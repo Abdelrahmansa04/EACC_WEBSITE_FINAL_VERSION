@@ -481,6 +481,7 @@
 
     let currentSlide = 0;
 
+    if (slides.length) {
     slides.forEach((slide, index) => {
 
       slide.classList.toggle('active', index === 0);
@@ -499,6 +500,7 @@
         .classList.add('active');
 
     }, 7000);
+    }
 })();
 
 
@@ -1323,10 +1325,7 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
     if (!value) return '';
     value = String(value).trim();
     if (!value || value.charAt(0) === '#') return value;
-    if (isExternalUrl(value)) {
-      if (value.indexOf('wixstudio.com/eacc-refactor/') === -1) return value;
-      value = '/' + value.split('wixstudio.com/eacc-refactor/').pop();
-    }
+    if (isExternalUrl(value)) return value;
     var split = splitHash(value);
     var path = split.path || '';
     var hash = split.hash || '';
@@ -1337,12 +1336,20 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
     return toProjectPath(path) + hash;
   }
 
+  function normalizeHrefOnly(value) {
+    if (!value) return '';
+    value = String(value).trim();
+    if (!value || value.charAt(0) === '#' || isExternalUrl(value)) return value;
+    if (value.charAt(0) === '/') return normalizeLocalPath(value);
+    return value;
+  }
+
   function resolveLocalHref(a) {
     if (!a) return '';
     var local = a.getAttribute('data-local-link');
     var href = a.getAttribute('href');
-    var wix = a.getAttribute('data-wix-link');
-    return normalizeLocalPath(local || href || wix || '');
+    if (local) return normalizeLocalPath(local);
+    return normalizeHrefOnly(href || '');
   }
 
   function shouldIgnore(a, destination) {
@@ -1352,10 +1359,11 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
   }
 
   function normalizeLinks() {
-    document.querySelectorAll('a[href], a[data-local-link], a[data-wix-link]').forEach(function (a) {
+    document.querySelectorAll('a[href], a[data-local-link]').forEach(function (a) {
       var destination = resolveLocalHref(a);
       if (shouldIgnore(a, destination)) return;
-      if (isLocalPreview() || a.hasAttribute('data-wix-link')) {
+      var href = a.getAttribute('href') || '';
+      if (a.hasAttribute('data-local-link') || href.charAt(0) === '/') {
         a.setAttribute('href', destination);
       }
     });
@@ -1366,7 +1374,7 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
     var destination = resolveLocalHref(a);
     if (shouldIgnore(a, destination)) return;
 
-    if (isExternalUrl(destination) && destination.indexOf('wixstudio.com/eacc-refactor/') === -1) return;
+    if (isExternalUrl(destination)) return;
 
     event.preventDefault();
     event.stopPropagation();

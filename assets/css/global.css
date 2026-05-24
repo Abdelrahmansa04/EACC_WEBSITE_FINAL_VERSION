@@ -3102,7 +3102,7 @@ section{
     overflow: hidden;
     background:
       linear-gradient(180deg, rgba(255,255,255,0.92), rgba(248,249,255,0.96)),
-      url(""../../assets/images/hero (4).avif"") center/cover;
+      url("../../assets/images/home-hero3.avif") center/cover;
   }
 
   #about:before {
@@ -4701,7 +4701,12 @@ body.eacc-inner-site .course-hero {
 
 body.eacc-inner-site .legal-hero,
 body.eacc-inner-site .contact-hero {
-  --eacc-hero-photo: url(""../../assets/images/hero (4).avif"");
+  --eacc-hero-photo: url("../../assets/images/home-hero3.avif");
+}
+
+body.eacc-inner-site .eacc-global-hero {
+  --eacc-hero-photo: url("../../assets/images/home-hero3.avif");
+  isolation: isolate;
 }
 
 body.eacc-inner-site .testing-hero {

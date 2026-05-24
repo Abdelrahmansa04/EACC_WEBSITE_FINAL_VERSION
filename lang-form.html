@@ -201,8 +201,9 @@ English text remains the default page content. Arabic is included in translation
       font-family: var(--heading-font);
       font-size: clamp(30px, 4vw, 42px);
       margin-bottom: 8px;
+      color: #fff !important;
     }
-    .form-head p { color: rgba(255,255,255,.86); }
+    .form-head p { color: rgba(255,255,255,.92) !important; }
 
     .form-body { padding: 28px 30px 34px; }
     .form-grid {
@@ -384,7 +385,7 @@ English text remains the default page content. Arabic is included in translation
   <link rel='stylesheet' href='assets/css/global.css'>
 
 </head>
-<body>
+<body class="eacc-inner-site loading">
   <div data-include='partials/global-loading-screen.html'></div>
   <div data-include='partials/global-navbar.html'></div>
 
@@ -392,7 +393,7 @@ English text remains the default page content. Arabic is included in translation
   
 
   <main>
-    <section class="hero">
+    <section class="hero course-hero eacc-global-hero">
       <div class="container">
         <h1>Language Registration Form</h1>
         <p>Submit your details and our admissions team will contact you with the best course path, level guidance, and available schedules.</p>
@@ -736,140 +737,7 @@ English text remains the default page content. Arabic is included in translation
   });
 })();
 </script>
-
-
-
-
-<script id="eacc-wix-nav-bridge">
-(function () {
-  if (window.__eaccWixBridgeInstalled) return;
-  window.__eaccWixBridgeInstalled = true;
-  var slugMap = {
-    'index': '/',
-    'corporate-train': '/corporate-training',
-    'testing-centre': '/testing-centre',
-    'summer-camp-2026': '/summer-camp-2026',
-    'mindspace': '/mindspace',
-    'mindspace-form': '/mindspace',
-    'contactus': '/contact-us',
-    'contact-us': '/contact-us',
-    'request-info': '/request-info',
-    'book-cons': '/book-consultation',
-    'book-consultation': '/book-consultation',
-    'application': '/application',
-    'careers': '/careers',
-    'career': '/careers',
-    'faq': '/faq',
-    'terms': '/terms-and-conditions',
-    'terms-conditions': '/terms-and-conditions',
-    'terms-and-conditions': '/terms-and-conditions',
-    'privacy': '/privacy-policy',
-    'privacy-policy': '/privacy-policy',
-    'refund': '/refund',
-    'language-acad': '/language-academy',
-    'language-academy': '/language-academy',
-    'lang-form': '/language-form',
-    'language-form': '/language-form',
-    'eng': '/english',
-    'adults': '/english-adults',
-    'youth': '/english-youth',
-    'kids': '/english-kids',
-    'german': '/german',
-    'french': '/french',
-    'italian': '/italian',
-    'spanish': '/spanish',
-    'international-exams': '/international-exams',
-    'int-exams': '/international-exams',
-    'ielts': '/ielts',
-    'tofel': '/toefl',
-    'toefl': '/toefl',
-    'oet': '/oet',
-    'pte': '/pte',
-    'celi-cils': '/celi-cils',
-    'celi': '/celi',
-    'cils': '/cils',
-    'placment-test': '/placement-test',
-    'placement-test': '/placement-test',
-    'psychological-assessment': '/psychological-assessment',
-    'who-we-are': '/who-we-are',
-    'our-story': '/who-we-are',
-    'leadership': '/leadership',
-    'partners': '/partners',
-    'visit-our-centre': '/contact-us',
-    'online-lang': '/online-languages',
-    'online-languages': '/online-languages',
-    'kids-youth': '/kids-youth',
-    'kids-youth-academy': '/kids-youth',
-    'robotics': '/robotics',
-    'workshops': '/kids-youth'
-  };
-  function fromHrefToRoute(href) {
-    if (!href) return '';
-    href = String(href).trim();
-    if (!href) return '';
-    if (href.indexOf('javascript:') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('#') === 0) {
-      return '';
-    }
-    if (href.indexOf('http://') === 0 || href.indexOf('https://') === 0) {
-      if (href.indexOf('wixstudio.com/eacc-refactor/') > -1) return href;
-      return href;
-    }
-    if (href.charAt(0) === '/') {
-      return href;
-    }
-    var clean = href.split('#')[0].split('?')[0].replace(/\\/g, '/');
-    var parts = clean.split('/');
-    var file = parts[parts.length - 1] || '';
-    var base = file.replace(/\.html?$/i, '').toLowerCase();
-    if (slugMap[base]) return slugMap[base];
-    if (base) return '/' + base;
-    return '';
-  }
-  function resolveRoute(a) {
-    var wix = (a.getAttribute('data-wix-link') || '').trim();
-    if (wix) {
-      if (wix.charAt(0) === '/' || wix.indexOf('http://') === 0 || wix.indexOf('https://') === 0) return wix;
-      if (wix.indexOf('.html') > -1) return fromHrefToRoute(wix);
-    }
-    var href = a.getAttribute('href') || '';
-    return fromHrefToRoute(href);
-  }
-  function normalizeInternalLinks() {
-    var anchors = document.querySelectorAll('a[href], a[data-local-link], a[data-wix-link]');
-    anchors.forEach(function(a){
-      var route = resolveRoute(a);
-      if (route && route.charAt(0) === '/') {
-        a.setAttribute('data-wix-link', route);
-      }
-    });
-  }
-  document.addEventListener('click', function (event) {
-    var a = event.target && event.target.closest ? event.target.closest('a') : null;
-    if (!a) return;
-    if (a.target === '_blank' || a.hasAttribute('download')) return;
-    var route = resolveRoute(a);
-    if (!route) return;
-    event.preventDefault();
-    try {
-      if (window.parent && window.parent !== window) {
-        window.parent.postMessage({ type: 'EACC_NAVIGATE', href: route }, '*');
-      } else {
-        window.location.href = route;
-      }
-    } catch (e) {
-      window.location.href = route;
-    }
-  }, true);
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', normalizeInternalLinks);
-  } else {
-    normalizeInternalLinks();
-  }
-})();
-</script>
-
-
-  <script src='assets/js/include-partials.js'></script>
+<script src='assets/js/include-partials.js'></script>
 
   <div data-include='partials/global-footer.html'></div>
 </body>

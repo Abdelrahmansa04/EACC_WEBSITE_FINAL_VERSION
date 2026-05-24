@@ -6007,11 +6007,11 @@ header .dropdown-menu a:hover {
 <div class="container">
 <div class="hero-content">
 <div class="breadcrumb">
-<a data-wix-link="/" href="../../../index.html" data-local-link="index.html">Home</a>
+<a href="../../../index.html" data-local-link="index.html">Home</a>
 <i class="fa-solid fa-chevron-right"></i>
-<a data-wix-link="/language" href="../language-acad.html" data-local-link="Our Services/langauge-academy/language-acad.html">Languages</a>
+<a href="../language-acad.html" data-local-link="Our Services/langauge-academy/language-acad.html">Languages</a>
 <i class="fa-solid fa-chevron-right"></i>
-<a data-wix-link="/english" href="eng.html" data-local-link="Our Services/langauge-academy/eng/eng.html">English</a>
+<a href="eng.html" data-local-link="Our Services/langauge-academy/eng/eng.html">English</a>
 <i class="fa-solid fa-chevron-right"></i>
 <span>Adults</span>
 </div>
@@ -6133,18 +6133,18 @@ header .dropdown-menu a:hover {
 <div class="cta-box">
 <h2>Register Now</h2>
 <p>Whether you are starting from scratch or refining your fluency, the Egyptian American Center is your partner in reaching your English goals.</p>
-<a class="btn btn-primary" data-local-link="lang-form.html" data-wix-link="/language-form" href="../../../lang-form.html">Register Now</a>
+<a class="btn btn-primary" data-local-link="lang-form.html" href="../../../lang-form.html">Register Now</a>
 </div>
 <div class="section-title related-title">
 <h2>Explore Other English Paths</h2>
 <p>Families can choose the English path that fits each learner's age and goal.</p>
 </div>
 <div class="path-grid">
-<a class="path-card" data-local-link="Our Services/langauge-academy/eng/youth.html" data-wix-link="/english-youth" href="youth.html">
+<a class="path-card" data-local-link="Our Services/langauge-academy/eng/youth.html" href="youth.html">
 <img alt="English for Youth" src="../../../assets/images/youth.avif"/>
 <div class="path-content"><span>Youths</span><h3>Youth English</h3><p>Structured English learning for teenagers aged 12 to 17.</p></div>
 </a>
-<a class="path-card" data-local-link="Our Services/langauge-academy/eng/kids.html" data-wix-link="/english-kids" href="kids.html">
+<a class="path-card" data-local-link="Our Services/langauge-academy/eng/kids.html" href="kids.html">
 <img alt="English for Kids" src="../../../assets/images/kids/kids.avif"/>
 <div class="path-content"><span>Kids</span><h3>Kids English</h3><p>Foundational English learning for young learners.</p></div>
 </a>
@@ -6236,42 +6236,6 @@ header .dropdown-menu a:hover {
     syncDots();
   }
 
-})();
-</script>
-
-<script id="eacc-wix-navigation-bridge">
-(function(){
-  'use strict';
-  function isLocalPreview(){
-    return window.location.protocol==='file:'||
-      window.location.hostname==='localhost'||
-      window.location.hostname==='127.0.0.1';
-  }
-  function navigateLocal(href){
-    if(!href)return;
-    if(/^https?:\/\//i.test(href)){
-      window.location.href=href;
-      return;
-    }
-    window.location.href=href;
-  }
-  document.addEventListener('click',function(event){
-    var link=event.target.closest&&event.target.closest('a[data-wix-link],a[data-external-link]');
-    if(!link)return;
-    var href=link.getAttribute('data-wix-link')||link.getAttribute('data-external-link');
-    var local=link.getAttribute('data-local-link');
-    if(!href&&!local)return;
-    event.preventDefault();
-    if(isLocalPreview()){
-      navigateLocal(local||href);
-      return;
-    }
-    if(window.parent&&window.parent!==window){
-      window.parent.postMessage({type:'EACC_NAVIGATE',href:href},'*');
-      return;
-    }
-    navigateLocal(href||local);
-  });
 })();
 </script>
 <a aria-label="Chat with EACC on WhatsApp" class="sticky-wp" data-external-link="https://wa.me/201065533240" data-local-link="https://wa.me/201065533240" href="https://wa.me/201065533240">
@@ -6372,140 +6336,7 @@ header .dropdown-menu a:hover {
   nodes.forEach(function (el) { obs.observe(el); });
 })();
 </script>
-
-
-
-
-<script id="eacc-wix-nav-bridge">
-(function () {
-  if (window.__eaccWixBridgeInstalled) return;
-  window.__eaccWixBridgeInstalled = true;
-  var slugMap = {
-    'index': '/',
-    'corporate-train': '/corporate-training',
-    'testing-centre': '/testing-centre',
-    'summer-camp-2026': '/summer-camp-2026',
-    'mindspace': '/mindspace',
-    'mindspace-form': '/mindspace',
-    'contactus': '/contact-us',
-    'contact-us': '/contact-us',
-    'request-info': '/request-info',
-    'book-cons': '/book-consultation',
-    'book-consultation': '/book-consultation',
-    'application': '/application',
-    'careers': '/careers',
-    'career': '/careers',
-    'faq': '/faq',
-    'terms': '/terms-and-conditions',
-    'terms-conditions': '/terms-and-conditions',
-    'terms-and-conditions': '/terms-and-conditions',
-    'privacy': '/privacy-policy',
-    'privacy-policy': '/privacy-policy',
-    'refund': '/refund',
-    'language-acad': '/language-academy',
-    'language-academy': '/language-academy',
-    'lang-form': '/language-form',
-    'language-form': '/language-form',
-    'eng': '/english',
-    'adults': '/english-adults',
-    'youth': '/english-youth',
-    'kids': '/english-kids',
-    'german': '/german',
-    'french': '/french',
-    'italian': '/italian',
-    'spanish': '/spanish',
-    'international-exams': '/international-exams',
-    'int-exams': '/international-exams',
-    'ielts': '/ielts',
-    'tofel': '/toefl',
-    'toefl': '/toefl',
-    'oet': '/oet',
-    'pte': '/pte',
-    'celi-cils': '/celi-cils',
-    'celi': '/celi',
-    'cils': '/cils',
-    'placment-test': '/placement-test',
-    'placement-test': '/placement-test',
-    'psychological-assessment': '/psychological-assessment',
-    'who-we-are': '/who-we-are',
-    'our-story': '/who-we-are',
-    'leadership': '/leadership',
-    'partners': '/partners',
-    'visit-our-centre': '/contact-us',
-    'online-lang': '/online-languages',
-    'online-languages': '/online-languages',
-    'kids-youth': '/kids-youth',
-    'kids-youth-academy': '/kids-youth',
-    'robotics': '/robotics',
-    'workshops': '/kids-youth'
-  };
-  function fromHrefToRoute(href) {
-    if (!href) return '';
-    href = String(href).trim();
-    if (!href) return '';
-    if (href.indexOf('javascript:') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('#') === 0) {
-      return '';
-    }
-    if (href.indexOf('http://') === 0 || href.indexOf('https://') === 0) {
-      if (href.indexOf('wixstudio.com/eacc-refactor/') > -1) return href;
-      return href;
-    }
-    if (href.charAt(0) === '/') {
-      return href;
-    }
-    var clean = href.split('#')[0].split('?')[0].replace(/\\/g, '/');
-    var parts = clean.split('/');
-    var file = parts[parts.length - 1] || '';
-    var base = file.replace(/\.html?$/i, '').toLowerCase();
-    if (slugMap[base]) return slugMap[base];
-    if (base) return '/' + base;
-    return '';
-  }
-  function resolveRoute(a) {
-    var wix = (a.getAttribute('data-wix-link') || '').trim();
-    if (wix) {
-      if (wix.charAt(0) === '/' || wix.indexOf('http://') === 0 || wix.indexOf('https://') === 0) return wix;
-      if (wix.indexOf('.html') > -1) return fromHrefToRoute(wix);
-    }
-    var href = a.getAttribute('href') || '';
-    return fromHrefToRoute(href);
-  }
-  function normalizeInternalLinks() {
-    var anchors = document.querySelectorAll('a[href], a[data-local-link], a[data-wix-link]');
-    anchors.forEach(function(a){
-      var route = resolveRoute(a);
-      if (route && route.charAt(0) === '/') {
-        a.setAttribute('data-wix-link', route);
-      }
-    });
-  }
-  document.addEventListener('click', function (event) {
-    var a = event.target && event.target.closest ? event.target.closest('a') : null;
-    if (!a) return;
-    if (a.target === '_blank' || a.hasAttribute('download')) return;
-    var route = resolveRoute(a);
-    if (!route) return;
-    event.preventDefault();
-    try {
-      if (window.parent && window.parent !== window) {
-        window.parent.postMessage({ type: 'EACC_NAVIGATE', href: route }, '*');
-      } else {
-        window.location.href = route;
-      }
-    } catch (e) {
-      window.location.href = route;
-    }
-  }, true);
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', normalizeInternalLinks);
-  } else {
-    normalizeInternalLinks();
-  }
-})();
-</script>
-
-
-  <script src='../../../assets/js/include-partials.js'></script>
+<script src='../../../assets/js/include-partials.js'></script>
 
   <div data-include='../../../partials/global-footer.html'></div>
 </body>

@@ -48,6 +48,24 @@
     });
   };
 
+  const preparePartialHtml = (html) => {
+    if (window.location.protocol !== 'file:' || !html) return html;
+    const prefix = getFileModeAssetPrefix();
+    return html
+      .replace(/(["'])\/assets\//g, `$1${prefix}assets/`)
+      .replace(/url\((["']?)\/assets\//g, `url($1${prefix}assets/`)
+      .replace(/<a\b[^>]*>/gi, (tag) => {
+        const localMatch = tag.match(/\sdata-local-link=(["'])(.*?)\1/i);
+        if (!localMatch) return tag;
+        const local = localMatch[2];
+        if (!local || /^(https?:|mailto:|tel:|javascript:|#)/i.test(local)) return tag;
+        const href = `${prefix}${local}`;
+        return tag.match(/\shref=(["']).*?\1/i)
+          ? tag.replace(/\shref=(["']).*?\1/i, ` href="${href}"`)
+          : tag.replace(/>$/, ` href="${href}">`);
+      });
+  };
+
   const removeLegacyGlobals = () => {
     if (hasInclude('global-loading-screen.html')) {
       document.querySelectorAll('#siteLoader, .site-loader').forEach((el) => el.remove());
@@ -75,66 +93,66 @@
     'partials/global-navbar.html': `
 <header>
   <div class="container navbar">
-    <a href="/" class="logo" data-wix-link="/" data-local-link="index.html">
+    <a href="/" class="logo" data-local-link="index.html">
       <img src="/assets/images/eacc-white-logo.png" alt="EACC Logo">
     </a>
     <nav class="nav-links" id="navLinks">
-      <a href="/" data-wix-link="/" data-local-link="index.html"><span>Home</span></a>
+      <a href="/" data-local-link="index.html"><span>Home</span></a>
       <div class="dropdown">
-        <a href="/summer-camp-2026" data-wix-link="/summer-camp-2026" data-local-link="summer-camp-2026.html"><span>Summer Camp 2026</span><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="/summer-camp-2026" data-local-link="summer-camp-2026.html"><span>Summer Camp 2026</span><i class="fa-solid fa-chevron-down"></i></a>
         <div class="dropdown-menu">
-          <a href="/summer-camp-2026#top" data-wix-link="/summer-camp-2026#top" data-local-link="summer-camp-2026.html#top">Overview</a>
-          <a href="/summer-camp-2026#program" data-wix-link="/summer-camp-2026#program" data-local-link="summer-camp-2026.html#program">Programs & Activities</a>
-          <a href="/summer-camp-2026#enroll" data-wix-link="/summer-camp-2026#enroll" data-local-link="summer-camp-2026.html#enroll">Schedule & Fees</a>
-          <a href="/summer-camp-2026#partners" data-wix-link="/summer-camp-2026#partners" data-local-link="summer-camp-2026.html#partners">Previous Camps</a>
-          <a href="/summer-camp-2026#summer-camp-faqs" data-wix-link="/summer-camp-2026#summer-camp-faqs" data-local-link="summer-camp-2026.html#summer-camp-faqs">Frequently Asked Questions</a>
+          <a href="/summer-camp-2026#top" data-local-link="summer-camp-2026.html#top">Overview</a>
+          <a href="/summer-camp-2026#program" data-local-link="summer-camp-2026.html#program">Programs & Activities</a>
+          <a href="/summer-camp-2026#enroll" data-local-link="summer-camp-2026.html#enroll">Schedule & Fees</a>
+          <a href="/summer-camp-2026#partners" data-local-link="summer-camp-2026.html#partners">Previous Camps</a>
+          <a href="/summer-camp-2026#summer-camp-faqs" data-local-link="summer-camp-2026.html#summer-camp-faqs">Frequently Asked Questions</a>
         </div>
       </div>
       <div class="dropdown">
         <a href="index.html#services"><span>Our Services</span><i class="fa-solid fa-chevron-down"></i></a>
         <div class="dropdown-menu">
-          <a href="/language-academy" data-wix-link="/language-academy" data-local-link="Our Services/langauge-academy/language-acad.html">Language Academy</a>
-          <a href="/kids-youth" data-wix-link="/kids-youth" data-local-link="Our Services/kids-youth.html">Kids & Youth Development Academy</a>
-          <a href="/international-exams" data-wix-link="/international-exams" data-local-link="Our Services/international-exams.html">International Exam Preparation</a>
-          <a href="/online-languages" data-wix-link="/online-languages" data-local-link="Our Services/online-lang.html">Online Language Center</a>
+          <a href="/language-academy" data-local-link="Our Services/langauge-academy/language-acad.html">Language Academy</a>
+          <a href="/kids-youth" data-local-link="Our Services/kids-youth.html">Kids & Youth Development Academy</a>
+          <a href="/international-exams" data-local-link="Our Services/international-exams.html">International Exam Preparation</a>
+          <a href="/online-languages" data-local-link="Our Services/online-lang.html">Online Language Center</a>
         </div>
       </div>
       <div class="dropdown">
-        <a href="/mindspace" data-wix-link="/mindspace" data-local-link="mindspace.html"><span>MindSpace</span><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="/mindspace" data-local-link="mindspace.html"><span>MindSpace</span><i class="fa-solid fa-chevron-down"></i></a>
         <div class="dropdown-menu">
-          <a href="mindspace.html#about" data-wix-link="/mindspace#about" data-local-link="mindspace.html#about">About MindSpace</a>
-          <a href="mindspace.html#services" data-wix-link="/mindspace#services" data-local-link="mindspace.html#services">Therapy Services</a>
-          <a href="mindspace.html#assessment" data-wix-link="/mindspace#assessment" data-local-link="mindspace.html#assessment">Assessments</a>
-          <a href="mindspace.html#family" data-wix-link="/mindspace#family" data-local-link="mindspace.html#family">Family Support</a>
-          <a href="mindspace.html#family" data-wix-link="/mindspace#family" data-local-link="mindspace.html#family">Professional Workshops</a>
-          <a href="/contact-us" data-wix-link="/contact-us" data-local-link="mindspace-form.html">Book an Appointment</a>
+          <a href="mindspace.html#about" data-local-link="mindspace.html#about">About MindSpace</a>
+          <a href="mindspace.html#services" data-local-link="mindspace.html#services">Therapy Services</a>
+          <a href="mindspace.html#assessment" data-local-link="mindspace.html#assessment">Assessments</a>
+          <a href="mindspace.html#family" data-local-link="mindspace.html#family">Family Support</a>
+          <a href="mindspace.html#family" data-local-link="mindspace.html#family">Professional Workshops</a>
+          <a href="/contact-us" data-local-link="mindspace-form.html">Book an Appointment</a>
         </div>
       </div>
       <div class="dropdown">
-        <a href="/testing-centre" data-wix-link="/testing-centre" data-local-link="testing-centre.html"><span>Testing Center</span><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="/testing-centre" data-local-link="testing-centre.html"><span>Testing Center</span><i class="fa-solid fa-chevron-down"></i></a>
         <div class="dropdown-menu">
-          <a href="/toefl" data-wix-link="/toefl" data-local-link="testing-centre/tofel.html">TOEFL</a>
-          <a href="/celi-cils" data-wix-link="/celi-cils" data-local-link="testing-centre/celi-cils.html">CELI &amp; CILS</a>
-          <a href="/contact-us" data-wix-link="/contact-us" data-local-link="testing-centre/placment-test.html">Placement Test</a>
-          <a href="testing-centre/Psychological-assessment.html" data-wix-link="/psychological-assessment" data-local-link="testing-centre/Psychological-assessment.html">Psychological Assessment</a>
+          <a href="/toefl" data-local-link="testing-centre/tofel.html">TOEFL</a>
+          <a href="/celi-cils" data-local-link="testing-centre/celi-cils.html">CELI &amp; CILS</a>
+          <a href="/contact-us" data-local-link="testing-centre/placment-test.html">Placement Test</a>
+          <a href="testing-centre/Psychological-assessment.html" data-local-link="testing-centre/Psychological-assessment.html">Psychological Assessment</a>
         </div>
       </div>
-      <a href="/corporate-training" data-wix-link="/corporate-training" data-local-link="corporate-train.html">Corporate Training</a>
+      <a href="/corporate-training" data-local-link="corporate-train.html">Corporate Training</a>
       <div class="dropdown">
-        <a href="/who-we-are" data-wix-link="/who-we-are" data-local-link="about-us/our-story.html"><span>About</span><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="/who-we-are" data-local-link="about-us/our-story.html"><span>About</span><i class="fa-solid fa-chevron-down"></i></a>
         <div class="dropdown-menu">
-          <a href="/who-we-are" data-wix-link="/who-we-are" data-local-link="about-us/our-story.html">Our Story</a>
-          <a href="/leadership" data-wix-link="/leadership" data-local-link="about-us/leadership.html">Leadership Team</a>
-          <a href="/partners" data-wix-link="/partners" data-local-link="about-us/partners.html">Partners &amp; Accreditations</a>
-          <a href="/careers" data-wix-link="/careers" data-local-link="about-us/application.html">Careers</a>
+          <a href="/who-we-are" data-local-link="about-us/our-story.html">Our Story</a>
+          <a href="/leadership" data-local-link="about-us/leadership.html">Leadership Team</a>
+          <a href="/partners" data-local-link="about-us/partners.html">Partners &amp; Accreditations</a>
+          <a href="/careers" data-local-link="about-us/application.html">Careers</a>
         </div>
       </div>
       <div class="dropdown">
-        <a href="/contact-us" data-wix-link="/contact-us" data-local-link="contact-us/visit-our-centre.html"><span>Contact Us</span><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="/contact-us" data-local-link="contact-us/visit-our-centre.html"><span>Contact Us</span><i class="fa-solid fa-chevron-down"></i></a>
         <div class="dropdown-menu">
-          <a href="/contact-us" data-wix-link="/contact-us" data-local-link="contact-us/visit-our-centre.html">Visit Our Center</a>
-          <a href="/request-info" data-wix-link="/request-info" data-local-link="contact-us/request-info.html">Request Information</a>
-          <a href="/book-consultation" data-wix-link="/book-consultation" data-local-link="contact-us/book-cons.html">Book a Consultation</a>
+          <a href="/contact-us" data-local-link="contact-us/visit-our-centre.html">Visit Our Center</a>
+          <a href="/request-info" data-local-link="contact-us/request-info.html">Request Information</a>
+          <a href="/book-consultation" data-local-link="contact-us/book-cons.html">Book a Consultation</a>
         </div>
       </div>
       <button type="button" class="language-toggle eacc-language-toggle notranslate" id="languageToggle" aria-label="Switch website language to Arabic" translate="no" data-no-translate>
@@ -178,19 +196,19 @@
       <div class="footer-col">
         <h4>Explore</h4>
         <div class="footer-links">
-          <a href="/summer-camp-2026" data-wix-link="/summer-camp-2026" data-local-link="summer-camp-2026.html">Summer Camp 2026</a>
-          <a href="/mindspace" data-wix-link="/mindspace" data-local-link="mindspace.html">Mind Space by EACC</a>
-          <a href="testing-centre.html" data-wix-link="/testing-centre" data-local-link="testing-centre.html">Authorized Testing Center</a>
-          <a href="Our Services/online-lang.html" data-wix-link="/online-languages" data-local-link="Our Services/online-lang.html">Online Language Center</a>
-          <a href="corporate-train.html" data-wix-link="/corporate-training" data-local-link="corporate-train.html">Corporate Training</a>
+          <a href="/summer-camp-2026" data-local-link="summer-camp-2026.html">Summer Camp 2026</a>
+          <a href="/mindspace" data-local-link="mindspace.html">Mind Space by EACC</a>
+          <a href="testing-centre.html" data-local-link="testing-centre.html">Authorized Testing Center</a>
+          <a href="Our Services/online-lang.html" data-local-link="Our Services/online-lang.html">Online Language Center</a>
+          <a href="corporate-train.html" data-local-link="corporate-train.html">Corporate Training</a>
         </div>
       </div>
       <div class="footer-col">
         <h4>Resources</h4>
         <div class="footer-links">
           <a href="https://lms.eacc-egy.com/login.php" data-external-link="https://lms.eacc-egy.com/login.php" data-local-link="https://lms.eacc-egy.com/login.php">LMS Login</a>
-          <a href="/contact-us" data-wix-link="/contact-us" data-local-link="testing-centre/placment-test.html">Placement Test</a>
-          <a href="/contact-us" data-wix-link="/contact-us" data-local-link="contact-us/book-cons.html#contact">Consultation Request</a>
+          <a href="/contact-us" data-local-link="testing-centre/placment-test.html">Placement Test</a>
+          <a href="/contact-us" data-local-link="contact-us/book-cons.html#consultationForm">Consultation Request</a>
         </div>
       </div>
       <div class="footer-col footer-office">
@@ -205,9 +223,9 @@
     <div class="footer-bottom">
       <span>© 2026 Egyptian American Cultural Center. All rights reserved.</span>
       <span class="footer-bottom-links">
-        <a href="/privacy-policy" data-wix-link="/privacy-policy" data-local-link="privacy.html">Privacy Policy</a>
-        <a href="/terms-and-conditions" data-wix-link="/terms-and-conditions" data-local-link="terms.html">Terms &amp; Conditions</a>
-        <a href="/refund" data-wix-link="/refund" data-local-link="refund.html">Refund Policy</a>
+        <a href="/privacy-policy" data-local-link="privacy.html">Privacy Policy</a>
+        <a href="/terms-and-conditions" data-local-link="terms.html">Terms &amp; Conditions</a>
+        <a href="/refund" data-local-link="refund.html">Refund Policy</a>
       </span>
     </div>
   </div>
@@ -247,15 +265,23 @@
       const file = slot.getAttribute('data-include');
       if (!file) return;
 
+      if (window.location.protocol === 'file:') {
+        const fallback = getFallbackPartial(file);
+        if (fallback) {
+          slot.outerHTML = preparePartialHtml(fallback);
+        }
+        return;
+      }
+
       try {
         const response = await fetch(file, { cache: 'no-cache' });
         if (!response.ok) throw new Error(`Could not load ${file}`);
-        slot.outerHTML = await response.text();
+        slot.outerHTML = preparePartialHtml(await response.text());
       } catch (error) {
         console.error(error);
         const fallback = getFallbackPartial(file);
         if (fallback) {
-          slot.outerHTML = fallback;
+          slot.outerHTML = preparePartialHtml(fallback);
         } else {
           slot.innerHTML = `<!-- Include failed: ${file}. Use a local server such as VS Code Live Server. -->`;
         }
