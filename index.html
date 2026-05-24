@@ -7,7 +7,7 @@
     EACC HOME PAGE MAINTENANCE NOTES
     - Main language behavior is controlled globally by assets/js/global.js.
     - The visible AR/EN toggle triggers Google Translate; the Google widget itself stays hidden.
-    - Layout, interaction, and navigation scripts are intentionally separated near the end of <body>.
+    - Layout, interaction, and navigation scripts are intentionally separated near the end of the body element.
   -->
 
   <meta charset="UTF-8" />
@@ -28,19 +28,213 @@
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
     rel="stylesheet">
 
-  <!-- FONT AWESOME -->
+  <!-- Global Styles -->
   <link rel="stylesheet" href="assets/css/global.css">
+
+  <!-- Homepage mobile polish: keeps index sections clean and readable on phones. -->
+  <style id="eacc-index-mobile-polish">
+    @media (max-width: 768px) {
+      body.eacc-home-page {
+        background: linear-gradient(180deg, #f7f8ff 0%, #ffffff 42%, #f8f9ff 100%);
+      }
+
+      body.eacc-home-page .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      body.eacc-home-page section {
+        padding-block: 64px;
+      }
+
+      body.eacc-home-page .hero {
+        min-height: auto !important;
+        padding: 108px 0 54px !important;
+        text-align: center;
+      }
+
+      body.eacc-home-page .hero-slider,
+      body.eacc-home-page .hero-overlay {
+        border-radius: 0 0 28px 28px;
+      }
+
+      body.eacc-home-page .hero-content {
+        width: 100%;
+        max-width: 560px;
+        margin-inline: auto;
+        align-items: center;
+      }
+
+      body.eacc-home-page .hero .hero-title-block {
+        margin: 0 0 18px !important;
+      }
+
+      body.eacc-home-page .hero .hero-slogan-line {
+        max-width: 11ch;
+        margin-inline: auto;
+        font-size: clamp(38px, 12vw, 54px) !important;
+        line-height: 0.98 !important;
+        text-wrap: balance;
+      }
+
+      body.eacc-home-page .hero-overview-summary {
+        padding: 18px 16px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.14);
+        text-align: left;
+      }
+
+      body.eacc-home-page .hero-overview-kicker {
+        width: 100%;
+        justify-content: center;
+      }
+
+      body.eacc-home-page .hero-overview-points article {
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 18px;
+      }
+
+      body.eacc-home-page .hero .hero-buttons,
+      body.eacc-home-page .cta-box .hero-buttons {
+        width: 100%;
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      body.eacc-home-page .hero .hero-buttons .btn,
+      body.eacc-home-page .cta-box .hero-buttons .btn,
+      body.eacc-home-page .camp-actions .btn {
+        width: 100%;
+        min-height: 52px;
+        justify-content: center;
+      }
+
+      body.eacc-home-page .positioning-line {
+        margin-top: 0;
+        font-size: clamp(24px, 8vw, 34px);
+        line-height: 1.12;
+        text-wrap: balance;
+      }
+
+      body.eacc-home-page .featured-banner-grid,
+      body.eacc-home-page .approved-service-grid,
+      body.eacc-home-page .story-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      body.eacc-home-page .feature-card {
+        border-radius: 24px !important;
+        padding: 22px;
+      }
+
+      body.eacc-home-page .feature-card-media,
+      body.eacc-home-page .feature-media {
+        width: calc(100% + 44px);
+        margin: -22px -22px 18px;
+        aspect-ratio: 16 / 10;
+        border-radius: 24px 24px 18px 18px;
+      }
+
+      body.eacc-home-page .feature-card h3 {
+        font-size: clamp(21px, 6vw, 28px);
+        line-height: 1.12;
+      }
+
+      body.eacc-home-page .service-card-link {
+        min-height: 48px;
+        margin-top: 18px;
+      }
+
+      body.eacc-home-page .camps-section {
+        padding-block: 68px;
+        text-align: center;
+      }
+
+      body.eacc-home-page .camps-wrapper {
+        gap: 24px;
+      }
+
+      body.eacc-home-page .camps-image {
+        border-radius: 26px;
+        overflow: hidden;
+        box-shadow: 0 22px 54px rgba(0, 0, 0, 0.2);
+      }
+
+      body.eacc-home-page .camps-section .camp-highlights {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px;
+      }
+
+      body.eacc-home-page .camps-section .camp-highlights span {
+        min-height: 44px;
+        padding: 10px;
+        border-radius: 16px;
+      }
+
+      body.eacc-home-page .section-title {
+        margin-bottom: 26px;
+      }
+
+      body.eacc-home-page .section-title h2,
+      body.eacc-home-page .cta-box h2 {
+        text-wrap: balance;
+      }
+
+      body.eacc-home-page #about .features-grid,
+      body.eacc-home-page #partners .partner-logo-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+      }
+
+      body.eacc-home-page #partners .partner-logo-card {
+        max-width: none;
+        min-height: 132px;
+        border-radius: 22px;
+      }
+
+      body.eacc-home-page .post-feature-trust-summary,
+      body.eacc-home-page .cta-box {
+        border-radius: 24px;
+        padding: 22px 18px;
+      }
+
+    }
+
+    @media (max-width: 420px) {
+      body.eacc-home-page .container {
+        width: min(100% - 22px, 1180px);
+      }
+
+      body.eacc-home-page section {
+        padding-block: 56px;
+      }
+
+      body.eacc-home-page .hero {
+        padding-top: 100px !important;
+      }
+
+      body.eacc-home-page .camps-section .camp-highlights {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
 
 </head>
 
-<body class="loading">
+<body class="eacc-home-page loading">
+
+  <!-- Global Loading Screen -->
   <div data-include="partials/global-loading-screen.html"></div>
 
+  <!-- Global Navbar -->
   <div data-include="partials/global-navbar.html"></div>
 
 
 
-  <!-- HERO -->
+  <!-- Home Hero -->
 
   <section class="hero">
 
@@ -90,15 +284,6 @@
           <a href="lang-form.html" class="btn btn-outline" data-local-link="lang-form.html">
             Enroll Now
           </a>
-
-          <!-- <a  class="btn btn-outline"  href="contact-us/visit-our-centre.html" data-local-link="contact-us/visit-our-centre.html">
-            Book a Consultation
-          </a>
-
-          <a href="https://wa.me/201065533240" class="btn btn-outline" data-external-link="https://wa.me/201065533240" data-local-link="https://wa.me/201065533240">
-            WhatsApp Us
-          </a> -->
-
         </div>
 
       </div>
@@ -110,7 +295,7 @@
 
 
 
-  <!-- HOME SUPPORTING MESSAGE -->
+  <!-- Home Overview Cards -->
 
   <section class="home-supporting-message" id="home-overview">
 
@@ -118,13 +303,13 @@
       <p class="positioning-line">Language opens doors. Wellbeing builds resilience. Technology develops future skills. Creativity inspires innovation.</p>
 
       <div class="featured-banner-grid">
-        <article class="feature-card" >
-          <div class="feature-card-media" >
-            <img src="assets/images/summer26/summer8.png" alt="Summer Camp 2026 activities" loading="lazy" decoding="async" >
-          </div >
-          <h3 >Now Enrolling: Summer Camp 2026</h3 >
-          <p >A dynamic summer experience combining English, robotics, arts, and engaging activities for children and teens.</p >
-          <a class="service-card-link" href="summer-camp-2026.html" data-local-link="/summer-camp-2026.html" href="/summer-camp-2026.html">Learn More</a >
+        <article class="feature-card">
+          <div class="feature-card-media">
+            <img src="assets/images/summer26/summer8.png" alt="Summer Camp 2026 activities" loading="lazy" decoding="async">
+          </div>
+          <h3>Now Enrolling: Summer Camp 2026</h3>
+          <p>A dynamic summer experience combining English, robotics, arts, and engaging activities for children and teens.</p>
+          <a class="service-card-link" href="summer-camp-2026.html" data-local-link="summer-camp-2026.html">Learn More</a>
         </article>
         <article class="feature-card" id="mind-space">
           <div class="feature-card-media is-logo">
@@ -132,7 +317,7 @@
           </div>
           <h3>Mind Space by EACC</h3>
           <p>Psychological therapy, assessments, and family support for children, youth, and adults.</p>
-          <a class="service-card-link" href="mindspace.html" data-local-link="/mindspace.html">Mind Space by EACC</a>
+          <a class="service-card-link" href="mindspace.html" data-local-link="mindspace.html">Mind Space by EACC</a>
         </article>
         <article class="feature-card" id="robotics-lab">
           <div class="feature-card-media">
@@ -140,7 +325,7 @@
           </div>
           <h3>Robotics Lab &amp; Expressive Studios</h3>
           <p>Hands-on robotics, creative expression, and workshops that build confidence, creativity, and future skills.</p>
-          <a class="service-card-link" href="/Our Services/kids-youth/robotics.html">Explore Services</a>
+          <a class="service-card-link" href="Our Services/kids-youth/robotics.html" data-local-link="Our Services/kids-youth/robotics.html">Explore Services</a>
         </article>
         <article class="feature-card" id="testing-center">
           <div class="feature-card-media is-logo">
@@ -162,7 +347,7 @@
 
   </section>
 
-  <!-- SUMMER CAMP 2026 -->
+  <!-- Summer Camp 2026 -->
 
   <section class="camps-section" id="summer-camp-2026">
 
@@ -185,7 +370,7 @@
           <a href="summer-camp-2026.html" class="btn btn-outline camp-cta-btn" data-local-link="summer-camp-2026.html">
             Explore My Voice Summer Camp 2026
           </a>
-          <a href="summer-camp-2026.html#enroll" class="btn btn-primary camp-cta-btn" data-local-link="lang-form.html">
+          <a href="lang-form.html" class="btn btn-primary camp-cta-btn" data-local-link="lang-form.html">
             Register for Summer Camp
           </a>
           <p class="camp-urgency">
@@ -208,7 +393,7 @@
 
   </section>
 
-  <!-- FEATURED SERVICES -->
+  <!-- Featured Services -->
 
   <section id="services">
 
@@ -235,7 +420,7 @@
           </div>
           <h3>Kids &amp; Youth Development Academy</h3>
           <p>English for kids, robotics lab, teen programs, and workshops that develop confidence and future skills.</p>
-          <a class="service-card-link" href="/Our Services/kids-youth.html" data-local-link="/Our Services/kids-youth.html">Explore Kids &amp; Youth Academy</a>
+          <a class="service-card-link" href="Our Services/kids-youth.html" data-local-link="Our Services/kids-youth.html">Explore Kids &amp; Youth Academy</a>
         </article>
         <article class="feature-card">
           <div class="feature-card-media is-logo">
@@ -259,7 +444,7 @@
           </div>
           <h3>Online Language Center</h3>
           <p>A focused landing point for flexible online language services and learner support.</p>
-          <a class="service-card-link" data-local-link="/Our Services/online-lang.html" href="/Our Services/online-lang.html">Explore Online Learning</a>
+          <a class="service-card-link" data-local-link="Our Services/online-lang.html" href="Our Services/online-lang.html">Explore Online Learning</a>
         </article>
         <article class="feature-card" id="corporate-training">
           <div class="feature-card-media">
@@ -267,15 +452,14 @@
           </div>
           <h3>Corporate Training</h3>
           <p>Customized language, communication, and professional development programs for organizations.</p>
-          <a class="service-card-link"  href="/corporate-train.html" data-local-link="/corporate-train.html">Explore Corporate Training</a>
+          <a class="service-card-link" href="corporate-train.html" data-local-link="corporate-train.html">Explore Corporate Training</a>
         </article>
       </div>
 
     </div>
 
   </section>
-
-   <!-- WHY EACC -->
+  <!-- Why Choose EACC -->
 
   <section id="about">
 
@@ -322,7 +506,7 @@
 
   </section>
 
-  <!-- SUCCESS STORIES -->
+  <!-- Success Stories -->
 
   <section id="success-stories">
 
@@ -353,7 +537,7 @@
 
   </section>
 
-  <!-- PARTNERS & ACCREDITATIONS -->
+  <!-- Partners And Accreditations -->
 
   <section id="partners">
 
@@ -406,7 +590,7 @@
 
   </section>
 
-  <!-- FINAL CTA -->
+  <!-- Final Call To Action -->
 
   <section>
 
@@ -416,115 +600,25 @@
         <h2>Start Your Learning Journey with EACC</h2>
         <p>Whether you want to improve your language skills, prepare for an international exam, support your child's development, access psychological services, or advance your organization, EACC is here to help you achieve your goals.</p>
         <div class="hero-buttons">
-          <a  class="btn btn-primary" data-local-link="lang-form.html" href="lang-form.html">Enroll Now</a>
-          <a  class="btn btn-outline"  href="contact-us/visit-our-centre.html" data-local-link="contact-us/visit-our-centre.html">Contact Us</a>
+          <a class="btn btn-primary" data-local-link="lang-form.html" href="lang-form.html">Enroll Now</a>
+          <a class="btn btn-outline" href="contact-us/visit-our-centre.html" data-local-link="contact-us/visit-our-centre.html">Contact Us</a>
         </div>
-        <br>
-        <p>Our team is ready to help you choose the service that best fits your needs.</p>
+<p>Our team is ready to help you choose the service that best fits your needs.</p>
       </div>
 
     </div>
 
   </section>
-   <!-- FOOTER -->
 
-<a class="sticky-wp" href="https://wa.me/201065533240" aria-label="Chat with EACC on WhatsApp" data-external-link="https://wa.me/201065533240" data-local-link="https://wa.me/201065533240">
-  <img src="assets/icons/wp-icon.png" alt="" aria-hidden="true">
-</a>
-<style id="eacc-sticky-whatsapp-final">
-  .sticky-wp{
-    position:fixed !important;
-    right:18px !important;
-    bottom:18px !important;
-    z-index:9999 !important;
-    width:62px !important;
-    height:62px !important;
-    border-radius:50% !important;
-    display:inline-flex !important;
-    align-items:center !important;
-    justify-content:center !important;
-    background:transparent !important;
-    box-shadow:0 16px 34px rgba(20,120,56,.30), 0 0 0 8px rgba(72,187,95,.12) !important;
-    transition:transform .24s ease, box-shadow .24s ease, filter .24s ease !important;
-    animation:wpFloatFinal 2.8s ease-in-out infinite !important;
-  }
-  .sticky-wp::before{
-    content:"" !important;
-    position:absolute !important;
-    inset:-10px !important;
-    border-radius:50% !important;
-    background:
-      radial-gradient(circle, rgba(255,255,255,.88) 0%, rgba(255,255,255,.22) 42%, rgba(255,255,255,0) 70%),
-      radial-gradient(circle, rgba(72,187,95,.44) 0%, rgba(72,187,95,0) 76%) !important;
-    z-index:-1 !important;
-    animation:wpPulseFinal 2.6s ease-out infinite !important;
-  }
-  .sticky-wp::after{
-    content:"" !important;
-    position:absolute !important;
-    top:4px !important;
-    right:4px !important;
-    width:11px !important;
-    height:11px !important;
-    border-radius:50% !important;
-    background:#ff3b30 !important;
-    border:2px solid #ffffff !important;
-    box-shadow:0 0 0 0 rgba(255,59,48,.55) !important;
-    animation:wpLiveDot 1.6s ease-out infinite !important;
-  }
-  .sticky-wp:hover,.sticky-wp:focus-visible{
-    transform:translateY(-4px) scale(1.05) !important;
-    box-shadow:0 20px 44px rgba(20,120,56,.36), 0 0 0 10px rgba(72,187,95,.14) !important;
-    filter:saturate(1.1) !important;
-    outline:none !important;
-  }
-  .sticky-wp img{
-    width:34px !important;
-    height:34px !important;
-    object-fit:contain !important;
-    display:block !important;
-  }
-  @keyframes wpPulseFinal{0%{transform:scale(.9);opacity:.45}70%{transform:scale(1.12);opacity:.08}100%{transform:scale(1.18);opacity:0}}
-  @keyframes wpFloatFinal{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
-  @keyframes wpLiveDot{
-    0%{box-shadow:0 0 0 0 rgba(255,59,48,.55)}
-    70%{box-shadow:0 0 0 8px rgba(255,59,48,0)}
-    100%{box-shadow:0 0 0 0 rgba(255,59,48,0)}
-  }
-  @media (max-width:768px){.sticky-wp{right:14px !important;bottom:14px !important;width:56px !important;height:56px !important}.sticky-wp img{width:31px !important;height:31px !important}}
-  @media (prefers-reduced-motion:reduce){.sticky-wp,.sticky-wp::before{animation:none !important}}
-</style>
+  <!-- Floating WhatsApp Action -->
+  <a class="sticky-wp" href="https://wa.me/201065533240" aria-label="Chat with EACC on WhatsApp" data-external-link="https://wa.me/201065533240" data-local-link="https://wa.me/201065533240">
+    <img src="assets/icons/wp-icon.png" alt="" aria-hidden="true">
+  </a>
 
+  <!-- Global Scripts And Footer -->
   <script src="assets/js/include-partials.js"></script>
 
   <div data-include='partials/global-footer.html'></div>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
