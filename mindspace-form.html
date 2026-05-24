@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindSpace Registration | EACC</title>
+  <meta name="description" content="Book MindSpace services at Egyptian American Cultural Center." />
+  <link rel="icon" type="image/png" href="assets/images/eacc-blue-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #1a237e;
+      --navy-dark: #0d1457;
+      --navy-mid: #283593;
+      --gold: #f5a623;
+      --gold-light: #ffd54f;
+      --white: #ffffff;
+      --off-white: #f8f9ff;
+      --gray-light: #eef0f8;
+      --gray: #6f7897;
+      --text: #1a1d2e;
+      --heading-font: 'Playfair Display', serif;
+      --body-font: 'DM Sans', sans-serif;
+      --shadow: 0 20px 60px rgba(13,20,87,.12);
+      --radius: 22px;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--body-font);
+      color: var(--text);
+      background: linear-gradient(180deg, #f8f9ff 0%, #f1f4ff 100%);
+      overflow-x: hidden;
+    }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    .container { width: min(1180px, calc(100% - 28px)); margin: auto; }
+
+    .fa-solid { display: inline-flex; align-items: center; justify-content: center; font-style: normal; }
+    .fa-chevron-down::before { content: "\2304"; }
+    .fa-globe::before { content: "\25C9"; }
+    .fa-laptop::before { content: "\25AD"; }
+    .mobile-toggle-line { width: 21px; height: 2px; border-radius: 999px; background: currentColor; display: block; transition: transform .3s ease, opacity .22s ease; }
+    .mobile-toggle { display: none; flex-direction: column; gap: 5px; align-items: center; justify-content: center; cursor: pointer; }
+    .nav-lms { display: inline-flex; align-items: center; gap: 8px; min-height: 42px; padding: 0 16px; border: 1px solid rgba(255,255,255,.22); border-radius: 999px; background: rgba(255,255,255,.08); color: #fff; font-size: 14px; font-weight: 800; transition: .3s ease; }
+    .nav-lms:hover { background: rgba(255,255,255,.16); color: var(--gold-light); transform: translateY(-2px); }
+    header.scrolled .nav-lms { color: var(--navy-dark); border-color: rgba(13,20,87,.14); background: rgba(13,20,87,.05); }
+    .nav-cta-group { display: inline-flex; align-items: center; gap: 10px; }
+    input, select, textarea {
+      min-height: 52px;
+      border: 1px solid rgba(13,20,87,.14);
+      border-radius: 14px;
+      padding: 12px 14px;
+      font: 700 15px/1.4 var(--body-font);
+      color: var(--text);
+      background: #fff;
+      transition: .2s ease;
+      width: 100%;
+    }
+    textarea { min-height: 120px; resize: vertical; }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      background: transparent;
+      border-bottom: 1px solid transparent;
+      transition: .35s ease;
+    }
+    header.scrolled {
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(18px);
+      border-bottom-color: rgba(13,20,87,.08);
+      box-shadow: 0 14px 36px rgba(13,20,87,.08);
+    }
+    .navbar {
+      height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      transition: height .3s ease;
+    }
+    header.scrolled .navbar { height: 72px; }
+    .logo img { width: 118px; transition: .3s ease; }
+    header.scrolled .logo img { width: 98px; }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .nav-links a, .dropdown > a {
+      min-height: 42px;
+      padding: 12px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 800;
+      color: var(--white);
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: .3s ease;
+      white-space: nowrap;
+    }
+    .nav-links a:hover, .dropdown:hover > a {
+      color: var(--gold-light);
+      transform: translateY(-2px);
+    }
+    header.scrolled .nav-links a,
+    header.scrolled .dropdown > a { color: var(--navy-dark); }
+
+    .dropdown { position: relative; }
+    .dropdown-menu {
+      position: absolute;
+      top: calc(100% + 12px);
+      left: 0;
+      min-width: 220px;
+      padding: 12px;
+      border-radius: 16px;
+      background: var(--white);
+      border: 1px solid rgba(13,20,87,.08);
+      box-shadow: 0 20px 40px rgba(13,20,87,.14);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(10px);
+      transition: .25s ease;
+    }
+    .dropdown:hover .dropdown-menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+    .dropdown-menu a {
+      display: block;
+      color: var(--navy-dark);
+      padding: 12px 13px;
+      border-radius: 10px;
+      font-weight: 800;
+      min-height: auto;
+    }
+    .dropdown-menu a:hover { background: var(--gray-light); color: var(--navy); }
+
+    .mobile-toggle {
+      width: 46px;
+      height: 46px;
+      border: 1px solid rgba(255,255,255,.24);
+      border-radius: 14px;
+      background: rgba(255,255,255,.1);
+      color: var(--white);
+    }
+    header.scrolled .mobile-toggle {
+      color: var(--navy-dark);
+      background: rgba(255,255,255,.9);
+      border-color: rgba(13,20,87,.12);
+    }
+
+    .hero {
+      min-height: 55vh;
+      padding: 140px 0 70px;
+      background:
+        linear-gradient(135deg, rgba(13,20,87,.92), rgba(26,35,126,.82)),
+        url('assets/images/tofel.avif') center / cover no-repeat;
+      color: var(--white);
+      text-align: center;
+    }
+    .hero h1 {
+      font-family: var(--heading-font);
+      font-size: clamp(38px, 6vw, 66px);
+      margin-bottom: 14px;
+    }
+    .hero p { max-width: 760px; margin: auto; color: rgba(255,255,255,.9); line-height: 1.8; }
+
+    .form-section { padding: 70px 0 90px; }
+    .form-shell {
+      max-width: 820px;
+      margin: auto;
+      background: var(--white);
+      border-radius: 30px;
+      border: 1px solid rgba(13,20,87,.08);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+    .form-head {
+      padding: 28px 30px;
+      background: linear-gradient(135deg, rgba(13,20,87,.96), rgba(26,35,126,.88));
+      color: var(--white);
+    }
+    .form-head h2 {
+      font-family: var(--heading-font);
+      font-size: clamp(30px, 4vw, 42px);
+      margin-bottom: 8px;
+    }
+    .form-head p { color: rgba(255,255,255,.86); }
+
+    .form-body { padding: 28px 30px 34px; }
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+    .field { display: grid; gap: 8px; }
+    .field.full { grid-column: 1 / -1; }
+    label { font-weight: 800; color: var(--navy-dark); font-size: 14px; }
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 4px rgba(245,166,35,.2);
+    }
+
+    .actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-top: 18px;
+    }
+    .submit-btn {
+      min-height: 52px;
+      border: 0;
+      border-radius: 999px;
+      padding: 0 28px;
+      font: 900 15px/1 var(--body-font);
+      color: var(--navy-dark);
+      background: linear-gradient(135deg, var(--gold), var(--gold-light));
+      box-shadow: 0 14px 28px rgba(245,166,35,.3);
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: .25s ease;
+    }
+    .submit-btn:hover { transform: translateY(-2px); }
+    .submit-btn[disabled] { opacity: .75; cursor: wait; transform: none; }
+
+    .spinner {
+      width: 16px;
+      height: 16px;
+      border: 2px solid rgba(13,20,87,.25);
+      border-top-color: var(--navy-dark);
+      border-radius: 50%;
+      display: none;
+      animation: spin .7s linear infinite;
+    }
+    .submit-btn.loading .spinner { display: inline-block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    .form-feedback {
+      margin-top: 16px;
+      padding: 14px 16px;
+      border-radius: 14px;
+      border: 1px solid transparent;
+      display: none;
+      font-weight: 700;
+      line-height: 1.6;
+    }
+    .form-feedback.success {
+      display: block;
+      color: #0b5b34;
+      background: rgba(34, 197, 94, .12);
+      border-color: rgba(34, 197, 94, .35);
+    }
+
+    .site-footer {
+      background: var(--navy-dark);
+      color: var(--white);
+      padding-top: 60px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1fr;
+      gap: 28px;
+    }
+    .footer-logo img { width: 110px; margin-bottom: 16px; }
+    .footer-col h4 { color: var(--gold); margin-bottom: 14px; }
+    .footer-links { display: grid; gap: 10px; }
+    .footer-links a { color: rgba(255,255,255,.75); font-size: 14px; }
+    .footer-links a:hover { color: var(--gold-light); }
+    .footer-bottom {
+      margin-top: 34px;
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding: 16px 0;
+      text-align: center;
+      color: rgba(255,255,255,.68);
+      font-size: 14px;
+    }
+
+    @media (max-width: 980px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .navbar { height: 78px; }
+      header.scrolled .navbar { height: 68px; }
+      .logo img, header.scrolled .logo img { width: 92px; }
+      .mobile-toggle { display: inline-flex; align-items: center; justify-content: center; }
+      .nav-links {
+        position: fixed;
+        top: 78px;
+        right: -100%;
+        width: 100%;
+        height: calc(100vh - 78px);
+        overflow-y: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        padding: 24px;
+        background: #fff;
+        transition: right .3s ease;
+      }
+      .nav-links.active { right: 0; }
+      .nav-links a, .dropdown > a {
+        color: var(--navy-dark);
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 1px solid rgba(13,20,87,.08);
+      }
+      .dropdown-menu {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        border: 0;
+        box-shadow: none;
+        padding: 4px 0 0 14px;
+      }
+      .hero { padding: 120px 0 56px; }
+      .form-grid { grid-template-columns: 1fr; }
+      .form-body { padding: 22px 18px 24px; }
+      .form-head { padding: 20px 18px; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+
+    body.embed-only {
+      background: transparent;
+    }
+    body.embed-only header,
+    body.embed-only footer {
+      display: none !important;
+    }
+    body.embed-only main {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    body.embed-only .hero {
+      display: none !important;
+    }
+    body.embed-only .form-section {
+      padding: 0 !important;
+    }
+    body.embed-only .form-shell {
+      border-radius: 18px;
+      box-shadow: 0 18px 48px rgba(13,20,87,.12);
+    }
+  </style>
+<style id="eacc-footer-mobile-polish">
+@media (max-width: 768px) {
+  .site-footer .footer-grid,
+  footer .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 22px !important;
+  }
+  .site-footer .footer-col,
+  footer .footer-col,
+  .site-footer .footer-brand-block,
+  footer .footer-about,
+  .site-footer .footer-follow,
+  footer .footer-follow,
+  .site-footer .footer-office,
+  footer .footer-office {
+    width: 100% !important;
+    min-width: 0 !important;
+    padding: 14px 0 !important;
+    border: 0 !important;
+    background: transparent !important;
+  }
+  .site-footer .footer-links,
+  footer .footer-links {
+    gap: 10px !important;
+  }
+  .site-footer .footer-bottom,
+  footer .footer-bottom {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    text-align: left !important;
+  }
+  html[dir="rtl"] .site-footer .footer-bottom,
+  html[dir="rtl"] footer .footer-bottom {
+    align-items: flex-end !important;
+    text-align: right !important;
+  }
+}
+</style>
+
+  <link rel='stylesheet' href='assets/css/global.css'>
+
+</head>
+<body>
+  <div data-include='partials/global-loading-screen.html'></div>
+  <div data-include='partials/global-navbar.html'></div>
+  <div data-include='partials/global-navbar.html'></div>
+  <div data-include='partials/global-loading-screen.html'></div>
+  
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>MindSpace Registration</h1>
+        <p>Share your details and our MindSpace team will contact you to recommend the right assessment, therapy, or family support pathway.</p>
+      </div>
+    </section>
+
+    <section class="form-section">
+      <div class="container">
+        <div class="form-shell">
+          <div class="form-head">
+            <h2>Request MindSpace Support</h2>
+            <p>Tell us about your child and we will guide you to the right service.</p>
+          </div>
+
+          <div class="form-body">
+            <form id="mindspaceForm" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="childName">Child Name</label>
+                  <input id="childName" name="childName" type="text" placeholder="Child full name" required>
+                </div>
+
+                <div class="field">
+                  <label for="parentName">Parent Name</label>
+                  <input id="parentName" name="parentName" type="text" placeholder="Parent or guardian name" required>
+                </div>
+
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" placeholder="Enter phone number" required>
+                </div>
+
+                <div class="field">
+                  <label for="age">Child Age</label>
+                  <input id="age" name="age" type="number" min="2" max="18" placeholder="Enter age" required>
+                </div>
+
+                <div class="field full">
+                  <label for="service">Service of Interest</label>
+                  <select id="service" name="service" required>
+                    <option value="" selected disabled>Select a MindSpace service</option>
+                    <option value="assessment">Assessment</option>
+                    <option value="therapy">Therapy Services</option>
+                    <option value="speech">Speech &amp; Language Support</option>
+                    <option value="behavior">Behavior Support</option>
+                    <option value="family">Family Guidance</option>
+                    <option value="workshop">Professional Workshop</option>
+                    <option value="guidance">I need guidance</option>
+                  </select>
+                </div>
+
+                <div class="field full">
+                  <label for="message">Additional Details</label>
+                  <textarea id="message" name="message" placeholder="Share anything helpful about your child's needs."></textarea>
+                </div>
+              </div>
+
+              <div class="actions">
+                <button type="submit" class="submit-btn" id="submitBtn">
+                  <span class="spinner" aria-hidden="true"></span>
+                  <span id="submitText">Submit</span>
+                </button>
+              </div>
+
+              <div class="form-feedback" id="formFeedback" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <script>
+    (function () {
+      var isEmbedMode = window.location.search.indexOf('embed=1') !== -1;
+      if (isEmbedMode) {
+        document.body.classList.add('embed-only');
+      }
+
+      var header = document.getElementById('header');
+      var mobileToggle = document.getElementById('mobileToggle');
+      var navLinks = document.getElementById('navLinks');
+      var navLogo = document.getElementById('navLogo');
+      var form = document.getElementById('mindspaceForm');
+      var submitBtn = document.getElementById('submitBtn');
+      var submitText = document.getElementById('submitText');
+      var feedback = document.getElementById('formFeedback');
+      var defaultLogo = 'assets/images/eacc-blue-logo.png';
+      var whiteLogo = 'assets/images/eacc-white-logo.png';
+
+      function updateHeaderState() {
+        if (!header) return;
+        var scrolled = window.scrollY > 0;
+        header.classList.toggle('scrolled', scrolled);
+        if (navLogo) navLogo.src = scrolled ? defaultLogo : whiteLogo;
+      }
+      if (!isEmbedMode) {
+        updateHeaderState();
+        window.addEventListener('scroll', updateHeaderState, { passive: true });
+      }
+
+      if (mobileToggle && navLinks) {
+        mobileToggle.addEventListener('click', function () {
+          var open = navLinks.classList.toggle('active');
+          mobileToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+      }
+
+      const SCRIPT_URL = '';
+      form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+        submitBtn.disabled = true;
+        submitBtn.classList.add('loading');
+        submitText.textContent = 'Submitting...';
+        feedback.className = 'form-feedback';
+        feedback.textContent = '';
+        await new Promise(function(resolve){ setTimeout(resolve, 700); });
+        feedback.className = 'form-feedback success';
+        feedback.textContent = 'Thank you. Your MindSpace request has been received. Our team will contact you shortly to discuss the best next steps.';
+        form.reset();
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('loading');
+        submitText.textContent = 'Submit';
+      });
+          var result = await response.json();
+          if (!response.ok || !result.success) throw new Error((result && result.message) || 'Submission failed');
+
+          feedback.className = 'form-feedback success';
+          feedback.textContent = result.message || 'Thank you. Your MindSpace request has been received. Our team will contact you shortly to discuss the best next steps.';
+          form.reset();
+        } catch (error) {
+          feedback.className = 'form-feedback error';
+          feedback.textContent = error.message || 'Sorry, something went wrong. Please try again.';
+        } finally {
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('loading');
+          submitText.textContent = 'Submit';
+        }
+      });
+    })();
+  </script>
+
+<script id="eacc-wix-nav-bridge">
+(function () {
+  if (window.__eaccWixBridgeInstalled) return;
+  window.__eaccWixBridgeInstalled = true;
+  var slugMap = {
+    'index': '/',
+    'corporate-train': '/corporate-training',
+    'testing-centre': '/testing-centre',
+    'summer-camp-2026': '/summer-camp-2026',
+    'mindspace': '/mindspace',
+    'mindspace-form': '/mindspace',
+    'contactus': '/contact-us',
+    'contact-us': '/contact-us',
+    'request-info': '/request-info',
+    'book-cons': '/book-consultation',
+    'book-consultation': '/book-consultation',
+    'application': '/application',
+    'careers': '/careers',
+    'career': '/careers',
+    'faq': '/faq',
+    'terms': '/terms-and-conditions',
+    'terms-conditions': '/terms-and-conditions',
+    'terms-and-conditions': '/terms-and-conditions',
+    'privacy': '/privacy-policy',
+    'privacy-policy': '/privacy-policy',
+    'refund': '/refund',
+    'language-acad': '/language-academy',
+    'language-academy': '/language-academy',
+    'lang-form': '/language-form',
+    'language-form': '/language-form',
+    'eng': '/english',
+    'adults': '/english-adults',
+    'youth': '/english-youth',
+    'kids': '/english-kids',
+    'german': '/german',
+    'french': '/french',
+    'italian': '/italian',
+    'spanish': '/spanish',
+    'international-exams': '/international-exams',
+    'int-exams': '/international-exams',
+    'ielts': '/ielts',
+    'tofel': '/toefl',
+    'toefl': '/toefl',
+    'oet': '/oet',
+    'pte': '/pte',
+    'celi-cils': '/celi-cils',
+    'celi': '/celi',
+    'cils': '/cils',
+    'placment-test': '/placement-test',
+    'placement-test': '/placement-test',
+    'psychological-assessment': '/psychological-assessment',
+    'who-we-are': '/who-we-are',
+    'our-story': '/who-we-are',
+    'leadership': '/leadership',
+    'partners': '/partners',
+    'visit-our-centre': '/contact-us',
+    'online-lang': '/online-languages',
+    'online-languages': '/online-languages',
+    'kids-youth': '/kids-youth',
+    'kids-youth-academy': '/kids-youth',
+    'robotics': '/robotics',
+    'workshops': '/kids-youth'
+  };
+  function fromHrefToRoute(href) {
+    if (!href) return '';
+    href = String(href).trim();
+    if (!href) return '';
+    if (href.indexOf('javascript:') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('#') === 0) {
+      return '';
+    }
+    if (href.indexOf('http://') === 0 || href.indexOf('https://') === 0) {
+      if (href.indexOf('wixstudio.com/eacc-refactor/') > -1) return href;
+      return href;
+    }
+    if (href.charAt(0) === '/') {
+      return href;
+    }
+    var clean = href.split('#')[0].split('?')[0].replace(/\\/g, '/');
+    var parts = clean.split('/');
+    var file = parts[parts.length - 1] || '';
+    var base = file.replace(/\.html?$/i, '').toLowerCase();
+    if (slugMap[base]) return slugMap[base];
+    if (base) return '/' + base;
+    return '';
+  }
+  function resolveRoute(a) {
+    var wix = (a.getAttribute('data-wix-link') || '').trim();
+    if (wix) {
+      if (wix.charAt(0) === '/' || wix.indexOf('http://') === 0 || wix.indexOf('https://') === 0) return wix;
+      if (wix.indexOf('.html') > -1) return fromHrefToRoute(wix);
+    }
+    var href = a.getAttribute('href') || '';
+    return fromHrefToRoute(href);
+  }
+  function normalizeInternalLinks() {
+    var anchors = document.querySelectorAll('a[href], a[data-local-link], a[data-wix-link]');
+    anchors.forEach(function(a){
+      var route = resolveRoute(a);
+      if (route && route.charAt(0) === '/') {
+        a.setAttribute('data-wix-link', route);
+      }
+    });
+  }
+  document.addEventListener('click', function (event) {
+    var a = event.target && event.target.closest ? event.target.closest('a') : null;
+    if (!a) return;
+    if (a.target === '_blank' || a.hasAttribute('download')) return;
+    var route = resolveRoute(a);
+    if (!route) return;
+    event.preventDefault();
+    try {
+      if (window.parent && window.parent !== window) {
+        window.parent.postMessage({ type: 'EACC_NAVIGATE', href: route }, '*');
+      } else {
+        window.location.href = route;
+      }
+    } catch (e) {
+      window.location.href = route;
+    }
+  }, true);
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', normalizeInternalLinks);
+  } else {
+    normalizeInternalLinks();
+  }
+})();
+</script>
+
+
+  <script src='assets/js/include-partials.js'></script>
+
+  <div data-include='partials/global-footer.html'></div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

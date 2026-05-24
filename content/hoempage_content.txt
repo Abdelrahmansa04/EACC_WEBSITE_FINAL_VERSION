@@ -1,0 +1,406 @@
+Home page Content 
+
+Final Main Navigation (Approved Structure)
+
+Home | Summer Camp 2026 | Academies | Mind Space | Authorized Testing Center | Online Language Center | Corporate Training | About Us | Contact Us
+
+⸻
+
+Header CTA Buttons
+
+* Enroll Now
+* WhatsApp Us
+* LMS
+
+Why LMS in the Header Is a Smart Decision
+
+Adding an LMS button:
+
+* Gives current students instant access.
+* Demonstrates that EACC uses advanced educational technology.
+* Increases trust among prospective students and parents.
+* Supports the positioning of EACC as a modern learning institution.
+
+⸻
+
+Final Dropdown Structure
+
+Summer Camp 2026
+
+* Overview
+* Programs & Activities
+* Schedule & Fees
+* Previous Camps
+* Frequently Asked Questions
+
+⸻
+
+Academies
+
+* Language Academy
+* Kids & Youth Development Academy
+* International Exam Preparation
+
+Kids & Youth Development Academy Includes
+
+* English for Kids
+* Robotics Lab
+* Teen Programs
+* Workshops
+
+⸻
+
+Mind Space
+
+* About Mind Space by EACC
+* Therapy Services
+* Assessments
+* Family Support
+* Professional Workshops
+* Book an Appointment
+
+⸻
+
+Authorized Testing Center
+
+* TOEFL
+* CILS
+* CELI
+* Placement Test
+* Psychological Assessment
+
+“Placement Test” serves as the language assessment entry point for prospective students.
+
+⸻
+
+Online Language Center
+
+* No dropdown
+
+A single conversion-focused landing page for all online language services.
+
+⸻
+
+Corporate Training
+
+* No dropdown
+
+⸻
+
+About Us
+
+* Our Story
+* Leadership Team
+* Partners & Accreditations
+* Careers
+
+⸻
+
+Contact Us
+
+* Visit Our Center
+* Request Information
+* Book a Consultation
+
+⸻
+
+Final Strategic Notes
+
+Summer Camp 2026
+
+Includes “Previous Camps” to build trust and showcase your track record.
+
+Academies
+
+Contains only currently active educational divisions.
+
+Mind Space
+
+Maintains independent branding and dedicated service pages.
+
+Authorized Testing Center
+
+Prominently showcases EACC’s official testing and assessment services.
+
+Online Language Center
+
+Presented as a strategic online delivery platform without unnecessary submenu items.
+
+LMS Button
+
+A strong technology signal and convenience feature for existing learners.
+
+----------------------------------------------------------------------------------
+
+Main Headline
+
+Empowering Minds. Building Futures.
+
+Supporting Message
+
+Since 1996, Egyptian American Cultural Center has helped more than 10,000 graduates build the communication skills, confidence, and global perspective needed to succeed through language training, international exam preparation, and professional development.
+
+Because success in today’s world requires more than language proficiency, EACC is expanding its services in 2026 to support the whole learner—academically, emotionally, creatively, and technologically.
+
+Our new services in psychological wellbeing, robotics, and creative expression complement our language training by helping children, youth, and adults develop emotional resilience, critical thinking, creativity, and future-ready skills for lifelong success.Authorized Testing Center
+
+Official registration for TOEFL, CILS, and CELI exams, placement tests, and psychological assessments.
+
+
+-----------------------------------------------------------------------------------
+
+Featured Banner
+
+Now Enrolling: Summer Camp 2026
+
+A dynamic summer experience combining English, robotics, arts, and engaging activities for children and teens.
+
+Button: Learn More
+
+Mind Space by EACC
+
+Psychological therapy, assessments, and family support for children, youth, and adults.
+
+Button: Book a Consultation
+
+Robotics Lab & 🎨 Expressive Studios
+
+Hands-on robotics, creative expression, and workshops that build confidence, creativity, and future skills.
+
+Button: Explore Services
+
+Authorized Testing Center
+
+Official registration for TOEFL, CILS, and CELI exams, placement tests, and psychological assessments.
+
+Button: Book Your Test
+
+Primary Call-to-Action Buttons
+
+[ Explore Services ]   [ Enroll Now ]
+
+⸻
+
+Secondary Call-to-Action Buttons
+
+[ Book a Consultation ]   [ WhatsApp Us ]
+
+⸻
+
+Trust Indicators
+
+Established in 1996 • 10,000+ Graduates Since 1996 • Authorized TOEFL, CILS & CELI Testing Center • 80+ Educators and Specialists • Part of Future Education Holding
+
+⸻
+
+Strategic Positioning Statement
+
+Language opens doors. Wellbeing builds resilience. Technology develops future skills. Creativity inspires innovation.
+
+-----------------------------------------------------------------
+Visual Placement Summary
+TOP BADGE
+↓
+MAIN HEADLINE
+↓
+SUPPORTING MESSAGE
+↓
+4 FEATURED SERVICE CARDS
+↓
+PRIMARY CTA BUTTONS
+↓
+SECONDARY CTA BUTTONS
+↓
+TRUST INDICATORS
+↓
+STRATEGIC POSITIONING STATEMENT
+
+-------------------------------------------------------------
+
+Homepage Build Sequence
+
+1. Navigation & Header ✅
+2. Hero Section ✅
+3. Summer Camp 2026 Section ← Next Step
+4. Academies Overview
+5. Why Choose EACC
+6. Testimonials
+7. Partners & Accreditations
+8. Final Call to Action
+
+اعتقد الأجزاء دي تقريبا نفس اللي عاملها في ال version القديم
+
+----------------------------------------------------------
+
+Section Badge
+
+Registration Now Open
+
+Section Headline
+
+My Voice Summer Camp 2026
+
+Supporting Message
+
+A transformational summer experience where children and teens build confidence, strengthen their English, explore robotics and creative expression, and discover their unique voice.
+
+Highlights
+
+Personalized Assessments • Robotics • Expressive Arts • Field Trips • Adventure Camp • Parent Club • Final Showcase
+
+Primary Call-to-Action
+
+[ Explore My Voice Summer Camp 2026 ]
+
+Urgency Message
+
+Limited seats available.
+
+--------------------------------------------------
+Featured Services
+
+Discover the Service That Fits Your Goals
+
+Whether you are looking for language training, international testing, psychological support, online learning, or customized corporate solutions, EACC offers trusted services designed to help you succeed.
+
+Clickable Cards:
+
+* Language Academy → Explore Language Academy
+* Kids & Youth Development Academy → Explore Kids & Youth Academy
+* Mind Space by EACC → Explore Mind Space
+* Authorized Testing Center → Explore Testing Services
+* Online Language Center → Explore Online Learning
+* Corporate Training → Explore Corporate Training
+
+---------------------------------------------
+Section Badge
+
+Success Stories
+
+⸻
+
+Section Headline
+
+Real Results. Meaningful Impact.
+
+⸻
+
+Supporting Message
+
+For nearly three decades, Egyptian American Cultural Center has helped learners, families, and organizations achieve their goals through education, assessment, and personal development.
+
+و نستخدم ال testimonial اللي عندنا
+
+-------------------------------------------------------
+
+Partners & Accreditations
+
+⸻
+
+Section Badge
+
+Partners & Accreditations
+
+⸻
+
+Section Headline
+
+Trusted Partnerships. International Standards.
+
+⸻
+
+Supporting Message
+
+Egyptian American Cultural Center works with respected educational institutions and authorized testing organizations to deliver internationally recognized services and assessments.
+
+⸻
+
+Featured Partner and Accreditation Logos
+
+Authorized Testing Organizations
+
+* TOEFL
+* CILS
+* CELI
+
+Academic and Institutional Partners
+
+* Future Education Holding
+* Notting Hill College
+* Think English
+* Partner universities and institutions
+
+(Display these as a clean logo grid or carousel rather than as text bullets.)
+
+⸻
+
+Primary Call-to-Action
+
+[ View Our Partners ]
+
+-----------------------------------------------------------
+
+Final Homepage Copy
+
+Start Your Learning Journey with EACC
+
+Whether you want to improve your language skills, prepare for an international exam, support your child’s development, access psychological services, or advance your organization, EACC is here to help you achieve your goals.
+
+[ Enroll Now ]   [ Book a Consultation ]
+
+[ WhatsApp Us ]   [ Contact Us ]
+
+Our team is ready to help you choose the service that best fits your needs.
+
+-------------------------------------------------------------
+
+Final Footer (Refined and Approved)
+
+Column 1: Brand Signature
+
+Empowering Minds. Building Futures.
+
+Language, wellbeing, and future skills for every stage of life.
+
+Follow Us: Facebook | Instagram | LinkedIn | YouTube | TikTok
+
+⸻
+
+Column 2: Explore
+
+* Summer Camp 2026
+* Mind Space by EACC
+* Authorized Testing Center
+* Online Language Center
+* Corporate Training
+
+⸻
+
+Column 3: Resources
+
+* LMS Login
+* Placement Test
+* Consultation Request
+* FAQ
+
+⸻
+
+Column 4: Contact
+
+* Alexandria, Egypt
+* WhatsApp: +20 XXX XXX XXXX
+* Email: info@eacc-egy.com
+
+⸻
+
+Closing Statement
+
+Helping learners and families grow with confidence since 1996.
+
+⸻
+
+Bottom Bar
+
+©️ 2026 Egyptian American Cultural Center. All rights reserved. | Privacy Policy | Terms & Conditions | Refund Policy
+
+

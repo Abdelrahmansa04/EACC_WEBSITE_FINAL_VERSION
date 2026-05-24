@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!--
+    EACC HOME PAGE MAINTENANCE NOTES
+    - Main language behavior is controlled by the final script: #eacc-translation-controller-v2.
+    - Add future English/Arabic copy to window.EACC_TRANSLATIONS.enToAr in that script.
+    - Keep visible English text as the source text; Arabic is applied at runtime when users press AR/EN.
+    - Layout, interaction, and navigation scripts are intentionally separated near the end of <body>
+  <div data-include='partials/global-loading-screen.html'></div>
+  <div data-include='partials/global-navbar.html'></div> for easier debugging.
+  -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>EACC | Egyptian American Cultural Center</title>
+
+  <meta name="description"
+    content="Egyptian American Cultural Center offers premium language education, camps, test preparation programs, and immersive learning experiences." />
+
+  <link rel="icon" type="image/png" href="assets/images/eacc-blue-logo.png">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- FONT AWESOME -->
+  <link rel="stylesheet" href="assets/css/global.css">
+
+</head>
+
+<body class="loading">
+  <div data-include="partials/global-loading-screen.html"></div>
+
+  <div data-include="partials/global-navbar.html"></div>
+
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-slider">
+
+      <div class="slide slide-hero-main"
+        style="background-image:url('assets/images/home-hero3.png')"></div>
+      <div class="slide slide-hero-camps"
+        style="background-image:url('assets/images/explore-our-campus/home-hero2.png')"></div>
+      <div class="slide slide-hero-main"
+        style="background-image:url('assets/images/explore-our-campus/home-hero.png')"></div>
+
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <div class="hero-title-block">
+          <h1 class="hero-slogan-line">Empowering Minds. Building Futures.</h1>
+        </div>
+
+        <div class="hero-overview-summary" aria-label="EACC whole learner overview">
+          <span class="hero-overview-kicker">Egyptian American Cultural Center</span>
+          
+          <p>Since 1996, the Egyptian American Cultural Center has guided more than 60,000 graduates toward stronger communication, greater confidence, and a global outlook through accredited language programs, international exam preparation, and professional development.</p>
+          <div class="hero-overview-points">
+            <article>
+              <h3>Expanding Our Offerings in 2026</h3>
+              <p>Excellence today requires more than language proficiency alone. EACC is extending its services to support learners across academics, wellbeing, creativity, and technology.</p>
+            </article>
+            <article>
+              <h3>Integrated Pathways for Growth</h3>
+              <p>Complementing our language programs, new services in psychological wellbeing, robotics, and creative arts help children, youth, and adults build resilience, critical thinking, and the confidence to succeed long term.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+
+          <a href="index.html#services" class="btn btn-primary">
+            Explore Services
+          </a>
+
+          <a href="/lang-form" class="btn btn-outline" data-wix-link="/lang-form" data-local-link="lang-form.html">
+            Enroll Now
+          </a>
+
+          <!-- <a href="/contact-us" class="btn btn-outline" data-wix-link="/contact-us" data-local-link="contact-us/book-cons.html#contact">
+            Book a Consultation
+          </a>
+
+          <a href="https://wa.me/201065533240" class="btn btn-outline" data-external-link="https://wa.me/201065533240" data-local-link="https://wa.me/201065533240">
+            WhatsApp Us
+          </a> -->
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- HOME SUPPORTING MESSAGE -->
+
+  <section class="home-supporting-message" id="home-overview">
+
+    <div class="container">
+      <p class="positioning-line">Language opens doors. Wellbeing builds resilience. Technology develops future skills. Creativity inspires innovation.</p>
+
+      <div class="featured-banner-grid">
+        <article class="feature-card">
+          <div class="feature-card-media">
+            <img src="assets/images/summer26/summer8.png" alt="Summer Camp 2026 activities" loading="lazy" decoding="async">
+          </div>
+          <h3>Now Enrolling: Summer Camp 2026</h3>
+          <p>A dynamic summer experience combining English, robotics, arts, and engaging activities for children and teens.</p>
+          <a class="service-card-link" href="/summer-camp-2026" data-wix-link="/summer-camp-2026" data-local-link="summer-camp-2026.html">Learn More</a>
+        </article>
+        <article class="feature-card" id="mind-space">
+          <div class="feature-card-media is-logo">
+            <img src="assets/images/partners/mindspace.png" alt="Mind Space by EACC logo" loading="lazy" decoding="async">
+          </div>
+          <h3>Mind Space by EACC</h3>
+          <p>Psychological therapy, assessments, and family support for children, youth, and adults.</p>
+          <a class="service-card-link" href="/mindspace" data-wix-link="/mindspace" data-local-link="mindspace.html">Mind Space by EACC</a>
+        </article>
+        <article class="feature-card" id="robotics-lab">
+          <div class="feature-card-media">
+            <img src="assets/images/summer/ai-kdis.webp" alt="Robotics and creative workshops" loading="lazy" decoding="async">
+          </div>
+          <h3>Robotics Lab &amp; Expressive Studios</h3>
+          <p>Hands-on robotics, creative expression, and workshops that build confidence, creativity, and future skills.</p>
+          <a class="service-card-link" href="index.html#services">Explore Services</a>
+        </article>
+        <article class="feature-card" id="testing-center">
+          <div class="feature-card-media is-logo">
+            <img src="assets/images/int-exams.png" alt="Authorized testing services" loading="lazy" decoding="async">
+          </div>
+          <h3>Authorized Testing Center</h3>
+          <p>Official registration for TOEFL, CILS, and CELI exams, placement tests, and psychological assessments.</p>
+          <a class="service-card-link" href="/lang-form" data-wix-link="/lang-form" data-local-link="lang-form.html">Book Your Test</a>
+        </article>
+      </div>
+
+      <p class="post-feature-trust-summary" aria-label="EACC trust indicators">
+        Established in 1996, EACC has supported <strong>60,000+ graduates since 1996</strong>, serves as an
+        <a href="#testing-center" class="hero-trust-link">Authorized TOEFL, CILS & CELI Testing Center</a>,
+        is powered by <strong>80+ educators and specialists</strong>, and is part of <strong>Future Education Holding</strong>.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- SUMMER CAMP 2026 -->
+
+  <section class="camps-section" id="summer-camp-2026">
+
+    <div class="container camps-wrapper">
+
+      <div class="camps-content">
+        <span class="camp-kicker">Registration Now Open</span>
+        <h2>My Voice Summer Camp 2026</h2>
+        <p>A transformational summer experience where children and teens build confidence, strengthen their English, explore robotics and creative expression, and discover their unique voice.</p>
+        <div class="camp-highlights">
+          <span>Personalized Assessments</span>
+          <span>Robotics</span>
+          <span>Expressive Arts</span>
+          <span>Field Trips</span>
+          <span>Adventure Camp</span>
+          <span>Parent Club</span>
+          <span>Final Showcase</span>
+        </div>
+        <div class="camp-actions">
+          <a href="/summer-camp-2026" class="btn btn-outline camp-cta-btn" data-wix-link="/summer-camp-2026" data-local-link="summer-camp-2026.html">
+            Explore My Voice Summer Camp 2026
+          </a>
+          <a href="/summer-camp-2026" class="btn btn-primary camp-cta-btn" data-wix-link="/summer-camp-2026" data-local-link="summer-camp-form.html">
+            Register for Summer Camp
+          </a>
+          <p class="camp-urgency">
+            <span class="camp-urgency-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            Limited seats available.
+          </p>
+        </div>
+      </div>
+
+      <div class="camps-image">
+        <img src="assets/images/summer26/summer8.png" alt="My Voice Summer Camp 2026">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FEATURED SERVICES -->
+
+  <section id="services">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span class="mini-title">Featured Services</span>
+        <h2>Discover the Service That Fits Your Goals</h2>
+        <p>Whether you are looking for language training, international testing, psychological support, online learning, or customized corporate solutions, EACC offers trusted services designed to help you succeed.</p>
+      </div>
+
+      <div class="approved-service-grid">
+        <article class="feature-card">
+          <div class="feature-card-media">
+            <img src="assets/images/languages.png" alt="Language Academy programs" loading="lazy" decoding="async">
+          </div>
+          <h3>Language Academy</h3>
+          <p>Structured language programs for school, work, study, travel, and everyday communication.</p>
+          <a class="service-card-link" href="/language-academy" data-wix-link="/language-academy" data-local-link="programs/language.html">Explore Language Academy</a>
+        </article>
+        <article class="feature-card" id="kids-youth-academy">
+          <div class="feature-card-media">
+            <img src="assets/images/summer26/summer12.png" alt="Kids and youth development programs" loading="lazy" decoding="async">
+          </div>
+          <h3>Kids &amp; Youth Development Academy</h3>
+          <p>English for kids, robotics lab, teen programs, and workshops that develop confidence and future skills.</p>
+          <a class="service-card-link" href="/kids-youth" data-wix-link="/kids-youth" data-local-link="programs/english/kids/kids.html">Explore Kids &amp; Youth Academy</a>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card-media is-logo">
+            <img src="assets/images/partners/mindspace.png" alt="Mind Space by EACC logo" loading="lazy" decoding="async">
+          </div>
+          <h3>Mind Space by EACC</h3>
+          <p>Therapy services, assessments, family support, and professional workshops.</p>
+          <a class="service-card-link" href="/mindspace" data-wix-link="/mindspace" data-local-link="mindspace.html">Explore Mind Space</a>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card-media is-logo">
+            <img src="assets/images/int-exams.png" alt="Testing center services" loading="lazy" decoding="async">
+          </div>
+          <h3>Authorized Testing Center</h3>
+          <p>TOEFL, CILS, CELI, placement tests, and psychological assessments.</p>
+          <a class="service-card-link" href="/testing-centre" data-wix-link="/testing-centre" data-local-link="testing-centre.html">Explore Testing Services</a>
+        </article>
+        <article class="feature-card" id="online-language-center">
+          <div class="feature-card-media">
+            <img src="assets/images/private.avif" alt="Online language learning" loading="lazy" decoding="async">
+          </div>
+          <h3>Online Language Center</h3>
+          <p>A focused landing point for flexible online language services and learner support.</p>
+          <a class="service-card-link" href="/contact-us" data-wix-link="/contact-us" data-local-link="lang-form.html">Explore Online Learning</a>
+        </article>
+        <article class="feature-card" id="corporate-training">
+          <div class="feature-card-media">
+            <img src="assets/images/hero (4).avif" alt="Corporate training classroom" loading="lazy" decoding="async">
+          </div>
+          <h3>Corporate Training</h3>
+          <p>Customized language, communication, and professional development programs for organizations.</p>
+          <a class="service-card-link" href="/contact-us" data-wix-link="/contact-us" data-local-link="contact-us/request-info.html">Explore Corporate Training</a>
+        </article>
+      </div>
+
+    </div>
+
+  </section>
+
+   <!-- WHY EACC -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span class="mini-title">Why Choose EACC</span>
+        <h2>What Makes EACC Unique</h2>
+        <p>EACC combines trusted educational experience with new academic, wellbeing, creative, and technology pathways for learners at every stage of life.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-media">
+            <img src="assets/images/hero (4).avif" alt="EACC students learning in class" loading="lazy" decoding="async">
+          </div>
+          <h3>Language Expertise</h3>
+          <p>Clear placement, strong instruction, and practical communication pathways for children, teens, and adults.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-media">
+            <img src="assets/images/partners/mindspace.png" alt="Courses for students of different ages" loading="lazy" decoding="async">
+          </div>
+          <h3>Whole-Learner Support</h3>
+          <p>Mind Space services help families and learners build confidence, resilience, and clarity.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-media">
+            <img src="assets/images/lms.png" alt="Student using an online learning platform" loading="lazy" decoding="async">
+          </div>
+          <h3>Technology for Learning</h3>
+          <p>LMS access, online learning options, robotics, and digital practice support modern learning habits.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-media is-logo">
+            <img src="assets/images/int-exams.png" alt="TOEFL authorized testing center" loading="lazy" decoding="async">
+          </div>
+          <h3>Official Testing</h3>
+          <p>Authorized testing and assessment services create a trusted entry point for learners.</p>
+        </article>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- SUCCESS STORIES -->
+
+  <section id="success-stories">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span class="mini-title">Success Stories</span>
+        <h2>Real Results. Meaningful Impact.</h2>
+        <p>For nearly three decades, Egyptian American Cultural Center has helped learners, families, and organizations achieve their goals through education, assessment, and personal development.</p>
+      </div>
+
+      <div class="story-grid">
+        <article class="feature-card">
+          <h3>Language Confidence</h3>
+          <p>Students move from placement to practical communication through guided instruction, feedback, and consistent practice.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Family Support</h3>
+          <p>Families gain clearer pathways for children and teens through assessment, counseling, and development-focused programs.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Organizational Growth</h3>
+          <p>Teams benefit from targeted training that connects language, communication, and professional performance.</p>
+        </article>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PARTNERS & ACCREDITATIONS -->
+
+  <section id="partners">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span class="mini-title">Partners &amp; Accreditations</span>
+        <h2>Trusted Partnerships. International Standards.</h2>
+        <p>Egyptian American Cultural Center works with respected educational institutions and authorized testing organizations to deliver internationally recognized services and assessments.</p>
+      </div>
+
+      <div class="partner-logo-grid" aria-label="Featured partner and accreditation logos">
+        <div class="partner-logo-card">
+          <img src="assets/images/tofel.avif" alt="TOEFL logo" loading="lazy" decoding="async">
+          <small>Authorized Testing Organization</small>
+        </div>
+        <div class="partner-logo-card">
+          <img src="assets/images/italian/cils.avif" alt="TOEFL logo" loading="lazy" decoding="async">
+          CILS<small>Authorized Testing Organization</small>
+        </div>
+        <div class="partner-logo-card">
+  
+          <img src="assets/images/italian/celi.avif" alt="TOEFL logo" loading="lazy" decoding="async">
+          CELI<small>Authorized Testing Organization</small>
+        </div>
+        <div class="partner-logo-card">
+          <img src="assets/images/partners/feh.jpg" alt="TOEFL logo" loading="lazy" decoding="async">
+          Future Education Holding<small>Academic Group</small>
+        </div>
+        <div class="partner-logo-card">
+          <img src="assets/images/partners/notting.avif" alt="Notting Hill College logo" loading="lazy" decoding="async">
+          Notting Hill College<small>Academic Partner</small>
+        </div>
+        <div class="partner-logo-card">
+          <img src="assets/images/partners/think-eng.avif" alt="Think English logo" loading="lazy" decoding="async">
+          Think English<small>Academic Partner</small>
+        </div>
+        <div class="partner-logo-card">
+          <img src="assets/images/partners/eton.avif" alt="Eton Academy logo" loading="lazy" decoding="async">
+          Partner Universities<small>Institutional Network</small>
+        </div>
+      
+      </div>
+
+      <div class="section-action">
+        <a href="/partners" class="btn btn-dark" data-wix-link="/partners" data-local-link="about-us/partners.html">View Our Partners</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FINAL CTA -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="cta-box">
+        <h2>Start Your Learning Journey with EACC</h2>
+        <p>Whether you want to improve your language skills, prepare for an international exam, support your child's development, access psychological services, or advance your organization, EACC is here to help you achieve your goals.</p>
+        <div class="hero-buttons">
+          <a href="/lang-form" class="btn btn-primary" data-wix-link="/lang-form" data-local-link="lang-form.html">Enroll Now</a>
+          <a href="/request-info" class="btn btn-outline" data-wix-link="/request-info" data-local-link="contact-us/request-info.html">Contact Us</a>
+        </div>
+        <br>
+        <p>Our team is ready to help you choose the service that best fits your needs.</p>
+      </div>
+
+    </div>
+
+  </section>
+   <!-- FOOTER -->
+
+<a class="sticky-wp" href="https://wa.me/201065533240" aria-label="Chat with EACC on WhatsApp" data-external-link="https://wa.me/201065533240" data-local-link="https://wa.me/201065533240">
+  <img src="assets/icons/wp-icon.png" alt="" aria-hidden="true">
+</a>
+<style id="eacc-sticky-whatsapp-final">
+  .sticky-wp{
+    position:fixed !important;
+    right:18px !important;
+    bottom:18px !important;
+    z-index:9999 !important;
+    width:62px !important;
+    height:62px !important;
+    border-radius:50% !important;
+    display:inline-flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:transparent !important;
+    box-shadow:0 16px 34px rgba(20,120,56,.30), 0 0 0 8px rgba(72,187,95,.12) !important;
+    transition:transform .24s ease, box-shadow .24s ease, filter .24s ease !important;
+    animation:wpFloatFinal 2.8s ease-in-out infinite !important;
+  }
+  .sticky-wp::before{
+    content:"" !important;
+    position:absolute !important;
+    inset:-10px !important;
+    border-radius:50% !important;
+    background:
+      radial-gradient(circle, rgba(255,255,255,.88) 0%, rgba(255,255,255,.22) 42%, rgba(255,255,255,0) 70%),
+      radial-gradient(circle, rgba(72,187,95,.44) 0%, rgba(72,187,95,0) 76%) !important;
+    z-index:-1 !important;
+    animation:wpPulseFinal 2.6s ease-out infinite !important;
+  }
+  .sticky-wp::after{
+    content:"" !important;
+    position:absolute !important;
+    top:4px !important;
+    right:4px !important;
+    width:11px !important;
+    height:11px !important;
+    border-radius:50% !important;
+    background:#ff3b30 !important;
+    border:2px solid #ffffff !important;
+    box-shadow:0 0 0 0 rgba(255,59,48,.55) !important;
+    animation:wpLiveDot 1.6s ease-out infinite !important;
+  }
+  .sticky-wp:hover,.sticky-wp:focus-visible{
+    transform:translateY(-4px) scale(1.05) !important;
+    box-shadow:0 20px 44px rgba(20,120,56,.36), 0 0 0 10px rgba(72,187,95,.14) !important;
+    filter:saturate(1.1) !important;
+    outline:none !important;
+  }
+  .sticky-wp img{
+    width:34px !important;
+    height:34px !important;
+    object-fit:contain !important;
+    display:block !important;
+  }
+  @keyframes wpPulseFinal{0%{transform:scale(.9);opacity:.45}70%{transform:scale(1.12);opacity:.08}100%{transform:scale(1.18);opacity:0}}
+  @keyframes wpFloatFinal{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}
+  @keyframes wpLiveDot{
+    0%{box-shadow:0 0 0 0 rgba(255,59,48,.55)}
+    70%{box-shadow:0 0 0 8px rgba(255,59,48,0)}
+    100%{box-shadow:0 0 0 0 rgba(255,59,48,0)}
+  }
+  @media (max-width:768px){.sticky-wp{right:14px !important;bottom:14px !important;width:56px !important;height:56px !important}.sticky-wp img{width:31px !important;height:31px !important}}
+  @media (prefers-reduced-motion:reduce){.sticky-wp,.sticky-wp::before{animation:none !important}}
+</style>
+
+  <script src="assets/js/include-partials.js"></script>
+
+  <div data-include='partials/global-footer.html'></div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

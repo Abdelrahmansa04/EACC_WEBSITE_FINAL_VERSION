@@ -1,0 +1,223 @@
+robotics lab 
+
+Build, Code, and Conquer
+
+A hands-on Arduino robotics course for kids ages 7–12. Students learn robotics by building, testing, and solving real robot challenges using simple explanations, real components, and ready-made code.
+
+Course Duration: 2 hours per session
+Coding Level: No coding experience required
+Main Board: Arduino Uno
+
+
+COURSE OBJECTIVE
+
+By the final session, each child will be able to build and run a simple Arduino robot through guided challenges using ready-made code.
+
+Students will learn to:
+
+Understand Robots
+Explain what robots are, how they sense, think, and act, and where they appear in real life.
+
+Build Circuits
+Use a breadboard, jumper wires, LEDs, motors, sensors, and batteries safely.
+
+Assemble Components
+Connect the Arduino Uno, sensors, motor driver, wheels, and power source into one working robot.
+
+Complete Challenges
+Test robot logic through line follower, light follower, and small maze challenges.
+
+
+COURSE TIMELINE
+The Journey in Four Stages
+
+Stage 1: Robot Ideas
+Students discover what robotics means and how robots help people in daily life.
+
+Stage 2: Circuit Basics
+Students learn about power, closed circuits, breadboards, LEDs, motors, and safe wiring.
+
+Stage 3: Robot Parts
+Students explore the Arduino brain, sensors, motors, battery, wheels, jumper wires, and robot body.
+
+Stage 4: Challenge Arena
+Students apply what they learned through line follower, light follower, and maze logic activities using ready-made code.
+
+Every session ends with a quick quiz or mini-project before moving forward.
+
+
+LEVEL-BY-LEVEL COURSE MAP
+
+Level 01: What Is Robotics?
+Topics: Robotics concepts, real-life robots, and the sense-think-act process.
+Activity: Quiz and dream robot sketch.
+
+Level 02: How Circuits Work
+Topics: Power flow, breadboard use, jumper wires, LEDs, and motors.
+Activity: Build a working LED circuit.
+
+Level 03: Meet the Components
+Topics: Arduino, sensors, motors, battery, and basic connections.
+Activity: Component matching challenge.
+
+Level 04: Line Follower
+Topics: IR sensor logic and track testing.
+Activity: Finish the line track.
+
+Level 05: Light Follower
+Topics: LDR logic and flashlight testing.
+Activity: Make the robot follow the light.
+
+Level 06: Maze Challenge
+Topics: Building, sensing, testing, and troubleshooting.
+Activity: Final robot run.
+
+
+STAGE 1: ROBOTICS FUNDAMENTALS
+
+Students begin with a simple idea: a robot is a machine that can sense, decide, and act.
+
+In this stage, students learn:
+
+What a robot is and what is not a robot.
+How robots differ from humans and ordinary toys.
+Where robots appear in homes, hospitals, factories, schools, and daily life.
+The sense-think-act loop in simple, kid-friendly language.
+
+Checkpoint: Quick quiz and sketch your dream robot.
+
+
+STAGE 2: CIRCUIT BASICS
+
+Before building a robot, students learn that electricity needs a complete path. Every circuit has power, connections, protection, and an output.
+
+Key Components:
+
+Battery: Provides power.
+Breadboard: Used as the building area for circuits.
+Jumper Wires: Connect circuit parts together.
+Resistor: Protects the LED.
+LED or Motor: Acts as the output.
+DC Motor: Creates motion.
+Push Button: Works as a human input.
+
+Kid-Friendly Logic:
+If the path is open, nothing happens. If the path is closed, power can move and the output works.
+
+Mini-Project: Build a working LED circuit.
+
+
+STAGE 3: UNDERSTANDING THE COMPONENTS
+
+Students handle real robot parts first, then learn the job of each part before connecting anything.
+
+Main Components:
+
+1. Arduino Board
+The brain of the robot.
+
+2. DC Motor
+Makes the wheels spin.
+
+3. L298N Motor Driver
+Controls motor power.
+
+4. Jumper Wires
+Connect every part.
+
+5. USB Cable
+Uploads ready-made code to the Arduino board.
+
+6. Mobile Robot Chassis
+Forms the robot body and holds the wheels.
+
+7. Battery
+Provides portable robot power.
+
+Mini-Check: Match each part to its job before building the robot.
+
+Then connect the parts together.
+
+
+STAGE 4: CHALLENGE ARENA
+
+The course goal is to help students use logic, testing, and teamwork to overcome real robot challenges.
+
+Main Challenges:
+
+Line Follower
+The robot uses IR sensors to follow a dark track.
+
+Light Follower
+The robot uses light sensors to follow a flashlight.
+
+Small Maze
+The robot navigates turns and walls.
+
+Challenge Components:
+
+IR Sensor: Detects line input.
+Light Sensor: Detects light input.
+Motor Driver: Controls motor power.
+
+
+CHALLENGE 1: LINE FOLLOWER
+
+Sensor Used: IR Sensor
+Function: Detects the line.
+
+Logic Idea:
+If the sensor sees the dark line, the robot keeps moving. If it drifts away, it corrects its direction.
+
+Steps:
+
+Assemble the chassis, motors, and wheels.
+Connect IR sensors to the Arduino board.
+Upload the ready-made code and test the robot on the track.
+Troubleshoot sensor height and direction.
+
+Mini-Project: Complete the line track without going off course.
+
+
+CHALLENGE 2: LIGHT FOLLOWER
+
+Sensor Used: Light Sensor
+Function: Finds light.
+
+Students observe cause and effect: when the light changes, the robot behavior changes.
+
+Steps:
+
+1. Build
+Attach light sensors to the front of the robot.
+
+2. Connect
+Wire the sensors through the breadboard to the Arduino board.
+
+3. Run
+Upload the ready-made code and test the robot using a flashlight.
+
+Mini-Project: Make the robot follow the flashlight path.
+
+
+CHALLENGE 3: MAZE CHALLENGE
+
+Students combine building, sensing, testing, and troubleshooting skills to complete the final robot challenge.
+
+In this challenge, students:
+
+Review robot assembly.
+Check sensor connections.
+Test robot movement.
+Adjust logic and direction.
+Solve simple maze obstacles.
+Work as a team to improve performance.
+
+Final Project: Complete the maze challenge with a working Arduino robot.
+
+
+END OF COURSE OUTCOME
+
+At the end of Robotics Lab, each student will understand the basic ideas of robotics and will have practical experience with circuits, Arduino components, sensors, motors, and robot challenges.
+
+Students leave the course with confidence in building, testing, solving problems, and thinking like young robotics engineers.
