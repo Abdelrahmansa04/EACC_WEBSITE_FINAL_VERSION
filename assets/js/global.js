@@ -324,15 +324,16 @@
 
     };
 
-    collectTranslatableText();
-
-    applyLanguage('en');
-
-    languageToggle.addEventListener('click', () => {
-
-      applyLanguage(currentLanguage === 'ar' ? 'en' : 'ar');
-
-    });
+    // Legacy manual translator disabled: AR/EN now uses Google Translate bridge.
+    if (true) {
+      // No global translation binding.
+    } else {
+      collectTranslatableText();
+      applyLanguage('en');
+      languageToggle.addEventListener('click', () => {
+        applyLanguage(currentLanguage === 'ar' ? 'en' : 'ar');
+      });
+    }
 
     window.addEventListener('load', () => {
 
@@ -578,6 +579,162 @@
 })();
 })();
 
+window.googleTranslateElementInit = function googleTranslateElementInit() {
+  var mount = document.getElementById("google_translate_element");
+  if (!mount) return;
+  if (!window.google || !google.translate || !google.translate.TranslateElement) return;
+  if (mount.getAttribute("data-google-ready") === "true") return;
+
+  mount.setAttribute("data-google-ready", "true");
+  new google.translate.TranslateElement(
+    {
+      pageLanguage: "en",
+      includedLanguages: "en,ar",
+      layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
+      autoDisplay: false
+    },
+    "google_translate_element"
+  );
+};
+
+function ensureGoogleTranslateMount() {
+  var mount = document.getElementById("google_translate_element");
+  if (mount) return mount;
+
+  var ctaGroup = document.querySelector(".nav-cta-group");
+  if (!ctaGroup) return null;
+
+  mount = document.createElement("div");
+  mount.id = "google_translate_element";
+  mount.setAttribute("aria-label", "Google Translate language selector");
+  ctaGroup.insertBefore(mount, ctaGroup.firstChild);
+  return mount;
+}
+
+function loadGoogleTranslateScript() {
+  if (!ensureGoogleTranslateMount()) return;
+
+  if (document.querySelector('script[src*="translate_a/element.js"]')) {
+    window.googleTranslateElementInit();
+    return;
+  }
+
+  var script = document.createElement("script");
+  script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+  script.async = true;
+  script.defer = true;
+  script.onload = function () {
+    window.__eaccGoogleTranslateLoaded = true;
+  };
+
+  (document.body || document.documentElement).appendChild(script);
+}
+
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", loadGoogleTranslateScript);
+} else {
+  loadGoogleTranslateScript();
+}
+document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
+
+/* --- AR/EN toggle bridge to Google Translate --- */
+(() => {
+  function readGoogTransCookie() {
+    var match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+    return match ? decodeURIComponent(match[1]) : '';
+  }
+
+  function getCurrentLanguage() {
+    var cookie = readGoogTransCookie();
+    if (cookie.indexOf('/en/ar') !== -1) return 'ar';
+    if (cookie.indexOf('/en/en') !== -1) return 'en';
+    return document.documentElement.dir === 'rtl' ? 'ar' : 'en';
+  }
+
+  function updateToggleLabel(language) {
+    var next = language === 'ar' ? 'EN' : 'AR';
+    document.querySelectorAll('#languageToggleText, .eacc-lang-label').forEach(function (node) {
+      node.textContent = next;
+    });
+    document.querySelectorAll('#languageToggle, .eacc-language-toggle, .language-toggle').forEach(function (button) {
+      button.setAttribute(
+        'aria-label',
+        language === 'ar' ? 'Switch website language to English' : 'Switch website language to Arabic'
+      );
+    });
+  }
+
+  function setGoogTransCookie(language) {
+    var value = language === 'ar' ? '/en/ar' : '/en/en';
+    var domains = [window.location.hostname, '.' + window.location.hostname];
+    document.cookie = 'googtrans=' + value + ';path=/';
+    domains.forEach(function (domain) {
+      if (!domain || domain === '.') return;
+      document.cookie = 'googtrans=' + value + ';path=/;domain=' + domain;
+    });
+  }
+
+  function applyGoogleLanguage(language) {
+    setGoogTransCookie(language);
+    try {
+      localStorage.setItem('eacc-google-language', language);
+    } catch (error) {
+      /* The Google widget still works when storage is blocked. */
+    }
+
+    var combo = document.querySelector('.goog-te-combo');
+    if (!combo) return false;
+
+    combo.value = language;
+    combo.dispatchEvent(new Event('change', { bubbles: true }));
+    updateToggleLabel(language);
+    return true;
+  }
+
+  function switchLanguage() {
+    var nextLanguage = getCurrentLanguage() === 'ar' ? 'en' : 'ar';
+    var attempts = 0;
+    var maxAttempts = 30;
+
+    updateToggleLabel(nextLanguage);
+    setGoogTransCookie(nextLanguage);
+    loadGoogleTranslateScript();
+
+    var timer = setInterval(function () {
+      attempts += 1;
+      if (applyGoogleLanguage(nextLanguage) || attempts >= maxAttempts) {
+        clearInterval(timer);
+      }
+    }, 120);
+  }
+
+  document.addEventListener('click', function (event) {
+    var button = event.target.closest && event.target.closest('#languageToggle, .eacc-language-toggle, .language-toggle');
+    if (!button) return;
+    if (event.target.closest('#google_translate_element')) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    switchLanguage();
+  }, true);
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function () {
+      updateToggleLabel(getCurrentLanguage());
+      loadGoogleTranslateScript();
+    });
+  } else {
+    updateToggleLabel(getCurrentLanguage());
+    loadGoogleTranslateScript();
+  }
+
+  document.addEventListener('eacc:partials-loaded', function () {
+    updateToggleLabel(getCurrentLanguage());
+    loadGoogleTranslateScript();
+  });
+})();
+
 
 /* --- Extracted script block 3 id="eacc-translation-controller-v2" --- */
 (() => {
@@ -598,6 +755,11 @@
 */
 (function () {
   'use strict';
+
+  // Legacy dictionary translator is disabled globally in favor of Google Translate.
+  if (true) {
+    return;
+  }
 
   var STORAGE_KEY = 'eacc-preferred-language';
   var LEGACY_STORAGE_KEYS = [

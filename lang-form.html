@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 Rewritten full HTML source saved as TXT.
 English is the default visible language: <html lang="en" dir="ltr">.
 Arabic translation strings were cleaned/repaired: no mojibake and no repeated question-mark corruption.
@@ -387,8 +387,8 @@ English text remains the default page content. Arabic is included in translation
 <body>
   <div data-include='partials/global-loading-screen.html'></div>
   <div data-include='partials/global-navbar.html'></div>
-  <div data-include='partials/global-navbar.html'></div>
-  <div data-include='partials/global-loading-screen.html'></div>
+
+
   
 
   <main>
@@ -736,131 +736,8 @@ English text remains the default page content. Arabic is included in translation
   });
 })();
 </script>
-<script id="eacc-form-arabic-polish">
-(function () {
-  'use strict';
 
-  var dictionary = {
-    'Name': '?????',
-    'Enter full name': '???? ????? ??????',
-    'Phone': '??? ??????',
-    'Enter phone number': '???? ??? ??????',
-    'Adult / Kids / Youth': '???? / ????? / ????',
-    'Select category': '???? ?????',
-    'Adult': '????',
-    'Kids': '???????',
-    'Youth': '??????',
-    'Age': '?????',
-    'Enter age': '???? ?????',
-    'Language / Program': '????? / ????????',
-    'Select language or exam': '???? ????? ?? ????????',
-    'Child Name': '??? ?????',
-    'Child full name': '????? ?????? ?????',
-    'Parent Name': '??? ??? ?????',
-    'Parent or guardian name': '??? ??? ????? ?? ?????',
-    'Child Age': '??? ?????',
-    'Service of Interest': '?????? ????????',
-    'Select a MindSpace service': '???? ???? ?? ????? ????',
-    'Assessment': '???????',
-    'Therapy Services': '????? ??????',
-    'Speech & Language Support': '??? ??????? ??????',
-    'Behavior Support': '??? ??????',
-    'Family Guidance': '??????? ??????',
-    'Professional Workshop': '???? ??? ????????',
-    'I need guidance': '????? ??? ????? ?????',
-    'Additional Details': '?????? ??????',
-    "Share anything helpful about your child's needs.": '      .',
-    'Full Name *': '????? ?????? *',
-    'Your full name': '???? ??????',
-    'Email *': '?????? ?????????? *',
-    'you@email.com': 'you@email.com',
-    'Phone *': '??? ?????? *',
-    'Preferred Contact Method *': '????? ??????? ??????? *',
-    'Select method': '???? ???????',
-    'Preferred Date *': '??????? ?????? *',
-    'Preferred Time *': '????? ?????? *',
-    'Message *': '??????? *',
-    'Tell us what you would like to discuss.': '?????? ??? ???? ?? ???????.',
-    'First Name': '????? ?????',
-    'Last Name': '??? ???????',
-    'Email': '?????? ??????????',
-    'WhatsApp Number': '??? ??????',
-    'Course Interest': '???????? ???????',
-    'Select a program': '???? ????????',
-    'Message': '???????',
-    'Tell us what you would like to study.': '?????? ??? ???? ?? ??????.',
-    'Submit': '?????',
-    'Submit Request': '????? ?????',
-    'Book Consultation': '???? ???????',
-    'Submit Application': '????? ?????'
-  };
 
-  function translateText(text, lang) {
-    if (lang !== 'ar') return text;
-    return dictionary[text.trim()] || text;
-  }
-
-  function rememberEnglish(el, attr) {
-    var key = attr ? 'eaccEn' + attr : 'eaccEnText';
-    if (!el.dataset[key]) {
-      el.dataset[key] = attr ? (el.getAttribute(attr) || '') : (el.textContent || '');
-    }
-    return el.dataset[key];
-  }
-
-  function apply(lang) {
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-
-    document.querySelectorAll('label, option, button span, button, h1, h2, h3, p').forEach(function (el) {
-      if (el.children.length && !el.matches('button')) return;
-      var en = el.getAttribute('data-en') || rememberEnglish(el, null);
-      var ar = el.getAttribute('data-ar') || dictionary[en.trim()];
-      if (lang === 'ar' && ar) el.textContent = ar;
-      if (lang === 'en') el.textContent = en;
-    });
-
-    document.querySelectorAll('input[placeholder], textarea[placeholder]').forEach(function (el) {
-      var en = el.getAttribute('data-en-placeholder') || rememberEnglish(el, 'placeholder');
-      var ar = el.getAttribute('data-ar-placeholder') || dictionary[en.trim()];
-      if (lang === 'ar' && ar) el.setAttribute('placeholder', ar);
-      if (lang === 'en') el.setAttribute('placeholder', en);
-    });
-
-    try { localStorage.setItem('eaccSiteLanguage', lang); } catch (e) {}
-  }
-
-  function ensureToggle() {
-    if (document.querySelector('.language-toggle, .eacc-language-toggle, #languageToggle')) return;
-    var btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'eacc-form-lang-toggle';
-    btn.textContent = 'AR';
-    btn.style.cssText = 'position:fixed;z-index:9999;right:18px;top:96px;border:0;border-radius:999px;background:#1a237e;color:#fff;padding:10px 14px;font-weight:800;box-shadow:0 10px 24px rgba(13,20,87,.18);cursor:pointer;';
-    btn.addEventListener('click', function () {
-      var next = document.documentElement.lang === 'ar' ? 'en' : 'ar';
-      apply(next);
-      btn.textContent = next === 'ar' ? 'EN' : 'AR';
-    });
-    document.body.appendChild(btn);
-  }
-
-  document.addEventListener('DOMContentLoaded', function () {
-    var saved = 'en';
-    try { saved = localStorage.getItem('eaccSiteLanguage') === 'ar' ? 'ar' : 'en'; } catch (e) {}
-    apply(saved);
-    ensureToggle();
-  });
-
-  document.addEventListener('click', function (event) {
-    var langBtn = event.target.closest && event.target.closest('.language-toggle, .eacc-language-toggle, #languageToggle');
-    if (!langBtn) return;
-    setTimeout(function () {
-      apply(document.documentElement.lang === 'ar' ? 'ar' : 'en');
-    }, 40);
-  }, true);
-})();
-</script>
 
 
 <script id="eacc-wix-nav-bridge">
@@ -995,9 +872,11 @@ English text remains the default page content. Arabic is included in translation
   <script src='assets/js/include-partials.js'></script>
 
   <div data-include='partials/global-footer.html'></div>
-
 </body>
 </html>
+
+
+
 
 
 

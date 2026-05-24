@@ -1,16 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
 
   <!--
     EACC HOME PAGE MAINTENANCE NOTES
-    - Main language behavior is controlled by the final script: #eacc-translation-controller-v2.
-    - Add future English/Arabic copy to window.EACC_TRANSLATIONS.enToAr in that script.
-    - Keep visible English text as the source text; Arabic is applied at runtime when users press AR/EN.
-    - Layout, interaction, and navigation scripts are intentionally separated near the end of <body>
-  <div data-include='partials/global-loading-screen.html'></div>
-  <div data-include='partials/global-navbar.html'></div> for easier debugging.
+    - Main language behavior is controlled globally by assets/js/global.js.
+    - The visible AR/EN toggle triggers Google Translate; the Google widget itself stays hidden.
+    - Layout, interaction, and navigation scripts are intentionally separated near the end of <body>.
   -->
 
   <meta charset="UTF-8" />
@@ -40,6 +37,7 @@
   <div data-include="partials/global-loading-screen.html"></div>
 
   <div data-include="partials/global-navbar.html"></div>
+
 
 
   <!-- HERO -->
@@ -500,10 +498,11 @@
   <script src="assets/js/include-partials.js"></script>
 
   <div data-include='partials/global-footer.html'></div>
-
 </body>
 
 </html>
+
+
 
 
 

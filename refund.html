@@ -1,4 +1,4 @@
-<!--
+﻿<!--
 Rewritten full HTML source saved as TXT.
 English is the default visible language: <html lang="en" dir="ltr">.
 Arabic translation fields were cleaned/repaired: no mojibake and no corrupted Arabic question-mark text.
@@ -74,8 +74,8 @@ Each data-en string has a matching data-ar Arabic translation where the page use
 <body>
   <div data-include='partials/global-loading-screen.html'></div>
   <div data-include='partials/global-navbar.html'></div>
-  <div data-include='partials/global-navbar.html'></div>
-  <div data-include='partials/global-loading-screen.html'></div>
+
+
 <div aria-hidden="true" class="scroll-progress"></div>
 
 <section class="legal-hero"><div class="container"><div class="breadcrumb"><span>EACC</span><span>/</span><span><span data-ar="??? ???????" data-en="Refund Request">Refund Request</span></span></div><h1 data-ar="??? ???????" data-en="Refund Request">Refund Request</h1><p data-ar="???? ????? ??? ????????? ????? ?????? ??????? ?????????? ??????? ??????? ????????? ???????." data-en="Complete the refund request form and review the official registration, refund, admission, attendance and certificate policies.">Complete the refund request form and review the official registration, refund, admission, attendance and certificate policies.</p><div class="toc"><a href="#refund-policy"><span data-ar="????? ?????????" data-en="Refund Policy">Refund Policy</span></a></div></div></section><section class="section"><div class="container grid"><div class="card"><div class="section-title"><h2 data-ar="????? ??? ???????" data-en="Submit a Refund Request">Submit a Refund Request</h2><p data-ar="???? ??????? ??????? ????? ?????? ?????? ??????? ???? ????? ?????? ?????????." data-en="Please complete the form below and our team will review your request according to the refund policy.">Please complete the form below and our team will review your request according to the refund policy.</p></div><form id="refundForm" novalidate=""><input name="formType" type="hidden" value="Refund"/><label data-ar="????? ???????" data-en="Full name" for="fullName">Full name</label><input id="fullName" name="fullName" required="" type="text"/><label data-ar="??? ??????" data-en="Phone number" for="phone">Phone number</label><input id="phone" name="phone" required="" type="tel"/><label data-ar="?????? ??????????" data-en="Email" for="email">Email</label><input id="email" name="email" required="" type="email"/><label data-ar="???????? / ??????" data-en="Program / service" for="programService">Program / service</label><input id="programService" name="programService" required="" type="text"/><label data-ar="?????? ???????" data-en="Paid amount" for="paidAmount">Paid amount</label><input id="paidAmount" min="0" name="paidAmount" required="" step="0.01" type="number"/><input name="currency" type="hidden" value="EGP"/><label data-ar="??? ??????? / ????????" data-en="Receipt / invoice no." for="receiptInvoiceNo">Receipt / invoice no.</label><input id="receiptInvoiceNo" name="receiptInvoiceNo" type="text"/><label data-ar="????? ?????" data-en="Payment date" for="paymentDate">Payment date</label><input id="paymentDate" name="paymentDate" required="" type="date"/><label data-ar="????? ??????? ???????" data-en="Preferred contact" for="preferredContact">Preferred contact</label><select id="preferredContact" name="preferredContact" required=""><option data-ar="??????" data-en="Phone" value="Phone">Phone</option><option data-ar="??????" data-en="WhatsApp" value="WhatsApp">WhatsApp</option><option data-ar="?????? ??????????" data-en="Email" value="Email">Email</option></select><label data-ar="??? ?????????" data-en="Refund reason" for="refundReason">Refund reason</label><textarea id="refundReason" name="refundReason" required=""></textarea><button class="btn" data-ar="????? ??? ?????????" data-en="Submit Refund Request" type="submit">Submit Refund Request</button><div aria-live="polite" class="form-feedback" id="formFeedback" role="status"></div></form></div><div id="refund-policy"><div class="card">
@@ -91,69 +91,8 @@ Each data-en string has a matching data-ar Arabic translation where the page use
 <ol class="policy-list"><li><span data-ar="????? ???????? ???? ????????? ??? ?????? ??? ?????? ?????????? ??? ??????? ????? ??? ???????? ???? ??????." data-en="Certificates are available as soft copies only and are sent by email once the certificate request form is completed. This is free of charge.">Certificates are available as soft copies only and are sent by email once the certificate request form is completed. This is free of charge.</span></li><li><span data-ar="???? ????? ???????? ???? 6 ???? ?? ????? ?????? ??????." data-en="Certificate requests are available for 6 months from the end of the course.">Certificate requests are available for 6 months from the end of the course.</span></li><li><span data-ar="????? ???????? ???????? ????? ???? ?????? ????? 600 ????." data-en="Printed certificates are available for an extra fee of 600 L.E.">Printed certificates are available for an extra fee of 600 L.E.</span></li><li><span data-ar="????? ???????? ???????? ???? 6 ???? ?? ????? ??? ???? ???????." data-en="Printed certificates are available for 6 months from the certificate fee payment date.">Printed certificates are available for 6 months from the certificate fee payment date.</span></li><li><span data-ar="??? ?????? ???????? ???? 14 ????? ?? ????? ??? ??????? ????? ?? ???? ??????." data-en="Certificates are received within 14 days from the certificate request date and payment of any required fee.">Certificates are received within 14 days from the certificate request date and payment of any required fee.</span></li><li><span data-ar="??????? ?????? ????? ???????? ????? ???? ??? ????? 390 ?????? ???? ??????? ??? ???????." data-en="For an end-of-level report, a 390 L.E request fee applies and an issuance application must be completed.">For an end-of-level report, a 390 L.E request fee applies and an issuance application must be completed.</span></li></ol>
 </div></div></div></section>
 
-<script id="eacc-legal-index-nav-controller">
-(function(){
-  'use strict';
-  var storageKey='eacc-site-language';
-  function setText(el, value){ if(el) el.textContent = value; }
-  function setLang(lang){
-    lang = lang === 'ar' ? 'ar' : 'en';
-    document.documentElement.lang = lang;
-    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    document.querySelectorAll('[data-en][data-ar]').forEach(function(el){
-      el.textContent = lang === 'ar' ? el.getAttribute('data-ar') : el.getAttribute('data-en');
-    });
-    document.querySelectorAll('[data-placeholder-en][data-placeholder-ar]').forEach(function(el){
-      el.setAttribute('placeholder', lang === 'ar' ? el.getAttribute('data-placeholder-ar') : el.getAttribute('data-placeholder-en'));
-    });
-    document.querySelectorAll('[data-value-en][data-value-ar]').forEach(function(el){
-      el.value = lang === 'ar' ? el.getAttribute('data-value-ar') : el.getAttribute('data-value-en');
-    });
-    document.querySelectorAll('.language-toggle').forEach(function(btn){
-      var text = btn.querySelector('#languageToggleText') || btn.querySelector('span') || btn;
-      setText(text, lang === 'ar' ? 'EN' : 'AR');
-      btn.setAttribute('aria-label', lang === 'ar' ? 'Switch website language to English' : 'Switch website language to Arabic');
-    });
-    try{localStorage.setItem(storageKey,lang);}catch(e){}
-  }
-  function updateHeader(){
-    var progress=document.querySelector('.scroll-progress');
-    if(progress){var h=document.documentElement;var max=Math.max(1,h.scrollHeight-h.clientHeight);progress.style.width=(Math.min(1,window.scrollY/max)*100)+'%';}
-    var header=document.querySelector('header');
-    if(!header)return;
-    header.classList.toggle('scrolled', window.scrollY > 20);
-  }
-  document.addEventListener('click',function(e){
-    var btn=e.target.closest&&e.target.closest('.language-toggle');
-    if(!btn)return;
-    e.preventDefault();
-    setLang(document.documentElement.lang === 'ar' ? 'en' : 'ar');
-  });
-  var toggle=document.getElementById('mobileToggle');
-  var nav=document.getElementById('navLinks');
-  if(toggle&&nav){
-    toggle.addEventListener('click',function(){
-      var open=nav.classList.toggle('active');
-      toggle.classList.toggle('active',open);
-      toggle.setAttribute('aria-expanded',String(open));
-      document.body.classList.toggle('nav-open',open);
-    });
-    nav.querySelectorAll('a,.language-toggle').forEach(function(el){
-      el.addEventListener('click',function(){
-        nav.classList.remove('active');
-        toggle.classList.remove('active');
-        toggle.setAttribute('aria-expanded','false');
-        document.body.classList.remove('nav-open');
-      });
-    });
-  }
-  document.addEventListener('DOMContentLoaded',updateHeader);
-  window.addEventListener('scroll',updateHeader,{passive:true});
-  updateHeader();
-  var saved='en'; try{saved=localStorage.getItem(storageKey)==='ar'?'ar':'en';}catch(e){}
-  setLang(saved);
-})();
-</script>
+
+
 <script id="eacc-local-link-helper">
 (function(){
   document.addEventListener('click',function(e){
@@ -184,12 +123,12 @@ Each data-en string has a matching data-ar Arabic translation where the page use
     var btn=form.querySelector('button[type="submit"]');
     var fb=document.getElementById('formFeedback');
     var old=btn.textContent;
-    btn.disabled=true; btn.textContent=isArabic()?'���� �������...':'Submitting...'; feedback(fb,'','');
+    btn.disabled=true; btn.textContent=isArabic()?'ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½...':'Submitting...'; feedback(fb,'','');
     var data={}; new FormData(form).forEach(function(v,k){data[k]=v;});
     data.formType='Refund'; data.page=window.location.pathname.split('/').pop() || 'refund.html';
     try {
       await fetch(SCRIPT_URL, {method:'POST', mode:'no-cors', body:JSON.stringify(data)});
-      feedback(fb,'success',isArabic()?'����� ��. �� ������ ��� ��������� ������ ������ �������� �������� ��� ������.':'Thank you. Your refund request has been received successfully. Our team will review it and contact you soon.');
+      feedback(fb,'success',isArabic()?'ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½. ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.':'Thank you. Your refund request has been received successfully. Our team will review it and contact you soon.');
       form.reset();
     } catch(e) {
       feedback(fb,'error',isArabic()?'??? ??? ????? ???????. ???? ???????? ??? ????.':'Something went wrong. Please try again.');
@@ -329,8 +268,10 @@ Each data-en string has a matching data-ar Arabic translation where the page use
   <script src='assets/js/include-partials.js'></script>
 
   <div data-include='partials/global-footer.html'></div>
-
 </body>
 </html>
+
+
+
 
 

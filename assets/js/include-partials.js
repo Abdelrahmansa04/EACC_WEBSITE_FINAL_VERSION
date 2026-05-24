@@ -1,4 +1,6 @@
 (() => {
+  const includeScript = document.currentScript;
+  const includeScriptSrc = includeScript ? includeScript.getAttribute('src') || '' : '';
   const getIncludeSlots = () => Array.from(document.querySelectorAll('[data-include]'));
   const ROOT_FOLDER_NAME = 'EACC_WEBSITE_FINAL_VERSION';
   const hasInclude = (name) =>
@@ -140,6 +142,7 @@
         <span id="languageToggleText">AR</span>
       </button>
       <div class="nav-cta-group">
+        <div id="google_translate_element" aria-label="Google Translate language selector"></div>
         <a href="https://lms.eacc-egy.com/login.php" class="nav-lms" data-external-link="https://lms.eacc-egy.com/login.php" data-local-link="https://lms.eacc-egy.com/login.php">
           <i class="fa-solid fa-laptop" aria-hidden="true"></i>
           <span>LMS</span>
@@ -259,38 +262,22 @@
       }
     }));
     normalizeAssetUrlsForFileMode();
+    document.dispatchEvent(new CustomEvent('eacc:partials-loaded'));
   }
 
   function loadGlobalScripts() {
     if (window.__eaccGlobalScriptLoaded) return;
     window.__eaccGlobalScriptLoaded = true;
     const script = document.createElement('script');
-    script.src = 'assets/js/global.js';
+    script.src = includeScriptSrc
+      ? includeScriptSrc.replace(/include-partials\.js(?:\?.*)?$/i, 'global.js')
+      : `${getFileModeAssetPrefix()}assets/js/global.js`;
     script.defer = true;
     script.addEventListener('error', () => {
       unlockPage();
       forceHideLoader();
     });
     script.addEventListener('load', () => {
-      // Global language fallback: ensure AR/EN toggle always works.
-      if (!window.__eaccLanguageFallbackBound) {
-        window.__eaccLanguageFallbackBound = true;
-        document.addEventListener('click', (event) => {
-          const btn = event.target && event.target.closest
-            ? event.target.closest('.language-toggle, .eacc-language-toggle, #languageToggle')
-            : null;
-          if (!btn) return;
-          setTimeout(() => {
-            try {
-              if (window.EACC_TRANSLATION && typeof window.EACC_TRANSLATION.refresh === 'function') {
-                window.EACC_TRANSLATION.refresh();
-              }
-            } catch (e) {
-              // Keep UI usable even if a page-specific script fails.
-            }
-          }, 0);
-        }, true);
-      }
       setTimeout(() => {
         unlockPage();
         forceHideLoader();
