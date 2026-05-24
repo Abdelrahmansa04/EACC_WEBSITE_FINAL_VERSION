@@ -868,6 +868,13 @@ Each data-en string has a matching data-ar Arabic translation where the page use
 
     }
 
+    /* Ensure the summer-track section headings use the site's navy (blue) color */
+    .summer-track-section .section-head .section-kicker,
+    .summer-track-section .section-head h2,
+    .summer-track-section .section-head p {
+      color: var(--navy-dark) !important;
+    }
+
     .section-action {
 
       margin-top: 42px;
@@ -8861,6 +8868,384 @@ header .dropdown-menu a:hover {
   }
 </style>
 
+
+<style id="eacc-professional-program-enroll-update">
+  /* Professional update for Program Options and Enrollment sections */
+  .summer-options-section,
+  .summer-enroll-section {
+    position: relative;
+    overflow: hidden;
+    background:
+      radial-gradient(circle at 8% 8%, rgba(255, 213, 79, .22), transparent 34%),
+      linear-gradient(180deg, #ffffff 0%, #f8f9ff 100%);
+  }
+
+  .summer-options-section::before,
+  .summer-enroll-section::before {
+    content: "";
+    position: absolute;
+    inset: 28px;
+    border: 1px solid rgba(13, 20, 87, .06);
+    border-radius: 38px;
+    pointer-events: none;
+  }
+
+  .summer-options-section .container,
+  .summer-enroll-section .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .summer-options-head,
+  .summer-enroll-head {
+    margin-bottom: clamp(34px, 5vw, 58px) !important;
+  }
+
+  .summer-options-head .section-kicker,
+  .summer-enroll-head .section-kicker {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 34px;
+    padding: 8px 18px;
+    border-radius: 999px;
+    background: rgba(245, 166, 35, .13);
+    color: var(--eacc-navy-dark, #0d1457) !important;
+    font-size: 13px;
+    font-weight: 900;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+
+  .summer-options-head h2,
+  .summer-enroll-head h2 {
+    color: var(--eacc-navy-dark, #0d1457) !important;
+    text-shadow: none !important;
+  }
+
+  .summer-options-head p,
+  .summer-enroll-head p {
+    color: rgba(13, 20, 87, .68) !important;
+    max-width: 760px;
+    margin-inline: auto;
+    font-size: clamp(16px, 1.4vw, 18px);
+  }
+
+  .summer-options-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: clamp(22px, 3vw, 34px);
+    max-width: 1050px;
+    margin-inline: auto;
+    align-items: stretch;
+  }
+
+  .summer-option-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: clamp(28px, 4vw, 44px);
+    overflow: hidden;
+    border: 1px solid rgba(13, 20, 87, .08);
+    border-radius: 32px;
+    background: rgba(255, 255, 255, .94);
+    box-shadow: 0 28px 80px rgba(13, 20, 87, .10);
+    transition: transform .35s cubic-bezier(.22,1,.36,1), box-shadow .35s ease, border-color .35s ease;
+  }
+
+  .summer-option-card::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto;
+    height: 6px;
+    background: linear-gradient(90deg, var(--eacc-gold, #f5a623), var(--eacc-gold-light, #ffd54f));
+  }
+
+  .summer-option-card-featured {
+    background:
+      linear-gradient(145deg, rgba(255, 248, 226, .96), rgba(255,255,255,.96) 52%),
+      #fff;
+    border-color: rgba(245, 166, 35, .28);
+  }
+
+  .summer-option-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(245, 166, 35, .42);
+    box-shadow: 0 36px 96px rgba(13, 20, 87, .16);
+  }
+
+  .summer-option-topline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 14px;
+    margin-bottom: 24px;
+  }
+
+  .summer-option-label,
+  .summer-option-badge {
+    display: inline-flex;
+    align-items: center;
+    min-height: 30px;
+    padding: 7px 12px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: .04em;
+  }
+
+  .summer-option-label {
+    color: var(--eacc-navy-dark, #0d1457);
+    background: rgba(13, 20, 87, .06);
+  }
+
+  .summer-option-badge {
+    color: var(--eacc-navy-dark, #0d1457);
+    background: linear-gradient(135deg, var(--eacc-gold, #f5a623), var(--eacc-gold-light, #ffd54f));
+  }
+
+  .summer-option-badge-soft {
+    color: var(--eacc-navy, #1a237e);
+    background: rgba(245, 166, 35, .15);
+  }
+
+  .summer-option-card h3 {
+    max-width: 13ch;
+    margin-bottom: 14px;
+    color: var(--eacc-navy-dark, #0d1457) !important;
+    font-size: clamp(34px, 4vw, 48px);
+    line-height: 1.02;
+    letter-spacing: -.03em;
+  }
+
+  .summer-option-card p {
+    margin-bottom: 26px;
+    color: rgba(13, 20, 87, .72) !important;
+    font-size: 16.5px;
+    line-height: 1.75;
+  }
+
+  .summer-option-list {
+    display: grid;
+    gap: 15px;
+    margin: 0 0 32px;
+    padding: 0;
+    list-style: none;
+    flex: 1 1 auto;
+  }
+
+  .summer-option-list li {
+    position: relative;
+    min-height: 34px;
+    padding-left: 48px;
+    color: var(--eacc-navy-dark, #0d1457) !important;
+    font-size: 15.5px;
+    font-weight: 800;
+    line-height: 1.55;
+  }
+
+  .summer-option-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: -2px;
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(245, 166, 35, .18);
+    color: var(--eacc-gold, #f5a623);
+    font-weight: 900;
+  }
+
+  .summer-option-button {
+    width: fit-content;
+    min-width: 230px;
+    min-height: 54px;
+    margin-top: auto;
+    padding-inline: 28px;
+    border-radius: 999px !important;
+    font-weight: 900 !important;
+  }
+
+  .summer-option-card .btn-dark {
+    background: linear-gradient(135deg, var(--eacc-navy, #1a237e), var(--eacc-navy-dark, #0d1457)) !important;
+    color: #fff !important;
+    box-shadow: 0 18px 38px rgba(13, 20, 87, .20);
+  }
+
+  .summer-enroll-section {
+    background:
+      radial-gradient(circle at 88% 20%, rgba(26, 35, 126, .08), transparent 30%),
+      linear-gradient(180deg, #ffffff 0%, #f8f9ff 100%);
+  }
+
+  .summer-enroll-panel {
+    display: grid;
+    grid-template-columns: minmax(320px, .85fr) minmax(0, 1.15fr);
+    gap: clamp(26px, 4vw, 44px);
+    align-items: stretch;
+    max-width: 1180px;
+    margin-inline: auto;
+    padding: clamp(20px, 2.8vw, 34px);
+    border: 1px solid rgba(13, 20, 87, .08);
+    border-radius: 34px;
+    background: rgba(255,255,255,.92);
+    box-shadow: 0 30px 90px rgba(13, 20, 87, .10);
+  }
+
+  .summer-enroll-visual {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    min-width: 0;
+    overflow: hidden;
+    border: 1px solid rgba(13, 20, 87, .14);
+    border-radius: 28px;
+    background: #fff;
+    box-shadow: 0 20px 54px rgba(13, 20, 87, .10);
+  }
+
+  .summer-enroll-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: none;
+    object-fit: contain;
+    object-position: center;
+    background: #fff;
+  }
+
+  .summer-enroll-form-card {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+  }
+
+  .summer-enroll-form-card .contact-form {
+    width: 100%;
+    margin: 0 !important;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  .summer-enroll-form-card .field {
+    min-width: 0;
+  }
+
+  .summer-enroll-form-card .field.full {
+    grid-column: 1 / -1;
+  }
+
+  .summer-enroll-form-card label {
+    display: block;
+    margin-bottom: 9px;
+    color: var(--eacc-navy-dark, #0d1457) !important;
+    font-weight: 900;
+  }
+
+  .summer-enroll-form-card input,
+  .summer-enroll-form-card select,
+  .summer-enroll-form-card textarea {
+    width: 100%;
+    min-height: 58px;
+    border: 1px solid rgba(13, 20, 87, .14);
+    border-radius: 18px;
+    background: #f8f9ff;
+    color: var(--eacc-navy-dark, #0d1457);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.8);
+  }
+
+  .summer-enroll-form-card textarea {
+    min-height: 134px;
+  }
+
+  .summer-enroll-form-card input:focus,
+  .summer-enroll-form-card select:focus,
+  .summer-enroll-form-card textarea:focus {
+    border-color: rgba(245, 166, 35, .82);
+    box-shadow: 0 0 0 4px rgba(245, 166, 35, .14);
+  }
+
+  .summer-enroll-form-card .btn {
+    width: fit-content;
+    min-width: 260px;
+    min-height: 58px;
+    border: 0;
+    cursor: pointer;
+  }
+
+  html[dir="rtl"] .summer-option-list li {
+    padding-left: 0;
+    padding-right: 48px;
+  }
+
+  html[dir="rtl"] .summer-option-list li::before {
+    left: auto;
+    right: 0;
+  }
+
+  @media (max-width: 980px) {
+    .summer-options-grid,
+    .summer-enroll-panel {
+      grid-template-columns: 1fr;
+    }
+
+    .summer-option-card h3 {
+      max-width: 100%;
+    }
+
+    .summer-enroll-panel {
+      max-width: 760px;
+    }
+
+    .summer-enroll-visual img {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .summer-options-section::before,
+    .summer-enroll-section::before {
+      inset: 12px;
+      border-radius: 26px;
+    }
+
+    .summer-option-card,
+    .summer-enroll-panel {
+      border-radius: 24px;
+    }
+
+    .summer-option-topline {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    .summer-option-button,
+    .summer-enroll-form-card .btn {
+      width: 100%;
+      min-width: 0;
+    }
+
+    .summer-enroll-form-card .contact-form {
+      grid-template-columns: 1fr;
+    }
+
+    .summer-enroll-panel {
+      padding: 14px;
+    }
+
+    .summer-enroll-visual {
+      border-radius: 22px;
+    }
+  }
+</style>
+
 </head>
 <body class="loading">
   <div data-include='partials/global-loading-screen.html'></div>
@@ -8882,7 +9267,7 @@ header .dropdown-menu a:hover {
 </h1>
 <p data-ar="????? ????? ????? ???????" data-en="Find your voice, Shape your future"></p>
 <div class="hero-actions">
-<a class="btn btn-primary" href="summer-camp-form.html"><span data-ar="???? ???????" data-en="Register Interest">Register Interest</span><i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
+<a class="btn btn-primary" href="lang-form.html" data-local-link="lang-form.html"><span data-ar="???? ???????" data-en="Register Interest">Register Interest</span><i aria-hidden="true" class="fa-solid fa-arrow-right"></i></a>
 <a class="btn btn-ghost" href="#program"><span data-ar="?????? ????????" data-en="Explore Program">Explore Program</span></a>
 </div>
 <div aria-label="Program highlights" class="hero-metrics">
@@ -8945,170 +9330,156 @@ header .dropdown-menu a:hover {
 <p data-ar="????? ?? ???? ???? ????? ??? ??? ????? ?????? ?????? ???? ?????." data-en="Each pillar turns summer energy into practical language, creativity, leadership, and global awareness.">Each pillar turns summer energy into practical language, creativity, leadership, and global awareness.</p>
 </div>
 <div class="pillars-grid">
-<article class="pillar-card">
-<img alt="Children presenting together" decoding="async" loading="lazy" src="assets/images/summer26/summer1.png"/>
-<div class="pillar-content">
-<span class="pillar-number">1</span>
-<h3 data-ar="????" data-en="My Voice">My Voice</h3>
-<h4 data-ar="????? ??????? ?????? ?????????? ??????? ????." data-en="English Communication Lab for confident expression.">English Communication Lab for confident expression.</h4>
-<ul class="pillar-list">
-<li data-ar="????? ????? ???????? ??????" data-en="Role-play and real conversations">Role-play and real conversations</li>
-<li data-ar="??? ????? ????????? ????????" data-en="Storytelling and group discussion">Storytelling and group discussion</li>
-<li data-ar="???? ??????? ?????" data-en="Short presentations">Short presentations</li>
-</ul>
-</div>
-</article>
-<article class="pillar-card">
-<img alt="Child building robotics project" decoding="async" loading="lazy" src="assets/images/summer26/summer7.png"/>
-<div class="pillar-content">
-<span class="pillar-number">2</span>
-<h3 data-ar="??????" data-en="My Ideas">My Ideas</h3>
-<p data-ar="????? ?????? ?????? ????????? ??????? ???????? ?????????." data-en="AI Discovery Lab for creative future thinking.">AI Discovery Lab for creative future thinking.</p>
-<ul class="pillar-list">
-<li data-ar="?????? ???? ??????? ?????? ?????" data-en="Age-appropriate AI concepts">Age-appropriate AI concepts</li>
-<li data-ar="????? ???? ???? ????" data-en="Digital design and storytelling">Digital design and storytelling</li>
-<li data-ar="?????? ????????" data-en="Innovation challenges">Innovation challenges</li>
-</ul>
-</div>
-</article>
-<article class="pillar-card">
-<img alt="Child holding robotics work" decoding="async" loading="lazy" src="assets/images/summer26/summer2.png"/>
-<div class="pillar-content">
-<span class="pillar-number">3</span>
-<h3 data-ar="??????" data-en="My Impact">My Impact</h3>
-<p data-ar="??????? ?????? ??????? ?? ???? ?????? ????? ??? ??????." data-en="Leadership and teamwork through mission-based projects.">Leadership and teamwork through mission-based projects.</p>
-<ul class="pillar-list">
-<li data-ar="?????? ????? ???????" data-en="Teamwork challenges">Teamwork challenges</li>
-<li data-ar="?????? ?? ????????" data-en="Problem-solving skills">Problem-solving skills</li>
-<li data-ar="????? ?? ??? ???????" data-en="Confidence in presenting ideas">Confidence in presenting ideas</li>
-</ul>
-</div>
-</article>
-<article class="pillar-card">
-<img alt="Global cultural summer camp illustration" decoding="async" loading="lazy" src="assets/images/summer26/summer3.png"/>
-<div class="pillar-content">
-<span class="pillar-number">4</span>
-<h3 data-ar="?????" data-en="My World">My World</h3>
-<p data-ar="????? ?????? ?????? ?? ??????? ????? ???? ??????????." data-en="Global cultural experiences with real-life English use.">Global cultural experiences with real-life English use.</p>
-<ul class="pillar-list">
-<li data-ar="????? ?????? ?? ?????? ?? ??????? ???????" data-en="Live UK educator sessions">Live UK educator sessions</li>
-<li data-ar="????? ??????? ???????" data-en="Educational field trips">Educational field trips</li>
-<li data-ar="???? ?????" data-en="Cultural curiosity">Cultural curiosity</li>
-</ul>
-</div>
-</article>
-</div>
-</div>
-</section>
+<article class="pillar-card"  data-local-link="lang-form.html">
+<img alt="Children presenting together" decoding="async" loading="lazy" src="assets/images/summer26/summer1.png"/ >
+<div class="pillar-content" >
+<span class="pillar-number" >1</span >
+<h3 data-ar="????" data-en="My Voice" >My Voice</h3 >
+<h4 data-ar="????? ??????? ?????? ?????????? ??????? ????." data-en="English Communication Lab for confident expression." >English Communication Lab for confident expression.</h4 >
+<ul class="pillar-list" >
+<li data-ar="????? ????? ???????? ??????" data-en="Role-play and real conversations" >Role-play and real conversations</li >
+<li data-ar="??? ????? ????????? ????????" data-en="Storytelling and group discussion" >Storytelling and group discussion</li >
+<li data-ar="???? ??????? ?????" data-en="Short presentations" >Short presentations</li >
+</ul >
+</div >
+</article >
+<article class="pillar-card" >
+<img alt="Child building robotics project" decoding="async" loading="lazy" src="assets/images/summer26/summer7.png"/ >
+<div class="pillar-content" >
+<span class="pillar-number" >2</span >
+<h3 data-ar="??????" data-en="My Ideas" >My Ideas</h3 >
+<p data-ar="????? ?????? ?????? ????????? ??????? ???????? ?????????." data-en="AI Discovery Lab for creative future thinking." >AI Discovery Lab for creative future thinking.</p >
+<ul class="pillar-list" >
+<li data-ar="?????? ???? ??????? ?????? ?????" data-en="Age-appropriate AI concepts" >Age-appropriate AI concepts</li >
+<li data-ar="????? ???? ???? ????" data-en="Digital design and storytelling" >Digital design and storytelling</li >
+<li data-ar="?????? ????????" data-en="Innovation challenges" >Innovation challenges</li >
+</ul >
+</div >
+</article >
+<article class="pillar-card" >
+<img alt="Child holding robotics work" decoding="async" loading="lazy" src="assets/images/summer26/summer2.png"/ >
+<div class="pillar-content" >
+<span class="pillar-number" >3</span >
+<h3 data-ar="??????" data-en="My Impact" >My Impact</h3 >
+<p data-ar="??????? ?????? ??????? ?? ???? ?????? ????? ??? ??????." data-en="Leadership and teamwork through mission-based projects." >Leadership and teamwork through mission-based projects.</p >
+<ul class="pillar-list" >
+<li data-ar="?????? ????? ???????" data-en="Teamwork challenges" >Teamwork challenges</li >
+<li data-ar="?????? ?? ????????" data-en="Problem-solving skills" >Problem-solving skills</li >
+<li data-ar="????? ?? ??? ???????" data-en="Confidence in presenting ideas" >Confidence in presenting ideas</li >
+</ul >
+</div >
+</article >
+<article class="pillar-card" >
+<img alt="Global cultural summer camp illustration" decoding="async" loading="lazy" src="assets/images/summer26/summer3.png"/ >
+<div class="pillar-content" >
+<span class="pillar-number" >4</span >
+<h3 data-ar="?????" data-en="My World" >My World</h3 >
+<p data-ar="????? ?????? ?????? ?? ??????? ????? ???? ??????????." data-en="Global cultural experiences with real-life English use." >Global cultural experiences with real-life English use.</p >
+<ul class="pillar-list" >
+<li data-ar="????? ?????? ?? ?????? ?? ??????? ???????" data-en="Live UK educator sessions" >Live UK educator sessions</li >
+<li data-ar="????? ??????? ???????" data-en="Educational field trips" >Educational field trips</li >
+<li data-ar="???? ?????" data-en="Cultural curiosity" >Cultural curiosity</li >
+</ul >
+</div >
+</article >
+</div >
+</div >
+</section >
+
+<section class="section alt" >
+<div class="container" >
+<div class="section-head" >
+<span class="section-kicker" data-ar="6 ?????. ???? ????." data-en="6 stages. One transformation." >6 stages. One transformation.</span >
+<h2 data-ar="?? ??????? ????? ??? ???????? ???????" data-en="From first assessment to final celebration" >From first assessment to final celebration</h2 >
+<p data-ar="?? ????? ???? ?????? ??? ????? ???? ????? ??????? ??????." data-en="The brochure journey is redesigned here as a clear parent-friendly path." >The brochure journey is redesigned here as a clear parent-friendly path.</p >
+</div >
+<div class="journey-grid" >
+<article class="journey-card" data-step="01" >
+<span class="chip" data-ar="?????" data-en="Discover" >Discover</span >
+<h3 data-ar="????? ?????? ??????" data-en="Identity &amp; language assessment" >Identity &amp; language assessment</h3 >
+<p data-ar="????? ????? ?????????? ?? ?????? ??????? ??????????? ???????? ?? ????? ???? ??? ??? ???????." data-en="English placement plus personality and interest discovery with MindSpace before the camp begins." >English placement plus personality and interest discovery with MindSpace before the camp begins.</p >
+</article >
+<article class="journey-card" data-step="02" >
+<span class="chip" data-ar="??????" data-en="Explore" >Explore</span >
+<h3 data-ar="????? ???????" data-en="The camp experience" >The camp experience</h3 >
+<p data-ar="????? ??????? ?????? ????????? ??? ????? ??? ????? ??? ????? MyVoice ???????." data-en="Three weeks, two sessions per week, five hours each, across the four MyVoice pillars." >Three weeks, two sessions per week, five hours each, across the four MyVoice pillars.</p >
+</article >
+<article class="journey-card" data-step="03" >
+<span class="chip" data-ar="????" data-en="Express" >Express</span >
+<h3 data-ar="??????? ??????? ?????????" data-en="Optional Expression Studio" >Optional Expression Studio</h3 >
+<p data-ar="????? ??????? ?????? ??????? ??? ???? ???????? ????????? ??????? ?????? ???????." data-en="Children choose creative tracks such as art, drama, music, movement, and creative makers." >Children choose creative tracks such as art, drama, music, movement, and creative makers.</p >
+</article >
+<article class="journey-card" data-step="04" >
+<span class="chip" data-ar="????" data-en="Create" >Create</span >
+<h3 data-ar="????? ????? ??????" data-en="Team project development" >Team project development</h3 >
+<p data-ar="???? ????? ??????? ??????? ??????? ???? ??? ?????????? ???????? ?????? ??????? ?????????." data-en="Small teams build a final project combining English, creativity, teamwork, and innovation." >Small teams build a final project combining English, creativity, teamwork, and innovation.</p >
+</article >
+<article class="journey-card" data-step="05" >
+<span class="chip" data-ar="????" data-en="Experience" >Experience</span >
+<h3 data-ar="????? ??????? ??? ????" data-en="MyVoice Adventure Camp" >MyVoice Adventure Camp</h3 >
+<p data-ar="????? ????? ?????? ???? ?????? ?????? ???? ???? ?? ????? ????? ???????." data-en="A two-night, three-day outdoor residential experience that brings every skill to life." >A two-night, three-day outdoor residential experience that brings every skill to life.</p >
+</article >
+<article class="journey-card" data-step="06" >
+<span class="chip" data-ar="?????" data-en="Celebrate" >Celebrate</span >
+<h3 data-ar="?????? ??? ??? ????" data-en="MyVoice Showcase Event" >MyVoice Showcase Event</h3 >
+<p data-ar="?????? ?????? ??? ???? ??????? ??????? ????? ?????????." data-en="The grand finale where children present their work to families and educators." >The grand finale where children present their work to families and educators.</p >
+</article >
+</div >
+</div >
+</section >
 <!-- SECTION: section alt -->
-<section class="section alt">
-<div class="container">
-<div class="section-head">
-<span class="section-kicker" data-ar="6 ?????. ???? ????." data-en="6 stages. One transformation.">6 stages. One transformation.</span>
-<h2 data-ar="?? ??????? ????? ??? ???????? ???????" data-en="From first assessment to final celebration">From first assessment to final celebration</h2>
-<p data-ar="?? ????? ???? ?????? ??? ????? ???? ????? ??????? ??????." data-en="The brochure journey is redesigned here as a clear parent-friendly path.">The brochure journey is redesigned here as a clear parent-friendly path.</p>
-</div>
-<div class="journey-grid">
-<article class="journey-card" data-step="01">
-<span class="chip" data-ar="?????" data-en="Discover">Discover</span>
-<h3 data-ar="????? ?????? ??????" data-en="Identity &amp; language assessment">Identity &amp; language assessment</h3>
-<p data-ar="????? ????? ?????????? ?? ?????? ??????? ??????????? ???????? ?? ????? ???? ??? ??? ???????." data-en="English placement plus personality and interest discovery with MindSpace before the camp begins.">English placement plus personality and interest discovery with MindSpace before the camp begins.</p>
-</article>
-<article class="journey-card" data-step="02">
-<span class="chip" data-ar="??????" data-en="Explore">Explore</span>
-<h3 data-ar="????? ???????" data-en="The camp experience">The camp experience</h3>
-<p data-ar="????? ??????? ?????? ????????? ??? ????? ??? ????? ??? ????? MyVoice ???????." data-en="Three weeks, two sessions per week, five hours each, across the four MyVoice pillars.">Three weeks, two sessions per week, five hours each, across the four MyVoice pillars.</p>
-</article>
-<article class="journey-card" data-step="03">
-<span class="chip" data-ar="????" data-en="Express">Express</span>
-<h3 data-ar="??????? ??????? ?????????" data-en="Optional Expression Studio">Optional Expression Studio</h3>
-<p data-ar="????? ??????? ?????? ??????? ??? ???? ???????? ????????? ??????? ?????? ???????." data-en="Children choose creative tracks such as art, drama, music, movement, and creative makers.">Children choose creative tracks such as art, drama, music, movement, and creative makers.</p>
-</article>
-<article class="journey-card" data-step="04">
-<span class="chip" data-ar="????" data-en="Create">Create</span>
-<h3 data-ar="????? ????? ??????" data-en="Team project development">Team project development</h3>
-<p data-ar="???? ????? ??????? ??????? ??????? ???? ??? ?????????? ???????? ?????? ??????? ?????????." data-en="Small teams build a final project combining English, creativity, teamwork, and innovation.">Small teams build a final project combining English, creativity, teamwork, and innovation.</p>
-</article>
-<article class="journey-card" data-step="05">
-<span class="chip" data-ar="????" data-en="Experience">Experience</span>
-<h3 data-ar="????? ??????? ??? ????" data-en="MyVoice Adventure Camp">MyVoice Adventure Camp</h3>
-<p data-ar="????? ????? ?????? ???? ?????? ?????? ???? ???? ?? ????? ????? ???????." data-en="A two-night, three-day outdoor residential experience that brings every skill to life.">A two-night, three-day outdoor residential experience that brings every skill to life.</p>
-</article>
-<article class="journey-card" data-step="06">
-<span class="chip" data-ar="?????" data-en="Celebrate">Celebrate</span>
-<h3 data-ar="?????? ??? ??? ????" data-en="MyVoice Showcase Event">MyVoice Showcase Event</h3>
-<p data-ar="?????? ?????? ??? ???? ??????? ??????? ????? ?????????." data-en="The grand finale where children present their work to families and educators.">The grand finale where children present their work to families and educators.</p>
-</article>
-</div>
-</div>
+<!-- SECTION: program-options -->
+<section class="section summer-options-section" id="program-options">
+  <div class="container">
+    <div class="section-head summer-options-head">
+      <span class="section-kicker" data-ar="اختر المسار المناسب" data-en="Choose the right track">Choose the right track</span>
+      <h2 data-ar="خيارات برامج لكل طفل" data-en="Program options for every child">Program options for every child</h2>
+      <p data-ar="يمكن للأسر اختيار برنامج ماي فويس الكامل أو إضافة يوم إبداعي من خلال استوديو التعبير." data-en="Families can choose the full MyVoice program or add a creative day through Expression Studio.">Families can choose the full MyVoice program or add a creative day through Expression Studio.</p>
+    </div>
+
+    <div class="summer-options-grid">
+      <article class="summer-option-card summer-option-card-featured">
+        <div class="summer-option-topline">
+          <span class="summer-option-label" data-ar="البرنامج الأساسي" data-en="Core programme">Core programme</span>
+          <span class="summer-option-badge" data-ar="الأكثر شمولًا" data-en="Most complete">Most complete</span>
+        </div>
+
+        <h3 data-ar="برنامج ماي فويس الكامل" data-en="Full MyVoice Programme">Full MyVoice Programme</h3>
+        <p data-ar="رحلة المعسكر الأساسية: التقييم، أربعة محاور تعليمية، مشروع جماعي، عرض ختامي، وشهادة." data-en="The core camp journey: assessment, four learning pillars, team project, showcase, and certificate.">The core camp journey: assessment, four learning pillars, team project, showcase, and certificate.</p>
+
+        <ul class="summer-option-list">
+          <li data-ar="3 أسابيع لكل مستوى، جلستان أسبوعيًا" data-en="3 weeks per level, 2 sessions per week">3 weeks per level, 2 sessions per week</li>
+          <li data-ar="5 ساعات لكل جلسة، 25 ساعة تعليمية" data-en="5 hours per session, 25 instructional hours">5 hours per session, 25 instructional hours</li>
+          <li data-ar="تقسيم حسب العمر ومستوى اللغة الإنجليزية" data-en="Age grouped and English proficiency grouped">Age grouped and English proficiency grouped</li>
+          <li data-ar="عرض MyVoice الختامي وشهادة إتمام" data-en="MyVoice Showcase and completion certificate">MyVoice Showcase and completion certificate</li>
+        </ul>
+
+        <a class="btn btn-primary summer-option-button" data-ar="اسأل عن التوفر" data-en="Ask About Availability" href="#enroll">Ask About Availability</a>
+      </article>
+
+      <article class="summer-option-card">
+        <div class="summer-option-topline">
+          <span class="summer-option-label" data-ar="إضافة اختيارية" data-en="Optional add-on">Optional add-on</span>
+          <span class="summer-option-badge summer-option-badge-soft" data-ar="يوم إبداعي" data-en="Creative day">Creative day</span>
+        </div>
+
+        <h3 data-ar="إضافة استوديو التعبير" data-en="Expression Studio Add-on">Expression Studio Add-on</h3>
+        <p data-ar="يوم إبداعي للأطفال لاكتشاف المواهب والثقة والشغف الشخصي ومهارات الأداء." data-en="A creative day for children to discover talents, confidence, personal passions, and performance skills.">A creative day for children to discover talents, confidence, personal passions, and performance skills.</p>
+
+        <ul class="summer-option-list">
+          <li data-ar="روبوتات ورياضات مصغرة واكتشاف المواهب" data-en="Robotics, mini sports, and talent discovery">Robotics, mini sports, and talent discovery</li>
+          <li data-ar="الفن: الرسم والتلوين والحرف اليدوية" data-en="Art: drawing, painting, crafts">Art: drawing, painting, crafts</li>
+          <li data-ar="دراما وثقة على المسرح" data-en="Drama and stage confidence">Drama and stage confidence</li>
+          <li data-ar="موسيقى وحركة وصناع الإبداع" data-en="Music, movement, and creative makers">Music, movement, and creative makers</li>
+        </ul>
+
+        <a class="btn btn-dark summer-option-button" data-ar="عرض الأنشطة" data-en="View Activities" href="#activities">View Activities</a>
+      </article>
+    </div>
+  </div>
 </section>
-<!-- SECTION: section navy -->
-<section class="section navy">
-<div class="container">
-<div class="section-head">
-<span class="section-kicker" data-ar="???? ????? ????? ???????" data-en="Summer energy, professional structure">Summer energy, professional structure</span>
-<h2 data-ar="????? ????? ?????" data-en="A visual camp experience">A visual camp experience</h2>
-<p data-ar="????? ????? ??????? ?????? ?????? ?? ???? ?????? ????? ?????? ????? ??????? ??????? ??????." data-en="Bright brochure visuals are paired with the EACC theme so the page feels playful, premium, and trustworthy.">Bright brochure visuals are paired with the EACC theme so the page feels playful, premium, and trustworthy.</p>
-</div>
-<div class="gallery-grid">
-<figure class="gallery-item large">
-<img alt="MyVoice summer camp brochure artwork" decoding="async" loading="lazy" src="assets/images/summer26/summer13.png"/>
-<figcaption class="gallery-caption" data-ar="???? ???? ?????? ?? ????????" data-en="British-inspired summer learning">British-inspired summer learning</figcaption>
-</figure>
-<figure class="gallery-item">
-<img alt="Robotics activity" decoding="async" loading="lazy" src="assets/images/summer26/summer7.png"/>
-<figcaption class="gallery-caption" data-ar="????????? ????? ????????" data-en="Robotics &amp; future lab">Robotics &amp; future lab</figcaption>
-</figure>
-<figure class="gallery-item">
-<img alt="Child with robot" decoding="async" loading="lazy" src="assets/images/summer26/summer10.png"/>
-<figcaption class="gallery-caption" data-ar="?????? ????" data-en="Hands-on discovery">Hands-on discovery</figcaption>
-</figure>
-<figure class="gallery-item">
-<img alt="AI learning for children" decoding="async" loading="lazy" src="assets/images/summer26/summer5.png"/>
-<figcaption class="gallery-caption" data-ar="?????? ????????? ????????? ??????" data-en="AI for young learners">AI for young learners</figcaption>
-</figure>
-<figure class="gallery-item">
-<img alt="Group activity" decoding="async" loading="lazy" src="assets/images/summer26/summer2.png"/>
-<figcaption class="gallery-caption" data-ar="??? ????? ????" data-en="Teamwork and confidence">Teamwork and confidence</figcaption>
-</figure>
-</div>
-</div>
-</section>
-<!-- SECTION: section alt -->
-<section class="section alt summer-track-section">
-<div class="container">
-<div class="section-head">
-<span class="section-kicker" data-ar="???? ?????? ???????" data-en="Choose the right track">Choose the right track</span>
-<h2 data-ar="?????? ????? ??? ???" data-en="Program options for every child">Program options for every child</h2>
-<p data-ar="???? ????? ?????? ?????? ??? ???? ?????? ?? ????? ??? ?????? ?? ???? ??????? ???????." data-en="Families can choose the full MyVoice program or add a creative day through Expression Studio.">Families can choose the full MyVoice program or add a creative day through Expression Studio.</p>
-</div>
-<div class="program-grid">
-<article class="program-card featured">
-<h3 data-ar="?????? ??? ???? ??????" data-en="Full MyVoice Programme">Full MyVoice Programme</h3>
-<p data-ar="???? ??????? ????????: ???????? ????? ????? ???????? ????? ?????? ??? ?????? ??????." data-en="The core camp journey: assessment, four learning pillars, team project, showcase, and certificate.">The core camp journey: assessment, four learning pillars, team project, showcase, and certificate.</p>
-<ul class="included-list">
-<li data-ar="3 ?????? ??? ?????? ?????? ????????" data-en="3 weeks per level, 2 sessions per week">3 weeks per level, 2 sessions per week</li>
-<li data-ar="5 ????? ??? ????? 25 ???? ???????" data-en="5 hours per session, 25 instructional hours">5 hours per session, 25 instructional hours</li>
-<li data-ar="????? ??? ????? ?????? ????? ??????????" data-en="Age grouped and English proficiency grouped">Age grouped and English proficiency grouped</li>
-<li data-ar="??? MyVoice ??????? ?????? ?????" data-en="MyVoice Showcase and completion certificate">MyVoice Showcase and completion certificate</li>
-</ul>
-<a class="btn btn-primary" data-ar="???? ?? ??????" data-en="Ask About Availability" href="#enroll">Ask About Availability</a>
-</article>
-<article class="program-card">
-<h3 data-ar="????? ??????? ???????" data-en="Expression Studio Add-on">Expression Studio Add-on</h3>
-<p data-ar="??? ?????? ??????? ??????? ??????? ?????? ?????? ?????? ??????? ??????." data-en="A creative day for children to discover talents, confidence, personal passions, and performance skills.">A creative day for children to discover talents, confidence, personal passions, and performance skills.</p>
-<ul class="included-list">
-<li data-ar="??????? ??????? ????? ??????? ???????" data-en="Robotics, mini sports, and talent discovery">Robotics, mini sports, and talent discovery</li>
-<li data-ar="????: ????? ???????? ?????? ???????" data-en="Art: drawing, painting, crafts">Art: drawing, painting, crafts</li>
-<li data-ar="????? ???? ??? ??????" data-en="Drama and stage confidence">Drama and stage confidence</li>
-<li data-ar="?????? ????? ????? ???????" data-en="Music, movement, and creative makers">Music, movement, and creative makers</li>
-</ul>
-<a class="btn btn-primary" data-ar="??? ???????" data-en="View Activities" href="#activities">View Activities</a>
-</article>
-</div>
-</div>
-</section>
-<!-- SECTION: activities -->
+
+<!-- SECTION: activities --> -->
 <section class="section navy" id="activities">
 <div class="container">
 <div class="section-head">
@@ -9217,7 +9588,7 @@ header .dropdown-menu a:hover {
 <img alt="MindSpace logo" decoding="async" loading="lazy" src="assets/images/partners/mindspace.png"/>
 </span>
 <div>
-<h3>MindSpace ï¿½ EACC</h3>
+<h3>MindSpace EACC</h3>
 <p>Egyptian American Cultural Center</p>
 </div>
 </article>
@@ -9373,18 +9744,22 @@ header .dropdown-menu a:hover {
 </div>
 </section>
 <!-- SECTION: enroll -->
-<section class="section alt" id="enroll">
-<div class="container">
-<div class="section-head">
-<span class="section-kicker" data-ar="???? ????" data-en="Register now">Register now</span>
-<h2 data-ar="???? ???? ???? ???? ?? ???" data-en="Your child's transformation begins here">Your child's transformation begins here</h2>
-<p data-ar="??????? ??????. ???? ??????? ???????? ???? ?????? ?? ?????? ??????? ??????? ??????? ???????." data-en="Spots are limited. Send your details and the EACC team will help you choose the right level, schedule, and track.">Spots are limited. Send your details and the EACC team will help you choose the right level, schedule, and track.</p>
-</div>
-<div class="contact-panel">
-<aside class="contact-card summer-contact-visual">
-<img alt="Children celebrating summer camp learning" decoding="async" loading="lazy" src="assets/images/summer.png"/>
-</aside>
-<form class="contact-form" id="summerCampForm">
+<!-- SECTION: enroll -->
+<section class="section summer-enroll-section" id="enroll">
+  <div class="container">
+    <div class="section-head summer-enroll-head">
+      <span class="section-kicker" data-ar="سجل الآن" data-en="Register now">Register now</span>
+      <h2 data-ar="تبدأ رحلة تحول طفلك هنا" data-en="Your child's transformation begins here">Your child's transformation begins here</h2>
+      <p data-ar="الأماكن محدودة. أرسل بياناتك وسيساعدك فريق EACC في اختيار المستوى والجدول والمسار المناسب." data-en="Spots are limited. Send your details and the EACC team will help you choose the right level, schedule, and track.">Spots are limited. Send your details and the EACC team will help you choose the right level, schedule, and track.</p>
+    </div>
+
+    <div class="summer-enroll-panel">
+      <aside class="summer-enroll-visual" aria-label="MyVoice Summer Camp 2026 visual">
+        <img alt="MyVoice Summer Camp 2026 registration visual" decoding="async" loading="lazy" src="assets/images/summer.png"/>
+      </aside>
+
+      <div class="summer-enroll-form-card">
+        <form class="contact-form" id="summerCampForm">
 <input name="formType" type="hidden" value="Summer Camp"/>
 <div class="field">
 <label data-ar="??? ??? ?????" data-en="Parent name" for="parentName">Parent name</label>
@@ -9434,8 +9809,9 @@ header .dropdown-menu a:hover {
 </div>
 </div>
 </form>
-</div>
-</div>
+      </div>
+    </div>
+  </div>
 </section>
 </main>
 
@@ -9851,40 +10227,3 @@ if (summerCampForm) {
   <div data-include='partials/global-footer.html'></div>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
