@@ -116,7 +116,7 @@
           <a href="/toefl" data-wix-link="/toefl" data-local-link="testing-centre/tofel.html">TOEFL</a>
           <a href="/celi-cils" data-wix-link="/celi-cils" data-local-link="testing-centre/celi-cils.html">CELI &amp; CILS</a>
           <a href="/contact-us" data-wix-link="/contact-us" data-local-link="testing-centre/placment-test.html">Placement Test</a>
-          <a href="https://nhcwork2017.wixstudio.com/eacc-refactor/psychological-assessment" data-wix-link="/psychological-assessment" data-local-link="/psychological-assessment">Psychological Assessment</a>
+          <a href="testing-centre/Psychological-assessment.html" data-wix-link="/psychological-assessment" data-local-link="testing-centre/Psychological-assessment.html">Psychological Assessment</a>
         </div>
       </div>
       <a href="/corporate-training" data-wix-link="/corporate-training" data-local-link="corporate-train.html">Corporate Training</a>
@@ -137,7 +137,7 @@
           <a href="/book-consultation" data-wix-link="/book-consultation" data-local-link="contact-us/book-cons.html">Book a Consultation</a>
         </div>
       </div>
-      <button type="button" class="language-toggle eacc-language-toggle" id="languageToggle" aria-label="Switch website language to Arabic">
+      <button type="button" class="language-toggle eacc-language-toggle notranslate" id="languageToggle" aria-label="Switch website language to Arabic" translate="no" data-no-translate>
         <i class="fa-solid fa-globe" aria-hidden="true"></i>
         <span id="languageToggleText">AR</span>
       </button>
@@ -180,9 +180,9 @@
         <div class="footer-links">
           <a href="/summer-camp-2026" data-wix-link="/summer-camp-2026" data-local-link="summer-camp-2026.html">Summer Camp 2026</a>
           <a href="/mindspace" data-wix-link="/mindspace" data-local-link="mindspace.html">Mind Space by EACC</a>
-          <a href="#testing-center">Authorized Testing Center</a>
-          <a href="/online-languages" data-wix-link="/online-languages">Online Language Center</a>
-          <a href="#corporate-training">Corporate Training</a>
+          <a href="testing-centre.html" data-wix-link="/testing-centre" data-local-link="testing-centre.html">Authorized Testing Center</a>
+          <a href="Our Services/online-lang.html" data-wix-link="/online-languages" data-local-link="Our Services/online-lang.html">Online Language Center</a>
+          <a href="corporate-train.html" data-wix-link="/corporate-training" data-local-link="corporate-train.html">Corporate Training</a>
         </div>
       </div>
       <div class="footer-col">

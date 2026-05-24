@@ -8682,6 +8682,184 @@ header .dropdown-menu a:hover {
 </style>
 
   <link rel='stylesheet' href='assets/css/global.css'>
+<style id="eacc-summer-camp-polish">
+  .summer-track-section {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background:
+      linear-gradient(135deg, rgba(13, 20, 87, .92), rgba(26, 35, 126, .78)),
+      url("assets/images/summer26/summer2.png") center / cover no-repeat;
+    color: #fff;
+  }
+
+  .summer-track-section::before {
+    content: "";
+    position: absolute;
+    inset: 28px;
+    z-index: -1;
+    border: 1px solid rgba(255, 255, 255, .18);
+    border-radius: 38px;
+    background: radial-gradient(circle at 15% 20%, rgba(255, 193, 7, .24), transparent 32%);
+    pointer-events: none;
+  }
+
+  .summer-track-section .section-head,
+  .summer-track-section .section-head h2,
+  .summer-track-section .section-head p,
+  .summer-track-section .section-kicker {
+    color: #fff !important;
+  }
+
+  .summer-track-section .program-grid {
+    gap: clamp(20px, 3vw, 34px);
+    align-items: stretch;
+  }
+
+  .summer-track-section .program-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+    padding: clamp(28px, 4vw, 42px);
+    border: 1px solid rgba(255, 255, 255, .22) !important;
+    border-radius: 30px !important;
+    background: rgba(255, 255, 255, .94);
+    box-shadow: 0 28px 70px rgba(0, 0, 0, .24);
+  }
+
+  .summer-track-section .program-card.featured {
+    background: linear-gradient(145deg, rgba(255, 255, 255, .98), rgba(255, 246, 216, .94));
+  }
+
+  .summer-track-section .program-card h3 {
+    color: var(--eacc-navy-dark, #0d1457);
+  }
+
+  .summer-track-section .program-card p,
+  .summer-track-section .included-list li {
+    color: rgba(13, 20, 87, .86);
+  }
+
+  .summer-track-section .included-list li {
+    padding-block: 8px;
+  }
+
+  .summer-track-section .program-card .btn {
+    align-self: flex-start;
+    color: var(--eacc-navy-dark, #0d1457) !important;
+    background: linear-gradient(135deg, #ffc72c, #ffdf78) !important;
+    box-shadow: 0 18px 38px rgba(245, 166, 35, .34);
+  }
+
+  .summer-track-section .program-card:not(.featured) .btn {
+    color: #fff !important;
+    background: linear-gradient(135deg, #1a237e, #0d1457) !important;
+  }
+
+  #summer-camp-faqs .faq-grid {
+    display: grid;
+    gap: 14px;
+    max-width: 980px;
+    margin-inline: auto;
+  }
+
+  #summer-camp-faqs .faq-item {
+    overflow: hidden;
+    border: 1px solid rgba(13, 20, 87, .10) !important;
+    border-radius: 22px !important;
+    background: #fff;
+    box-shadow: 0 18px 46px rgba(13, 20, 87, .08);
+  }
+
+  #summer-camp-faqs .faq-item summary {
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 22px 62px 22px 24px;
+    color: var(--eacc-navy-dark, #0d1457);
+    font-weight: 900;
+    list-style: none;
+  }
+
+  #summer-camp-faqs .faq-item summary::-webkit-details-marker {
+    display: none;
+  }
+
+  #summer-camp-faqs .faq-item summary::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 22px;
+    display: grid;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    border-radius: 50%;
+    background: rgba(245, 166, 35, .16);
+    color: var(--eacc-navy-dark, #0d1457);
+    transform: translateY(-50%);
+    transition: transform .2s ease, background .2s ease;
+  }
+
+  #summer-camp-faqs .faq-item[open] summary::after {
+    content: "-";
+    background: var(--eacc-gold, #f5a623);
+    transform: translateY(-50%) rotate(180deg);
+  }
+
+  #summer-camp-faqs .faq-answer {
+    padding: 0 24px 24px;
+    color: rgba(13, 20, 87, .74);
+    line-height: 1.75;
+  }
+
+  #enroll .contact-card.summer-contact-visual {
+    display: block;
+    overflow: hidden;
+    padding: 0 !important;
+    min-height: 100%;
+    border-radius: 32px !important;
+    background: var(--eacc-navy-dark, #0d1457);
+  }
+
+  #enroll .contact-card.summer-contact-visual img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: clamp(420px, 44vw, 680px);
+    object-fit: cover;
+    object-position: center;
+  }
+
+  @media (max-width: 900px) {
+    .summer-track-section::before {
+      inset: 14px;
+      border-radius: 26px;
+    }
+
+    .summer-track-section .program-card .btn {
+      width: 100%;
+    }
+
+    #summer-camp-faqs .faq-item summary {
+      padding: 18px 54px 18px 20px;
+    }
+
+    #enroll .contact-card.summer-contact-visual img {
+      min-height: 320px;
+      aspect-ratio: 16 / 10;
+    }
+  }
+
+  html[dir="rtl"] #summer-camp-faqs .faq-item summary {
+    padding: 22px 24px 22px 62px;
+  }
+
+  html[dir="rtl"] #summer-camp-faqs .faq-item summary::after {
+    right: auto;
+    left: 22px;
+  }
+</style>
 
 </head>
 <body class="loading">
@@ -8897,7 +9075,7 @@ header .dropdown-menu a:hover {
 </div>
 </section>
 <!-- SECTION: section alt -->
-<section class="section alt">
+<section class="section alt summer-track-section">
 <div class="container">
 <div class="section-head">
 <span class="section-kicker" data-ar="???? ?????? ???????" data-en="Choose the right track">Choose the right track</span>
@@ -8914,7 +9092,7 @@ header .dropdown-menu a:hover {
 <li data-ar="????? ??? ????? ?????? ????? ??????????" data-en="Age grouped and English proficiency grouped">Age grouped and English proficiency grouped</li>
 <li data-ar="??? MyVoice ??????? ?????? ?????" data-en="MyVoice Showcase and completion certificate">MyVoice Showcase and completion certificate</li>
 </ul>
-<a class="btn btn-primary" data-ar="???? ?? ??????" data-en="Ask About Availability" href="summer-camp-form.html">Ask About Availability</a>
+<a class="btn btn-primary" data-ar="???? ?? ??????" data-en="Ask About Availability" href="#enroll">Ask About Availability</a>
 </article>
 <article class="program-card">
 <h3 data-ar="????? ??????? ???????" data-en="Expression Studio Add-on">Expression Studio Add-on</h3>
@@ -9203,18 +9381,8 @@ header .dropdown-menu a:hover {
 <p data-ar="??????? ??????. ???? ??????? ???????? ???? ?????? ?? ?????? ??????? ??????? ??????? ???????." data-en="Spots are limited. Send your details and the EACC team will help you choose the right level, schedule, and track.">Spots are limited. Send your details and the EACC team will help you choose the right level, schedule, and track.</p>
 </div>
 <div class="contact-panel">
-<aside class="contact-card">
+<aside class="contact-card summer-contact-visual">
 <img alt="Children celebrating summer camp learning" decoding="async" loading="lazy" src="assets/images/summer.png"/>
-<div class="contact-card-content">
-<h3 data-ar="????? ?? ??????" data-en="Contact EACC">Contact EACC</h3>
-<ul class="contact-list">
-<li><a data-ar="117 ???? ???? ????? ????? ??????????" data-en="117 Ahmed Shawky St., Roushdy, Alexandria" data-external-link="https://www.google.com/maps/search/?api=1&amp;query=117%20Ahmed%20Shawqi%2C%20Roushdy%2C%20Alexandria" data-local-link="https://www.google.com/maps/search/?api=1&amp;query=117%20Ahmed%20Shawqi%2C%20Roushdy%2C%20Alexandria" href="https://www.google.com/maps/search/?api=1&amp;query=117%20Ahmed%20Shawqi%2C%20Roushdy%2C%20Alexandria">117 Ahmed Shawky St., Roushdy, Alexandria</a></li>
-<li><a href="tel:+2035427420">+2 03 5427420</a></li>
-<li><a href="tel:+201065533240">+20 106 553 3240</a></li>
-<li><a href="mailto:info_eacc@eacc-egy.com">info_eacc@eacc-egy.com</a></li>
-<li><a data-external-link="https://eacc-egy.com" data-local-link="https://eacc-egy.com" href="https://eacc-egy.com">eacc-egy.com</a></li>
-</ul>
-</div>
 </aside>
 <form class="contact-form" id="summerCampForm">
 <input name="formType" type="hidden" value="Summer Camp"/>
@@ -9667,138 +9835,17 @@ if (summerCampForm) {
 })();
 </script>
 
-
-<script id="eacc-wix-nav-bridge">
+<script id="eacc-summer-faq-accordion">
 (function () {
-  if (window.__eaccWixBridgeInstalled) return;
-  window.__eaccWixBridgeInstalled = true;
-  var slugMap = {
-    'index': '/',
-    'corporate-train': '/corporate-training',
-    'testing-centre': '/testing-centre',
-    'summer-camp-2026': '/summer-camp-2026',
-    'mindspace': '/mindspace',
-    'mindspace-form': '/mindspace',
-    'contactus': '/contact-us',
-    'contact-us': '/contact-us',
-    'request-info': '/request-info',
-    'book-cons': '/book-consultation',
-    'book-consultation': '/book-consultation',
-    'application': '/application',
-    'careers': '/careers',
-    'career': '/careers',
-    'faq': '/faq',
-    'terms': '/terms-and-conditions',
-    'terms-conditions': '/terms-and-conditions',
-    'terms-and-conditions': '/terms-and-conditions',
-    'privacy': '/privacy-policy',
-    'privacy-policy': '/privacy-policy',
-    'refund': '/refund',
-    'language-acad': '/language-academy',
-    'language-academy': '/language-academy',
-    'lang-form': '/language-form',
-    'language-form': '/language-form',
-    'eng': '/english',
-    'adults': '/english-adults',
-    'youth': '/english-youth',
-    'kids': '/english-kids',
-    'german': '/german',
-    'french': '/french',
-    'italian': '/italian',
-    'spanish': '/spanish',
-    'international-exams': '/international-exams',
-    'int-exams': '/international-exams',
-    'ielts': '/ielts',
-    'tofel': '/toefl',
-    'toefl': '/toefl',
-    'oet': '/oet',
-    'pte': '/pte',
-    'celi-cils': '/celi-cils',
-    'celi': '/celi',
-    'cils': '/cils',
-    'placment-test': '/placement-test',
-    'placement-test': '/placement-test',
-    'psychological-assessment': '/psychological-assessment',
-    'who-we-are': '/who-we-are',
-    'our-story': '/who-we-are',
-    'leadership': '/leadership',
-    'partners': '/partners',
-    'visit-our-centre': '/contact-us',
-    'online-lang': '/online-languages',
-    'online-languages': '/online-languages',
-    'kids-youth': '/kids-youth',
-    'kids-youth-academy': '/kids-youth',
-    'robotics': '/robotics',
-    'workshops': '/kids-youth'
-  };
-  function fromHrefToRoute(href) {
-    if (!href) return '';
-    href = String(href).trim();
-    if (!href) return '';
-    if (href.indexOf('javascript:') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('#') === 0) {
-      return '';
-    }
-    if (href.indexOf('http://') === 0 || href.indexOf('https://') === 0) {
-      if (href.indexOf('wixstudio.com/eacc-refactor/') > -1) return href;
-      return href;
-    }
-    if (href.charAt(0) === '/') {
-      return href;
-    }
-    var clean = href.split('#')[0].split('?')[0].replace(/\\/g, '/');
-    var parts = clean.split('/');
-    var file = parts[parts.length - 1] || '';
-    var base = file.replace(/\.html?$/i, '').toLowerCase();
-    if (slugMap[base]) return slugMap[base];
-    if (base) return '/' + base;
-    return '';
-  }
-  function resolveRoute(a) {
-    var wix = (a.getAttribute('data-wix-link') || '').trim();
-    if (wix) {
-      if (wix.charAt(0) === '/' || wix.indexOf('http://') === 0 || wix.indexOf('https://') === 0) return wix;
-      if (wix.indexOf('.html') > -1) return fromHrefToRoute(wix);
-    }
-    var href = a.getAttribute('href') || '';
-    return fromHrefToRoute(href);
-  }
-  function normalizeInternalLinks() {
-    var anchors = document.querySelectorAll('a[href], a[data-local-link], a[data-wix-link]');
-    anchors.forEach(function(a){
-      var route = resolveRoute(a);
-      if (route && route.charAt(0) === '/') {
-        a.setAttribute('data-wix-link', route);
-      }
+  document.addEventListener('toggle', function (event) {
+    var item = event.target;
+    if (!item || !item.matches || !item.matches('#summer-camp-faqs .faq-item') || !item.open) return;
+    document.querySelectorAll('#summer-camp-faqs .faq-item[open]').forEach(function (other) {
+      if (other !== item) other.removeAttribute('open');
     });
-  }
-  document.addEventListener('click', function (event) {
-    var a = event.target && event.target.closest ? event.target.closest('a') : null;
-    if (!a) return;
-    if (a.target === '_blank' || a.hasAttribute('download')) return;
-    var route = resolveRoute(a);
-    if (!route) return;
-    event.preventDefault();
-    try {
-      if (window.parent && window.parent !== window) {
-        window.parent.postMessage({ type: 'EACC_NAVIGATE', href: route }, '*');
-      } else {
-        window.location.href = route;
-      }
-    } catch (e) {
-      window.location.href = route;
-    }
   }, true);
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', normalizeInternalLinks);
-  } else {
-    normalizeInternalLinks();
-  }
 })();
 </script>
-
-
-
-
   <script src='assets/js/include-partials.js'></script>
 
   <div data-include='partials/global-footer.html'></div>

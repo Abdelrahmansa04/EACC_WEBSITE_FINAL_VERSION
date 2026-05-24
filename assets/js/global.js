@@ -335,7 +335,7 @@
       });
     }
 
-    window.addEventListener('load', () => {
+    const hideSiteLoader = () => {
 
       setTimeout(() => {
 
@@ -351,7 +351,15 @@
 
       }, 650);
 
-    });
+    };
+
+    if (document.readyState === 'complete') {
+      hideSiteLoader();
+    } else {
+      window.addEventListener('load', hideSiteLoader, { once: true });
+      document.addEventListener('DOMContentLoaded', hideSiteLoader, { once: true });
+      setTimeout(hideSiteLoader, 2200);
+    }
 
     const header =
       document.querySelector('header');
@@ -647,8 +655,38 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
   function getCurrentLanguage() {
     var cookie = readGoogTransCookie();
     if (cookie.indexOf('/en/ar') !== -1) return 'ar';
-    if (cookie.indexOf('/en/en') !== -1) return 'en';
     return document.documentElement.dir === 'rtl' ? 'ar' : 'en';
+  }
+
+  function cookieDomains() {
+    var hostname = window.location.hostname;
+    var domains = [''];
+    if (hostname) {
+      domains.push(hostname);
+      domains.push('.' + hostname);
+    }
+    return domains;
+  }
+
+  function writeGoogTransCookie(value) {
+    cookieDomains().forEach(function (domain) {
+      var cookie = 'googtrans=' + value + ';path=/;SameSite=Lax';
+      if (domain) cookie += ';domain=' + domain;
+      document.cookie = cookie;
+    });
+  }
+
+  function clearGoogTransCookie() {
+    cookieDomains().forEach(function (domain) {
+      var suffix = ';path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT;SameSite=Lax';
+      if (domain) suffix += ';domain=' + domain;
+      document.cookie = 'googtrans=' + suffix;
+    });
+  }
+
+  function setDocumentLanguage(language) {
+    document.documentElement.lang = language === 'ar' ? 'ar' : 'en';
+    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
   }
 
   function updateToggleLabel(language) {
@@ -657,6 +695,8 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
       node.textContent = next;
     });
     document.querySelectorAll('#languageToggle, .eacc-language-toggle, .language-toggle').forEach(function (button) {
+      button.classList.add('notranslate');
+      button.setAttribute('translate', 'no');
       button.setAttribute(
         'aria-label',
         language === 'ar' ? 'Switch website language to English' : 'Switch website language to Arabic'
@@ -665,27 +705,38 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
   }
 
   function setGoogTransCookie(language) {
-    var value = language === 'ar' ? '/en/ar' : '/en/en';
-    var domains = [window.location.hostname, '.' + window.location.hostname];
-    document.cookie = 'googtrans=' + value + ';path=/';
-    domains.forEach(function (domain) {
-      if (!domain || domain === '.') return;
-      document.cookie = 'googtrans=' + value + ';path=/;domain=' + domain;
-    });
+    if (language === 'ar') {
+      writeGoogTransCookie('/en/ar');
+      return;
+    }
+    clearGoogTransCookie();
   }
 
-  function applyGoogleLanguage(language) {
-    setGoogTransCookie(language);
+  function setStoredLanguage(language) {
     try {
       localStorage.setItem('eacc-google-language', language);
     } catch (error) {
       /* The Google widget still works when storage is blocked. */
     }
+  }
+
+  function applyGoogleLanguage(language) {
+    setGoogTransCookie(language);
+    setStoredLanguage(language);
+    setDocumentLanguage(language);
 
     var combo = document.querySelector('.goog-te-combo');
-    if (!combo) return false;
+    if (!combo) {
+      updateToggleLabel(language);
+      return false;
+    }
 
-    combo.value = language;
+    if (language === 'en') {
+      combo.value = combo.querySelector('option[value=""]') ? '' : 'en';
+    } else {
+      combo.value = 'ar';
+    }
+
     combo.dispatchEvent(new Event('change', { bubbles: true }));
     updateToggleLabel(language);
     return true;
@@ -694,12 +745,19 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
   function switchLanguage() {
     var nextLanguage = getCurrentLanguage() === 'ar' ? 'en' : 'ar';
     var attempts = 0;
-    var maxAttempts = 30;
+    var maxAttempts = 35;
 
-    updateToggleLabel(nextLanguage);
     setGoogTransCookie(nextLanguage);
-    loadGoogleTranslateScript();
+    setStoredLanguage(nextLanguage);
+    setDocumentLanguage(nextLanguage);
+    updateToggleLabel(nextLanguage);
 
+    if (nextLanguage === 'en') {
+      applyGoogleLanguage('en');
+      return;
+    }
+
+    loadGoogleTranslateScript();
     var timer = setInterval(function () {
       attempts += 1;
       if (applyGoogleLanguage(nextLanguage) || attempts >= maxAttempts) {
@@ -719,20 +777,20 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
     switchLanguage();
   }, true);
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      updateToggleLabel(getCurrentLanguage());
-      loadGoogleTranslateScript();
-    });
-  } else {
-    updateToggleLabel(getCurrentLanguage());
+  function initLanguageToggle() {
+    var language = getCurrentLanguage();
+    setDocumentLanguage(language);
+    updateToggleLabel(language);
     loadGoogleTranslateScript();
   }
 
-  document.addEventListener('eacc:partials-loaded', function () {
-    updateToggleLabel(getCurrentLanguage());
-    loadGoogleTranslateScript();
-  });
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initLanguageToggle);
+  } else {
+    initLanguageToggle();
+  }
+
+  document.addEventListener('eacc:partials-loaded', initLanguageToggle);
 })();
 
 
@@ -1179,172 +1237,151 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
 })();
 
 
-/* --- Extracted script block 4 id="eacc-wix-navigation-bridge" --- */
+/* --- Local-first navigation bridge --- */
 (() => {
-(function(){
-  'use strict';
-  function isLocalPreview(){
-    return window.location.protocol==='file:'||
-      window.location.hostname==='localhost'||
-      window.location.hostname==='127.0.0.1';
-  }
-  function navigateLocal(href){
-    if(!href)return;
-    if(/^https?:\/\//i.test(href)){
-      window.location.href=href;
-      return;
-    }
-    window.location.href=href;
-  }
-  document.addEventListener('click',function(event){
-    var link=event.target.closest&&event.target.closest('a[data-wix-link],a[data-external-link]');
-    if(!link)return;
-    var href=link.getAttribute('data-wix-link')||link.getAttribute('data-external-link');
-    var local=link.getAttribute('data-local-link');
-    if(!href&&!local)return;
-    event.preventDefault();
-    if(isLocalPreview()){
-      navigateLocal(local||href);
-      return;
-    }
-    if(window.parent&&window.parent!==window){
-      window.parent.postMessage({type:'EACC_NAVIGATE',href:href},'*');
-      return;
-    }
-    navigateLocal(href||local);
-  });
-})();
-})();
+  if (window.__eaccLocalNavInstalled) return;
+  window.__eaccLocalNavInstalled = true;
 
-
-/* --- Extracted script block 5 id="eacc-wix-nav-bridge" --- */
-(() => {
-(function () {
-  if (window.__eaccWixBridgeInstalled) return;
-  window.__eaccWixBridgeInstalled = true;
-  var slugMap = {
-    'index': '/',
-    'corporate-train': '/corporate-training',
-    'testing-centre': '/testing-centre',
-    'summer-camp-2026': '/summer-camp-2026',
-    'mindspace': '/mindspace',
-    'mindspace-form': '/mindspace',
-    'contactus': '/contact-us',
-    'contact-us': '/contact-us',
-    'request-info': '/request-info',
-    'book-cons': '/book-consultation',
-    'book-consultation': '/book-consultation',
-    'application': '/application',
-    'careers': '/careers',
-    'career': '/careers',
-    'faq': '/faq',
-    'terms': '/terms-and-conditions',
-    'terms-conditions': '/terms-and-conditions',
-    'terms-and-conditions': '/terms-and-conditions',
-    'privacy': '/privacy-policy',
-    'privacy-policy': '/privacy-policy',
-    'refund': '/refund',
-    'language-acad': '/language-academy',
-    'language-academy': '/language-academy',
-    'lang-form': '/language-form',
-    'language-form': '/language-form',
-    'eng': '/english',
-    'adults': '/english-adults',
-    'youth': '/english-youth',
-    'kids': '/english-kids',
-    'german': '/german',
-    'french': '/french',
-    'italian': '/italian',
-    'spanish': '/spanish',
-    'international-exams': '/international-exams',
-    'int-exams': '/international-exams',
-    'ielts': '/ielts',
-    'tofel': '/toefl',
-    'toefl': '/toefl',
-    'oet': '/oet',
-    'pte': '/pte',
-    'celi-cils': '/celi-cils',
-    'celi': '/celi',
-    'cils': '/cils',
-    'placment-test': '/placement-test',
-    'placement-test': '/placement-test',
-    'psychological-assessment': '/psychological-assessment',
-    'who-we-are': '/who-we-are',
-    'our-story': '/who-we-are',
-    'leadership': '/leadership',
-    'partners': '/partners',
-    'visit-our-centre': '/contact-us',
-    'online-lang': '/online-languages',
-    'online-languages': '/online-languages',
-    'kids-youth': '/kids-youth',
-    'kids-youth-academy': '/kids-youth',
-    'robotics': '/robotics',
-    'workshops': '/kids-youth'
+  var localRouteMap = {
+    '/': 'index.html',
+    '/summer-camp-2026': 'summer-camp-2026.html',
+    '/mindspace': 'mindspace.html',
+    '/corporate-training': 'corporate-train.html',
+    '/testing-centre': 'testing-centre.html',
+    '/toefl': 'testing-centre/tofel.html',
+    '/celi-cils': 'testing-centre/celi-cils.html',
+    '/placement-test': 'testing-centre/placment-test.html',
+    '/psychological-assessment': 'testing-centre/Psychological-assessment.html',
+    '/language-academy': 'Our Services/langauge-academy/language-acad.html',
+    '/kids-youth': 'Our Services/kids-youth.html',
+    '/international-exams': 'Our Services/international-exams.html',
+    '/online-languages': 'Our Services/online-lang.html',
+    '/english': 'Our Services/langauge-academy/eng/eng.html',
+    '/english-adults': 'Our Services/langauge-academy/eng/adults.html',
+    '/english-youth': 'Our Services/langauge-academy/eng/youth.html',
+    '/english-kids': 'Our Services/langauge-academy/eng/kids.html',
+    '/german': 'Our Services/langauge-academy/german/german.html',
+    '/french': 'Our Services/langauge-academy/french/french.html',
+    '/italian': 'Our Services/langauge-academy/italian/italian.html',
+    '/spanish': 'Our Services/langauge-academy/spanish/spanish.html',
+    '/ielts': 'Our Services/int-exams/ielts.html',
+    '/oet': 'Our Services/int-exams/oet.html',
+    '/pte': 'Our Services/int-exams/pte.html',
+    '/who-we-are': 'about-us/our-story.html',
+    '/leadership': 'about-us/leadership.html',
+    '/partners': 'about-us/partners.html',
+    '/careers': 'about-us/application.html',
+    '/contact-us': 'contact-us/visit-our-centre.html',
+    '/contact': 'contact-us/visit-our-centre.html',
+    '/request-info': 'contact-us/request-info.html',
+    '/book-consultation': 'contact-us/book-cons.html',
+    '/faqs': 'about-us/faq.html',
+    '/language': 'Our Services/langauge-academy/language-acad.html',
+    '/lang-form': 'lang-form.html',
+    '/language-form': 'lang-form.html',
+    '/privacy-policy': 'privacy.html',
+    '/terms-and-conditions': 'terms.html',
+    '/refund': 'refund.html'
   };
-  function fromHrefToRoute(href) {
-    if (!href) return '';
-    href = String(href).trim();
-    if (!href) return '';
-    if (href.indexOf('javascript:') === 0 || href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0 || href.indexOf('#') === 0) {
-      return '';
-    }
-    if (href.indexOf('http://') === 0 || href.indexOf('https://') === 0) {
-      if (href.indexOf('wixstudio.com/eacc-refactor/') > -1) return href;
-      return href;
-    }
-    if (href.charAt(0) === '/') {
-      return href;
-    }
-    var clean = href.split('#')[0].split('?')[0].replace(/\\/g, '/');
-    var parts = clean.split('/');
-    var file = parts[parts.length - 1] || '';
-    var base = file.replace(/\.html?$/i, '').toLowerCase();
-    if (slugMap[base]) return slugMap[base];
-    if (base) return '/' + base;
-    return '';
+
+  function isExternalUrl(value) {
+    return /^https?:\/\//i.test(value) || /^mailto:/i.test(value) || /^tel:/i.test(value);
   }
-  function resolveRoute(a) {
-    var wix = (a.getAttribute('data-wix-link') || '').trim();
-    if (wix) {
-      if (wix.charAt(0) === '/' || wix.indexOf('http://') === 0 || wix.indexOf('https://') === 0) return wix;
-      if (wix.indexOf('.html') > -1) return fromHrefToRoute(wix);
-    }
-    var href = a.getAttribute('href') || '';
-    return fromHrefToRoute(href);
+
+  function isLocalPreview() {
+    return window.location.protocol === 'file:' ||
+      window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1';
   }
-  function normalizeInternalLinks() {
-    var anchors = document.querySelectorAll('a[href], a[data-local-link], a[data-wix-link]');
-    anchors.forEach(function(a){
-      var route = resolveRoute(a);
-      if (route && route.charAt(0) === '/') {
-        a.setAttribute('data-wix-link', route);
+
+  function getFileModeRootPrefix() {
+    if (window.location.protocol !== 'file:') return '';
+    var parts = decodeURIComponent(window.location.pathname)
+      .replace(/\\/g, '/')
+      .split('/')
+      .filter(Boolean);
+    var rootIndex = parts.lastIndexOf('EACC_WEBSITE_FINAL_VERSION');
+    if (rootIndex === -1) return '';
+    var depthFromRoot = parts.length - rootIndex - 2;
+    return depthFromRoot > 0 ? '../'.repeat(depthFromRoot) : '';
+  }
+
+  function toProjectPath(path) {
+    if (!path || path.charAt(0) === '#') return path;
+    if (isExternalUrl(path)) return path;
+    if (path.charAt(0) === '/') return path;
+    if (window.location.protocol === 'file:') return getFileModeRootPrefix() + path;
+    return '/' + path.replace(/^\/+/, '');
+  }
+
+  function splitHash(value) {
+    var parts = String(value || '').split('#');
+    return { path: parts.shift() || '', hash: parts.length ? '#' + parts.join('#') : '' };
+  }
+
+  function normalizeLocalPath(value) {
+    if (!value) return '';
+    value = String(value).trim();
+    if (!value || value.charAt(0) === '#') return value;
+    if (isExternalUrl(value)) {
+      if (value.indexOf('wixstudio.com/eacc-refactor/') === -1) return value;
+      value = '/' + value.split('wixstudio.com/eacc-refactor/').pop();
+    }
+    var split = splitHash(value);
+    var path = split.path || '';
+    var hash = split.hash || '';
+    if (path.charAt(0) === '/') {
+      path = localRouteMap[path] || localRouteMap[path.replace(/\/$/, '')] || path.replace(/^\//, '') || 'index.html';
+    }
+    if (!path) return hash;
+    return toProjectPath(path) + hash;
+  }
+
+  function resolveLocalHref(a) {
+    if (!a) return '';
+    var local = a.getAttribute('data-local-link');
+    var href = a.getAttribute('href');
+    var wix = a.getAttribute('data-wix-link');
+    return normalizeLocalPath(local || href || wix || '');
+  }
+
+  function shouldIgnore(a, destination) {
+    if (!a || a.target === '_blank' || a.hasAttribute('download')) return true;
+    if (!destination || destination.charAt(0) === '#') return true;
+    return /^mailto:/i.test(destination) || /^tel:/i.test(destination) || /^javascript:/i.test(destination);
+  }
+
+  function normalizeLinks() {
+    document.querySelectorAll('a[href], a[data-local-link], a[data-wix-link]').forEach(function (a) {
+      var destination = resolveLocalHref(a);
+      if (shouldIgnore(a, destination)) return;
+      if (isLocalPreview() || a.hasAttribute('data-wix-link')) {
+        a.setAttribute('href', destination);
       }
     });
   }
+
   document.addEventListener('click', function (event) {
     var a = event.target && event.target.closest ? event.target.closest('a') : null;
-    if (!a) return;
-    if (a.target === '_blank' || a.hasAttribute('download')) return;
-    var route = resolveRoute(a);
-    if (!route) return;
+    var destination = resolveLocalHref(a);
+    if (shouldIgnore(a, destination)) return;
+
+    if (isExternalUrl(destination) && destination.indexOf('wixstudio.com/eacc-refactor/') === -1) return;
+
     event.preventDefault();
-    try {
-      if (window.parent && window.parent !== window) {
-        window.parent.postMessage({ type: 'EACC_NAVIGATE', href: route }, '*');
-      } else {
-        window.location.href = route;
-      }
-    } catch (e) {
-      window.location.href = route;
+    event.stopPropagation();
+    if (destination.charAt(0) === '#') {
+      var target = document.querySelector(destination);
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      return;
     }
+    window.location.href = destination;
   }, true);
+
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', normalizeInternalLinks);
+    document.addEventListener('DOMContentLoaded', normalizeLinks);
   } else {
-    normalizeInternalLinks();
+    normalizeLinks();
   }
+  document.addEventListener('eacc:partials-loaded', normalizeLinks);
 })();
-})();
-
-
-
