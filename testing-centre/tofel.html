@@ -5792,10 +5792,99 @@ header .dropdown-menu a:hover {
 
   <link rel='stylesheet' href='../assets/css/global.css'>
 
+<style id="eacc-toefl-faq-polish">
+  body.eacc-inner-site .toefl-faq-card {
+    position: relative;
+    overflow: hidden;
+    min-height: 100%;
+    padding: clamp(28px, 4vw, 42px);
+    border: 1px solid rgba(255,255,255,.16);
+    background:
+      radial-gradient(circle at 92% 8%, rgba(255,213,79,.34), transparent 28%),
+      linear-gradient(135deg, #1a237e 0%, #0d1457 72%);
+    box-shadow: 0 28px 70px rgba(13,20,87,.22);
+  }
+  body.eacc-inner-site .toefl-faq-card::before {
+    content: '';
+    position: absolute;
+    inset: 18px 18px auto auto;
+    width: 96px;
+    height: 96px;
+    border-radius: 32px;
+    border: 1px solid rgba(255,255,255,.18);
+    background: rgba(255,255,255,.08);
+    transform: rotate(10deg);
+  }
+  body.eacc-inner-site .toefl-faq-card > * { position: relative; z-index: 1; }
+  body.eacc-inner-site .toefl-faq-card .faq-eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    margin-bottom: 14px;
+    padding: 8px 13px;
+    border-radius: 999px;
+    background: rgba(245,166,35,.16);
+    color: var(--gold-light, #ffd54f);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  body.eacc-inner-site .toefl-faq-card h2 {
+    max-width: 520px;
+    margin-bottom: 14px;
+    font-size: clamp(30px, 4.8vw, 54px);
+    line-height: 1.04;
+    letter-spacing: 0;
+    color: #fff !important;
+  }
+  body.eacc-inner-site .toefl-faq-card p {
+    max-width: 620px;
+    color: rgba(255,255,255,.82);
+    font-size: 16px;
+    line-height: 1.85;
+  }
+  body.eacc-inner-site .highlight-list li {
+    color: #fff !important;
+  }
+  body.eacc-inner-site .toefl-faq-card .faq-highlights {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 24px 0 26px;
+  }
+  body.eacc-inner-site .toefl-faq-card .faq-highlights span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.14);
+    color: #fff;
+    font-weight: 800;
+    font-size: 13px;
+  }
+  body.eacc-inner-site .toefl-faq-card .faq-cta {
+    width: fit-content;
+    min-width: 190px;
+    background: linear-gradient(135deg, var(--gold, #f5a623), var(--gold-light, #ffd54f));
+    color: var(--navy-dark, #0d1457) !important;
+    border-color: transparent;
+    box-shadow: 0 16px 34px rgba(245,166,35,.26);
+  }
+  @media (max-width: 768px) {
+    body.eacc-inner-site .closing { grid-template-columns: 1fr; }
+    body.eacc-inner-site .toefl-faq-card { text-align: left; }
+    body.eacc-inner-site .toefl-faq-card .faq-cta { width: 100%; }
+    html[dir="rtl"] body.eacc-inner-site .toefl-faq-card { text-align: right; }
+  }
+</style>
 </head>
 <body class="eacc-inner-site loading">
-  <div data-include='../partials/global-loading-screen.html'></div>
-  <div data-include='../partials/global-navbar.html'></div>
+  <!-- Global Loading Screen -->
+<div data-include='../partials/global-loading-screen.html'></div>
+  <!-- Global Navbar -->
+<div data-include='../partials/global-navbar.html'></div>
 
 
 
@@ -5803,14 +5892,16 @@ header .dropdown-menu a:hover {
 <!-- HEADER -->
 
 <main>
-<section class="course-hero">
+
+    <!-- Hero -->
+    <section class="course-hero">
 <div class="container hero-grid">
 <div>
 <div class="breadcrumb"><a data-ar="????????" data-en="Home" data-local-link="index.html" href="../index.html">Home</a><span>/</span><span data-ar="????? ???????" data-en="Preparation Courses">Preparation Courses</span></div>
 <div class="eyebrow" data-ar="???? ??????? ??????? TOEFL" data-en="TOEFL Preparation Course">TOEFL Preparation Course</div>
 <h1 data-ar="????? ?? ?????? TOEFL ?? EACC" data-en="Ace Your TOEFL Exam with EACC">Ace Your TOEFL Exam with EACC</h1>
 <p data-ar="???? ??????? ?? ????? ??????????? ???????????? ????????? ?????? ???? ??????? ?????? ??????? ?? ?????? ?????? ?? ????? ?????? ?? ???? ?????? Home Edition ?? ????." data-en="Build the English skills, exam strategy, and confidence you need for university admission, career growth, migration goals, or remote Home Edition testing.">Build the English skills, exam strategy, and confidence you need for university admission, career growth, migration goals, or remote Home Edition testing.</p>
-<div class="hero-actions"><a class="btn btn-primary" data-ar="???? ????" data-en="Register Now" data-local-link="lang-form.html" href="../lang-form.html">Register Now</a><a class="btn btn-light" data-ar="???? ??????? ??????? ??? TOEFL" data-en="Read TOEFL FAQs" data-local-link="about-us/faq.html#panel-toefl" href="../about-us/faq.html#panel-toefl">Read TOEFL FAQs</a></div>
+<div class="hero-actions"><a class="btn btn-primary" data-ar="???? ????" data-en="Register Now" data-local-link="lang-form.html" href="../lang-form.html">Register Now</a><a class="btn btn-light" data-en="Read TOEFL FAQs" data-local-link="about-us/faq.html#panel-toefl" href="../about-us/faq.html#panel-toefl">Read TOEFL FAQs</a></div>
 </div>
 <div class="hero-media toefl-brand-card">
 <img loading="lazy" alt="TOEFL preparation at EACC" decoding="async" height="440" src="../assets/images/tofel/tofel.webp" width="500"/>
@@ -5822,7 +5913,9 @@ header .dropdown-menu a:hover {
 </div>
 </div>
 </section>
-<section>
+
+    <!-- A global benchmark for English proficiency. -->
+    <section>
 <div class="container split">
 <div class="image-card premium-photo"><img alt="Looking up at skyscrapers" decoding="async" loading="lazy" src="../assets/images/tofel/tofel1.avif"/><span class="image-label" data-ar="??? ???? ?????? ????" data-en="Looking Up at Skyscrapers">Looking Up at Skyscrapers</span></div>
 <div class="section-copy">
@@ -5833,7 +5926,9 @@ header .dropdown-menu a:hover {
 </div>
 </div>
 </section>
-<section style="background:#fff">
+
+    <!-- Why Choose EACC? -->
+    <section style="background:#fff">
 <div class="container">
 <div class="section-title"><div class="section-kicker" data-ar="???? ??? ????" data-en="Towering Skyscrapers">Towering Skyscrapers</div><h2 data-ar="????? ????? EACC?" data-en="Why Choose EACC?">Why Choose EACC?</h2><p data-ar="???? ?????? ??????? ?????? ???????? ????? ??????? ?? ??????? ??????? TOEFL ????? ?? 25 ?????." data-en="The Egyptian American Cultural Center has been a trusted name in TOEFL preparation for over 25 years.">The Egyptian American Cultural Center has been a trusted name in TOEFL preparation for over 25 years.</p></div>
 <div class="why-grid">
@@ -5846,7 +5941,9 @@ header .dropdown-menu a:hover {
 </div>
 </div>
 </section>
-<section style="background:#fff">
+
+    <!-- Course Details -->
+    <section style="background:#fff">
 <div class="container">
 <div class="section-title"><div class="section-kicker" data-ar="?????? ????" data-en="Pay attention to">Pay attention to</div><h2 data-ar="?????? ??????" data-en="Course Details">Course Details</h2><p data-ar="?????? ???? ????? ????? ????? ??????? ???????? ???????? ?????????." data-en="Comprehensive and flexible learning options designed to prepare you with the right pace and structure.">Comprehensive and flexible learning options designed to prepare you with the right pace and structure.</p></div>
 <div class="details-grid">
@@ -5856,7 +5953,9 @@ header .dropdown-menu a:hover {
 </div>
 </div>
 </section>
-<section>
+
+    <!-- Class Options -->
+    <section>
 <div class="container">
 <div class="section-title"><div class="section-kicker" data-ar="????????? ?? ??????" data-en="Working at home">Working at home</div><h2 data-ar="?????? ???????" data-en="Class Options">Class Options</h2><p data-ar="???? ???? ?????? ???? ????? ????? ???????." data-en="Choose the learning mode that fits your schedule and your goals.">Choose the learning mode that fits your schedule and your goals.</p></div>
 <div class="option-grid">
@@ -5866,7 +5965,9 @@ header .dropdown-menu a:hover {
 </div>
 </div>
 </section>
-<section class="dark-band">
+
+    <!-- Supporting Content -->
+    <section class="dark-band">
 <div class="container highlight-wrap">
 <div>
 <div class="section-title" style="text-align:left;margin:0 0 28px"><div class="section-kicker" data-ar="?????? ??????" data-en="Course Highlights">Course Highlights</div><h2 data-ar="????? ??? ??? ?? ?????? TOEFL." data-en="Prepare for every part of the TOEFL exam.">Prepare for every part of the TOEFL exam.</h2><p data-ar="????? ???? ??????? ??????? TOEFL ?????? ?????? ??????? ??? ???? ?? ????? ????????." data-en="Our TOEFL Preparation Course is carefully designed to ensure you are fully prepared for every aspect of the exam.">Our TOEFL Preparation Course is carefully designed to ensure you are fully prepared for every aspect of the exam.</p></div>
@@ -5881,10 +5982,22 @@ header .dropdown-menu a:hover {
 <div class="image-card course-visual"><img alt="TOEFL study resources" decoding="async" height="440" loading="lazy" src="../assets/images/tofel/tofel2.webp" width="500"/><span class="image-label" data-ar="??? ?????? ????" data-en="Pensive Coffee Time">Pensive Coffee Time</span></div>
 </div>
 </section>
-<section class="bottom-strip">
+
+    <!-- F A Q -->
+    <section class="bottom-strip">
 <div class="container closing">
 <div class="score-card"><span data-ar="????? ??????" data-en="Our Students Score">Our Students Score</span><strong data-ar="????" data-en="Higher">Higher</strong><p data-ar="?? ?????? ?????? ??? ????? ??????. ???? ??? ???? ??????? ??????? TOEFL ?? EACC ????? ???? ????????." data-en="Take the first step toward achieving your dreams. Join the TOEFL Preparation Course at EACC and unlock your full potential.">Take the first step toward achieving your dreams. Join the TOEFL Preparation Course at EACC and unlock your full potential.</p><div class="hero-actions"><a class="btn btn-primary" data-ar="???? ????" data-en="Register Now" data-local-link="lang-form.html" href="../lang-form.html">Register Now</a></div></div>
-<div class="faq-card"><h2 data-ar="??????? ???????" data-en="F A Q">F A Q</h2><p data-ar="?? ????? ??? ?????? ???? ??? ?????? TOEFL iBT ?? ??????? ?? ??????? ?? ?????? ???????? ???? ?????? ???? ??????? ??????? ?? EACC." data-en="Need more details about the TOEFL iBT test, scoring, sections, or score reports? Visit the EACC FAQ page.">Need more details about the TOEFL iBT test, scoring, sections, or score reports? Visit the EACC FAQ page.</p><a class="btn btn-light" data-ar="???? ????? TOEFL ???????" data-en="Open TOEFL FAQs" data-local-link="about-us/faq.html#panel-toefl" href="../about-us/faq.html#panel-toefl">Open TOEFL FAQs</a></div>
+<div class="faq-card toefl-faq-card">
+  <span class="faq-eyebrow" data-en="TOEFL FAQ">TOEFL FAQ</span>
+  <h2 data-en="All test details in one place">All test details in one place</h2>
+  <p data-en="Need more details about the TOEFL iBT test, scoring, sections, or score reports? Visit the EACC FAQ page for clear answers before you prepare.">Need more details about the TOEFL iBT test, scoring, sections, or score reports? Visit the EACC FAQ page for clear answers before you prepare.</p>
+  <div class="faq-highlights" aria-label="TOEFL FAQ topics">
+    <span data-en="Sections">Sections</span>
+    <span data-en="Scoring">Scoring</span>
+    <span data-en="Score reports">Score reports</span>
+  </div>
+  <a class="btn btn-light faq-cta" data-en="Open TOEFL FAQs" data-local-link="about-us/faq.html#panel-toefl" href="../about-us/faq.html#panel-toefl">Open TOEFL FAQs</a>
+</div>
 </div>
 </section>
 </main>
@@ -6128,9 +6241,11 @@ header .dropdown-menu a:hover {
 
 
 
-  <script src='../assets/js/include-partials.js'></script>
+  <!-- Global Scripts -->
+<script src='../assets/js/include-partials.js'></script>
 
-  <div data-include='../partials/global-footer.html'></div>
+  <!-- Global Footer -->
+<div data-include='../partials/global-footer.html'></div>
 </body>
 </html>
 

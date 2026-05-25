@@ -109,7 +109,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <a href="index.html#services"><span>Our Services</span><i class="fa-solid fa-chevron-down"></i></a>
+        <a href="index.html#services" data-local-link="index.html#services"><span>Our Services</span><i class="fa-solid fa-chevron-down"></i></a>
         <div class="dropdown-menu">
           <a href="/language-academy" data-local-link="Our Services/langauge-academy/language-acad.html">Language Academy</a>
           <a href="/kids-youth" data-local-link="Our Services/kids-youth.html">Kids & Youth Development Academy</a>

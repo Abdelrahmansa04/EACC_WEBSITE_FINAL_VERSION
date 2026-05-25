@@ -5612,8 +5612,10 @@ header .dropdown-menu a:hover {
 </head>
 
 <body class="eacc-inner-site loading">
-  <div data-include='../partials/global-loading-screen.html'></div>
-  <div data-include='../partials/global-navbar.html'></div>
+  <!-- Global Loading Screen -->
+<div data-include='../partials/global-loading-screen.html'></div>
+  <!-- Global Navbar -->
+<div data-include='../partials/global-navbar.html'></div>
 
 
 
@@ -5624,8 +5626,12 @@ header .dropdown-menu a:hover {
       
 
 <main>
-<section class="hero"><div class="container"><span class="eyebrow">Contact EACC</span><h1>Book a Consultation</h1><p>Speak with our team about programs, placement, and the learning path that fits your goals.</p></div></section>
-  <section class="block eacc-form-page"><div class="container"><article class="card eacc-pro-form-card"><div class="eacc-pro-form-head"><span class="eyebrow">Consultation</span><h2>Book a Consultation</h2><p>Choose your preferred time and our team will confirm your appointment.</p></div><form class="form-grid" id="consultationForm" novalidate>
+
+    <!-- Hero -->
+    <section class="hero"><div class="container"><span class="eyebrow">Contact EACC</span><h1>Book a Consultation</h1><p>Speak with our team about programs, placement, and the learning path that fits your goals.</p></div></section>
+
+    <!-- Book a Consultation -->
+    <section class="block eacc-form-page"><div class="container"><article class="card eacc-pro-form-card"><div class="eacc-pro-form-head"><span class="eyebrow">Consultation</span><h2>Book a Consultation</h2><p>Choose your preferred time and our team will confirm your appointment.</p></div><form class="form-grid" id="consultationForm" novalidate>
 <input type="hidden" name="formType" value="Book Consultation"><div class="field"><label for="consName">Full Name *</label><input id="consName" name="consName" type="text" placeholder="Your full name" required></div><div class="field"><label for="consEmail">Email *</label><input id="consEmail" name="consEmail" type="email" placeholder="you@email.com" required></div><div class="field"><label for="consPhone">Phone *</label><input id="consPhone" name="consPhone" type="tel" placeholder="01xxxxxxxxx" required></div><div class="field"><label for="consMethod">Preferred Contact Method *</label><select id="consMethod" name="consMethod" required><option value="" disabled selected>Select method</option><option>Phone Call</option><option>WhatsApp</option><option>Email</option></select></div><div class="field"><label for="consDate">Preferred Date *</label><input id="consDate" name="consDate" type="date" required></div><div class="field"><label for="consTime">Preferred Time *</label><input id="consTime" name="consTime" type="time" required></div><div class="field full"><label for="consMessage">Message *</label><textarea id="consMessage" name="consMessage" placeholder="Tell us what you would like to discuss." required></textarea></div><div class="field full eacc-form-actions"><button class="btn btn-primary eacc-submit-btn" type="submit" id="consSubmitBtn"><span class="eacc-btn-spinner" aria-hidden="true"></span><span id="consSubmitText">Book Consultation</span></button></div><div class="eacc-form-feedback" id="consFormFeedback" role="status" aria-live="polite" hidden></div></form></article></div></section>
 </main>
 
@@ -6038,9 +6044,11 @@ header .dropdown-menu a:hover {
   });
 })();
 </script>
+<!-- Global Scripts -->
 <script src='../assets/js/include-partials.js'></script>
 
-  <div data-include='../partials/global-footer.html'></div>
+  <!-- Global Footer -->
+<div data-include='../partials/global-footer.html'></div>
 </body>
 
 </html>

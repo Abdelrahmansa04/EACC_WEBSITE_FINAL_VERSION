@@ -412,10 +412,57 @@
 
       if (!isOpen) {
         navLinks.querySelectorAll('.dropdown.open')
-          .forEach(dropdown => dropdown.classList.remove('open'));
+          .forEach(dropdown => {
+            dropdown.classList.remove('open');
+            dropdown.querySelector(':scope > a')?.setAttribute('aria-expanded', 'false');
+          });
       }
 
     };
+
+    const setupMobileDropdowns = () => {
+
+      navLinks.querySelectorAll('.dropdown').forEach(dropdown => {
+
+        const trigger =
+          dropdown.querySelector(':scope > a');
+
+        const menu =
+          dropdown.querySelector(':scope > .dropdown-menu');
+
+        if (!trigger || !menu) return;
+
+        trigger.setAttribute('aria-haspopup', 'true');
+        trigger.setAttribute('aria-expanded', 'false');
+
+        if (!menu.querySelector(':scope > .dropdown-parent-link')) {
+
+          const parentLink =
+            document.createElement('a');
+
+          const label =
+            trigger.textContent.replace(/\s+/g, ' ').trim();
+
+          parentLink.className = 'dropdown-parent-link';
+          parentLink.href = trigger.getAttribute('href') || '#';
+          parentLink.textContent = `View ${label} page`;
+
+          const localLink =
+            trigger.getAttribute('data-local-link');
+
+          if (localLink) {
+            parentLink.setAttribute('data-local-link', localLink);
+          }
+
+          menu.prepend(parentLink);
+
+        }
+
+      });
+
+    };
+
+    setupMobileDropdowns();
 
     mobileToggle.addEventListener('click', () => {
 
@@ -430,6 +477,7 @@
 
           if (dropdown !== exceptDropdown) {
             dropdown.classList.remove('open');
+            dropdown.querySelector(':scope > a')?.setAttribute('aria-expanded', 'false');
           }
 
         });
@@ -445,21 +493,7 @@
         window.matchMedia('(max-width: 1240px)').matches;
 
       if (dropdownTrigger && isMobileMenu) {
-
-        const dropdown =
-          dropdownTrigger.closest('.dropdown');
-
-        event.preventDefault();
-
-        const willOpen =
-          !dropdown.classList.contains('open');
-
-        closeMobileDropdowns(dropdown);
-
-        dropdown.classList.toggle('open', willOpen);
-
-        return;
-
+        closeMobileDropdowns();
       }
 
       const link =
@@ -470,6 +504,15 @@
         closeMobileDropdowns();
         setMobileMenuState(false);
 
+      }
+
+    });
+
+    document.addEventListener('keydown', event => {
+
+      if (event.key === 'Escape' && navLinks.classList.contains('active')) {
+        setMobileMenuState(false);
+        mobileToggle.focus();
       }
 
     });
