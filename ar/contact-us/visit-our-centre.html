@@ -7144,6 +7144,28 @@ header .dropdown-menu a:hover {
   <link rel="alternate" hreflang="en" href="https://eacc-egy.com/contact-us/visit-our-centre.html">
   <link rel="alternate" hreflang="ar" href="https://eacc-egy.com/ar/contact-us/visit-our-centre.html">
   <link rel="alternate" hreflang="x-default" href="https://eacc-egy.com/contact-us/visit-our-centre.html">
+  <style id="eacc-contact-card-centering">
+    .contact-highlights {
+      grid-template-columns: repeat(2, minmax(260px, 380px)) !important;
+      justify-content: center !important;
+      align-items: stretch !important;
+      max-width: 820px;
+      margin-left: auto !important;
+      margin-right: auto !important;
+    }
+
+    .contact-highlights .contact-card {
+      width: 100%;
+      text-align: right;
+    }
+
+    @media (max-width: 768px) {
+      .contact-highlights {
+        grid-template-columns: minmax(0, 1fr) !important;
+        max-width: 420px;
+      }
+    }
+  </style>
 </head>
 
 <body class="eacc-inner-site loading is-arabic">
