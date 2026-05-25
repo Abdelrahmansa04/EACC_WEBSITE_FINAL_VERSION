@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="EACC_WEBSITE_FINAL_VERSION">
+  <description>Project structure sitemap for the EACC static website.</description>
+  <root path="D:/Work/EACC_WEBSITE_FINAL_VERSION" />
+  <structure>
+    <folder name="about-us" path="about-us">
+      <file name="application.html" path="about-us/application.html" extension="html" sizeBytes="182219" />
+      <file name="careers.html" path="about-us/careers.html" extension="html" sizeBytes="185631" />
+      <file name="faq.html" path="about-us/faq.html" extension="html" sizeBytes="112964" />
+      <file name="leadership.html" path="about-us/leadership.html" extension="html" sizeBytes="195871" />
+      <file name="our-story.html" path="about-us/our-story.html" extension="html" sizeBytes="222987" />
+      <file name="partners.html" path="about-us/partners.html" extension="html" sizeBytes="166418" />
+    </folder>
+    <folder name="ar" path="ar">
+      <folder name="about-us" path="ar/about-us">
+        <file name="application.html" path="ar/about-us/application.html" extension="html" sizeBytes="183824" />
+        <file name="careers.html" path="ar/about-us/careers.html" extension="html" sizeBytes="187553" />
+        <file name="faq.html" path="ar/about-us/faq.html" extension="html" sizeBytes="128614" />
+        <file name="leadership.html" path="ar/about-us/leadership.html" extension="html" sizeBytes="196797" />
+        <file name="our-story.html" path="ar/about-us/our-story.html" extension="html" sizeBytes="223186" />
+        <file name="partners.html" path="ar/about-us/partners.html" extension="html" sizeBytes="166858" />
+      </folder>
+      <folder name="contact-us" path="ar/contact-us">
+        <file name="book-cons.html" path="ar/contact-us/book-cons.html" extension="html" sizeBytes="175826" />
+        <file name="request-info.html" path="ar/contact-us/request-info.html" extension="html" sizeBytes="159544" />
+        <file name="visit-our-centre.html" path="ar/contact-us/visit-our-centre.html" extension="html" sizeBytes="242567" />
+      </folder>
+      <folder name="Our Services" path="ar/Our Services">
+        <folder name="int-exams" path="ar/Our Services/int-exams">
+          <file name="ielts.html" path="ar/Our Services/int-exams/ielts.html" extension="html" sizeBytes="213945" />
+          <file name="oet.html" path="ar/Our Services/int-exams/oet.html" extension="html" sizeBytes="214210" />
+          <file name="pte.html" path="ar/Our Services/int-exams/pte.html" extension="html" sizeBytes="213687" />
+        </folder>
+        <folder name="kids-youth" path="ar/Our Services/kids-youth">
+          <file name="robotics.html" path="ar/Our Services/kids-youth/robotics.html" extension="html" sizeBytes="172851" />
+          <file name="workshops.html" path="ar/Our Services/kids-youth/workshops.html" extension="html" sizeBytes="157178" />
+        </folder>
+        <folder name="langauge-academy" path="ar/Our Services/langauge-academy">
+          <folder name="eng" path="ar/Our Services/langauge-academy/eng">
+            <file name="adults.html" path="ar/Our Services/langauge-academy/eng/adults.html" extension="html" sizeBytes="224607" />
+            <file name="eng.html" path="ar/Our Services/langauge-academy/eng/eng.html" extension="html" sizeBytes="214082" />
+            <file name="kids.html" path="ar/Our Services/langauge-academy/eng/kids.html" extension="html" sizeBytes="221568" />
+            <file name="youth.html" path="ar/Our Services/langauge-academy/eng/youth.html" extension="html" sizeBytes="218676" />
+          </folder>
+          <folder name="french" path="ar/Our Services/langauge-academy/french">
+            <file name="french.html" path="ar/Our Services/langauge-academy/french/french.html" extension="html" sizeBytes="193183" />
+          </folder>
+          <folder name="german" path="ar/Our Services/langauge-academy/german">
+            <file name="german.html" path="ar/Our Services/langauge-academy/german/german.html" extension="html" sizeBytes="193248" />
+          </folder>
+          <folder name="italian" path="ar/Our Services/langauge-academy/italian">
+            <file name="italian.html" path="ar/Our Services/langauge-academy/italian/italian.html" extension="html" sizeBytes="193266" />
+          </folder>
+          <folder name="spanish" path="ar/Our Services/langauge-academy/spanish">
+            <file name="spanish.html" path="ar/Our Services/langauge-academy/spanish/spanish.html" extension="html" sizeBytes="193187" />
+          </folder>
+          <file name="language-acad.html" path="ar/Our Services/langauge-academy/language-acad.html" extension="html" sizeBytes="170644" />
+        </folder>
+        <file name="international-exams.html" path="ar/Our Services/international-exams.html" extension="html" sizeBytes="168007" />
+        <file name="kids-youth.html" path="ar/Our Services/kids-youth.html" extension="html" sizeBytes="165351" />
+        <file name="online-lang.html" path="ar/Our Services/online-lang.html" extension="html" sizeBytes="168072" />
+      </folder>
+      <folder name="partials" path="ar/partials">
+        <file name="global-footer.html" path="ar/partials/global-footer.html" extension="html" sizeBytes="4260" />
+        <file name="global-loading-screen.html" path="ar/partials/global-loading-screen.html" extension="html" sizeBytes="266" />
+        <file name="global-navbar.html" path="ar/partials/global-navbar.html" extension="html" sizeBytes="5846" />
+      </folder>
+      <folder name="testing-centre" path="ar/testing-centre">
+        <file name="celi.html" path="ar/testing-centre/celi.html" extension="html" sizeBytes="157070" />
+        <file name="celi-cils.html" path="ar/testing-centre/celi-cils.html" extension="html" sizeBytes="165198" />
+        <file name="cils.html" path="ar/testing-centre/cils.html" extension="html" sizeBytes="157070" />
+        <file name="placment-test.html" path="ar/testing-centre/placment-test.html" extension="html" sizeBytes="157152" />
+        <file name="Psychological-assessment.html" path="ar/testing-centre/Psychological-assessment.html" extension="html" sizeBytes="183692" />
+        <file name="tofel.html" path="ar/testing-centre/tofel.html" extension="html" sizeBytes="225601" />
+      </folder>
+      <file name="corporate-train.html" path="ar/corporate-train.html" extension="html" sizeBytes="172122" />
+      <file name="index.html" path="ar/index.html" extension="html" sizeBytes="30173" />
+      <file name="lang-form.html" path="ar/lang-form.html" extension="html" sizeBytes="28808" />
+      <file name="mindspace.html" path="ar/mindspace.html" extension="html" sizeBytes="211716" />
+      <file name="mindspace-form.html" path="ar/mindspace-form.html" extension="html" sizeBytes="20421" />
+      <file name="privacy.html" path="ar/privacy.html" extension="html" sizeBytes="25193" />
+      <file name="refund.html" path="ar/refund.html" extension="html" sizeBytes="32076" />
+      <file name="summer-camp-2026.html" path="ar/summer-camp-2026.html" extension="html" sizeBytes="315940" />
+      <file name="terms.html" path="ar/terms.html" extension="html" sizeBytes="29041" />
+      <file name="testing-centre.html" path="ar/testing-centre.html" extension="html" sizeBytes="195485" />
+      <file name="TRANSLATION_REVIEW.md" path="ar/TRANSLATION_REVIEW.md" extension="md" sizeBytes="46282" />
+    </folder>
+    <folder name="assets" path="assets">
+      <folder name="css" path="assets/css">
+        <file name="global.css" path="assets/css/global.css" extension="css" sizeBytes="160350" />
+      </folder>
+      <folder name="icons" path="assets/icons">
+        <file name="facebook-icon.png" path="assets/icons/facebook-icon.png" extension="png" sizeBytes="16039" />
+        <file name="facebook-icon.webp" path="assets/icons/facebook-icon.webp" extension="webp" sizeBytes="9158" />
+        <file name="insta-icon.png" path="assets/icons/insta-icon.png" extension="png" sizeBytes="52990" />
+        <file name="insta-icon.webp" path="assets/icons/insta-icon.webp" extension="webp" sizeBytes="11012" />
+        <file name="linkidin-icon.png" path="assets/icons/linkidin-icon.png" extension="png" sizeBytes="11481" />
+        <file name="linkidin-icon.webp" path="assets/icons/linkidin-icon.webp" extension="webp" sizeBytes="5056" />
+        <file name="tiktok-icon.png" path="assets/icons/tiktok-icon.png" extension="png" sizeBytes="10005" />
+        <file name="tiktok-icon.webp" path="assets/icons/tiktok-icon.webp" extension="webp" sizeBytes="4522" />
+        <file name="whatsapp.png" path="assets/icons/whatsapp.png" extension="png" sizeBytes="22480" />
+        <file name="whatsapp.webp" path="assets/icons/whatsapp.webp" extension="webp" sizeBytes="9188" />
+        <file name="wp-icon.png" path="assets/icons/wp-icon.png" extension="png" sizeBytes="22480" />
+        <file name="wp-icon.webp" path="assets/icons/wp-icon.webp" extension="webp" sizeBytes="9188" />
+        <file name="youtube-icon.png" path="assets/icons/youtube-icon.png" extension="png" sizeBytes="4440" />
+        <file name="youtube-icon.webp" path="assets/icons/youtube-icon.webp" extension="webp" sizeBytes="5110" />
+      </folder>
+      <folder name="images" path="assets/images">
+        <folder name="activities" path="assets/images/activities">
+          <file name="act1.avif" path="assets/images/activities/act1.avif" extension="avif" sizeBytes="8054" />
+          <file name="art.avif" path="assets/images/activities/art.avif" extension="avif" sizeBytes="15033" />
+          <file name="basketball.webp" path="assets/images/activities/basketball.webp" extension="webp" sizeBytes="4742" />
+          <file name="drama.webp" path="assets/images/activities/drama.webp" extension="webp" sizeBytes="7030" />
+          <file name="fitnes.jpg" path="assets/images/activities/fitnes.jpg" extension="jpg" sizeBytes="100974" />
+          <file name="fitnes.webp" path="assets/images/activities/fitnes.webp" extension="webp" sizeBytes="60482" />
+          <file name="football.webp" path="assets/images/activities/football.webp" extension="webp" sizeBytes="8930" />
+          <file name="music.jpg" path="assets/images/activities/music.jpg" extension="jpg" sizeBytes="158503" />
+          <file name="music.webp" path="assets/images/activities/music.webp" extension="webp" sizeBytes="142822" />
+        </folder>
+        <folder name="explore-our-campus" path="assets/images/explore-our-campus">
+          <file name="desktop.ini" path="assets/images/explore-our-campus/desktop.ini" extension="ini" sizeBytes="484" />
+          <file name="home-hero.png" path="assets/images/explore-our-campus/home-hero.png" extension="png" sizeBytes="1641660" />
+          <file name="home-hero.webp" path="assets/images/explore-our-campus/home-hero.webp" extension="webp" sizeBytes="154052" />
+          <file name="home-hero2.png" path="assets/images/explore-our-campus/home-hero2.png" extension="png" sizeBytes="2058333" />
+          <file name="home-hero2.webp" path="assets/images/explore-our-campus/home-hero2.webp" extension="webp" sizeBytes="267844" />
+          <file name="httpsstatic.wixstatic.commediae09be6_114346fe1af3408b93a8935be67d6937~mv2.png.png" path="assets/images/explore-our-campus/httpsstatic.wixstatic.commediae09be6_114346fe1af3408b93a8935be67d6937~mv2.png.png" extension="png" sizeBytes="1729300" />
+          <file name="httpsstatic.wixstatic.commediae09be6_114346fe1af3408b93a8935be67d6937~mv2.png.webp" path="assets/images/explore-our-campus/httpsstatic.wixstatic.commediae09be6_114346fe1af3408b93a8935be67d6937~mv2.png.webp" extension="webp" sizeBytes="134044" />
+          <file name="httpsstatic.wixstatic.commediae09be6_54fca49daa424bdc8a1ecca6c0e87c2d~mv2.png.png" path="assets/images/explore-our-campus/httpsstatic.wixstatic.commediae09be6_54fca49daa424bdc8a1ecca6c0e87c2d~mv2.png.png" extension="png" sizeBytes="1098939" />
+          <file name="httpsstatic.wixstatic.commediae09be6_54fca49daa424bdc8a1ecca6c0e87c2d~mv2.png.webp" path="assets/images/explore-our-campus/httpsstatic.wixstatic.commediae09be6_54fca49daa424bdc8a1ecca6c0e87c2d~mv2.png.webp" extension="webp" sizeBytes="65066" />
+          <file name="httpsstatic.wixstatic.commediae09be6_8aad1802f5f44dcdb0e579106aa5fc1e~mv2.png.png" path="assets/images/explore-our-campus/httpsstatic.wixstatic.commediae09be6_8aad1802f5f44dcdb0e579106aa5fc1e~mv2.png.png" extension="png" sizeBytes="1995719" />
+          <file name="httpsstatic.wixstatic.commediae09be6_8aad1802f5f44dcdb0e579106aa5fc1e~mv2.png.webp" path="assets/images/explore-our-campus/httpsstatic.wixstatic.commediae09be6_8aad1802f5f44dcdb0e579106aa5fc1e~mv2.png.webp" extension="webp" sizeBytes="225616" />
+          <file name="httpsstatic.wixstatic.commediae09be6_a34782b23e904602b29056c585556605~mv2.png.png" path="assets/images/explore-our-campus/httpsstatic.wixstatic.commediae09be6_a34782b23e904602b29056c585556605~mv2.png.png" extension="png" sizeBytes="1341518" />
+          <file name="httpsstatic.wixstatic.commediae09be6_a34782b23e904602b29056c585556605~mv2.png.webp" path="assets/images/explore-our-campus/httpsstatic.wixstatic.commediae09be6_a34782b23e904602b29056c585556605~mv2.png.webp" extension="webp" sizeBytes="103568" />
+          <file name="httpsstatic.wixstatic.commediae09be6_c6ef021c39e14759888b2e030ca0cd57~mv2.png.png" path="assets/images/explore-our-campus/httpsstatic.wixstatic.commediae09be6_c6ef021c39e14759888b2e030ca0cd57~mv2.png.png" extension="png" sizeBytes="1024668" />
+          <file name="httpsstatic.wixstatic.commediae09be6_c6ef021c39e14759888b2e030ca0cd57~mv2.png.webp" path="assets/images/explore-our-campus/httpsstatic.wixstatic.commediae09be6_c6ef021c39e14759888b2e030ca0cd57~mv2.png.webp" extension="webp" sizeBytes="61510" />
+        </folder>
+        <folder name="finearts" path="assets/images/finearts">
+          <file name="httpsstatic.wixstatic.commediae09be6_05271018ce9d4b6caec2957adf1a36d7~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_05271018ce9d4b6caec2957adf1a36d7~mv2.avif.avif" extension="avif" sizeBytes="80960" />
+          <file name="httpsstatic.wixstatic.commediae09be6_07fe2a335e344bd7bae4232130da313f~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_07fe2a335e344bd7bae4232130da313f~mv2.avif.avif" extension="avif" sizeBytes="54050" />
+          <file name="httpsstatic.wixstatic.commediae09be6_08cc1a96d2864b1a81b15766fa406cb1~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_08cc1a96d2864b1a81b15766fa406cb1~mv2.avif.avif" extension="avif" sizeBytes="23007" />
+          <file name="httpsstatic.wixstatic.commediae09be6_09230f3239094a2d9cd36688b1791eec~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_09230f3239094a2d9cd36688b1791eec~mv2.avif.avif" extension="avif" sizeBytes="40310" />
+          <file name="httpsstatic.wixstatic.commediae09be6_1500e1431e404a39930e131ad4fa4ace~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_1500e1431e404a39930e131ad4fa4ace~mv2.avif.avif" extension="avif" sizeBytes="37533" />
+          <file name="httpsstatic.wixstatic.commediae09be6_1fe055bd8fae4897ab5ce1e5b2f83bab~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_1fe055bd8fae4897ab5ce1e5b2f83bab~mv2.avif.avif" extension="avif" sizeBytes="62860" />
+          <file name="httpsstatic.wixstatic.commediae09be6_2a6b3df988bf421aa3255d02e32455ad~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_2a6b3df988bf421aa3255d02e32455ad~mv2.avif.avif" extension="avif" sizeBytes="16428" />
+          <file name="httpsstatic.wixstatic.commediae09be6_41c6073aa4b6437892a9162bd812a82f~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_41c6073aa4b6437892a9162bd812a82f~mv2.avif.avif" extension="avif" sizeBytes="12844" />
+          <file name="httpsstatic.wixstatic.commediae09be6_4b6ad8aa0d304ca7bd9a24f7c2b87f34~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_4b6ad8aa0d304ca7bd9a24f7c2b87f34~mv2.avif.avif" extension="avif" sizeBytes="65471" />
+          <file name="httpsstatic.wixstatic.commediae09be6_65d2e2c35d9d4a0ab71ed36d371f0132~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_65d2e2c35d9d4a0ab71ed36d371f0132~mv2.avif.avif" extension="avif" sizeBytes="41284" />
+          <file name="httpsstatic.wixstatic.commediae09be6_6c910e84abdb480dbef2597193b93f3c~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_6c910e84abdb480dbef2597193b93f3c~mv2.avif.avif" extension="avif" sizeBytes="58232" />
+          <file name="httpsstatic.wixstatic.commediae09be6_824799dc9d8f457c9cb45fb7436d9a59~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_824799dc9d8f457c9cb45fb7436d9a59~mv2.avif.avif" extension="avif" sizeBytes="10962" />
+          <file name="httpsstatic.wixstatic.commediae09be6_8854a4d0e8d54598ba904dbdba335b66~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_8854a4d0e8d54598ba904dbdba335b66~mv2.avif.avif" extension="avif" sizeBytes="24953" />
+          <file name="httpsstatic.wixstatic.commediae09be6_8b10860acff74676a47b4b2378d9b252~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_8b10860acff74676a47b4b2378d9b252~mv2.avif.avif" extension="avif" sizeBytes="44502" />
+          <file name="httpsstatic.wixstatic.commediae09be6_8b205407b37d4fca84097101ebfe2848~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_8b205407b37d4fca84097101ebfe2848~mv2.avif.avif" extension="avif" sizeBytes="86269" />
+          <file name="httpsstatic.wixstatic.commediae09be6_93d2e99ed7064543a45ead7d2a2248f6~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_93d2e99ed7064543a45ead7d2a2248f6~mv2.avif.avif" extension="avif" sizeBytes="49957" />
+          <file name="httpsstatic.wixstatic.commediae09be6_9617605f3f394c40ae29435f1c5f2696~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_9617605f3f394c40ae29435f1c5f2696~mv2.avif.avif" extension="avif" sizeBytes="24434" />
+          <file name="httpsstatic.wixstatic.commediae09be6_99032e54589a469b9e2f36542de5b306~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_99032e54589a469b9e2f36542de5b306~mv2.avif.avif" extension="avif" sizeBytes="62121" />
+          <file name="httpsstatic.wixstatic.commediae09be6_99d5b4070c694a2fa4a2810a86a9d014~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_99d5b4070c694a2fa4a2810a86a9d014~mv2.avif.avif" extension="avif" sizeBytes="90794" />
+          <file name="httpsstatic.wixstatic.commediae09be6_abd3aba8285040e79c95a2190d84be76~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_abd3aba8285040e79c95a2190d84be76~mv2.avif.avif" extension="avif" sizeBytes="60368" />
+          <file name="httpsstatic.wixstatic.commediae09be6_c197a8d4479f4ed688f1203fc1a6a3cd~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_c197a8d4479f4ed688f1203fc1a6a3cd~mv2.avif.avif" extension="avif" sizeBytes="35667" />
+          <file name="httpsstatic.wixstatic.commediae09be6_cc58da41e9e94d5d877d31e6693984ae~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_cc58da41e9e94d5d877d31e6693984ae~mv2.avif.avif" extension="avif" sizeBytes="27322" />
+          <file name="httpsstatic.wixstatic.commediae09be6_d48b44769966453e8e89b0668cf06065~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_d48b44769966453e8e89b0668cf06065~mv2.avif.avif" extension="avif" sizeBytes="15033" />
+          <file name="httpsstatic.wixstatic.commediae09be6_f25880f15155442b8065c87d8708607c~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_f25880f15155442b8065c87d8708607c~mv2.avif.avif" extension="avif" sizeBytes="37214" />
+          <file name="httpsstatic.wixstatic.commediae09be6_f319b776149a42a4a307d0fa86cb2840~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_f319b776149a42a4a307d0fa86cb2840~mv2.avif.avif" extension="avif" sizeBytes="18453" />
+          <file name="httpsstatic.wixstatic.commediae09be6_fa6c9c9c35824bb498fb0aeb0cc34e44~mv2.avif.avif" path="assets/images/finearts/httpsstatic.wixstatic.commediae09be6_fa6c9c9c35824bb498fb0aeb0cc34e44~mv2.avif.avif" extension="avif" sizeBytes="86985" />
+        </folder>
+        <folder name="french" path="assets/images/french">
+          <file name="french-hero.avif" path="assets/images/french/french-hero.avif" extension="avif" sizeBytes="70565" />
+          <file name="french-hero2.avif" path="assets/images/french/french-hero2.avif" extension="avif" sizeBytes="128220" />
+          <file name="httpsstatic.wixstatic.commediae09be6_767763e0f9e64287a9993b171d028f88~mv2.avif.avif" path="assets/images/french/httpsstatic.wixstatic.commediae09be6_767763e0f9e64287a9993b171d028f88~mv2.avif.avif" extension="avif" sizeBytes="2991" />
+          <file name="httpsstatic.wixstatic.commediae09be6_d108c6bf925340c3b13da6104467c035~mv2.avif.avif" path="assets/images/french/httpsstatic.wixstatic.commediae09be6_d108c6bf925340c3b13da6104467c035~mv2.avif.avif" extension="avif" sizeBytes="26364" />
+          <file name="httpsstatic.wixstatic.commediae09be6_e88ee88403ac4053bb2cd542802a3093~mv2.avif.avif" path="assets/images/french/httpsstatic.wixstatic.commediae09be6_e88ee88403ac4053bb2cd542802a3093~mv2.avif.avif" extension="avif" sizeBytes="55884" />
+        </folder>
+        <folder name="german" path="assets/images/german">
+          <file name="german-hero1.avif" path="assets/images/german/german-hero1.avif" extension="avif" sizeBytes="29440" />
+          <file name="german-hero2.avif" path="assets/images/german/german-hero2.avif" extension="avif" sizeBytes="51457" />
+          <file name="httpsstatic.wixstatic.commediae09be6_6251f509857542b387edba1e6cdac617~mv2.avif.avif" path="assets/images/german/httpsstatic.wixstatic.commediae09be6_6251f509857542b387edba1e6cdac617~mv2.avif.avif" extension="avif" sizeBytes="1521" />
+        </folder>
+        <folder name="ielts" path="assets/images/ielts">
+          <file name="ielts.avif" path="assets/images/ielts/ielts.avif" extension="avif" sizeBytes="24741" />
+        </folder>
+        <folder name="italian" path="assets/images/italian">
+          <file name="celi.avif" path="assets/images/italian/celi.avif" extension="avif" sizeBytes="24336" />
+          <file name="cils.avif" path="assets/images/italian/cils.avif" extension="avif" sizeBytes="12629" />
+          <file name="httpsstatic.wixstatic.commediae09be6_533ebd7654bd49e8b0bc82eb3edd83b6~mv2.avif.avif" path="assets/images/italian/httpsstatic.wixstatic.commediae09be6_533ebd7654bd49e8b0bc82eb3edd83b6~mv2.avif.avif" extension="avif" sizeBytes="26073" />
+          <file name="httpsstatic.wixstatic.commediae09be6_bb4b10794d044a55a2c101edbe30763e~mv2.avif.avif" path="assets/images/italian/httpsstatic.wixstatic.commediae09be6_bb4b10794d044a55a2c101edbe30763e~mv2.avif.avif" extension="avif" sizeBytes="244394" />
+          <file name="httpsstatic.wixstatic.commediae09be6_d40ab75718ab481181c68ecbcdcc385c~mv2.avif.avif" path="assets/images/italian/httpsstatic.wixstatic.commediae09be6_d40ab75718ab481181c68ecbcdcc385c~mv2.avif.avif" extension="avif" sizeBytes="155354" />
+          <file name="httpsstatic.wixstatic.commediae09be6_d516f27b2602483499733b2f95711e33~mv2.avif.avif" path="assets/images/italian/httpsstatic.wixstatic.commediae09be6_d516f27b2602483499733b2f95711e33~mv2.avif.avif" extension="avif" sizeBytes="4434" />
+          <file name="italian-hero.avif" path="assets/images/italian/italian-hero.avif" extension="avif" sizeBytes="215642" />
+          <file name="italian-hero2.avif" path="assets/images/italian/italian-hero2.avif" extension="avif" sizeBytes="36937" />
+        </folder>
+        <folder name="kids" path="assets/images/kids">
+          <file name="kids.avif" path="assets/images/kids/kids.avif" extension="avif" sizeBytes="5310" />
+          <file name="kids2.avif" path="assets/images/kids/kids2.avif" extension="avif" sizeBytes="18571" />
+          <file name="kids3.avif" path="assets/images/kids/kids3.avif" extension="avif" sizeBytes="14092" />
+          <file name="kids4.png" path="assets/images/kids/kids4.png" extension="png" sizeBytes="2203985" />
+          <file name="kids4.webp" path="assets/images/kids/kids4.webp" extension="webp" sizeBytes="133306" />
+          <file name="kids5.avif" path="assets/images/kids/kids5.avif" extension="avif" sizeBytes="31122" />
+          <file name="kids6.avif" path="assets/images/kids/kids6.avif" extension="avif" sizeBytes="7659" />
+        </folder>
+        <folder name="oet" path="assets/images/oet">
+          <file name="oet-hero.avif" path="assets/images/oet/oet-hero.avif" extension="avif" sizeBytes="38365" />
+        </folder>
+        <folder name="partners" path="assets/images/partners">
+          <file name="desktop.ini" path="assets/images/partners/desktop.ini" extension="ini" sizeBytes="88" />
+          <file name="eton.avif" path="assets/images/partners/eton.avif" extension="avif" sizeBytes="20402" />
+          <file name="feh.jpg" path="assets/images/partners/feh.jpg" extension="jpg" sizeBytes="16163" />
+          <file name="feh.webp" path="assets/images/partners/feh.webp" extension="webp" sizeBytes="4360" />
+          <file name="httpsstatic.wixstatic.commediae09be6_8854dd62ba3d4f7e80d02161df5773b4~mv2.avif.avif" path="assets/images/partners/httpsstatic.wixstatic.commediae09be6_8854dd62ba3d4f7e80d02161df5773b4~mv2.avif.avif" extension="avif" sizeBytes="20402" />
+          <file name="httpsstatic.wixstatic.commediae09be6_9999c48faac340bb843f627606b1396c~mv2.png.png" path="assets/images/partners/httpsstatic.wixstatic.commediae09be6_9999c48faac340bb843f627606b1396c~mv2.png.png" extension="png" sizeBytes="906401" />
+          <file name="httpsstatic.wixstatic.commediae09be6_9999c48faac340bb843f627606b1396c~mv2.png.webp" path="assets/images/partners/httpsstatic.wixstatic.commediae09be6_9999c48faac340bb843f627606b1396c~mv2.png.webp" extension="webp" sizeBytes="27262" />
+          <file name="mindspace.png" path="assets/images/partners/mindspace.png" extension="png" sizeBytes="233229" />
+          <file name="mindspace.webp" path="assets/images/partners/mindspace.webp" extension="webp" sizeBytes="59496" />
+          <file name="notting.avif" path="assets/images/partners/notting.avif" extension="avif" sizeBytes="26073" />
+          <file name="think-eng.avif" path="assets/images/partners/think-eng.avif" extension="avif" sizeBytes="8892" />
+        </folder>
+        <folder name="pte" path="assets/images/pte">
+        </folder>
+        <folder name="refund" path="assets/images/refund">
+          <file name="WhatsApp Image 2026-05-21 at 4.19.45 PM (1).jpeg" path="assets/images/refund/WhatsApp Image 2026-05-21 at 4.19.45 PM (1).jpeg" extension="jpeg" sizeBytes="261482" />
+          <file name="WhatsApp Image 2026-05-21 at 4.19.45 PM (1).webp" path="assets/images/refund/WhatsApp Image 2026-05-21 at 4.19.45 PM (1).webp" extension="webp" sizeBytes="131616" />
+          <file name="WhatsApp Image 2026-05-21 at 4.19.45 PM.jpeg" path="assets/images/refund/WhatsApp Image 2026-05-21 at 4.19.45 PM.jpeg" extension="jpeg" sizeBytes="375010" />
+          <file name="WhatsApp Image 2026-05-21 at 4.19.45 PM.webp" path="assets/images/refund/WhatsApp Image 2026-05-21 at 4.19.45 PM.webp" extension="webp" sizeBytes="235900" />
+        </folder>
+        <folder name="robotics" path="assets/images/robotics">
+          <file name="httpsstatic.wixstatic.commediae09be6_91abf91c0a8c47d6b51d398148d52ef6~mv2.png.png" path="assets/images/robotics/httpsstatic.wixstatic.commediae09be6_91abf91c0a8c47d6b51d398148d52ef6~mv2.png.png" extension="png" sizeBytes="387523" />
+          <file name="httpsstatic.wixstatic.commediae09be6_91abf91c0a8c47d6b51d398148d52ef6~mv2.png.webp" path="assets/images/robotics/httpsstatic.wixstatic.commediae09be6_91abf91c0a8c47d6b51d398148d52ef6~mv2.png.webp" extension="webp" sizeBytes="48608" />
+          <file name="robo1.png" path="assets/images/robotics/robo1.png" extension="png" sizeBytes="2343431" />
+          <file name="robo1.webp" path="assets/images/robotics/robo1.webp" extension="webp" sizeBytes="243836" />
+        </folder>
+        <folder name="spanish" path="assets/images/spanish">
+          <file name="httpsstatic.wixstatic.commediae09be6_fe0d59eb0be3447e87199d9978407d29~mv2.avif.avif" path="assets/images/spanish/httpsstatic.wixstatic.commediae09be6_fe0d59eb0be3447e87199d9978407d29~mv2.avif.avif" extension="avif" sizeBytes="6242" />
+          <file name="spanish-hero1.avif" path="assets/images/spanish/spanish-hero1.avif" extension="avif" sizeBytes="78794" />
+          <file name="spanish-hero2.avif" path="assets/images/spanish/spanish-hero2.avif" extension="avif" sizeBytes="338003" />
+          <file name="spanish-hero3.avif" path="assets/images/spanish/spanish-hero3.avif" extension="avif" sizeBytes="54389" />
+          <file name="spanish-hero4.avif" path="assets/images/spanish/spanish-hero4.avif" extension="avif" sizeBytes="35385" />
+          <file name="spanish-hero5.avif" path="assets/images/spanish/spanish-hero5.avif" extension="avif" sizeBytes="124594" />
+          <file name="spanish-hero6.avif" path="assets/images/spanish/spanish-hero6.avif" extension="avif" sizeBytes="43988" />
+        </folder>
+        <folder name="summer" path="assets/images/summer">
+          <file name="ai-kdis.webp" path="assets/images/summer/ai-kdis.webp" extension="webp" sizeBytes="10446" />
+          <file name="camp.avif" path="assets/images/summer/camp.avif" extension="avif" sizeBytes="221158" />
+          <file name="httpsstatic.wixstatic.commediae09be6_12e3fa549b6c48e0bb2e149e34dac960~mv2.jpg.jpg" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_12e3fa549b6c48e0bb2e149e34dac960~mv2.jpg.jpg" extension="jpg" sizeBytes="142686" />
+          <file name="httpsstatic.wixstatic.commediae09be6_12e3fa549b6c48e0bb2e149e34dac960~mv2.jpg.webp" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_12e3fa549b6c48e0bb2e149e34dac960~mv2.jpg.webp" extension="webp" sizeBytes="82174" />
+          <file name="httpsstatic.wixstatic.commediae09be6_450e2c7d7a87493aa5ddc62d802e5a4d~mv2.avif.avif" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_450e2c7d7a87493aa5ddc62d802e5a4d~mv2.avif.avif" extension="avif" sizeBytes="8054" />
+          <file name="httpsstatic.wixstatic.commediae09be6_450e2c7d7a87493aa5ddc62d802e5a4d~mv2.avif.png" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_450e2c7d7a87493aa5ddc62d802e5a4d~mv2.avif.png" extension="png" sizeBytes="2099547" />
+          <file name="httpsstatic.wixstatic.commediae09be6_450e2c7d7a87493aa5ddc62d802e5a4d~mv2.avif.webp" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_450e2c7d7a87493aa5ddc62d802e5a4d~mv2.avif.webp" extension="webp" sizeBytes="56578" />
+          <file name="httpsstatic.wixstatic.commediae09be6_6c9a9d62539b4810af1699682272e564~mv2.avif.avif" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_6c9a9d62539b4810af1699682272e564~mv2.avif.avif" extension="avif" sizeBytes="15033" />
+          <file name="httpsstatic.wixstatic.commediae09be6_7c2ec47e855042edb72c6f847357c1c4~mv2.webp.webp" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_7c2ec47e855042edb72c6f847357c1c4~mv2.webp.webp" extension="webp" sizeBytes="8806" />
+          <file name="httpsstatic.wixstatic.commediae09be6_7df0382411734fbfbdd187621b747690~mv2.avif.avif" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_7df0382411734fbfbdd187621b747690~mv2.avif.avif" extension="avif" sizeBytes="14198" />
+          <file name="httpsstatic.wixstatic.commediae09be6_7df0382411734fbfbdd187621b747690~mv2.avif.png" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_7df0382411734fbfbdd187621b747690~mv2.avif.png" extension="png" sizeBytes="93850" />
+          <file name="httpsstatic.wixstatic.commediae09be6_7df0382411734fbfbdd187621b747690~mv2.avif.webp" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_7df0382411734fbfbdd187621b747690~mv2.avif.webp" extension="webp" sizeBytes="55766" />
+          <file name="httpsstatic.wixstatic.commediae09be6_92c2df949b0a4f5785f7a10b07741314~mv2.webp.webp" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_92c2df949b0a4f5785f7a10b07741314~mv2.webp.webp" extension="webp" sizeBytes="7030" />
+          <file name="httpsstatic.wixstatic.commediae09be6_d17552054bb448c99155a65c806e39f7~mv2.avif.avif" path="assets/images/summer/httpsstatic.wixstatic.commediae09be6_d17552054bb448c99155a65c806e39f7~mv2.avif.avif" extension="avif" sizeBytes="110392" />
+        </folder>
+        <folder name="summer26" path="assets/images/summer26">
+          <file name="httpsstatic.wixstatic.commediae09be6_067592fbe34d4a669be82f8b637ee315~mv2.png.png" path="assets/images/summer26/httpsstatic.wixstatic.commediae09be6_067592fbe34d4a669be82f8b637ee315~mv2.png.png" extension="png" sizeBytes="1802164" />
+          <file name="httpsstatic.wixstatic.commediae09be6_067592fbe34d4a669be82f8b637ee315~mv2.png.webp" path="assets/images/summer26/httpsstatic.wixstatic.commediae09be6_067592fbe34d4a669be82f8b637ee315~mv2.png.webp" extension="webp" sizeBytes="156300" />
+          <file name="httpsstatic.wixstatic.commediae09be6_36f7ed4d60e5420eb353464b7890c7c7~mv2.png.png" path="assets/images/summer26/httpsstatic.wixstatic.commediae09be6_36f7ed4d60e5420eb353464b7890c7c7~mv2.png.png" extension="png" sizeBytes="2343431" />
+          <file name="httpsstatic.wixstatic.commediae09be6_36f7ed4d60e5420eb353464b7890c7c7~mv2.png.webp" path="assets/images/summer26/httpsstatic.wixstatic.commediae09be6_36f7ed4d60e5420eb353464b7890c7c7~mv2.png.webp" extension="webp" sizeBytes="236630" />
+          <file name="httpsstatic.wixstatic.commediae09be6_7e112909b6a841fca26cde504231662a~mv2.webp.webp" path="assets/images/summer26/httpsstatic.wixstatic.commediae09be6_7e112909b6a841fca26cde504231662a~mv2.webp.webp" extension="webp" sizeBytes="10446" />
+          <file name="summer1.png" path="assets/images/summer26/summer1.png" extension="png" sizeBytes="2623885" />
+          <file name="summer1.webp" path="assets/images/summer26/summer1.webp" extension="webp" sizeBytes="258372" />
+          <file name="summer10.png" path="assets/images/summer26/summer10.png" extension="png" sizeBytes="357253" />
+          <file name="summer10.webp" path="assets/images/summer26/summer10.webp" extension="webp" sizeBytes="33718" />
+          <file name="summer11.png" path="assets/images/summer26/summer11.png" extension="png" sizeBytes="1087844" />
+          <file name="summer11.webp" path="assets/images/summer26/summer11.webp" extension="webp" sizeBytes="115652" />
+          <file name="summer12.png" path="assets/images/summer26/summer12.png" extension="png" sizeBytes="2351411" />
+          <file name="summer12.webp" path="assets/images/summer26/summer12.webp" extension="webp" sizeBytes="255164" />
+          <file name="summer13.png" path="assets/images/summer26/summer13.png" extension="png" sizeBytes="284045" />
+          <file name="summer13.webp" path="assets/images/summer26/summer13.webp" extension="webp" sizeBytes="33210" />
+          <file name="summer2.png" path="assets/images/summer26/summer2.png" extension="png" sizeBytes="351300" />
+          <file name="summer2.webp" path="assets/images/summer26/summer2.webp" extension="webp" sizeBytes="43584" />
+          <file name="summer3.png" path="assets/images/summer26/summer3.png" extension="png" sizeBytes="2735853" />
+          <file name="summer3.webp" path="assets/images/summer26/summer3.webp" extension="webp" sizeBytes="271894" />
+          <file name="summer4.png" path="assets/images/summer26/summer4.png" extension="png" sizeBytes="1622058" />
+          <file name="summer4.webp" path="assets/images/summer26/summer4.webp" extension="webp" sizeBytes="114042" />
+          <file name="summer5.png" path="assets/images/summer26/summer5.png" extension="png" sizeBytes="2514704" />
+          <file name="summer5.webp" path="assets/images/summer26/summer5.webp" extension="webp" sizeBytes="241574" />
+          <file name="summer6.png" path="assets/images/summer26/summer6.png" extension="png" sizeBytes="2769876" />
+          <file name="summer6.webp" path="assets/images/summer26/summer6.webp" extension="webp" sizeBytes="357636" />
+          <file name="summer7.png" path="assets/images/summer26/summer7.png" extension="png" sizeBytes="387523" />
+          <file name="summer7.webp" path="assets/images/summer26/summer7.webp" extension="webp" sizeBytes="50326" />
+          <file name="summer8.png" path="assets/images/summer26/summer8.png" extension="png" sizeBytes="2393747" />
+          <file name="summer8.webp" path="assets/images/summer26/summer8.webp" extension="webp" sizeBytes="255284" />
+          <file name="summer9.png" path="assets/images/summer26/summer9.png" extension="png" sizeBytes="1932977" />
+          <file name="summer9.webp" path="assets/images/summer26/summer9.webp" extension="webp" sizeBytes="198302" />
+        </folder>
+        <folder name="tofel" path="assets/images/tofel">
+          <file name="httpsstatic.wixstatic.commediae09be6_15cd7609ed214cff989efa2b30d9ed49~mv2.webp.webp" path="assets/images/tofel/httpsstatic.wixstatic.commediae09be6_15cd7609ed214cff989efa2b30d9ed49~mv2.webp.webp" extension="webp" sizeBytes="4892" />
+          <file name="httpsstatic.wixstatic.commediae09be6_82e54f521b8d442abb5cc2baf3a9aea1~mv2.webp.webp" path="assets/images/tofel/httpsstatic.wixstatic.commediae09be6_82e54f521b8d442abb5cc2baf3a9aea1~mv2.webp.webp" extension="webp" sizeBytes="3656" />
+          <file name="httpsstatic.wixstatic.commediae09be6_e7deedee7fbd400789557a2efcf02f92~mv2.gif.gif" path="assets/images/tofel/httpsstatic.wixstatic.commediae09be6_e7deedee7fbd400789557a2efcf02f92~mv2.gif.gif" extension="gif" sizeBytes="16938" />
+          <file name="httpsstatic.wixstatic.commediae09be6_ef21d27a6e6240fbbfe354a81a39ff8f~mv2.png.png" path="assets/images/tofel/httpsstatic.wixstatic.commediae09be6_ef21d27a6e6240fbbfe354a81a39ff8f~mv2.png.png" extension="png" sizeBytes="181811" />
+          <file name="httpsstatic.wixstatic.commediae09be6_ef21d27a6e6240fbbfe354a81a39ff8f~mv2.png.webp" path="assets/images/tofel/httpsstatic.wixstatic.commediae09be6_ef21d27a6e6240fbbfe354a81a39ff8f~mv2.png.webp" extension="webp" sizeBytes="22460" />
+          <file name="tofel.png" path="assets/images/tofel/tofel.png" extension="png" sizeBytes="409337" />
+          <file name="tofel.webp" path="assets/images/tofel/tofel.webp" extension="webp" sizeBytes="17468" />
+          <file name="tofel1.avif" path="assets/images/tofel/tofel1.avif" extension="avif" sizeBytes="70791" />
+          <file name="tofel2.png" path="assets/images/tofel/tofel2.png" extension="png" sizeBytes="125152" />
+          <file name="tofel2.webp" path="assets/images/tofel/tofel2.webp" extension="webp" sizeBytes="13574" />
+        </folder>
+        <file name="adults.avif" path="assets/images/adults.avif" extension="avif" sizeBytes="18531" />
+        <file name="contact-hero.avif" path="assets/images/contact-hero.avif" extension="avif" sizeBytes="20550" />
+        <file name="desktop.ini" path="assets/images/desktop.ini" extension="ini" sizeBytes="88" />
+        <file name="dr.heba-profile.jpeg" path="assets/images/dr.heba-profile.jpeg" extension="jpeg" sizeBytes="100632" />
+        <file name="dr.heba-profile.webp" path="assets/images/dr.heba-profile.webp" extension="webp" sizeBytes="75710" />
+        <file name="eacc-blue-logo.png" path="assets/images/eacc-blue-logo.png" extension="png" sizeBytes="560420" />
+        <file name="eacc-blue-logo.webp" path="assets/images/eacc-blue-logo.webp" extension="webp" sizeBytes="67436" />
+        <file name="eacc-white-logo.png" path="assets/images/eacc-white-logo.png" extension="png" sizeBytes="93850" />
+        <file name="eacc-white-logo.webp" path="assets/images/eacc-white-logo.webp" extension="webp" sizeBytes="55766" />
+        <file name="eng.jpg" path="assets/images/eng.jpg" extension="jpg" sizeBytes="142686" />
+        <file name="eng.webp" path="assets/images/eng.webp" extension="webp" sizeBytes="106002" />
+        <file name="eng-hero.jpg" path="assets/images/eng-hero.jpg" extension="jpg" sizeBytes="150555" />
+        <file name="eng-hero.webp" path="assets/images/eng-hero.webp" extension="webp" sizeBytes="105470" />
+        <file name="france.avif" path="assets/images/france.avif" extension="avif" sizeBytes="2991" />
+        <file name="german.avif" path="assets/images/german.avif" extension="avif" sizeBytes="1521" />
+        <file name="hero (2).avif" path="assets/images/hero (2).avif" extension="avif" sizeBytes="28976" />
+        <file name="hero (3).avif" path="assets/images/hero (3).avif" extension="avif" sizeBytes="19653" />
+        <file name="hero (4).avif" path="assets/images/hero (4).avif" extension="avif" sizeBytes="28575" />
+        <file name="hero.avif" path="assets/images/hero.avif" extension="avif" sizeBytes="40534" />
+        <file name="hero-youth.avif" path="assets/images/hero-youth.avif" extension="avif" sizeBytes="37507" />
+        <file name="home-hero2.avif" path="assets/images/home-hero2.avif" extension="avif" sizeBytes="108008" />
+        <file name="home-hero2.png" path="assets/images/home-hero2.png" extension="png" sizeBytes="2864501" />
+        <file name="home-hero2.webp" path="assets/images/home-hero2.webp" extension="webp" sizeBytes="327654" />
+        <file name="home-hero3.avif" path="assets/images/home-hero3.avif" extension="avif" sizeBytes="110392" />
+        <file name="home-hero3.png" path="assets/images/home-hero3.png" extension="png" sizeBytes="2966068" />
+        <file name="home-hero3.webp" path="assets/images/home-hero3.webp" extension="webp" sizeBytes="399218" />
+        <file name="httpsstatic.wixstatic.commediae09be6_00f913ebff4a48dcb52ca6b0369218a7~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_00f913ebff4a48dcb52ca6b0369218a7~mv2.avif.avif" extension="avif" sizeBytes="3660" />
+        <file name="httpsstatic.wixstatic.commediae09be6_0633d3ca97c24e54b87cb4211b2817ff~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_0633d3ca97c24e54b87cb4211b2817ff~mv2.avif.avif" extension="avif" sizeBytes="8054" />
+        <file name="httpsstatic.wixstatic.commediae09be6_299456aafefb4adb85e178b7b1629283~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_299456aafefb4adb85e178b7b1629283~mv2.avif.avif" extension="avif" sizeBytes="16448" />
+        <file name="httpsstatic.wixstatic.commediae09be6_36f7be66fafe4a1c90a68bbf513643b9~mv2.png.png" path="assets/images/httpsstatic.wixstatic.commediae09be6_36f7be66fafe4a1c90a68bbf513643b9~mv2.png.png" extension="png" sizeBytes="2678204" />
+        <file name="httpsstatic.wixstatic.commediae09be6_36f7be66fafe4a1c90a68bbf513643b9~mv2.png.webp" path="assets/images/httpsstatic.wixstatic.commediae09be6_36f7be66fafe4a1c90a68bbf513643b9~mv2.png.webp" extension="webp" sizeBytes="286900" />
+        <file name="httpsstatic.wixstatic.commediae09be6_43f1277134a243b6878efaa729975e2f~mv2.png.png" path="assets/images/httpsstatic.wixstatic.commediae09be6_43f1277134a243b6878efaa729975e2f~mv2.png.png" extension="png" sizeBytes="2231366" />
+        <file name="httpsstatic.wixstatic.commediae09be6_43f1277134a243b6878efaa729975e2f~mv2.png.webp" path="assets/images/httpsstatic.wixstatic.commediae09be6_43f1277134a243b6878efaa729975e2f~mv2.png.webp" extension="webp" sizeBytes="196004" />
+        <file name="httpsstatic.wixstatic.commediae09be6_4ef989da170e4d25bdef8883794da69e~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_4ef989da170e4d25bdef8883794da69e~mv2.avif.avif" extension="avif" sizeBytes="18255" />
+        <file name="httpsstatic.wixstatic.commediae09be6_599419edcd9148569bb7e18e7e4cd14a~mv2.png.png" path="assets/images/httpsstatic.wixstatic.commediae09be6_599419edcd9148569bb7e18e7e4cd14a~mv2.png.png" extension="png" sizeBytes="2393747" />
+        <file name="httpsstatic.wixstatic.commediae09be6_599419edcd9148569bb7e18e7e4cd14a~mv2.png.webp" path="assets/images/httpsstatic.wixstatic.commediae09be6_599419edcd9148569bb7e18e7e4cd14a~mv2.png.webp" extension="webp" sizeBytes="247500" />
+        <file name="httpsstatic.wixstatic.commediae09be6_6cebf6f9bdc7479ca4f0e21b2b32c4ae~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_6cebf6f9bdc7479ca4f0e21b2b32c4ae~mv2.avif.avif" extension="avif" sizeBytes="4512" />
+        <file name="httpsstatic.wixstatic.commediae09be6_7ea4479e3a3649d8bfb897fc68a1b7cf~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_7ea4479e3a3649d8bfb897fc68a1b7cf~mv2.avif.avif" extension="avif" sizeBytes="2733" />
+        <file name="httpsstatic.wixstatic.commediae09be6_7fc3a825cc25464bac8669ec1fd0aad3~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_7fc3a825cc25464bac8669ec1fd0aad3~mv2.avif.avif" extension="avif" sizeBytes="221158" />
+        <file name="httpsstatic.wixstatic.commediae09be6_8c1088f09e814f95b1080ade6e7f2de2~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_8c1088f09e814f95b1080ade6e7f2de2~mv2.avif.avif" extension="avif" sizeBytes="8673" />
+        <file name="httpsstatic.wixstatic.commediae09be6_9a8e47d536b34432bba4b7607010de46~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_9a8e47d536b34432bba4b7607010de46~mv2.avif.avif" extension="avif" sizeBytes="23956" />
+        <file name="httpsstatic.wixstatic.commediae09be6_a1eed6bdd1e94bde96d2e22f3b8d42fc~mv2.png.png" path="assets/images/httpsstatic.wixstatic.commediae09be6_a1eed6bdd1e94bde96d2e22f3b8d42fc~mv2.png.png" extension="png" sizeBytes="2543924" />
+        <file name="httpsstatic.wixstatic.commediae09be6_a1eed6bdd1e94bde96d2e22f3b8d42fc~mv2.png.webp" path="assets/images/httpsstatic.wixstatic.commediae09be6_a1eed6bdd1e94bde96d2e22f3b8d42fc~mv2.png.webp" extension="webp" sizeBytes="256058" />
+        <file name="httpsstatic.wixstatic.commediae09be6_a3005ac5eeea4e8685b9d545d3265ece~mv2.png.png" path="assets/images/httpsstatic.wixstatic.commediae09be6_a3005ac5eeea4e8685b9d545d3265ece~mv2.png.png" extension="png" sizeBytes="3148760" />
+        <file name="httpsstatic.wixstatic.commediae09be6_a3005ac5eeea4e8685b9d545d3265ece~mv2.png.webp" path="assets/images/httpsstatic.wixstatic.commediae09be6_a3005ac5eeea4e8685b9d545d3265ece~mv2.png.webp" extension="webp" sizeBytes="448360" />
+        <file name="httpsstatic.wixstatic.commediae09be6_ba992d8cd30341eaae998e0c02cf9d33~mv2.png.png" path="assets/images/httpsstatic.wixstatic.commediae09be6_ba992d8cd30341eaae998e0c02cf9d33~mv2.png.png" extension="png" sizeBytes="2356336" />
+        <file name="httpsstatic.wixstatic.commediae09be6_ba992d8cd30341eaae998e0c02cf9d33~mv2.png.webp" path="assets/images/httpsstatic.wixstatic.commediae09be6_ba992d8cd30341eaae998e0c02cf9d33~mv2.png.webp" extension="webp" sizeBytes="305788" />
+        <file name="httpsstatic.wixstatic.commediae09be6_c3700fb7983e423ab808b5315d127cf4~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_c3700fb7983e423ab808b5315d127cf4~mv2.avif.avif" extension="avif" sizeBytes="14198" />
+        <file name="httpsstatic.wixstatic.commediae09be6_c45e71a9b760475ca2c09c33b2198c3d~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_c45e71a9b760475ca2c09c33b2198c3d~mv2.avif.avif" extension="avif" sizeBytes="17937" />
+        <file name="httpsstatic.wixstatic.commediae09be6_cee0e8059c8a41f5a2c265eed889ac03~mv2.jpg.jpg" path="assets/images/httpsstatic.wixstatic.commediae09be6_cee0e8059c8a41f5a2c265eed889ac03~mv2.jpg.jpg" extension="jpg" sizeBytes="2684897" />
+        <file name="httpsstatic.wixstatic.commediae09be6_cee0e8059c8a41f5a2c265eed889ac03~mv2.jpg.webp" path="assets/images/httpsstatic.wixstatic.commediae09be6_cee0e8059c8a41f5a2c265eed889ac03~mv2.jpg.webp" extension="webp" sizeBytes="803532" />
+        <file name="httpsstatic.wixstatic.commediae09be6_cfb70f7021fb4d1f9633ca366bcb4889~mv2.png.png" path="assets/images/httpsstatic.wixstatic.commediae09be6_cfb70f7021fb4d1f9633ca366bcb4889~mv2.png.png" extension="png" sizeBytes="94037" />
+        <file name="httpsstatic.wixstatic.commediae09be6_cfb70f7021fb4d1f9633ca366bcb4889~mv2.png.webp" path="assets/images/httpsstatic.wixstatic.commediae09be6_cfb70f7021fb4d1f9633ca366bcb4889~mv2.png.webp" extension="webp" sizeBytes="55780" />
+        <file name="httpsstatic.wixstatic.commediae09be6_d48b44769966453e8e89b0668cf06065~mv2.avif.avif" path="assets/images/httpsstatic.wixstatic.commediae09be6_d48b44769966453e8e89b0668cf06065~mv2.avif.avif" extension="avif" sizeBytes="15033" />
+        <file name="httpsstatic.wixstatic.commediae09be6_ec3b8ac09c624ce99c42c4bc5497100d~mv2.png.png" path="assets/images/httpsstatic.wixstatic.commediae09be6_ec3b8ac09c624ce99c42c4bc5497100d~mv2.png.png" extension="png" sizeBytes="2277494" />
+        <file name="httpsstatic.wixstatic.commediae09be6_ec3b8ac09c624ce99c42c4bc5497100d~mv2.png.webp" path="assets/images/httpsstatic.wixstatic.commediae09be6_ec3b8ac09c624ce99c42c4bc5497100d~mv2.png.webp" extension="webp" sizeBytes="200410" />
+        <file name="int-exams.png" path="assets/images/int-exams.png" extension="png" sizeBytes="1369292" />
+        <file name="int-exams.webp" path="assets/images/int-exams.webp" extension="webp" sizeBytes="97476" />
+        <file name="languages.png" path="assets/images/languages.png" extension="png" sizeBytes="1579788" />
+        <file name="languages.webp" path="assets/images/languages.webp" extension="webp" sizeBytes="112572" />
+        <file name="lms.png" path="assets/images/lms.png" extension="png" sizeBytes="656030" />
+        <file name="lms.webp" path="assets/images/lms.webp" extension="webp" sizeBytes="34072" />
+        <file name="oet.avif" path="assets/images/oet.avif" extension="avif" sizeBytes="5102" />
+        <file name="private.avif" path="assets/images/private.avif" extension="avif" sizeBytes="43314" />
+        <file name="spain.avif" path="assets/images/spain.avif" extension="avif" sizeBytes="6242" />
+        <file name="summer.png" path="assets/images/summer.png" extension="png" sizeBytes="2157268" />
+        <file name="summer.webp" path="assets/images/summer.webp" extension="webp" sizeBytes="215220" />
+        <file name="tofel.avif" path="assets/images/tofel.avif" extension="avif" sizeBytes="4951" />
+        <file name="youth.avif" path="assets/images/youth.avif" extension="avif" sizeBytes="20098" />
+        <file name="youth2.png" path="assets/images/youth2.png" extension="png" sizeBytes="2216608" />
+        <file name="youth2.webp" path="assets/images/youth2.webp" extension="webp" sizeBytes="144796" />
+      </folder>
+      <folder name="js" path="assets/js">
+        <file name="global.js" path="assets/js/global.js" extension="js" sizeBytes="95037" />
+        <file name="include-partials.js" path="assets/js/include-partials.js" extension="js" sizeBytes="28351" />
+      </folder>
+      <folder name="videos" path="assets/videos">
+      </folder>
+    </folder>
+    <folder name="contact-us" path="contact-us">
+      <file name="book-cons.html" path="contact-us/book-cons.html" extension="html" sizeBytes="175328" />
+      <file name="request-info.html" path="contact-us/request-info.html" extension="html" sizeBytes="159316" />
+      <file name="visit-our-centre.html" path="contact-us/visit-our-centre.html" extension="html" sizeBytes="241856" />
+    </folder>
+    <folder name="content" path="content">
+      <file name="Application Form Page.txt" path="content/Application Form Page.txt" extension="txt" sizeBytes="2954" />
+      <file name="careers.txt" path="content/careers.txt" extension="txt" sizeBytes="3414" />
+      <file name="Corporate Training.txt" path="content/Corporate Training.txt" extension="txt" sizeBytes="5281" />
+      <file name="English.txt" path="content/English.txt" extension="txt" sizeBytes="13121" />
+      <file name="French.txt" path="content/French.txt" extension="txt" sizeBytes="4010" />
+      <file name="german.txt" path="content/german.txt" extension="txt" sizeBytes="7140" />
+      <file name="hoempage_content.txt" path="content/hoempage_content.txt" extension="txt" sizeBytes="9267" />
+      <file name="Italian.txt" path="content/Italian.txt" extension="txt" sizeBytes="5780" />
+      <file name="Leadership Team.txt" path="content/Leadership Team.txt" extension="txt" sizeBytes="5222" />
+      <file name="mindspace.txt" path="content/mindspace.txt" extension="txt" sizeBytes="10232" />
+      <file name="Online Language Center.txt" path="content/Online Language Center.txt" extension="txt" sizeBytes="4424" />
+      <file name="Psychological Assessments.txt" path="content/Psychological Assessments.txt" extension="txt" sizeBytes="4928" />
+      <file name="robotics lab.txt" path="content/robotics lab.txt" extension="txt" sizeBytes="6297" />
+      <file name="Spanish.txt" path="content/Spanish.txt" extension="txt" sizeBytes="10788" />
+      <file name="summer camp 2026 FAQs.txt" path="content/summer camp 2026 FAQs.txt" extension="txt" sizeBytes="6061" />
+      <file name="testing.txt" path="content/testing.txt" extension="txt" sizeBytes="4554" />
+    </folder>
+    <folder name="Our Services" path="Our Services">
+      <folder name="int-exams" path="Our Services/int-exams">
+        <file name="ielts.html" path="Our Services/int-exams/ielts.html" extension="html" sizeBytes="213100" />
+        <file name="oet.html" path="Our Services/int-exams/oet.html" extension="html" sizeBytes="213360" />
+        <file name="pte.html" path="Our Services/int-exams/pte.html" extension="html" sizeBytes="212899" />
+      </folder>
+      <folder name="kids-youth" path="Our Services/kids-youth">
+        <file name="robotics.html" path="Our Services/kids-youth/robotics.html" extension="html" sizeBytes="172514" />
+        <file name="workshops.html" path="Our Services/kids-youth/workshops.html" extension="html" sizeBytes="157005" />
+      </folder>
+      <folder name="langauge-academy" path="Our Services/langauge-academy">
+        <folder name="eng" path="Our Services/langauge-academy/eng">
+          <file name="adults.html" path="Our Services/langauge-academy/eng/adults.html" extension="html" sizeBytes="221864" />
+          <file name="eng.html" path="Our Services/langauge-academy/eng/eng.html" extension="html" sizeBytes="213176" />
+          <file name="kids.html" path="Our Services/langauge-academy/eng/kids.html" extension="html" sizeBytes="219134" />
+          <file name="youth.html" path="Our Services/langauge-academy/eng/youth.html" extension="html" sizeBytes="217084" />
+        </folder>
+        <folder name="french" path="Our Services/langauge-academy/french">
+          <file name="french.html" path="Our Services/langauge-academy/french/french.html" extension="html" sizeBytes="191950" />
+        </folder>
+        <folder name="german" path="Our Services/langauge-academy/german">
+          <file name="german.html" path="Our Services/langauge-academy/german/german.html" extension="html" sizeBytes="191937" />
+        </folder>
+        <folder name="italian" path="Our Services/langauge-academy/italian">
+          <file name="italian.html" path="Our Services/langauge-academy/italian/italian.html" extension="html" sizeBytes="191964" />
+        </folder>
+        <folder name="spanish" path="Our Services/langauge-academy/spanish">
+          <file name="spanish.html" path="Our Services/langauge-academy/spanish/spanish.html" extension="html" sizeBytes="191896" />
+        </folder>
+        <file name="language-acad.html" path="Our Services/langauge-academy/language-acad.html" extension="html" sizeBytes="168936" />
+      </folder>
+      <file name="international-exams.html" path="Our Services/international-exams.html" extension="html" sizeBytes="167172" />
+      <file name="kids-youth.html" path="Our Services/kids-youth.html" extension="html" sizeBytes="164660" />
+      <file name="online-lang.html" path="Our Services/online-lang.html" extension="html" sizeBytes="166828" />
+    </folder>
+    <folder name="partials" path="partials">
+      <file name="global-footer.html" path="partials/global-footer.html" extension="html" sizeBytes="4371" />
+      <file name="global-loading-screen.html" path="partials/global-loading-screen.html" extension="html" sizeBytes="279" />
+      <file name="global-navbar.html" path="partials/global-navbar.html" extension="html" sizeBytes="6663" />
+    </folder>
+    <folder name="testing-centre" path="testing-centre">
+      <file name="celi.html" path="testing-centre/celi.html" extension="html" sizeBytes="156892" />
+      <file name="celi-cils.html" path="testing-centre/celi-cils.html" extension="html" sizeBytes="164898" />
+      <file name="cils.html" path="testing-centre/cils.html" extension="html" sizeBytes="156892" />
+      <file name="placment-test.html" path="testing-centre/placment-test.html" extension="html" sizeBytes="156955" />
+      <file name="Psychological-assessment.html" path="testing-centre/Psychological-assessment.html" extension="html" sizeBytes="183180" />
+      <file name="tofel.html" path="testing-centre/tofel.html" extension="html" sizeBytes="227134" />
+    </folder>
+    <file name="_redirects" path="_redirects" extension="" sizeBytes="1692" />
+    <file name="corporate-train.html" path="corporate-train.html" extension="html" sizeBytes="169854" />
+    <file name="image-map-apply-report.csv" path="image-map-apply-report.csv" extension="csv" sizeBytes="15305" />
+    <file name="index.html" path="index.html" extension="html" sizeBytes="25285" />
+    <file name="lang-form.html" path="lang-form.html" extension="html" sizeBytes="28204" />
+    <file name="mindspace.html" path="mindspace.html" extension="html" sizeBytes="212997" />
+    <file name="mindspace-form.html" path="mindspace-form.html" extension="html" sizeBytes="19915" />
+    <file name="privacy.html" path="privacy.html" extension="html" sizeBytes="26761" />
+    <file name="refund.html" path="refund.html" extension="html" sizeBytes="32308" />
+    <file name="summer-camp-2026.html" path="summer-camp-2026.html" extension="html" sizeBytes="306199" />
+    <file name="terms.html" path="terms.html" extension="html" sizeBytes="29282" />
+    <file name="testing-centre.html" path="testing-centre.html" extension="html" sizeBytes="194531" />
+  </structure>
+</project>

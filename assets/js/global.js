@@ -1291,40 +1291,19 @@ window.EACC_TRANSLATION = {
 
 /* OFFER POPUP SYSTEM */
 (function () {
-  var WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxgsU0np0A7vm8zTEp1KFJ05SP9kBx08n8SlPPrKLv2zoxX36Gk7ztdZHwv0xxBzO2lsQ/exec';
-  var SESSION_CLOSED_KEY = 'eacc-offer-popup-closed';
-  var LOCAL_OFFER_KEY = 'eacc-offer-code';
-  var LOCAL_PHONE_KEY = 'eacc-offer-phone';
-
-  function hasStorage(storage) {
+  var WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwIGMqkExjjSNxi0j5UQ4gsxEi_abc-CVfnhRG486Iv6NA3sTs4yKNGZHCVgoqF38Ei/exec';
+  function clearOfferPopupMemory() {
     try {
-      var testKey = '__eacc_offer_test__';
-      storage.setItem(testKey, '1');
-      storage.removeItem(testKey);
-      return true;
-    } catch (error) {
-      return false;
-    }
+      sessionStorage.removeItem('eacc-offer-popup-closed');
+    } catch (error) {}
+
+    try {
+      localStorage.removeItem('eacc-offer-code');
+      localStorage.removeItem('eacc-offer-phone');
+    } catch (error) {}
   }
 
-  var canUseSession = hasStorage(window.sessionStorage);
-  var canUseLocal = hasStorage(window.localStorage);
-
-  function getStoredOffer() {
-    if (!canUseLocal) return null;
-    var code = localStorage.getItem(LOCAL_OFFER_KEY);
-    if (!code) return null;
-    return {
-      code: code,
-      phone: localStorage.getItem(LOCAL_PHONE_KEY) || ''
-    };
-  }
-
-  function setStoredOffer(code, phone) {
-    if (!canUseLocal || !code) return;
-    localStorage.setItem(LOCAL_OFFER_KEY, code);
-    if (phone) localStorage.setItem(LOCAL_PHONE_KEY, phone);
-  }
+  clearOfferPopupMemory();
 
   function normalizePhone(value) {
     var phone = String(value || '').replace(/[\s\-().]/g, '');
@@ -1379,6 +1358,48 @@ window.EACC_TRANSLATION = {
     var status = String(payload.status || payload.Status || payload.result || '').toLowerCase();
     return status === 'success' || status === 'ok' || status === 'done' || Boolean(extractOfferCode(payload));
   }
+  function submitOfferJsonp(values) {
+    return new Promise(function (resolve, reject) {
+      var callbackName = 'eaccOfferCallback_' + Date.now() + '_' + Math.random().toString(36).slice(2);
+      var script = document.createElement('script');
+      var timeoutId = window.setTimeout(function () {
+        cleanup();
+        reject(new Error('The offer service took too long to respond. Please try again.'));
+      }, 18000);
+
+      function cleanup() {
+        window.clearTimeout(timeoutId);
+        try { delete window[callbackName]; } catch (error) { window[callbackName] = undefined; }
+        if (script.parentNode) script.parentNode.removeChild(script);
+      }
+
+      window[callbackName] = function (payload) {
+        cleanup();
+        resolve(payload);
+      };
+
+      script.onerror = function () {
+        cleanup();
+        reject(new Error('Could not connect to the offer service. Please try again.'));
+      };
+
+      script.src = WEB_APP_URL +
+        '?callback=' + encodeURIComponent(callbackName) +
+        '&name=' + encodeURIComponent(values.name) +
+        '&phone=' + encodeURIComponent(values.phone) +
+        '&localPhone=' + encodeURIComponent(toLocalEgyptPhone(values.phone)) +
+        '&_=' + Date.now();
+
+      document.body.appendChild(script);
+    });
+  }
+
+  async function submitOfferRequest(values) {
+    // Google Apps Script Web Apps often redirect /exec requests and can block fetch()
+    // responses with CORS. JSONP avoids that while the Apps Script still enforces
+    // one offer code per phone number server-side.
+    return submitOfferJsonp(values);
+  }
 
   function parseResponseText(text) {
     try {
@@ -1430,8 +1451,6 @@ window.EACC_TRANSLATION = {
     if (window.__eaccOfferPopupLoaded || !document.body) return;
     window.__eaccOfferPopupLoaded = true;
 
-    if (canUseSession && sessionStorage.getItem(SESSION_CLOSED_KEY) === '1') return;
-
     var overlay = createPopup();
     var modal = overlay.querySelector('.eacc-offer-modal');
     var closeButton = overlay.querySelector('.eacc-offer-close');
@@ -1455,7 +1474,6 @@ window.EACC_TRANSLATION = {
     function closePopup() {
       overlay.classList.remove('is-visible');
       overlay.setAttribute('aria-hidden', 'true');
-      if (canUseSession) sessionStorage.setItem(SESSION_CLOSED_KEY, '1');
       if (previousFocus && typeof previousFocus.focus === 'function') previousFocus.focus();
     }
 
@@ -1464,12 +1482,7 @@ window.EACC_TRANSLATION = {
       overlay.classList.add('is-visible');
       overlay.setAttribute('aria-hidden', 'false');
       setTimeout(function () {
-        var stored = getStoredOffer();
-        if (stored && stored.code) {
-          closeButton.focus();
-        } else {
-          nameInput.focus();
-        }
+        nameInput.focus();
       }, 80);
     }
 
@@ -1526,31 +1539,12 @@ window.EACC_TRANSLATION = {
       submitButton.textContent = 'Submitting...';
 
       try {
-        var requestPayload = {
-          name: values.name,
-          Name: values.name,
-          phone: values.phone,
-          Phone: values.phone,
-          localPhone: toLocalEgyptPhone(values.phone)
-        };
-        var fallbackUrl = WEB_APP_URL + '?name=' + encodeURIComponent(values.name) + '&phone=' + encodeURIComponent(values.phone);
-        var response = await fetch(fallbackUrl, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'text/plain;charset=utf-8'
-          },
-          body: JSON.stringify(requestPayload)
-        });
-
-        var text = await response.text();
-        var payload = parseResponseText(text);
+        var payload = await submitOfferRequest(values);
         var code = extractOfferCode(payload);
 
-        if (!response.ok || !isSuccessfulResponse(payload) || !code) {
+        if (!isSuccessfulResponse(payload) || !code) {
           throw new Error((payload && payload.message) || 'We could not complete your registration right now. Please try again.');
         }
-
-        setStoredOffer(code, values.phone);
         showSuccess(code, isDuplicateResponse(payload));
       } catch (error) {
         showStatus(error && error.message ? error.message : 'Something went wrong. Please try again.');
@@ -1581,11 +1575,6 @@ window.EACC_TRANSLATION = {
     });
     form.addEventListener('submit', submitOffer);
 
-    var storedOffer = getStoredOffer();
-    if (storedOffer && storedOffer.code) {
-      showSuccess(storedOffer.code, true);
-    }
-
     setTimeout(openPopup, 900);
   }
 
@@ -1596,5 +1585,9 @@ window.EACC_TRANSLATION = {
   }
   document.addEventListener('eacc:partials-loaded', initOfferPopup);
 })();
+
+
+
+
 
 
