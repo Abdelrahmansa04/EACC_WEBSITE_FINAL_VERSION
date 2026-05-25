@@ -626,6 +626,41 @@
     <img loading="lazy" src="assets/icons/wp-icon.webp" alt="" aria-hidden="true">
   </a>
 
+  <!-- Website Launch Offer: index-only popup loaded from offers.html. -->
+  <script>
+    (function () {
+      var frame = document.createElement('iframe');
+      frame.id = 'eaccLaunchOfferFrame';
+      frame.title = 'EACC New Era Launch Offer';
+      frame.src = 'offers.html';
+      frame.setAttribute('aria-label', 'EACC website launch offer');
+      frame.setAttribute('sandbox', 'allow-scripts allow-forms');
+      frame.setAttribute('referrerpolicy', 'no-referrer');
+      frame.style.cssText = [
+        'position:fixed',
+        'inset:0',
+        'width:100%',
+        'height:100%',
+        'border:0',
+        'z-index:9500',
+        'background:transparent'
+      ].join(';');
+
+      function removeOfferFrame() {
+        if (frame && frame.parentNode) frame.parentNode.removeChild(frame);
+        window.removeEventListener('message', handleOfferMessage);
+      }
+
+      function handleOfferMessage(event) {
+        if (!event.data || event.data.type !== 'EACC_OFFER_CLOSE') return;
+        removeOfferFrame();
+      }
+
+      window.addEventListener('message', handleOfferMessage);
+      document.body.appendChild(frame);
+    })();
+  </script>
+
   <!-- Global Scripts And Footer -->
   <script src="assets/js/include-partials.js"></script>
 

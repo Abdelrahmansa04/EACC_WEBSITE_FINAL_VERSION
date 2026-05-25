@@ -1,0 +1,913 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>EACC Launch Offer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --eacc-navy: #0d1457;
+      --eacc-blue: #202a86;
+      --eacc-blue-soft: #eef1ff;
+      --eacc-gold: #f5a623;
+      --eacc-gold-light: #ffd76a;
+      --eacc-cream: #fff8e8;
+      --eacc-white: #ffffff;
+      --eacc-text: #172044;
+      --eacc-muted: #67708e;
+      --eacc-line: rgba(13, 20, 87, 0.12);
+      --eacc-danger: #b42318;
+      --eacc-success: #0b7a4b;
+      --eacc-shadow: 0 30px 90px rgba(8, 13, 58, 0.34);
+      --eacc-body: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --eacc-heading: "Playfair Display", Georgia, serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      min-height: 100%;
+      margin: 0;
+    }
+
+    body {
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: max(18px, env(safe-area-inset-top)) max(14px, env(safe-area-inset-right)) max(18px, env(safe-area-inset-bottom)) max(14px, env(safe-area-inset-left));
+      background:
+        radial-gradient(circle at 18% 9%, rgba(255, 215, 106, 0.28), transparent 30%),
+        radial-gradient(circle at 92% 18%, rgba(32, 42, 134, 0.42), transparent 36%),
+        linear-gradient(140deg, rgba(4, 8, 36, 0.84), rgba(10, 17, 69, 0.72));
+      color: var(--eacc-text);
+      font-family: var(--eacc-body);
+      overflow-x: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: rgba(4, 8, 36, 0.2);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+
+    button,
+    input {
+      font: inherit;
+    }
+
+    button {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    .offer-modal {
+      position: relative;
+      width: min(100%, 480px);
+      max-height: min(92svh, 760px);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.68);
+      border-radius: 34px;
+      background:
+        linear-gradient(150deg, rgba(255, 215, 106, 0.18), transparent 32%),
+        linear-gradient(180deg, #ffffff 0%, #f8f9ff 100%);
+      box-shadow: var(--eacc-shadow);
+      animation: offerEnter 460ms cubic-bezier(.2,.9,.2,1) both;
+      isolation: isolate;
+    }
+
+    .offer-modal::before {
+      content: "";
+      position: absolute;
+      inset: 0 0 auto;
+      height: 7px;
+      background: linear-gradient(90deg, var(--eacc-gold), var(--eacc-gold-light), var(--eacc-blue));
+      z-index: 3;
+    }
+
+    .offer-modal::after {
+      content: "";
+      position: absolute;
+      right: -70px;
+      top: -70px;
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 166, 35, 0.18), transparent 68%);
+      pointer-events: none;
+    }
+
+    .offer-scroll {
+      max-height: inherit;
+      overflow-y: auto;
+      overscroll-behavior: contain;
+      scrollbar-width: thin;
+    }
+
+    .offer-close {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      z-index: 5;
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border: 1px solid rgba(13, 20, 87, 0.1);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.86);
+      color: var(--eacc-navy);
+      font-size: 25px;
+      line-height: 1;
+      cursor: pointer;
+      box-shadow: 0 12px 28px rgba(13, 20, 87, 0.1);
+      transition: transform 180ms ease, border-color 180ms ease, background 180ms ease;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .offer-close:hover,
+    .offer-close:focus-visible {
+      transform: rotate(90deg) scale(1.03);
+      border-color: rgba(245, 166, 35, 0.48);
+      background: #fff;
+      outline: none;
+    }
+
+    .offer-content {
+      position: relative;
+      z-index: 2;
+      padding: 34px 30px 28px;
+    }
+
+    .offer-badge-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      padding-right: 48px;
+    }
+
+    .offer-kicker,
+    .offer-saving {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      min-height: 32px;
+      padding: 0 12px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .offer-kicker {
+      border: 1px solid rgba(245, 166, 35, 0.34);
+      background: rgba(245, 166, 35, 0.13);
+      color: var(--eacc-navy);
+    }
+
+    .offer-saving {
+      border: 1px solid rgba(13, 20, 87, 0.08);
+      background: var(--eacc-blue-soft);
+      color: var(--eacc-blue);
+    }
+
+    .offer-title {
+      margin: 0 0 10px;
+      color: var(--eacc-navy);
+      font-family: var(--eacc-heading);
+      font-size: clamp(2.1rem, 8vw, 3.15rem);
+      line-height: 0.98;
+      letter-spacing: -0.035em;
+      text-wrap: balance;
+    }
+
+    .offer-headline {
+      margin: 0 0 12px;
+      color: var(--eacc-blue);
+      font-size: clamp(1rem, 3.4vw, 1.17rem);
+      font-weight: 900;
+      line-height: 1.45;
+      text-wrap: balance;
+    }
+
+    .offer-copy {
+      margin: 0;
+      color: var(--eacc-muted);
+      font-size: 0.97rem;
+      line-height: 1.68;
+    }
+
+    .benefit-list {
+      display: grid;
+      gap: 8px;
+      margin: 18px 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .benefit-list li {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: #344060;
+      font-size: 0.9rem;
+      font-weight: 750;
+    }
+
+    .benefit-list span {
+      width: 24px;
+      height: 24px;
+      display: inline-grid;
+      place-items: center;
+      flex: 0 0 auto;
+      border-radius: 50%;
+      background: rgba(245, 166, 35, 0.14);
+    }
+
+    .offer-form {
+      display: grid;
+      gap: 14px;
+      margin-top: 24px;
+    }
+
+    .field {
+      display: grid;
+      gap: 8px;
+    }
+
+    .field label {
+      color: var(--eacc-navy);
+      font-size: 0.88rem;
+      font-weight: 900;
+    }
+
+    .input-wrap {
+      position: relative;
+    }
+
+    .input-icon {
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      transform: translateY(-50%);
+      width: 26px;
+      height: 26px;
+      display: grid;
+      place-items: center;
+      border-radius: 10px;
+      background: rgba(13, 20, 87, 0.055);
+      color: var(--eacc-blue);
+      font-size: 0.9rem;
+      pointer-events: none;
+    }
+
+    .field input {
+      width: 100%;
+      min-height: 58px;
+      padding: 0 15px 0 50px;
+      border: 1px solid var(--eacc-line);
+      border-radius: 19px;
+      background: rgba(255, 255, 255, 0.92);
+      color: var(--eacc-navy);
+      font-size: 1rem;
+      font-weight: 800;
+      box-shadow: 0 10px 25px rgba(13, 20, 87, 0.045);
+      transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease, background 180ms ease;
+      appearance: none;
+    }
+
+    .field input::placeholder {
+      color: rgba(103, 112, 142, 0.74);
+      font-weight: 600;
+    }
+
+    .field input:focus {
+      border-color: rgba(245, 166, 35, 0.82);
+      background: #fff;
+      box-shadow: 0 0 0 4px rgba(245, 166, 35, 0.16), 0 16px 34px rgba(13, 20, 87, 0.08);
+      outline: none;
+      transform: translateY(-1px);
+    }
+
+    .claim-button,
+    .secondary-button {
+      width: 100%;
+      min-height: 60px;
+      border: 0;
+      border-radius: 999px;
+      cursor: pointer;
+      font-weight: 950;
+      letter-spacing: -0.01em;
+      transition: transform 190ms ease, box-shadow 190ms ease, opacity 190ms ease;
+    }
+
+    .claim-button {
+      position: relative;
+      margin-top: 4px;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--eacc-gold), var(--eacc-gold-light));
+      color: var(--eacc-navy);
+      box-shadow: 0 18px 40px rgba(245, 166, 35, 0.32);
+    }
+
+    .claim-button::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,.34), transparent);
+      transform: translateX(-120%);
+      transition: transform 600ms ease;
+    }
+
+    .claim-button:hover::after,
+    .claim-button:focus-visible::after {
+      transform: translateX(120%);
+    }
+
+    .claim-button:hover,
+    .claim-button:focus-visible,
+    .secondary-button:hover,
+    .secondary-button:focus-visible {
+      transform: translateY(-2px);
+      outline: none;
+    }
+
+    .claim-button:disabled {
+      cursor: wait;
+      opacity: 0.72;
+      transform: none;
+    }
+
+    .trust-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      margin-top: 12px;
+      color: var(--eacc-muted);
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .offer-note {
+      margin: 15px 0 0;
+      color: var(--eacc-muted);
+      font-size: 0.84rem;
+      line-height: 1.6;
+      text-align: center;
+    }
+
+    .message {
+      display: none;
+      margin-top: 16px;
+      padding: 13px 14px;
+      border-radius: 16px;
+      border: 1px solid rgba(180, 35, 24, 0.18);
+      background: rgba(180, 35, 24, 0.08);
+      color: var(--eacc-danger);
+      font-size: 0.9rem;
+      font-weight: 800;
+      line-height: 1.5;
+    }
+
+    .message.is-visible {
+      display: block;
+    }
+
+    .success-state {
+      display: none;
+      margin-top: 22px;
+      padding: 24px;
+      border-radius: 28px;
+      background:
+        radial-gradient(circle at 20% 8%, rgba(255, 215, 106, 0.20), transparent 32%),
+        linear-gradient(145deg, #0d1457, #1a237e);
+      color: #fff;
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.14), 0 24px 50px rgba(13, 20, 87, 0.26);
+    }
+
+    .success-state.is-visible {
+      display: block;
+      animation: successEnter 300ms ease both;
+    }
+
+    .success-icon {
+      width: 58px;
+      height: 58px;
+      display: grid;
+      place-items: center;
+      margin: 0 auto 14px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, var(--eacc-gold), var(--eacc-gold-light));
+      color: var(--eacc-navy);
+      font-size: 1.65rem;
+      box-shadow: 0 18px 34px rgba(245, 166, 35, 0.24);
+    }
+
+    .success-state h3 {
+      margin: 0 0 8px;
+      font-family: var(--eacc-heading);
+      font-size: clamp(1.8rem, 7vw, 2.4rem);
+      line-height: 1;
+      text-align: center;
+      letter-spacing: -0.02em;
+    }
+
+    .success-copy {
+      margin: 0;
+      color: rgba(255, 255, 255, 0.84);
+      font-size: 0.95rem;
+      line-height: 1.65;
+      text-align: center;
+    }
+
+    .code-box {
+      display: grid;
+      place-items: center;
+      min-height: 72px;
+      margin: 18px 0;
+      padding: 14px 12px;
+      border: 1px dashed rgba(255, 215, 106, 0.86);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--eacc-gold-light);
+      font-size: clamp(1.45rem, 7vw, 2rem);
+      font-weight: 950;
+      letter-spacing: 0.09em;
+      text-align: center;
+      box-shadow: inset 0 0 22px rgba(255, 255, 255, 0.045);
+      user-select: all;
+    }
+
+    .save-note {
+      display: flex;
+      gap: 10px;
+      margin-top: 16px;
+      padding: 13px;
+      border-radius: 17px;
+      background: rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 0.84rem;
+      font-weight: 700;
+      line-height: 1.5;
+    }
+
+    .secondary-button {
+      margin-top: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      background: rgba(255, 255, 255, 0.12);
+      color: #fff;
+      box-shadow: none;
+    }
+
+    @keyframes offerEnter {
+      from {
+        opacity: 0;
+        transform: translateY(22px) scale(0.96);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes successEnter {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (min-width: 860px) {
+      .offer-modal {
+        width: min(92vw, 780px);
+      }
+
+      .offer-content {
+        display: grid;
+        grid-template-columns: 1.02fr 0.98fr;
+        gap: 30px;
+        align-items: center;
+        padding: 44px;
+      }
+
+      .offer-intro {
+        padding-right: 4px;
+      }
+
+      .offer-form-wrap {
+        padding: 22px;
+        border: 1px solid rgba(13, 20, 87, 0.08);
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.68);
+        box-shadow: 0 20px 45px rgba(13, 20, 87, 0.08);
+      }
+
+      .offer-title {
+        font-size: 3.2rem;
+      }
+    }
+
+    @media (max-width: 560px) {
+      body {
+        align-items: end;
+        padding: 12px 10px max(10px, env(safe-area-inset-bottom));
+      }
+
+      .offer-modal {
+        width: 100%;
+        max-height: calc(100svh - 18px);
+        border-radius: 30px 30px 24px 24px;
+        animation-name: mobileSheetEnter;
+      }
+
+      .offer-modal::before {
+        height: 6px;
+      }
+
+      .offer-modal::after {
+        width: 140px;
+        height: 140px;
+        right: -64px;
+        top: -54px;
+      }
+
+      .offer-scroll {
+        max-height: calc(100svh - 18px);
+      }
+
+      .offer-content {
+        padding: 28px 18px 22px;
+      }
+
+      .offer-close {
+        top: 14px;
+        right: 14px;
+        width: 38px;
+        height: 38px;
+        font-size: 23px;
+      }
+
+      .offer-badge-row {
+        gap: 8px;
+        margin-bottom: 16px;
+        padding-right: 42px;
+      }
+
+      .offer-kicker,
+      .offer-saving {
+        min-height: 30px;
+        padding: 0 10px;
+        font-size: 0.66rem;
+      }
+
+      .offer-title {
+        max-width: 94%;
+        font-size: clamp(2rem, 10.5vw, 2.6rem);
+      }
+
+      .offer-headline {
+        font-size: 1rem;
+      }
+
+      .offer-copy {
+        font-size: 0.92rem;
+        line-height: 1.62;
+      }
+
+      .benefit-list {
+        grid-template-columns: 1fr;
+        margin-top: 15px;
+      }
+
+      .benefit-list li {
+        font-size: 0.84rem;
+      }
+
+      .offer-form-wrap {
+        margin-top: 20px;
+        padding: 16px;
+        border: 1px solid rgba(13, 20, 87, 0.08);
+        border-radius: 24px;
+        background: rgba(255,255,255,0.7);
+      }
+
+      .offer-form {
+        margin-top: 0;
+        gap: 13px;
+      }
+
+      .field input {
+        min-height: 56px;
+        border-radius: 18px;
+        font-size: 16px;
+      }
+
+      .claim-button,
+      .secondary-button {
+        min-height: 58px;
+      }
+
+      .success-state {
+        margin-top: 0;
+        padding: 22px 16px;
+        border-radius: 24px;
+      }
+
+      .code-box {
+        min-height: 68px;
+        letter-spacing: 0.07em;
+      }
+    }
+
+    @media (max-width: 370px) {
+      .offer-content {
+        padding: 24px 14px 18px;
+      }
+
+      .offer-title {
+        font-size: 1.9rem;
+      }
+
+      .offer-form-wrap {
+        padding: 13px;
+      }
+
+      .offer-kicker,
+      .offer-saving {
+        font-size: 0.61rem;
+      }
+    }
+
+    @keyframes mobileSheetEnter {
+      from {
+        opacity: 0;
+        transform: translateY(42px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="offer-modal" role="dialog" aria-modal="true" aria-labelledby="offerTitle" aria-describedby="offerDescription">
+    <button class="offer-close" type="button" aria-label="Close launch offer">&times;</button>
+
+    <div class="offer-scroll">
+      <section class="offer-content">
+        <div class="offer-intro">
+          <div class="offer-badge-row">
+            <span class="offer-kicker">🎉 EACC New Era</span>
+            <span class="offer-saving">✨ 5% Launch Offer</span>
+          </div>
+
+          <h1 class="offer-title" id="offerTitle">Launching a New Era of Learning, Wellbeing, and Future Skills</h1>
+
+          <p class="offer-headline" id="offerDescription">
+            🚀 Celebrate our new website launch with an exclusive 5% discount on selected services.
+          </p>
+
+          <p class="offer-copy">
+            Claim your personal launch code now. Our team will verify it when you visit the centre.
+          </p>
+
+          <ul class="benefit-list" aria-label="Offer benefits">
+            <li><span aria-hidden="true">🎓</span> Selected EACC services</li>
+            <li><span aria-hidden="true">⚡</span> Instant code generation</li>
+            <li><span aria-hidden="true">🏫</span> Redeemable at the centre</li>
+          </ul>
+        </div>
+
+        <div class="offer-form-wrap">
+          <form class="offer-form" id="offerForm" novalidate>
+            <div class="field">
+              <label for="offerName">Full name</label>
+              <div class="input-wrap">
+                <span class="input-icon" aria-hidden="true">👤</span>
+                <input id="offerName" name="name" type="text" autocomplete="name" placeholder="Enter your full name" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="offerPhone">Mobile phone</label>
+              <div class="input-wrap">
+                <span class="input-icon" aria-hidden="true">📱</span>
+                <input id="offerPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01012345678" required>
+              </div>
+            </div>
+
+            <button class="claim-button" id="claimButton" type="submit">🎁 Claim Your 5% Discount</button>
+
+            <div class="trust-row" aria-hidden="true">
+              <span>🔒</span>
+              <span>Your details are used only for offer verification.</span>
+            </div>
+          </form>
+
+          <p class="offer-note">Limited-time launch offer. Terms and conditions apply.</p>
+
+          <div class="message" id="offerMessage" aria-live="polite"></div>
+
+          <section class="success-state" id="successState" aria-live="polite">
+            <span class="success-icon" aria-hidden="true">🎉</span>
+            <h3>Launch code ready!</h3>
+            <p class="success-copy">Your exclusive EACC launch discount code is:</p>
+
+            <div class="code-box" id="generatedCode">EACC-XXXXXX</div>
+
+            <div class="save-note">
+              <span aria-hidden="true">📸</span>
+              <span>Please screenshot this page or save your discount code. You will need to show it when visiting the centre to redeem your launch offer.</span>
+            </div>
+
+            <button class="secondary-button" type="button" id="doneButton">Done</button>
+          </section>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    (function () {
+      "use strict";
+
+      // Paste your Google Apps Script Web App URL here if it changes.
+      var APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxPfByxTf0stkZqk-28Unu41WIVe3A2Q3z47Xm9omG7xwqSHX72EdwLc-7UkB6N6u5rQQ/exec";
+
+      var form = document.getElementById("offerForm");
+      var nameInput = document.getElementById("offerName");
+      var phoneInput = document.getElementById("offerPhone");
+      var claimButton = document.getElementById("claimButton");
+      var message = document.getElementById("offerMessage");
+      var successState = document.getElementById("successState");
+      var generatedCode = document.getElementById("generatedCode");
+      var closeButton = document.querySelector(".offer-close");
+      var doneButton = document.getElementById("doneButton");
+
+      function closeOffer() {
+        if (window.parent && window.parent !== window) {
+          window.parent.postMessage({ type: "EACC_OFFER_CLOSE" }, "*");
+        }
+      }
+
+      function showMessage(text) {
+        message.textContent = text;
+        message.classList.add("is-visible");
+      }
+
+      function clearMessage() {
+        message.textContent = "";
+        message.classList.remove("is-visible");
+      }
+
+      function generateDiscountCode() {
+        var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        var code = "";
+
+        if (window.crypto && window.crypto.getRandomValues) {
+          var values = new Uint32Array(6);
+          window.crypto.getRandomValues(values);
+
+          for (var i = 0; i < values.length; i += 1) {
+            code += alphabet[values[i] % alphabet.length];
+          }
+        } else {
+          for (var j = 0; j < 6; j += 1) {
+            code += alphabet[Math.floor(Math.random() * alphabet.length)];
+          }
+        }
+
+        return "EACC-" + code;
+      }
+
+      function normalizePhone(value) {
+        return String(value || "")
+          .trim()
+          .replace(/\s+/g, "")
+          .replace(/[^\d+]/g, "");
+      }
+
+      function isValidPhone(phone) {
+        return /^\+?\d{8,15}$/.test(phone);
+      }
+
+      async function submitToAppsScript(payload) {
+        await fetch(APPS_SCRIPT_URL, {
+          method: "POST",
+          mode: "no-cors",
+          body: JSON.stringify(payload)
+        });
+
+        return {
+          success: true,
+          code: payload.code
+        };
+      }
+
+      function showSuccess(code) {
+        form.style.display = "none";
+        document.querySelector(".offer-note").style.display = "none";
+        generatedCode.textContent = code;
+        successState.classList.add("is-visible");
+        successState.scrollIntoView({ behavior: "smooth", block: "center" });
+      }
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        clearMessage();
+
+        var name = nameInput.value.trim();
+        var phone = normalizePhone(phoneInput.value);
+
+        if (!name) {
+          showMessage("Please enter your full name.");
+          nameInput.focus();
+          return;
+        }
+
+        if (!phone) {
+          showMessage("Please enter your mobile phone number.");
+          phoneInput.focus();
+          return;
+        }
+
+        if (!isValidPhone(phone)) {
+          showMessage("Please enter a valid mobile phone number.");
+          phoneInput.focus();
+          return;
+        }
+
+        var code = generateDiscountCode();
+
+        claimButton.disabled = true;
+        claimButton.textContent = "Saving your offer...";
+
+        try {
+          var response = await submitToAppsScript({
+            name: name,
+            phone: phone,
+            code: code
+          });
+
+          if (!response || response.success !== true) {
+            throw new Error((response && response.message) || "Could not save your launch offer. Please try again.");
+          }
+
+          showSuccess(response.code || code);
+        } catch (error) {
+          showMessage(error.message || "Something went wrong. Please try again.");
+        } finally {
+          claimButton.disabled = false;
+          claimButton.textContent = "🎁 Claim Your 5% Discount";
+        }
+      }
+
+      closeButton.addEventListener("click", closeOffer);
+      doneButton.addEventListener("click", closeOffer);
+      form.addEventListener("submit", handleSubmit);
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") closeOffer();
+      });
+
+      window.setTimeout(function () {
+        nameInput.focus({ preventScroll: true });
+      }, 220);
+    })();
+  </script>
+</body>
+</html>
