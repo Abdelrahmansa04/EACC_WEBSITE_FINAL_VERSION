@@ -1,4 +1,4 @@
-/* --- Extracted script block 1 --- */
+﻿/* --- Extracted script block 1 --- */
 (() => {
 /* MOBILE NAV */
 
@@ -25,8 +25,8 @@
         close: 'Close menu'
       },
       ar: {
-        open: 'فتح القائمة',
-        close: 'إغلاق القائمة'
+        open: 'ÙØªØ­ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø©',
+        close: 'Ø¥ØºÙ„Ø§Ù‚ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø©'
       }
     };
 
@@ -34,177 +34,177 @@
 
     const translations = {
       ar: {
-        'Egyptian American Center':'المركز المصري الأمريكي',
-        'Home':'الرئيسية',
-        'About Us':'من نحن',
-        'Who We Are':'من نحن',
-        'Explore Our Camps':'استكشف مخيماتنا',
-        'FAQs':'الأسئلة الشائعة',
-        'Programs':'البرامج',
-        'Mind Space': 'مايند سبيس',
-        'Testing': 'الاختبارات',
-        'Corporate': 'التدريب المؤسسي',
-        'About': 'عن المركز',
-        'Contact':'تواصل معنا',
-        'About Mind Space': 'عن مايند سبيس',
-        'Therapy Services': 'خدمات العلاج',
-        'Assessments': 'التقييمات',
-        'Family Support': 'دعم الأسرة',
-        'Book an Appointment': 'احجز موعد',
-        'Authorized Testing Center': 'مركز اختبارات معتمد',
-        'Placement Test':'اختبار تحديد المستوى',
-        'Psychological Assessment': 'التقييم النفسي',
-        'Kids &amp; Youth Academy': 'أكاديمية الأطفال والشباب',
-        'Kids & Youth Academy': 'أكاديمية الأطفال والشباب',
-        'English for Kids':'إنجليزي للأطفال',
-        'Teen Programs': 'برامج المراهقين',
-        'Robotics Lab': 'معمل الروبوتات',
-        'Online Language Center': 'مركز اللغات أونلاين',
-        'Workshops': 'ورش العمل',
-        'Our Story': 'قصتنا',
-        'Leadership Team': 'فريق القيادة',
-        'Partners &amp; Accreditations': 'الشركاء والاعتمادات',
-        'Partners & Accreditations': 'الشركاء والاعتمادات',
-        'Careers': 'الوظائف',
-        'FAQ': 'الأسئلة الشائعة',
-        'Empowering Minds. Building Futures.': 'تمكين العقول. بناء المستقبل.',
-        'Holistic Education. Lasting Impact.': 'تعليم متكامل. أثر دائم.',
-        'Since 1996, the Egyptian American Cultural Center has guided more than 60,000 graduates toward stronger communication, greater confidence, and a global outlook through accredited language programs, international exam preparation, and professional development.': 'منذ عام 1996، ساعد المركز الثقافي المصري الأمريكي أكثر من 60,000 خريج على بناء تواصل أقوى وثقة أكبر ونظرة عالمية من خلال برامج لغوية معتمدة والتحضير للاختبارات الدولية والتطوير المهني.',
-        'Expanding Our Offerings in 2026': 'توسيع خدماتنا في 2026',
-        'Excellence today requires more than language proficiency alone. EACC is extending its services to support learners across academics, wellbeing, creativity, and technology.': 'التميز اليوم يحتاج أكثر من إتقان اللغة فقط. توسّع EACC خدماتها لدعم المتعلمين في الدراسة والرفاه النفسي والإبداع والتكنولوجيا.',
-        'Integrated Pathways for Growth': 'مسارات متكاملة للنمو',
-        'Complementing our language programs, new services in psychological wellbeing, robotics, and creative arts help children, youth, and adults build resilience, critical thinking, and the confidence to succeed long term.': 'إلى جانب برامج اللغات، تساعد خدمات جديدة في الرفاه النفسي والروبوتات والفنون الإبداعية الأطفال والشباب والكبار على بناء المرونة والتفكير النقدي والثقة للنجاح على المدى الطويل.',
-        'Summer Camp 2026':'المخيم الصيفي 2026',
-        'Languages':'اللغات',
-        'Activities':'الأنشطة',
-        'Preparation Courses':'دورات التحضير',
-        'Contact':'تواصل معنا',
-        'Apply Now':'قدّم الآن',
-        'LMS Login': 'دخول LMS',
-        'Unlock Your Future With Global Education Experiences':'افتح أبواب مستقبلك بتجارب تعليمية عالمية',
-        'EACC empowers students through premium language programs, international camps, test preparation courses, and immersive educational experiences designed for future success.':'تمكّن EACC الطلاب عبر برامج لغوية متميزة ومعسكرات دولية ودورات تحضير وتجارب تعليمية ثرية مصممة لنجاح المستقبل.',
-        'Explore Programs':'استكشف البرامج',
-        'Contact Us':'تواصل معنا',
-        'Why Students Choose EACC':'لماذا يختار الطلاب EACC',
-        'More than 25 years of excellence in language education, cultural exchange, and international preparation programs.':'أكثر من 25 عامًا من التميز في تعليم اللغات والتبادل الثقافي وبرامج الإعداد الدولية.',
-        'Thousands of Students':'آلاف الطلاب',
-        'Trusted by learners from all age groups seeking premium education experiences.':'موثوق بها من متعلمين من جميع الفئات العمرية الباحثين عن تجارب تعليمية متميزة.',
-        'Certified Programs':'برامج معتمدة',
-        'Internationally recognized language and preparation courses.':'دورات لغات وتحضير معترف بها دوليًا.',
-        'Global Opportunities':'فرص عالمية',
-        'Prepare for study abroad, career growth, and global communication.':'استعد للدراسة بالخارج وتطور المسار المهني والتواصل العالمي.',
-        'Flexible Learning':'تعلم مرن',
-        'Study online or offline with adaptable modern learning methods.':'تعلّم أونلاين أو حضوريًا بطرق تعلم حديثة ومرنة.',
-        'Learn More About EACC':'اعرف المزيد عن EACC',
-        'Explore EACC learning experiences, from summer camps to languages, activities, and creative programs.':'استكشف تجارب التعلم في EACC، من المخيمات الصيفية إلى اللغات والأنشطة والبرامج الإبداعية.',
-        'MyVoice summer experience for English, creativity, leadership, and confidence.':'تجربة MyVoice الصيفية للغة الإنجليزية والإبداع والقيادة والثقة.',
-        'English, German, French, Italian, and Spanish programs for global communication.':'برامج الإنجليزية والألمانية والفرنسية والإيطالية والإسبانية للتواصل العالمي.',
-        'Fine Arts and creative learning paths for expression, focus, and confidence.':'الفنون الجميلة ومسارات التعلم الإبداعي للتعبير والتركيز والثقة.',
-        'Test Preparation':'تحضير الاختبارات',
-        'Achieve your target scores through premium preparation programs.':'حقق الدرجات المستهدفة من خلال برامج تحضيرية متميزة.',
-        'Flexible Study Modes':'أنظمة دراسة مرنة',
-        'Adapt your learning journey through modern and flexible educational experiences.':'خصص رحلتك التعليمية عبر تجارب تعلم حديثة ومرنة.',
-        'Group Classroom':'فصل جماعي',
-        'Private Classroom':'فصل خاص',
-        'Online Classes':'حصص أونلاين',
-        'Private Online':'دروس أونلاين خاصة',
-        'International Experiences':'تجارب دولية',
-        'Summer & Winter Camps':'المخيمات الصيفية والشتوية',
-        'Explore unforgettable educational journeys, cultural exchange experiences, and international camps with EACC.':'استكشف رحلات تعليمية لا تُنسى وتجارب تبادل ثقافي ومعسكرات دولية مع EACC.',
-        'Explore Camps':'استكشف المخيمات',
-        'Start Your Journey With EACC Today':'ابدأ رحلتك مع EACC اليوم',
-        "Join one of Egypt's leading educational and language institutions.": 'انضم إلى واحدة من أبرز المؤسسات التعليمية واللغوية في مصر.',
-        'Egyptian American Cultural Center offers premium language education, preparation courses, camps, and international learning experiences.':'يقدّم المركز الثقافي المصري الأمريكي تعليم لغات متميزاً، ودورات تحضيرية، ومخيمات، وتجارب تعليمية دولية.',
-        '117 Ahmed Shawqi, Mustafa Kamel WA Bolkli, Sidi Gaber, Alexandria Governorate 5433141':'117 أحمد شوقي، مصطفى كامل وبولكلي، سيدي جابر، محافظة الإسكندرية 5433141',
-        'About EACC': 'عن EACC',
-        'Contact Page':'صفحة التواصل',
-        'Terms & Conditions': 'الشروط والأحكام',
-        'Privacy Policy': 'سياسة الخصوصية',
-        'Our Courses':'دوراتنا',
-        'Follow Us':'تابعنا',
-        'Get Started': 'ابدأ الآن',
-        'Location': 'الموقع',
-        'LinkedIn': 'لينكدإن',
-        'Testing Center': 'مركز الاختبارات',
-        'Partners': 'الشركاء',
-        'Language, wellbeing, and future skills for every stage of life.': 'اللغة والرفاه والمهارات المستقبلية لكل مرحلة من الحياة.',
-        'Helping learners and families grow with confidence since 1996.': 'نساعد المتعلمين والأسر على النمو بثقة منذ 1996.',
-        'Facebook':'فيسبوك',
-        'Instagram':'إنستجرام',
-        'Youtube':'يوتيوب',
-        'YouTube':'يوتيوب',
-        'WhatsApp': 'واتساب',
-        'TikTok':'تيك توك',
-        '© 2026 Egyptian American Cultural Center. All rights reserved.': '© 2026 Egyptian American Cultural Center. جميع الحقوق محفوظة.',
-        'What Makes EACC Unique':'ما الذي يجعل EACC مميزاً',
-        'Courses for All Ages':'دورات لكل الأعمار',
-        '98% Exam Pass Rate':'نسبة نجاح 98% في الاختبارات',
-        'Study Online or In Person':'ادرس أونلاين أو داخل المركز',
-        'TOEFL Authorized Testing Center':'مركز اختبار TOEFL معتمد',
-        "Kids' Summer Camps": 'المعسكرات الصيفية للأطفال',
-        'Partnership with Think English': 'شراكة مع Think English',
-        'Learning Platform for Practice':'منصة تعليمية للتدريب',
-        'Find Your Path':'اختر مسارك',
-        'What would you like to do with EACC?':'ماذا تريد أن تبدأ مع EACC؟',
-        'Choose the learning route that fits your goal, then continue to the right page for details, schedules, admissions support, and the next available start date.':'اختر مسار التعلم المناسب لهدفك، ثم انتقل إلى الصفحة المناسبة لمعرفة التفاصيل والجداول ودعم القبول وأقرب موعد بداية.',
-        'Learn a language':'تعلم لغة',
-        'English, German, French, Italian, Spanish':'الإنجليزية، الألمانية، الفرنسية، الإيطالية، الإسبانية',
-        'Prepare for exams':'استعد للاختبارات',
+        'Egyptian American Center':'Ø§Ù„Ù…Ø±ÙƒØ² Ø§Ù„Ù…ØµØ±ÙŠ Ø§Ù„Ø£Ù…Ø±ÙŠÙƒÙŠ',
+        'Home':'Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©',
+        'About Us':'Ù…Ù† Ù†Ø­Ù†',
+        'Who We Are':'Ù…Ù† Ù†Ø­Ù†',
+        'Explore Our Camps':'Ø§Ø³ØªÙƒØ´Ù Ù…Ø®ÙŠÙ…Ø§ØªÙ†Ø§',
+        'FAQs':'Ø§Ù„Ø£Ø³Ø¦Ù„Ø© Ø§Ù„Ø´Ø§Ø¦Ø¹Ø©',
+        'Programs':'Ø§Ù„Ø¨Ø±Ø§Ù…Ø¬',
+        'Mind Space': 'Ù…Ø§ÙŠÙ†Ø¯ Ø³Ø¨ÙŠØ³',
+        'Testing': 'Ø§Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª',
+        'Corporate': 'Ø§Ù„ØªØ¯Ø±ÙŠØ¨ Ø§Ù„Ù…Ø¤Ø³Ø³ÙŠ',
+        'About': 'Ø¹Ù† Ø§Ù„Ù…Ø±ÙƒØ²',
+        'Contact':'ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§',
+        'About Mind Space': 'Ø¹Ù† Ù…Ø§ÙŠÙ†Ø¯ Ø³Ø¨ÙŠØ³',
+        'Therapy Services': 'Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ø¹Ù„Ø§Ø¬',
+        'Assessments': 'Ø§Ù„ØªÙ‚ÙŠÙŠÙ…Ø§Øª',
+        'Family Support': 'Ø¯Ø¹Ù… Ø§Ù„Ø£Ø³Ø±Ø©',
+        'Book an Appointment': 'Ø§Ø­Ø¬Ø² Ù…ÙˆØ¹Ø¯',
+        'Authorized Testing Center': 'Ù…Ø±ÙƒØ² Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ù…Ø¹ØªÙ…Ø¯',
+        'Placement Test':'Ø§Ø®ØªØ¨Ø§Ø± ØªØ­Ø¯ÙŠØ¯ Ø§Ù„Ù…Ø³ØªÙˆÙ‰',
+        'Psychological Assessment': 'Ø§Ù„ØªÙ‚ÙŠÙŠÙ… Ø§Ù„Ù†ÙØ³ÙŠ',
+        'Kids &amp; Youth Academy': 'Ø£ÙƒØ§Ø¯ÙŠÙ…ÙŠØ© Ø§Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ø´Ø¨Ø§Ø¨',
+        'Kids & Youth Academy': 'Ø£ÙƒØ§Ø¯ÙŠÙ…ÙŠØ© Ø§Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ø´Ø¨Ø§Ø¨',
+        'English for Kids':'Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠ Ù„Ù„Ø£Ø·ÙØ§Ù„',
+        'Teen Programs': 'Ø¨Ø±Ø§Ù…Ø¬ Ø§Ù„Ù…Ø±Ø§Ù‡Ù‚ÙŠÙ†',
+        'Robotics Lab': 'Ù…Ø¹Ù…Ù„ Ø§Ù„Ø±ÙˆØ¨ÙˆØªØ§Øª',
+        'Online Language Center': 'Ù…Ø±ÙƒØ² Ø§Ù„Ù„ØºØ§Øª Ø£ÙˆÙ†Ù„Ø§ÙŠÙ†',
+        'Workshops': 'ÙˆØ±Ø´ Ø§Ù„Ø¹Ù…Ù„',
+        'Our Story': 'Ù‚ØµØªÙ†Ø§',
+        'Leadership Team': 'ÙØ±ÙŠÙ‚ Ø§Ù„Ù‚ÙŠØ§Ø¯Ø©',
+        'Partners &amp; Accreditations': 'Ø§Ù„Ø´Ø±ÙƒØ§Ø¡ ÙˆØ§Ù„Ø§Ø¹ØªÙ…Ø§Ø¯Ø§Øª',
+        'Partners & Accreditations': 'Ø§Ù„Ø´Ø±ÙƒØ§Ø¡ ÙˆØ§Ù„Ø§Ø¹ØªÙ…Ø§Ø¯Ø§Øª',
+        'Careers': 'Ø§Ù„ÙˆØ¸Ø§Ø¦Ù',
+        'FAQ': 'Ø§Ù„Ø£Ø³Ø¦Ù„Ø© Ø§Ù„Ø´Ø§Ø¦Ø¹Ø©',
+        'Empowering Minds. Building Futures.': 'ØªÙ…ÙƒÙŠÙ† Ø§Ù„Ø¹Ù‚ÙˆÙ„. Ø¨Ù†Ø§Ø¡ Ø§Ù„Ù…Ø³ØªÙ‚Ø¨Ù„.',
+        'Holistic Education. Lasting Impact.': 'ØªØ¹Ù„ÙŠÙ… Ù…ØªÙƒØ§Ù…Ù„. Ø£Ø«Ø± Ø¯Ø§Ø¦Ù….',
+        'Since 1996, the Egyptian American Cultural Center has guided more than 60,000 graduates toward stronger communication, greater confidence, and a global outlook through accredited language programs, international exam preparation, and professional development.': 'Ù…Ù†Ø° Ø¹Ø§Ù… 1996ØŒ Ø³Ø§Ø¹Ø¯ Ø§Ù„Ù…Ø±ÙƒØ² Ø§Ù„Ø«Ù‚Ø§ÙÙŠ Ø§Ù„Ù…ØµØ±ÙŠ Ø§Ù„Ø£Ù…Ø±ÙŠÙƒÙŠ Ø£ÙƒØ«Ø± Ù…Ù† 60,000 Ø®Ø±ÙŠØ¬ Ø¹Ù„Ù‰ Ø¨Ù†Ø§Ø¡ ØªÙˆØ§ØµÙ„ Ø£Ù‚ÙˆÙ‰ ÙˆØ«Ù‚Ø© Ø£ÙƒØ¨Ø± ÙˆÙ†Ø¸Ø±Ø© Ø¹Ø§Ù„Ù…ÙŠØ© Ù…Ù† Ø®Ù„Ø§Ù„ Ø¨Ø±Ø§Ù…Ø¬ Ù„ØºÙˆÙŠØ© Ù…Ø¹ØªÙ…Ø¯Ø© ÙˆØ§Ù„ØªØ­Ø¶ÙŠØ± Ù„Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ø§Ù„Ø¯ÙˆÙ„ÙŠØ© ÙˆØ§Ù„ØªØ·ÙˆÙŠØ± Ø§Ù„Ù…Ù‡Ù†ÙŠ.',
+        'Expanding Our Offerings in 2026': 'ØªÙˆØ³ÙŠØ¹ Ø®Ø¯Ù…Ø§ØªÙ†Ø§ ÙÙŠ 2026',
+        'Excellence today requires more than language proficiency alone. EACC is extending its services to support learners across academics, wellbeing, creativity, and technology.': 'Ø§Ù„ØªÙ…ÙŠØ² Ø§Ù„ÙŠÙˆÙ… ÙŠØ­ØªØ§Ø¬ Ø£ÙƒØ«Ø± Ù…Ù† Ø¥ØªÙ‚Ø§Ù† Ø§Ù„Ù„ØºØ© ÙÙ‚Ø·. ØªÙˆØ³Ù‘Ø¹ EACC Ø®Ø¯Ù…Ø§ØªÙ‡Ø§ Ù„Ø¯Ø¹Ù… Ø§Ù„Ù…ØªØ¹Ù„Ù…ÙŠÙ† ÙÙŠ Ø§Ù„Ø¯Ø±Ø§Ø³Ø© ÙˆØ§Ù„Ø±ÙØ§Ù‡ Ø§Ù„Ù†ÙØ³ÙŠ ÙˆØ§Ù„Ø¥Ø¨Ø¯Ø§Ø¹ ÙˆØ§Ù„ØªÙƒÙ†ÙˆÙ„ÙˆØ¬ÙŠØ§.',
+        'Integrated Pathways for Growth': 'Ù…Ø³Ø§Ø±Ø§Øª Ù…ØªÙƒØ§Ù…Ù„Ø© Ù„Ù„Ù†Ù…Ùˆ',
+        'Complementing our language programs, new services in psychological wellbeing, robotics, and creative arts help children, youth, and adults build resilience, critical thinking, and the confidence to succeed long term.': 'Ø¥Ù„Ù‰ Ø¬Ø§Ù†Ø¨ Ø¨Ø±Ø§Ù…Ø¬ Ø§Ù„Ù„ØºØ§ØªØŒ ØªØ³Ø§Ø¹Ø¯ Ø®Ø¯Ù…Ø§Øª Ø¬Ø¯ÙŠØ¯Ø© ÙÙŠ Ø§Ù„Ø±ÙØ§Ù‡ Ø§Ù„Ù†ÙØ³ÙŠ ÙˆØ§Ù„Ø±ÙˆØ¨ÙˆØªØ§Øª ÙˆØ§Ù„ÙÙ†ÙˆÙ† Ø§Ù„Ø¥Ø¨Ø¯Ø§Ø¹ÙŠØ© Ø§Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ø´Ø¨Ø§Ø¨ ÙˆØ§Ù„ÙƒØ¨Ø§Ø± Ø¹Ù„Ù‰ Ø¨Ù†Ø§Ø¡ Ø§Ù„Ù…Ø±ÙˆÙ†Ø© ÙˆØ§Ù„ØªÙÙƒÙŠØ± Ø§Ù„Ù†Ù‚Ø¯ÙŠ ÙˆØ§Ù„Ø«Ù‚Ø© Ù„Ù„Ù†Ø¬Ø§Ø­ Ø¹Ù„Ù‰ Ø§Ù„Ù…Ø¯Ù‰ Ø§Ù„Ø·ÙˆÙŠÙ„.',
+        'Summer Camp 2026':'Ø§Ù„Ù…Ø®ÙŠÙ… Ø§Ù„ØµÙŠÙÙŠ 2026',
+        'Languages':'Ø§Ù„Ù„ØºØ§Øª',
+        'Activities':'Ø§Ù„Ø£Ù†Ø´Ø·Ø©',
+        'Preparation Courses':'Ø¯ÙˆØ±Ø§Øª Ø§Ù„ØªØ­Ø¶ÙŠØ±',
+        'Contact':'ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§',
+        'Apply Now':'Ù‚Ø¯Ù‘Ù… Ø§Ù„Ø¢Ù†',
+        'LMS Login': 'Ø¯Ø®ÙˆÙ„ LMS',
+        'Unlock Your Future With Global Education Experiences':'Ø§ÙØªØ­ Ø£Ø¨ÙˆØ§Ø¨ Ù…Ø³ØªÙ‚Ø¨Ù„Ùƒ Ø¨ØªØ¬Ø§Ø±Ø¨ ØªØ¹Ù„ÙŠÙ…ÙŠØ© Ø¹Ø§Ù„Ù…ÙŠØ©',
+        'EACC empowers students through premium language programs, international camps, test preparation courses, and immersive educational experiences designed for future success.':'ØªÙ…ÙƒÙ‘Ù† EACC Ø§Ù„Ø·Ù„Ø§Ø¨ Ø¹Ø¨Ø± Ø¨Ø±Ø§Ù…Ø¬ Ù„ØºÙˆÙŠØ© Ù…ØªÙ…ÙŠØ²Ø© ÙˆÙ…Ø¹Ø³ÙƒØ±Ø§Øª Ø¯ÙˆÙ„ÙŠØ© ÙˆØ¯ÙˆØ±Ø§Øª ØªØ­Ø¶ÙŠØ± ÙˆØªØ¬Ø§Ø±Ø¨ ØªØ¹Ù„ÙŠÙ…ÙŠØ© Ø«Ø±ÙŠØ© Ù…ØµÙ…Ù…Ø© Ù„Ù†Ø¬Ø§Ø­ Ø§Ù„Ù…Ø³ØªÙ‚Ø¨Ù„.',
+        'Explore Programs':'Ø§Ø³ØªÙƒØ´Ù Ø§Ù„Ø¨Ø±Ø§Ù…Ø¬',
+        'Contact Us':'ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§',
+        'Why Students Choose EACC':'Ù„Ù…Ø§Ø°Ø§ ÙŠØ®ØªØ§Ø± Ø§Ù„Ø·Ù„Ø§Ø¨ EACC',
+        'More than 25 years of excellence in language education, cultural exchange, and international preparation programs.':'Ø£ÙƒØ«Ø± Ù…Ù† 25 Ø¹Ø§Ù…Ù‹Ø§ Ù…Ù† Ø§Ù„ØªÙ…ÙŠØ² ÙÙŠ ØªØ¹Ù„ÙŠÙ… Ø§Ù„Ù„ØºØ§Øª ÙˆØ§Ù„ØªØ¨Ø§Ø¯Ù„ Ø§Ù„Ø«Ù‚Ø§ÙÙŠ ÙˆØ¨Ø±Ø§Ù…Ø¬ Ø§Ù„Ø¥Ø¹Ø¯Ø§Ø¯ Ø§Ù„Ø¯ÙˆÙ„ÙŠØ©.',
+        'Thousands of Students':'Ø¢Ù„Ø§Ù Ø§Ù„Ø·Ù„Ø§Ø¨',
+        'Trusted by learners from all age groups seeking premium education experiences.':'Ù…ÙˆØ«ÙˆÙ‚ Ø¨Ù‡Ø§ Ù…Ù† Ù…ØªØ¹Ù„Ù…ÙŠÙ† Ù…Ù† Ø¬Ù…ÙŠØ¹ Ø§Ù„ÙØ¦Ø§Øª Ø§Ù„Ø¹Ù…Ø±ÙŠØ© Ø§Ù„Ø¨Ø§Ø­Ø«ÙŠÙ† Ø¹Ù† ØªØ¬Ø§Ø±Ø¨ ØªØ¹Ù„ÙŠÙ…ÙŠØ© Ù…ØªÙ…ÙŠØ²Ø©.',
+        'Certified Programs':'Ø¨Ø±Ø§Ù…Ø¬ Ù…Ø¹ØªÙ…Ø¯Ø©',
+        'Internationally recognized language and preparation courses.':'Ø¯ÙˆØ±Ø§Øª Ù„ØºØ§Øª ÙˆØªØ­Ø¶ÙŠØ± Ù…Ø¹ØªØ±Ù Ø¨Ù‡Ø§ Ø¯ÙˆÙ„ÙŠÙ‹Ø§.',
+        'Global Opportunities':'ÙØ±Øµ Ø¹Ø§Ù„Ù…ÙŠØ©',
+        'Prepare for study abroad, career growth, and global communication.':'Ø§Ø³ØªØ¹Ø¯ Ù„Ù„Ø¯Ø±Ø§Ø³Ø© Ø¨Ø§Ù„Ø®Ø§Ø±Ø¬ ÙˆØªØ·ÙˆØ± Ø§Ù„Ù…Ø³Ø§Ø± Ø§Ù„Ù…Ù‡Ù†ÙŠ ÙˆØ§Ù„ØªÙˆØ§ØµÙ„ Ø§Ù„Ø¹Ø§Ù„Ù…ÙŠ.',
+        'Flexible Learning':'ØªØ¹Ù„Ù… Ù…Ø±Ù†',
+        'Study online or offline with adaptable modern learning methods.':'ØªØ¹Ù„Ù‘Ù… Ø£ÙˆÙ†Ù„Ø§ÙŠÙ† Ø£Ùˆ Ø­Ø¶ÙˆØ±ÙŠÙ‹Ø§ Ø¨Ø·Ø±Ù‚ ØªØ¹Ù„Ù… Ø­Ø¯ÙŠØ«Ø© ÙˆÙ…Ø±Ù†Ø©.',
+        'Learn More About EACC':'Ø§Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯ Ø¹Ù† EACC',
+        'Explore EACC learning experiences, from summer camps to languages, activities, and creative programs.':'Ø§Ø³ØªÙƒØ´Ù ØªØ¬Ø§Ø±Ø¨ Ø§Ù„ØªØ¹Ù„Ù… ÙÙŠ EACCØŒ Ù…Ù† Ø§Ù„Ù…Ø®ÙŠÙ…Ø§Øª Ø§Ù„ØµÙŠÙÙŠØ© Ø¥Ù„Ù‰ Ø§Ù„Ù„ØºØ§Øª ÙˆØ§Ù„Ø£Ù†Ø´Ø·Ø© ÙˆØ§Ù„Ø¨Ø±Ø§Ù…Ø¬ Ø§Ù„Ø¥Ø¨Ø¯Ø§Ø¹ÙŠØ©.',
+        'MyVoice summer experience for English, creativity, leadership, and confidence.':'ØªØ¬Ø±Ø¨Ø© MyVoice Ø§Ù„ØµÙŠÙÙŠØ© Ù„Ù„ØºØ© Ø§Ù„Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØ© ÙˆØ§Ù„Ø¥Ø¨Ø¯Ø§Ø¹ ÙˆØ§Ù„Ù‚ÙŠØ§Ø¯Ø© ÙˆØ§Ù„Ø«Ù‚Ø©.',
+        'English, German, French, Italian, and Spanish programs for global communication.':'Ø¨Ø±Ø§Ù…Ø¬ Ø§Ù„Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØ© ÙˆØ§Ù„Ø£Ù„Ù…Ø§Ù†ÙŠØ© ÙˆØ§Ù„ÙØ±Ù†Ø³ÙŠØ© ÙˆØ§Ù„Ø¥ÙŠØ·Ø§Ù„ÙŠØ© ÙˆØ§Ù„Ø¥Ø³Ø¨Ø§Ù†ÙŠØ© Ù„Ù„ØªÙˆØ§ØµÙ„ Ø§Ù„Ø¹Ø§Ù„Ù…ÙŠ.',
+        'Fine Arts and creative learning paths for expression, focus, and confidence.':'Ø§Ù„ÙÙ†ÙˆÙ† Ø§Ù„Ø¬Ù…ÙŠÙ„Ø© ÙˆÙ…Ø³Ø§Ø±Ø§Øª Ø§Ù„ØªØ¹Ù„Ù… Ø§Ù„Ø¥Ø¨Ø¯Ø§Ø¹ÙŠ Ù„Ù„ØªØ¹Ø¨ÙŠØ± ÙˆØ§Ù„ØªØ±ÙƒÙŠØ² ÙˆØ§Ù„Ø«Ù‚Ø©.',
+        'Test Preparation':'ØªØ­Ø¶ÙŠØ± Ø§Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª',
+        'Achieve your target scores through premium preparation programs.':'Ø­Ù‚Ù‚ Ø§Ù„Ø¯Ø±Ø¬Ø§Øª Ø§Ù„Ù…Ø³ØªÙ‡Ø¯ÙØ© Ù…Ù† Ø®Ù„Ø§Ù„ Ø¨Ø±Ø§Ù…Ø¬ ØªØ­Ø¶ÙŠØ±ÙŠØ© Ù…ØªÙ…ÙŠØ²Ø©.',
+        'Flexible Study Modes':'Ø£Ù†Ø¸Ù…Ø© Ø¯Ø±Ø§Ø³Ø© Ù…Ø±Ù†Ø©',
+        'Adapt your learning journey through modern and flexible educational experiences.':'Ø®ØµØµ Ø±Ø­Ù„ØªÙƒ Ø§Ù„ØªØ¹Ù„ÙŠÙ…ÙŠØ© Ø¹Ø¨Ø± ØªØ¬Ø§Ø±Ø¨ ØªØ¹Ù„Ù… Ø­Ø¯ÙŠØ«Ø© ÙˆÙ…Ø±Ù†Ø©.',
+        'Group Classroom':'ÙØµÙ„ Ø¬Ù…Ø§Ø¹ÙŠ',
+        'Private Classroom':'ÙØµÙ„ Ø®Ø§Øµ',
+        'Online Classes':'Ø­ØµØµ Ø£ÙˆÙ†Ù„Ø§ÙŠÙ†',
+        'Private Online':'Ø¯Ø±ÙˆØ³ Ø£ÙˆÙ†Ù„Ø§ÙŠÙ† Ø®Ø§ØµØ©',
+        'International Experiences':'ØªØ¬Ø§Ø±Ø¨ Ø¯ÙˆÙ„ÙŠØ©',
+        'Summer & Winter Camps':'Ø§Ù„Ù…Ø®ÙŠÙ…Ø§Øª Ø§Ù„ØµÙŠÙÙŠØ© ÙˆØ§Ù„Ø´ØªÙˆÙŠØ©',
+        'Explore unforgettable educational journeys, cultural exchange experiences, and international camps with EACC.':'Ø§Ø³ØªÙƒØ´Ù Ø±Ø­Ù„Ø§Øª ØªØ¹Ù„ÙŠÙ…ÙŠØ© Ù„Ø§ ØªÙÙ†Ø³Ù‰ ÙˆØªØ¬Ø§Ø±Ø¨ ØªØ¨Ø§Ø¯Ù„ Ø«Ù‚Ø§ÙÙŠ ÙˆÙ…Ø¹Ø³ÙƒØ±Ø§Øª Ø¯ÙˆÙ„ÙŠØ© Ù…Ø¹ EACC.',
+        'Explore Camps':'Ø§Ø³ØªÙƒØ´Ù Ø§Ù„Ù…Ø®ÙŠÙ…Ø§Øª',
+        'Start Your Journey With EACC Today':'Ø§Ø¨Ø¯Ø£ Ø±Ø­Ù„ØªÙƒ Ù…Ø¹ EACC Ø§Ù„ÙŠÙˆÙ…',
+        "Join one of Egypt's leading educational and language institutions.": 'Ø§Ù†Ø¶Ù… Ø¥Ù„Ù‰ ÙˆØ§Ø­Ø¯Ø© Ù…Ù† Ø£Ø¨Ø±Ø² Ø§Ù„Ù…Ø¤Ø³Ø³Ø§Øª Ø§Ù„ØªØ¹Ù„ÙŠÙ…ÙŠØ© ÙˆØ§Ù„Ù„ØºÙˆÙŠØ© ÙÙŠ Ù…ØµØ±.',
+        'Egyptian American Cultural Center offers premium language education, preparation courses, camps, and international learning experiences.':'ÙŠÙ‚Ø¯Ù‘Ù… Ø§Ù„Ù…Ø±ÙƒØ² Ø§Ù„Ø«Ù‚Ø§ÙÙŠ Ø§Ù„Ù…ØµØ±ÙŠ Ø§Ù„Ø£Ù…Ø±ÙŠÙƒÙŠ ØªØ¹Ù„ÙŠÙ… Ù„ØºØ§Øª Ù…ØªÙ…ÙŠØ²Ø§Ù‹ØŒ ÙˆØ¯ÙˆØ±Ø§Øª ØªØ­Ø¶ÙŠØ±ÙŠØ©ØŒ ÙˆÙ…Ø®ÙŠÙ…Ø§ØªØŒ ÙˆØªØ¬Ø§Ø±Ø¨ ØªØ¹Ù„ÙŠÙ…ÙŠØ© Ø¯ÙˆÙ„ÙŠØ©.',
+        '117 Ahmed Shawqi, Mustafa Kamel WA Bolkli, Sidi Gaber, Alexandria Governorate 5433141':'117 Ø£Ø­Ù…Ø¯ Ø´ÙˆÙ‚ÙŠØŒ Ù…ØµØ·ÙÙ‰ ÙƒØ§Ù…Ù„ ÙˆØ¨ÙˆÙ„ÙƒÙ„ÙŠØŒ Ø³ÙŠØ¯ÙŠ Ø¬Ø§Ø¨Ø±ØŒ Ù…Ø­Ø§ÙØ¸Ø© Ø§Ù„Ø¥Ø³ÙƒÙ†Ø¯Ø±ÙŠØ© 5433141',
+        'About EACC': 'Ø¹Ù† EACC',
+        'Contact Page':'ØµÙØ­Ø© Ø§Ù„ØªÙˆØ§ØµÙ„',
+        'Terms & Conditions': 'Ø§Ù„Ø´Ø±ÙˆØ· ÙˆØ§Ù„Ø£Ø­ÙƒØ§Ù…',
+        'Privacy Policy': 'Ø³ÙŠØ§Ø³Ø© Ø§Ù„Ø®ØµÙˆØµÙŠØ©',
+        'Our Courses':'Ø¯ÙˆØ±Ø§ØªÙ†Ø§',
+        'Follow Us':'ØªØ§Ø¨Ø¹Ù†Ø§',
+        'Get Started': 'Ø§Ø¨Ø¯Ø£ Ø§Ù„Ø¢Ù†',
+        'Location': 'Ø§Ù„Ù…ÙˆÙ‚Ø¹',
+        'LinkedIn': 'Ù„ÙŠÙ†ÙƒØ¯Ø¥Ù†',
+        'Testing Center': 'Ù…Ø±ÙƒØ² Ø§Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª',
+        'Partners': 'Ø§Ù„Ø´Ø±ÙƒØ§Ø¡',
+        'Language, wellbeing, and future skills for every stage of life.': 'Ø§Ù„Ù„ØºØ© ÙˆØ§Ù„Ø±ÙØ§Ù‡ ÙˆØ§Ù„Ù…Ù‡Ø§Ø±Ø§Øª Ø§Ù„Ù…Ø³ØªÙ‚Ø¨Ù„ÙŠØ© Ù„ÙƒÙ„ Ù…Ø±Ø­Ù„Ø© Ù…Ù† Ø§Ù„Ø­ÙŠØ§Ø©.',
+        'Helping learners and families grow with confidence since 1996.': 'Ù†Ø³Ø§Ø¹Ø¯ Ø§Ù„Ù…ØªØ¹Ù„Ù…ÙŠÙ† ÙˆØ§Ù„Ø£Ø³Ø± Ø¹Ù„Ù‰ Ø§Ù„Ù†Ù…Ùˆ Ø¨Ø«Ù‚Ø© Ù…Ù†Ø° 1996.',
+        'Facebook':'ÙÙŠØ³Ø¨ÙˆÙƒ',
+        'Instagram':'Ø¥Ù†Ø³ØªØ¬Ø±Ø§Ù…',
+        'Youtube':'ÙŠÙˆØªÙŠÙˆØ¨',
+        'YouTube':'ÙŠÙˆØªÙŠÙˆØ¨',
+        'WhatsApp': 'ÙˆØ§ØªØ³Ø§Ø¨',
+        'TikTok':'ØªÙŠÙƒ ØªÙˆÙƒ',
+        'Â© 2026 Egyptian American Cultural Center. All rights reserved.': 'Â© 2026 Egyptian American Cultural Center. Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø­Ù‚ÙˆÙ‚ Ù…Ø­ÙÙˆØ¸Ø©.',
+        'What Makes EACC Unique':'Ù…Ø§ Ø§Ù„Ø°ÙŠ ÙŠØ¬Ø¹Ù„ EACC Ù…Ù…ÙŠØ²Ø§Ù‹',
+        'Courses for All Ages':'Ø¯ÙˆØ±Ø§Øª Ù„ÙƒÙ„ Ø§Ù„Ø£Ø¹Ù…Ø§Ø±',
+        '98% Exam Pass Rate':'Ù†Ø³Ø¨Ø© Ù†Ø¬Ø§Ø­ 98% ÙÙŠ Ø§Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª',
+        'Study Online or In Person':'Ø§Ø¯Ø±Ø³ Ø£ÙˆÙ†Ù„Ø§ÙŠÙ† Ø£Ùˆ Ø¯Ø§Ø®Ù„ Ø§Ù„Ù…Ø±ÙƒØ²',
+        'TOEFL Authorized Testing Center':'Ù…Ø±ÙƒØ² Ø§Ø®ØªØ¨Ø§Ø± TOEFL Ù…Ø¹ØªÙ…Ø¯',
+        "Kids' Summer Camps": 'Ø§Ù„Ù…Ø¹Ø³ÙƒØ±Ø§Øª Ø§Ù„ØµÙŠÙÙŠØ© Ù„Ù„Ø£Ø·ÙØ§Ù„',
+        'Partnership with Think English': 'Ø´Ø±Ø§ÙƒØ© Ù…Ø¹ Think English',
+        'Learning Platform for Practice':'Ù…Ù†ØµØ© ØªØ¹Ù„ÙŠÙ…ÙŠØ© Ù„Ù„ØªØ¯Ø±ÙŠØ¨',
+        'Find Your Path':'Ø§Ø®ØªØ± Ù…Ø³Ø§Ø±Ùƒ',
+        'What would you like to do with EACC?':'Ù…Ø§Ø°Ø§ ØªØ±ÙŠØ¯ Ø£Ù† ØªØ¨Ø¯Ø£ Ù…Ø¹ EACCØŸ',
+        'Choose the learning route that fits your goal, then continue to the right page for details, schedules, admissions support, and the next available start date.':'Ø§Ø®ØªØ± Ù…Ø³Ø§Ø± Ø§Ù„ØªØ¹Ù„Ù… Ø§Ù„Ù…Ù†Ø§Ø³Ø¨ Ù„Ù‡Ø¯ÙÙƒØŒ Ø«Ù… Ø§Ù†ØªÙ‚Ù„ Ø¥Ù„Ù‰ Ø§Ù„ØµÙØ­Ø© Ø§Ù„Ù…Ù†Ø§Ø³Ø¨Ø© Ù„Ù…Ø¹Ø±ÙØ© Ø§Ù„ØªÙØ§ØµÙŠÙ„ ÙˆØ§Ù„Ø¬Ø¯Ø§ÙˆÙ„ ÙˆØ¯Ø¹Ù… Ø§Ù„Ù‚Ø¨ÙˆÙ„ ÙˆØ£Ù‚Ø±Ø¨ Ù…ÙˆØ¹Ø¯ Ø¨Ø¯Ø§ÙŠØ©.',
+        'Learn a language':'ØªØ¹Ù„Ù… Ù„ØºØ©',
+        'English, German, French, Italian, Spanish':'Ø§Ù„Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØ©ØŒ Ø§Ù„Ø£Ù„Ù…Ø§Ù†ÙŠØ©ØŒ Ø§Ù„ÙØ±Ù†Ø³ÙŠØ©ØŒ Ø§Ù„Ø¥ÙŠØ·Ø§Ù„ÙŠØ©ØŒ Ø§Ù„Ø¥Ø³Ø¨Ø§Ù†ÙŠØ©',
+        'Prepare for exams':'Ø§Ø³ØªØ¹Ø¯ Ù„Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª',
         'IELTS, TOEFL, OET, PTE': 'IELTS ? TOEFL ? OET ? PTE',
-        'Choose study mode':'اختر نظام الدراسة',
-        'Group, private, classroom, online':'مجموعات، خاص، داخل المركز، أونلاين',
-        'Join Summer Camp':'انضم إلى المعسكر الصيفي',
-        'MyVoice 2026 for children':'MyVoice 2026 للأطفال',
-        'Explore Our Learning Pathways': 'استكشف مساراتنا التعليمية',
-        'Choose from focused programs built for children, teens, adults, and learners preparing for global goals.': 'اختر من برامج مركزة مصممة للأطفال والمراهقين والبالغين والمتعلمين الذين يستعدون لأهداف عالمية.',
-        'Prepare For International Exams': 'التحضير للاختبارات الدولية',
-        'Build exam confidence through focused preparation programs and experienced instructors.': 'ابنِ ثقتك في الاختبارات عبر برامج تحضير مركزة ومدربين ذوي خبرة.',
-        'View IELTS preparation course': 'عرض دورة تحضير IELTS',
-        'View TOEFL preparation course': 'عرض دورة تحضير TOEFL',
-        'View OET preparation course': 'عرض دورة تحضير OET',
-        'View PTE preparation course': 'عرض دورة تحضير PTE',
-        'Choose How You Study': 'اختر طريقة دراستك',
-        'Match your schedule and learning style with classroom, private, and online study options.': 'طابق جدولك وأسلوب تعلمك مع خيارات الدراسة داخل الفصل، والدروس الخاصة، والتعلم أونلاين.',
-        'Switch website language to English':'تبديل لغة الموقع إلى الإنجليزية',
-        'Switch website language to Arabic':'تبديل لغة الموقع إلى العربية',
-        'Open menu':'فتح القائمة',
-        'Close menu':'إغلاق القائمة',
-        'Home':'الرئيسية',
+        'Choose study mode':'Ø§Ø®ØªØ± Ù†Ø¸Ø§Ù… Ø§Ù„Ø¯Ø±Ø§Ø³Ø©',
+        'Group, private, classroom, online':'Ù…Ø¬Ù…ÙˆØ¹Ø§ØªØŒ Ø®Ø§ØµØŒ Ø¯Ø§Ø®Ù„ Ø§Ù„Ù…Ø±ÙƒØ²ØŒ Ø£ÙˆÙ†Ù„Ø§ÙŠÙ†',
+        'Join Summer Camp':'Ø§Ù†Ø¶Ù… Ø¥Ù„Ù‰ Ø§Ù„Ù…Ø¹Ø³ÙƒØ± Ø§Ù„ØµÙŠÙÙŠ',
+        'MyVoice 2026 for children':'MyVoice 2026 Ù„Ù„Ø£Ø·ÙØ§Ù„',
+        'Explore Our Learning Pathways': 'Ø§Ø³ØªÙƒØ´Ù Ù…Ø³Ø§Ø±Ø§ØªÙ†Ø§ Ø§Ù„ØªØ¹Ù„ÙŠÙ…ÙŠØ©',
+        'Choose from focused programs built for children, teens, adults, and learners preparing for global goals.': 'Ø§Ø®ØªØ± Ù…Ù† Ø¨Ø±Ø§Ù…Ø¬ Ù…Ø±ÙƒØ²Ø© Ù…ØµÙ…Ù…Ø© Ù„Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ù…Ø±Ø§Ù‡Ù‚ÙŠÙ† ÙˆØ§Ù„Ø¨Ø§Ù„ØºÙŠÙ† ÙˆØ§Ù„Ù…ØªØ¹Ù„Ù…ÙŠÙ† Ø§Ù„Ø°ÙŠÙ† ÙŠØ³ØªØ¹Ø¯ÙˆÙ† Ù„Ø£Ù‡Ø¯Ø§Ù Ø¹Ø§Ù„Ù…ÙŠØ©.',
+        'Prepare For International Exams': 'Ø§Ù„ØªØ­Ø¶ÙŠØ± Ù„Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ø§Ù„Ø¯ÙˆÙ„ÙŠØ©',
+        'Build exam confidence through focused preparation programs and experienced instructors.': 'Ø§Ø¨Ù†Ù Ø«Ù‚ØªÙƒ ÙÙŠ Ø§Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ø¹Ø¨Ø± Ø¨Ø±Ø§Ù…Ø¬ ØªØ­Ø¶ÙŠØ± Ù…Ø±ÙƒØ²Ø© ÙˆÙ…Ø¯Ø±Ø¨ÙŠÙ† Ø°ÙˆÙŠ Ø®Ø¨Ø±Ø©.',
+        'View IELTS preparation course': 'Ø¹Ø±Ø¶ Ø¯ÙˆØ±Ø© ØªØ­Ø¶ÙŠØ± IELTS',
+        'View TOEFL preparation course': 'Ø¹Ø±Ø¶ Ø¯ÙˆØ±Ø© ØªØ­Ø¶ÙŠØ± TOEFL',
+        'View OET preparation course': 'Ø¹Ø±Ø¶ Ø¯ÙˆØ±Ø© ØªØ­Ø¶ÙŠØ± OET',
+        'View PTE preparation course': 'Ø¹Ø±Ø¶ Ø¯ÙˆØ±Ø© ØªØ­Ø¶ÙŠØ± PTE',
+        'Choose How You Study': 'Ø§Ø®ØªØ± Ø·Ø±ÙŠÙ‚Ø© Ø¯Ø±Ø§Ø³ØªÙƒ',
+        'Match your schedule and learning style with classroom, private, and online study options.': 'Ø·Ø§Ø¨Ù‚ Ø¬Ø¯ÙˆÙ„Ùƒ ÙˆØ£Ø³Ù„ÙˆØ¨ ØªØ¹Ù„Ù…Ùƒ Ù…Ø¹ Ø®ÙŠØ§Ø±Ø§Øª Ø§Ù„Ø¯Ø±Ø§Ø³Ø© Ø¯Ø§Ø®Ù„ Ø§Ù„ÙØµÙ„ØŒ ÙˆØ§Ù„Ø¯Ø±ÙˆØ³ Ø§Ù„Ø®Ø§ØµØ©ØŒ ÙˆØ§Ù„ØªØ¹Ù„Ù… Ø£ÙˆÙ†Ù„Ø§ÙŠÙ†.',
+        'Switch website language to English':'ØªØ¨Ø¯ÙŠÙ„ Ù„ØºØ© Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø¥Ù„Ù‰ Ø§Ù„Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØ©',
+        'Switch website language to Arabic':'ØªØ¨Ø¯ÙŠÙ„ Ù„ØºØ© Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø¥Ù„Ù‰ Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©',
+        'Open menu':'ÙØªØ­ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø©',
+        'Close menu':'Ø¥ØºÙ„Ø§Ù‚ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø©',
+        'Home':'Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©',
         'IELTS': 'IELTS',
         'TOEFL': 'TOEFL',
         'OET': 'OET',
         'PTE': 'PTE',
-        'We provide language training and test preparation': 'نقدّم تدريبًا لغويًا والتحضير للاختبارات.',
-        'Start Your Journey': 'ابدأ رحلتك',
-        'View Course': 'عرض الكورس',
-        'IELTS Preparation Course': 'دورة التحضير لاختبار IELTS',
-        'TOEFL Preparation Course': 'دورة التحضير لاختبار TOEFL',
-        'OET Preparation Course': 'دورة التحضير لاختبار OET',
-        'PTE Preparation Course': 'دورة التحضير لاختبار PTE',
-        'For students aiming for international exams': 'للطلاب الساعين إلى الاختبارات الدولية',
-        'Professional instructors': 'مدربون محترفون',
-        'Mock tests and practice materials': 'اختبارات تجريبية ومواد تدريب',
-        'Flexible schedules': 'مواعيد مرنة',
-        'One-on-one tutoring': 'متابعة فردية',
-        'Group sessions': 'جلسات جماعية',
-        'Online classes available': 'حصص أونلاين متاحة',
-        'Contact for enrollment': 'تواصل للتسجيل',
-        'Call us':'اتصل بنا',
-        'Email us': 'راسلنا عبر البريد',
-        'Visit our office': 'زر مكتبنا',
-        'Get in Touch': 'تواصل معنا',
-        'We would love to hear from you': 'يسعدنا التواصل معك',
-        'Office Hours': 'ساعات العمل',
-        'Saturday to Thursday': 'من السبت إلى الخميس',
-        'Friday': 'الجمعة',
-        'Closed': 'مغلق',
-        'Send us a message': 'أرسل لنا رسالة',
-        'Name': 'الاسم',
-        'Email':'البريد الإلكتروني',
-        'Message':'الرسالة',
-        'Send': 'إرسال',
-        'Thank you for your message': 'شكرًا لرسالتك',
-        'We will get back to you soon': 'سنعود إليك قريبًا'
+        'We provide language training and test preparation': 'Ù†Ù‚Ø¯Ù‘Ù… ØªØ¯Ø±ÙŠØ¨Ù‹Ø§ Ù„ØºÙˆÙŠÙ‹Ø§ ÙˆØ§Ù„ØªØ­Ø¶ÙŠØ± Ù„Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª.',
+        'Start Your Journey': 'Ø§Ø¨Ø¯Ø£ Ø±Ø­Ù„ØªÙƒ',
+        'View Course': 'Ø¹Ø±Ø¶ Ø§Ù„ÙƒÙˆØ±Ø³',
+        'IELTS Preparation Course': 'Ø¯ÙˆØ±Ø© Ø§Ù„ØªØ­Ø¶ÙŠØ± Ù„Ø§Ø®ØªØ¨Ø§Ø± IELTS',
+        'TOEFL Preparation Course': 'Ø¯ÙˆØ±Ø© Ø§Ù„ØªØ­Ø¶ÙŠØ± Ù„Ø§Ø®ØªØ¨Ø§Ø± TOEFL',
+        'OET Preparation Course': 'Ø¯ÙˆØ±Ø© Ø§Ù„ØªØ­Ø¶ÙŠØ± Ù„Ø§Ø®ØªØ¨Ø§Ø± OET',
+        'PTE Preparation Course': 'Ø¯ÙˆØ±Ø© Ø§Ù„ØªØ­Ø¶ÙŠØ± Ù„Ø§Ø®ØªØ¨Ø§Ø± PTE',
+        'For students aiming for international exams': 'Ù„Ù„Ø·Ù„Ø§Ø¨ Ø§Ù„Ø³Ø§Ø¹ÙŠÙ† Ø¥Ù„Ù‰ Ø§Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ø§Ù„Ø¯ÙˆÙ„ÙŠØ©',
+        'Professional instructors': 'Ù…Ø¯Ø±Ø¨ÙˆÙ† Ù…Ø­ØªØ±ÙÙˆÙ†',
+        'Mock tests and practice materials': 'Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª ØªØ¬Ø±ÙŠØ¨ÙŠØ© ÙˆÙ…ÙˆØ§Ø¯ ØªØ¯Ø±ÙŠØ¨',
+        'Flexible schedules': 'Ù…ÙˆØ§Ø¹ÙŠØ¯ Ù…Ø±Ù†Ø©',
+        'One-on-one tutoring': 'Ù…ØªØ§Ø¨Ø¹Ø© ÙØ±Ø¯ÙŠØ©',
+        'Group sessions': 'Ø¬Ù„Ø³Ø§Øª Ø¬Ù…Ø§Ø¹ÙŠØ©',
+        'Online classes available': 'Ø­ØµØµ Ø£ÙˆÙ†Ù„Ø§ÙŠÙ† Ù…ØªØ§Ø­Ø©',
+        'Contact for enrollment': 'ØªÙˆØ§ØµÙ„ Ù„Ù„ØªØ³Ø¬ÙŠÙ„',
+        'Call us':'Ø§ØªØµÙ„ Ø¨Ù†Ø§',
+        'Email us': 'Ø±Ø§Ø³Ù„Ù†Ø§ Ø¹Ø¨Ø± Ø§Ù„Ø¨Ø±ÙŠØ¯',
+        'Visit our office': 'Ø²Ø± Ù…ÙƒØªØ¨Ù†Ø§',
+        'Get in Touch': 'ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§',
+        'We would love to hear from you': 'ÙŠØ³Ø¹Ø¯Ù†Ø§ Ø§Ù„ØªÙˆØ§ØµÙ„ Ù…Ø¹Ùƒ',
+        'Office Hours': 'Ø³Ø§Ø¹Ø§Øª Ø§Ù„Ø¹Ù…Ù„',
+        'Saturday to Thursday': 'Ù…Ù† Ø§Ù„Ø³Ø¨Øª Ø¥Ù„Ù‰ Ø§Ù„Ø®Ù…ÙŠØ³',
+        'Friday': 'Ø§Ù„Ø¬Ù…Ø¹Ø©',
+        'Closed': 'Ù…ØºÙ„Ù‚',
+        'Send us a message': 'Ø£Ø±Ø³Ù„ Ù„Ù†Ø§ Ø±Ø³Ø§Ù„Ø©',
+        'Name': 'Ø§Ù„Ø§Ø³Ù…',
+        'Email':'Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ',
+        'Message':'Ø§Ù„Ø±Ø³Ø§Ù„Ø©',
+        'Send': 'Ø¥Ø±Ø³Ø§Ù„',
+        'Thank you for your message': 'Ø´ÙƒØ±Ù‹Ø§ Ù„Ø±Ø³Ø§Ù„ØªÙƒ',
+        'We will get back to you soon': 'Ø³Ù†Ø¹ÙˆØ¯ Ø¥Ù„ÙŠÙƒ Ù‚Ø±ÙŠØ¨Ù‹Ø§'
       }
     };
 
@@ -324,7 +324,7 @@
 
     };
 
-    // Legacy manual translator disabled: AR/EN now uses Google Translate bridge.
+    // Legacy manual translator disabled: AR/EN now uses mirrored /ar/ pages.
     if (true) {
       // No global translation binding.
     } else {
@@ -632,211 +632,7 @@
 })();
 })();
 
-window.googleTranslateElementInit = function googleTranslateElementInit() {
-  var mount = document.getElementById("google_translate_element");
-  if (!mount) return;
-  if (!window.google || !google.translate || !google.translate.TranslateElement) return;
-  if (mount.getAttribute("data-google-ready") === "true") return;
-
-  mount.setAttribute("data-google-ready", "true");
-  new google.translate.TranslateElement(
-    {
-      pageLanguage: "en",
-      includedLanguages: "en,ar",
-      layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL,
-      autoDisplay: false
-    },
-    "google_translate_element"
-  );
-};
-
-function ensureGoogleTranslateMount() {
-  var mount = document.getElementById("google_translate_element");
-  if (mount) return mount;
-
-  var ctaGroup = document.querySelector(".nav-cta-group");
-  if (!ctaGroup) return null;
-
-  mount = document.createElement("div");
-  mount.id = "google_translate_element";
-  mount.setAttribute("aria-label", "Google Translate language selector");
-  ctaGroup.insertBefore(mount, ctaGroup.firstChild);
-  return mount;
-}
-
-function loadGoogleTranslateScript() {
-  if (!ensureGoogleTranslateMount()) return;
-
-  if (document.querySelector('script[src*="translate_a/element.js"]')) {
-    window.googleTranslateElementInit();
-    return;
-  }
-
-  var script = document.createElement("script");
-  script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
-  script.async = true;
-  script.defer = true;
-  script.onload = function () {
-    window.__eaccGoogleTranslateLoaded = true;
-  };
-
-  (document.body || document.documentElement).appendChild(script);
-}
-
-if (document.readyState === "loading") {
-  document.addEventListener("DOMContentLoaded", loadGoogleTranslateScript);
-} else {
-  loadGoogleTranslateScript();
-}
-document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
-
-/* --- AR/EN toggle bridge to Google Translate --- */
-(() => {
-  function readGoogTransCookie() {
-    var match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
-    return match ? decodeURIComponent(match[1]) : '';
-  }
-
-  function getCurrentLanguage() {
-    var cookie = readGoogTransCookie();
-    if (cookie.indexOf('/en/ar') !== -1) return 'ar';
-    return document.documentElement.dir === 'rtl' ? 'ar' : 'en';
-  }
-
-  function cookieDomains() {
-    var hostname = window.location.hostname;
-    var domains = [''];
-    if (hostname) {
-      domains.push(hostname);
-      domains.push('.' + hostname);
-    }
-    return domains;
-  }
-
-  function writeGoogTransCookie(value) {
-    cookieDomains().forEach(function (domain) {
-      var cookie = 'googtrans=' + value + ';path=/;SameSite=Lax';
-      if (domain) cookie += ';domain=' + domain;
-      document.cookie = cookie;
-    });
-  }
-
-  function clearGoogTransCookie() {
-    cookieDomains().forEach(function (domain) {
-      var suffix = ';path=/;expires=Thu, 01 Jan 1970 00:00:00 GMT;SameSite=Lax';
-      if (domain) suffix += ';domain=' + domain;
-      document.cookie = 'googtrans=' + suffix;
-    });
-  }
-
-  function setDocumentLanguage(language) {
-    document.documentElement.lang = language === 'ar' ? 'ar' : 'en';
-    document.documentElement.dir = language === 'ar' ? 'rtl' : 'ltr';
-  }
-
-  function updateToggleLabel(language) {
-    var next = language === 'ar' ? 'EN' : 'AR';
-    document.querySelectorAll('#languageToggleText, .eacc-lang-label').forEach(function (node) {
-      node.textContent = next;
-    });
-    document.querySelectorAll('#languageToggle, .eacc-language-toggle, .language-toggle').forEach(function (button) {
-      button.classList.add('notranslate');
-      button.setAttribute('translate', 'no');
-      button.setAttribute(
-        'aria-label',
-        language === 'ar' ? 'Switch website language to English' : 'Switch website language to Arabic'
-      );
-    });
-  }
-
-  function setGoogTransCookie(language) {
-    if (language === 'ar') {
-      writeGoogTransCookie('/en/ar');
-      return;
-    }
-    clearGoogTransCookie();
-  }
-
-  function setStoredLanguage(language) {
-    try {
-      localStorage.setItem('eacc-google-language', language);
-    } catch (error) {
-      /* The Google widget still works when storage is blocked. */
-    }
-  }
-
-  function applyGoogleLanguage(language) {
-    setGoogTransCookie(language);
-    setStoredLanguage(language);
-    setDocumentLanguage(language);
-
-    var combo = document.querySelector('.goog-te-combo');
-    if (!combo) {
-      updateToggleLabel(language);
-      return false;
-    }
-
-    if (language === 'en') {
-      combo.value = combo.querySelector('option[value=""]') ? '' : 'en';
-    } else {
-      combo.value = 'ar';
-    }
-
-    combo.dispatchEvent(new Event('change', { bubbles: true }));
-    updateToggleLabel(language);
-    return true;
-  }
-
-  function switchLanguage() {
-    var nextLanguage = getCurrentLanguage() === 'ar' ? 'en' : 'ar';
-    var attempts = 0;
-    var maxAttempts = 35;
-
-    setGoogTransCookie(nextLanguage);
-    setStoredLanguage(nextLanguage);
-    setDocumentLanguage(nextLanguage);
-    updateToggleLabel(nextLanguage);
-
-    if (nextLanguage === 'en') {
-      applyGoogleLanguage('en');
-      return;
-    }
-
-    loadGoogleTranslateScript();
-    var timer = setInterval(function () {
-      attempts += 1;
-      if (applyGoogleLanguage(nextLanguage) || attempts >= maxAttempts) {
-        clearInterval(timer);
-      }
-    }, 120);
-  }
-
-  document.addEventListener('click', function (event) {
-    var button = event.target.closest && event.target.closest('#languageToggle, .eacc-language-toggle, .language-toggle');
-    if (!button) return;
-    if (event.target.closest('#google_translate_element')) return;
-
-    event.preventDefault();
-    event.stopPropagation();
-    event.stopImmediatePropagation();
-    switchLanguage();
-  }, true);
-
-  function initLanguageToggle() {
-    var language = getCurrentLanguage();
-    setDocumentLanguage(language);
-    updateToggleLabel(language);
-    loadGoogleTranslateScript();
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initLanguageToggle);
-  } else {
-    initLanguageToggle();
-  }
-
-  document.addEventListener('eacc:partials-loaded', initLanguageToggle);
-})();
+/* --- Legacy widget translation removed: language switching now uses mirrored /ar/ pages. --- */
 
 
 /* --- Extracted script block 3 id="eacc-translation-controller-v2" --- */
@@ -859,7 +655,7 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
 (function () {
   'use strict';
 
-  // Legacy dictionary translator is disabled globally in favor of Google Translate.
+  // Legacy dictionary translator is disabled globally; language switching now uses mirrored /ar/ pages.
   if (true) {
     return;
   }
@@ -874,164 +670,164 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
 
   window.EACC_TRANSLATIONS = window.EACC_TRANSLATIONS || {};
   window.EACC_TRANSLATIONS.enToAr = {
-    "Egyptian American Center": "المركز المصري الأمريكي",
-    "Home": "الرئيسية",
-    "Summer Camp 2026": "المخيم الصيفي 2026",
-    "Overview": "نظرة عامة",
-    "Programs & Activities": "البرامج والأنشطة",
-    "Schedule & Fees": "المواعيد والرسوم",
-    "Previous Camps": "المعسكرات السابقة",
-    "Frequently Asked Questions": "الأسئلة الشائعة",
-    "Our Services": "خدماتنا",
-    "Language Academy": "أكاديمية اللغات",
-    "Kids & Youth Development Academy": "أكاديمية تنمية الأطفال والشباب",
-    "International Exam Preparation": "التحضير للاختبارات الدولية",
-    "Online Language Center": "مركز اللغات أونلاين",
-    "MindSpace": "مايند سبيس",
-    "About MindSpace": "عن مايند سبيس",
-    "Therapy Services": "خدمات العلاج",
-    "Assessments": "التقييمات",
-    "Family Support": "دعم الأسرة",
-    "Professional Workshops": "ورش عمل احترافية",
-    "Book an Appointment": "احجز موعد",
-    "Testing Center": "مركز الاختبارات",
+    "Egyptian American Center": "Ø§Ù„Ù…Ø±ÙƒØ² Ø§Ù„Ù…ØµØ±ÙŠ Ø§Ù„Ø£Ù…Ø±ÙŠÙƒÙŠ",
+    "Home": "Ø§Ù„Ø±Ø¦ÙŠØ³ÙŠØ©",
+    "Summer Camp 2026": "Ø§Ù„Ù…Ø®ÙŠÙ… Ø§Ù„ØµÙŠÙÙŠ 2026",
+    "Overview": "Ù†Ø¸Ø±Ø© Ø¹Ø§Ù…Ø©",
+    "Programs & Activities": "Ø§Ù„Ø¨Ø±Ø§Ù…Ø¬ ÙˆØ§Ù„Ø£Ù†Ø´Ø·Ø©",
+    "Schedule & Fees": "Ø§Ù„Ù…ÙˆØ§Ø¹ÙŠØ¯ ÙˆØ§Ù„Ø±Ø³ÙˆÙ…",
+    "Previous Camps": "Ø§Ù„Ù…Ø¹Ø³ÙƒØ±Ø§Øª Ø§Ù„Ø³Ø§Ø¨Ù‚Ø©",
+    "Frequently Asked Questions": "Ø§Ù„Ø£Ø³Ø¦Ù„Ø© Ø§Ù„Ø´Ø§Ø¦Ø¹Ø©",
+    "Our Services": "Ø®Ø¯Ù…Ø§ØªÙ†Ø§",
+    "Language Academy": "Ø£ÙƒØ§Ø¯ÙŠÙ…ÙŠØ© Ø§Ù„Ù„ØºØ§Øª",
+    "Kids & Youth Development Academy": "Ø£ÙƒØ§Ø¯ÙŠÙ…ÙŠØ© ØªÙ†Ù…ÙŠØ© Ø§Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ø´Ø¨Ø§Ø¨",
+    "International Exam Preparation": "Ø§Ù„ØªØ­Ø¶ÙŠØ± Ù„Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ø§Ù„Ø¯ÙˆÙ„ÙŠØ©",
+    "Online Language Center": "Ù…Ø±ÙƒØ² Ø§Ù„Ù„ØºØ§Øª Ø£ÙˆÙ†Ù„Ø§ÙŠÙ†",
+    "MindSpace": "Ù…Ø§ÙŠÙ†Ø¯ Ø³Ø¨ÙŠØ³",
+    "About MindSpace": "Ø¹Ù† Ù…Ø§ÙŠÙ†Ø¯ Ø³Ø¨ÙŠØ³",
+    "Therapy Services": "Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ø¹Ù„Ø§Ø¬",
+    "Assessments": "Ø§Ù„ØªÙ‚ÙŠÙŠÙ…Ø§Øª",
+    "Family Support": "Ø¯Ø¹Ù… Ø§Ù„Ø£Ø³Ø±Ø©",
+    "Professional Workshops": "ÙˆØ±Ø´ Ø¹Ù…Ù„ Ø§Ø­ØªØ±Ø§ÙÙŠØ©",
+    "Book an Appointment": "Ø§Ø­Ø¬Ø² Ù…ÙˆØ¹Ø¯",
+    "Testing Center": "Ù…Ø±ÙƒØ² Ø§Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª",
     "TOEFL": "TOEFL",
-    "CELI & CILS": "CELI و CILS",
-    "Placement Test": "اختبار تحديد المستوى",
-    "Psychological Assessment": "التقييم النفسي",
-    "Corporate Training": "التدريب المؤسسي",
-    "About": "عن المركز",
-    "Our Story": "قصتنا",
-    "Leadership Team": "فريق القيادة",
-    "Partners & Accreditations": "الشركاء والاعتمادات",
-    "Careers": "الوظائف",
-    "FAQs": "الأسئلة الشائعة",
-    "Contact Us": "تواصل معنا",
-    "Visit Our Center": "زر مركزنا",
-    "Request Information": "طلب معلومات",
-    "Book a Consultation": "احجز استشارة",
+    "CELI & CILS": "CELI Ùˆ CILS",
+    "Placement Test": "Ø§Ø®ØªØ¨Ø§Ø± ØªØ­Ø¯ÙŠØ¯ Ø§Ù„Ù…Ø³ØªÙˆÙ‰",
+    "Psychological Assessment": "Ø§Ù„ØªÙ‚ÙŠÙŠÙ… Ø§Ù„Ù†ÙØ³ÙŠ",
+    "Corporate Training": "Ø§Ù„ØªØ¯Ø±ÙŠØ¨ Ø§Ù„Ù…Ø¤Ø³Ø³ÙŠ",
+    "About": "Ø¹Ù† Ø§Ù„Ù…Ø±ÙƒØ²",
+    "Our Story": "Ù‚ØµØªÙ†Ø§",
+    "Leadership Team": "ÙØ±ÙŠÙ‚ Ø§Ù„Ù‚ÙŠØ§Ø¯Ø©",
+    "Partners & Accreditations": "Ø§Ù„Ø´Ø±ÙƒØ§Ø¡ ÙˆØ§Ù„Ø§Ø¹ØªÙ…Ø§Ø¯Ø§Øª",
+    "Careers": "Ø§Ù„ÙˆØ¸Ø§Ø¦Ù",
+    "FAQs": "Ø§Ù„Ø£Ø³Ø¦Ù„Ø© Ø§Ù„Ø´Ø§Ø¦Ø¹Ø©",
+    "Contact Us": "ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§",
+    "Visit Our Center": "Ø²Ø± Ù…Ø±ÙƒØ²Ù†Ø§",
+    "Request Information": "Ø·Ù„Ø¨ Ù…Ø¹Ù„ÙˆÙ…Ø§Øª",
+    "Book a Consultation": "Ø§Ø­Ø¬Ø² Ø§Ø³ØªØ´Ø§Ø±Ø©",
     "AR": "AR",
-    "LMS": "دخول LMS",
-    "Contact": "تواصل معنا",
-    "LMS Login": "دخول LMS",
-    "FAQ": "الأسئلة الشائعة",
-    "Terms & Conditions": "الشروط والأحكام",
-    "Privacy Policy": "سياسة الخصوصية",
-    "Refund Policy": "سياسة الاسترداد",
-    "Loading website": "جاري تحميل الموقع",
-    "EACC Logo": "شعار EACC",
-    "Switch website language to Arabic": "تبديل لغة الموقع إلى العربية",
-    "Switch website language to English": "تبديل لغة الموقع إلى الإنجليزية",
-    "Open menu": "فتح القائمة",
-    "Close menu": "إغلاق القائمة",
-    "Chat with EACC on WhatsApp": "تواصل مع EACC على واتساب",
-    "Empowering Minds. Building Futures.": "تمكين العقول. بناء المستقبل.",
-    "Egyptian American Cultural Center": "المركز الثقافي المصري الأمريكي",
-    "Since 1996, the Egyptian American Cultural Center has guided more than 60,000 graduates toward stronger communication, greater confidence, and a global outlook through accredited language programs, international exam preparation, and professional development.": "منذ عام 1996، وجّه المركز الثقافي المصري الأمريكي أكثر من 60,000 خريج نحو تواصل أقوى، وثقة أكبر، ونظرة عالمية من خلال برامج لغوية معتمدة، والتحضير للاختبارات الدولية، والتطوير المهني.",
-    "Expanding Our Offerings in 2026": "توسيع خدماتنا في 2026",
-    "Excellence today requires more than language proficiency alone. EACC is extending its services to support learners across academics, wellbeing, creativity, and technology.": "التميز اليوم يتطلب أكثر من إتقان اللغة فقط. تعمل EACC على توسيع خدماتها لدعم المتعلمين في المجالات الأكاديمية، والرفاه النفسي، والإبداع، والتكنولوجيا.",
-    "Integrated Pathways for Growth": "مسارات متكاملة للنمو",
-    "Complementing our language programs, new services in psychological wellbeing, robotics, and creative arts help children, youth, and adults build resilience, critical thinking, and the confidence to succeed long term.": "استكمالًا لبرامجنا اللغوية، تساعد الخدمات الجديدة في الرفاه النفسي، والروبوتات، والفنون الإبداعية الأطفال والشباب والبالغين على بناء المرونة، والتفكير النقدي، والثقة للنجاح على المدى الطويل.",
-    "Explore Services": "استكشف الخدمات",
-    "Enroll Now": "سجل الآن",
-    "Language opens doors. Wellbeing builds resilience. Technology develops future skills. Creativity inspires innovation.": "اللغة تفتح الأبواب. الرفاه يبني المرونة. التكنولوجيا تطور مهارات المستقبل. الإبداع يلهم الابتكار.",
-    "Summer Camp 2026 activities": "أنشطة المخيم الصيفي 2026",
-    "Now Enrolling: Summer Camp 2026": "التسجيل مفتوح الآن: المخيم الصيفي 2026",
-    "A dynamic summer experience combining English, robotics, arts, and engaging activities for children and teens.": "تجربة صيفية ديناميكية تجمع بين الإنجليزية، والروبوتات، والفنون، وأنشطة تفاعلية للأطفال والمراهقين.",
-    "Learn More": "اعرف المزيد",
-    "Mind Space by EACC logo": "شعار Mind Space by EACC",
-    "Mind Space by EACC": "مايند سبيس من EACC",
-    "Psychological therapy, assessments, and family support for children, youth, and adults.": "علاج نفسي، وتقييمات، ودعم أسري للأطفال والشباب والبالغين.",
-    "Robotics and creative workshops": "ورش الروبوتات والإبداع",
-    "Robotics Lab & Expressive Studios": "معمل الروبوتات واستوديوهات الفنون التعبيرية",
-    "Hands-on robotics, creative expression, and workshops that build confidence, creativity, and future skills.": "تطبيق عملي في الروبوتات، وتعبير إبداعي، وورش تبني الثقة والإبداع ومهارات المستقبل.",
-    "Authorized testing services": "خدمات اختبارات معتمدة",
-    "Authorized Testing Center": "مركز اختبارات معتمد",
-    "Official registration for TOEFL, CILS, and CELI exams, placement tests, and psychological assessments.": "تسجيل رسمي لاختبارات TOEFL وCILS وCELI واختبارات تحديد المستوى والتقييمات النفسية.",
-    "Book Your Test": "احجز اختبارك",
-    "Established in 1996, EACC has supported 60,000+ graduates since 1996, serves as an Authorized TOEFL, CILS & CELI Testing Center, is powered by 80+ educators and specialists, and is part of Future Education Holding.": "منذ تأسيسها في 1996، دعمت EACC أكثر من 60,000 خريج، وتعمل كمركز اختبارات معتمد لـ TOEFL وCILS وCELI، ويقودها أكثر من 80 معلّمًا ومتخصصًا، وهي جزء من Future Education Holding.",
-    "Registration Now Open": "التسجيل متاح الآن",
-    "My Voice Summer Camp 2026": "المخيم الصيفي My Voice 2026",
-    "A transformational summer experience where children and teens build confidence, strengthen their English, explore robotics and creative expression, and discover their unique voice.": "تجربة صيفية تحويلية يبني فيها الأطفال والمراهقون الثقة، ويطوّرون لغتهم الإنجليزية، ويستكشفون الروبوتات والتعبير الإبداعي، ويكتشفون صوتهم الخاص.",
-    "Personalized Assessments": "تقييمات مخصصة",
-    "Robotics": "الروبوتات",
-    "Expressive Arts": "الفنون التعبيرية",
-    "Field Trips": "رحلات ميدانية",
-    "Adventure Camp": "مخيم المغامرة",
-    "Parent Club": "نادي أولياء الأمور",
-    "Final Showcase": "العرض الختامي",
-    "Explore My Voice Summer Camp 2026": "استكشف مخيم My Voice الصيفي 2026",
-    "Register for Summer Camp": "سجل في المخيم الصيفي",
-    "Limited seats available.": "الأماكن محدودة.",
-    "Featured Services": "الخدمات المميزة",
-    "Discover the Service That Fits Your Goals": "اكتشف الخدمة المناسبة لأهدافك",
-    "Whether you are looking for language training, international testing, psychological support, online learning, or customized corporate solutions, EACC offers trusted services designed to help you succeed.": "سواء كنت تبحث عن تدريب لغوي، أو اختبارات دولية، أو دعم نفسي، أو تعلم أونلاين، أو حلول مؤسسية مخصصة، تقدم EACC خدمات موثوقة مصممة لمساعدتك على النجاح.",
-    "Language Academy programs": "برامج أكاديمية اللغات",
-    "Structured language programs for school, work, study, travel, and everyday communication.": "برامج لغوية منظمة للمدرسة والعمل والدراسة والسفر والتواصل اليومي.",
-    "Explore Language Academy": "استكشف أكاديمية اللغات",
-    "Kids and youth development programs": "برامج تنمية الأطفال والشباب",
-    "English for kids, robotics lab, teen programs, and workshops that develop confidence and future skills.": "إنجليزي للأطفال، ومعمل روبوتات، وبرامج للمراهقين، وورش تطوّر الثقة ومهارات المستقبل.",
-    "Explore Kids & Youth Academy": "استكشف أكاديمية الأطفال والشباب",
-    "Therapy services, assessments, family support, and professional workshops.": "خدمات علاج، وتقييمات، ودعم أسري، وورش احترافية.",
-    "Explore Mind Space": "استكشف Mind Space",
-    "Testing center services": "خدمات مركز الاختبارات",
-    "TOEFL, CILS, CELI, placement tests, and psychological assessments.": "TOEFL وCILS وCELI واختبارات تحديد المستوى والتقييمات النفسية.",
-    "Explore Testing Services": "استكشف خدمات الاختبارات",
-    "Online language learning": "تعلم اللغات أونلاين",
-    "A focused landing point for flexible online language services and learner support.": "نقطة انطلاق مركزة لخدمات لغوية مرنة أونلاين ودعم المتعلمين.",
-    "Explore Online Learning": "استكشف التعلم أونلاين",
-    "Corporate training classroom": "قاعة التدريب المؤسسي",
-    "Customized language, communication, and professional development programs for organizations.": "برامج مخصصة في اللغة والتواصل والتطوير المهني للمؤسسات.",
-    "Explore Corporate Training": "استكشف التدريب المؤسسي",
-    "Why Choose EACC": "لماذا تختار EACC",
-    "What Makes EACC Unique": "ما الذي يجعل EACC مميزة",
-    "EACC combines trusted educational experience with new academic, wellbeing, creative, and technology pathways for learners at every stage of life.": "تجمع EACC بين الخبرة التعليمية الموثوقة ومسارات جديدة أكاديمية ونفسية وإبداعية وتقنية للمتعلمين في كل مراحل الحياة.",
-    "EACC students learning in class": "طلاب EACC يتعلمون داخل الفصل",
-    "Language Expertise": "خبرة لغوية",
-    "Clear placement, strong instruction, and practical communication pathways for children, teens, and adults.": "تحديد مستوى واضح، وتعليم قوي، ومسارات تواصل عملية للأطفال والمراهقين والبالغين.",
-    "Courses for students of different ages": "دورات لطلاب من أعمار مختلفة",
-    "Whole-Learner Support": "دعم شامل للمتعلم",
-    "Mind Space services help families and learners build confidence, resilience, and clarity.": "تساعد خدمات Mind Space الأسر والمتعلمين على بناء الثقة والمرونة والوضوح.",
-    "Student using an online learning platform": "طالب يستخدم منصة تعليم أونلاين",
-    "Technology for Learning": "التكنولوجيا من أجل التعلم",
-    "LMS access, online learning options, robotics, and digital practice support modern learning habits.": "الوصول إلى LMS وخيارات التعلم أونلاين والروبوتات والتدريب الرقمي تدعم عادات تعلم حديثة.",
-    "TOEFL authorized testing center": "مركز اختبار TOEFL معتمد",
-    "Official Testing": "اختبارات رسمية",
-    "Authorized testing and assessment services create a trusted entry point for learners.": "توفر خدمات الاختبارات والتقييمات المعتمدة نقطة انطلاق موثوقة للمتعلمين.",
-    "Success Stories": "قصص النجاح",
-    "Real Results. Meaningful Impact.": "نتائج حقيقية. أثر ملموس.",
-    "For nearly three decades, Egyptian American Cultural Center has helped learners, families, and organizations achieve their goals through education, assessment, and personal development.": "على مدار ما يقارب ثلاثة عقود، ساعد المركز الثقافي المصري الأمريكي المتعلمين والأسر والمؤسسات على تحقيق أهدافهم من خلال التعليم والتقييم والتطوير الشخصي.",
-    "Language Confidence": "ثقة لغوية",
-    "Students move from placement to practical communication through guided instruction, feedback, and consistent practice.": "ينتقل الطلاب من تحديد المستوى إلى التواصل العملي عبر توجيه تعليمي وتغذية راجعة وتدريب منتظم.",
-    "Families gain clearer pathways for children and teens through assessment, counseling, and development-focused programs.": "تحصل الأسر على مسارات أوضح للأطفال والمراهقين عبر التقييم والإرشاد وبرامج تركز على التطوير.",
-    "Organizational Growth": "نمو المؤسسات",
-    "Teams benefit from targeted training that connects language, communication, and professional performance.": "تستفيد الفرق من تدريب موجه يربط بين اللغة والتواصل والأداء المهني.",
-    "Trusted Partnerships. International Standards.": "شراكات موثوقة. معايير دولية.",
-    "Egyptian American Cultural Center works with respected educational institutions and authorized testing organizations to deliver internationally recognized services and assessments.": "يتعاون المركز الثقافي المصري الأمريكي مع مؤسسات تعليمية مرموقة وجهات اختبارات معتمدة لتقديم خدمات وتقييمات معترف بها دوليًا.",
-    "TOEFL logo": "شعار TOEFL",
-    "Authorized Testing Organization": "جهة اختبارات معتمدة",
-    "Academic Group": "مجموعة أكاديمية",
-    "Notting Hill College logo": "شعار Notting Hill College",
-    "Academic Partner": "شريك أكاديمي",
-    "Think English logo": "شعار Think English",
+    "LMS": "Ø¯Ø®ÙˆÙ„ LMS",
+    "Contact": "ØªÙˆØ§ØµÙ„ Ù…Ø¹Ù†Ø§",
+    "LMS Login": "Ø¯Ø®ÙˆÙ„ LMS",
+    "FAQ": "Ø§Ù„Ø£Ø³Ø¦Ù„Ø© Ø§Ù„Ø´Ø§Ø¦Ø¹Ø©",
+    "Terms & Conditions": "Ø§Ù„Ø´Ø±ÙˆØ· ÙˆØ§Ù„Ø£Ø­ÙƒØ§Ù…",
+    "Privacy Policy": "Ø³ÙŠØ§Ø³Ø© Ø§Ù„Ø®ØµÙˆØµÙŠØ©",
+    "Refund Policy": "Ø³ÙŠØ§Ø³Ø© Ø§Ù„Ø§Ø³ØªØ±Ø¯Ø§Ø¯",
+    "Loading website": "Ø¬Ø§Ø±ÙŠ ØªØ­Ù…ÙŠÙ„ Ø§Ù„Ù…ÙˆÙ‚Ø¹",
+    "EACC Logo": "Ø´Ø¹Ø§Ø± EACC",
+    "Switch website language to Arabic": "ØªØ¨Ø¯ÙŠÙ„ Ù„ØºØ© Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø¥Ù„Ù‰ Ø§Ù„Ø¹Ø±Ø¨ÙŠØ©",
+    "Switch website language to English": "ØªØ¨Ø¯ÙŠÙ„ Ù„ØºØ© Ø§Ù„Ù…ÙˆÙ‚Ø¹ Ø¥Ù„Ù‰ Ø§Ù„Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØ©",
+    "Open menu": "ÙØªØ­ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø©",
+    "Close menu": "Ø¥ØºÙ„Ø§Ù‚ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø©",
+    "Chat with EACC on WhatsApp": "ØªÙˆØ§ØµÙ„ Ù…Ø¹ EACC Ø¹Ù„Ù‰ ÙˆØ§ØªØ³Ø§Ø¨",
+    "Empowering Minds. Building Futures.": "ØªÙ…ÙƒÙŠÙ† Ø§Ù„Ø¹Ù‚ÙˆÙ„. Ø¨Ù†Ø§Ø¡ Ø§Ù„Ù…Ø³ØªÙ‚Ø¨Ù„.",
+    "Egyptian American Cultural Center": "Ø§Ù„Ù…Ø±ÙƒØ² Ø§Ù„Ø«Ù‚Ø§ÙÙŠ Ø§Ù„Ù…ØµØ±ÙŠ Ø§Ù„Ø£Ù…Ø±ÙŠÙƒÙŠ",
+    "Since 1996, the Egyptian American Cultural Center has guided more than 60,000 graduates toward stronger communication, greater confidence, and a global outlook through accredited language programs, international exam preparation, and professional development.": "Ù…Ù†Ø° Ø¹Ø§Ù… 1996ØŒ ÙˆØ¬Ù‘Ù‡ Ø§Ù„Ù…Ø±ÙƒØ² Ø§Ù„Ø«Ù‚Ø§ÙÙŠ Ø§Ù„Ù…ØµØ±ÙŠ Ø§Ù„Ø£Ù…Ø±ÙŠÙƒÙŠ Ø£ÙƒØ«Ø± Ù…Ù† 60,000 Ø®Ø±ÙŠØ¬ Ù†Ø­Ùˆ ØªÙˆØ§ØµÙ„ Ø£Ù‚ÙˆÙ‰ØŒ ÙˆØ«Ù‚Ø© Ø£ÙƒØ¨Ø±ØŒ ÙˆÙ†Ø¸Ø±Ø© Ø¹Ø§Ù„Ù…ÙŠØ© Ù…Ù† Ø®Ù„Ø§Ù„ Ø¨Ø±Ø§Ù…Ø¬ Ù„ØºÙˆÙŠØ© Ù…Ø¹ØªÙ…Ø¯Ø©ØŒ ÙˆØ§Ù„ØªØ­Ø¶ÙŠØ± Ù„Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ø§Ù„Ø¯ÙˆÙ„ÙŠØ©ØŒ ÙˆØ§Ù„ØªØ·ÙˆÙŠØ± Ø§Ù„Ù…Ù‡Ù†ÙŠ.",
+    "Expanding Our Offerings in 2026": "ØªÙˆØ³ÙŠØ¹ Ø®Ø¯Ù…Ø§ØªÙ†Ø§ ÙÙŠ 2026",
+    "Excellence today requires more than language proficiency alone. EACC is extending its services to support learners across academics, wellbeing, creativity, and technology.": "Ø§Ù„ØªÙ…ÙŠØ² Ø§Ù„ÙŠÙˆÙ… ÙŠØªØ·Ù„Ø¨ Ø£ÙƒØ«Ø± Ù…Ù† Ø¥ØªÙ‚Ø§Ù† Ø§Ù„Ù„ØºØ© ÙÙ‚Ø·. ØªØ¹Ù…Ù„ EACC Ø¹Ù„Ù‰ ØªÙˆØ³ÙŠØ¹ Ø®Ø¯Ù…Ø§ØªÙ‡Ø§ Ù„Ø¯Ø¹Ù… Ø§Ù„Ù…ØªØ¹Ù„Ù…ÙŠÙ† ÙÙŠ Ø§Ù„Ù…Ø¬Ø§Ù„Ø§Øª Ø§Ù„Ø£ÙƒØ§Ø¯ÙŠÙ…ÙŠØ©ØŒ ÙˆØ§Ù„Ø±ÙØ§Ù‡ Ø§Ù„Ù†ÙØ³ÙŠØŒ ÙˆØ§Ù„Ø¥Ø¨Ø¯Ø§Ø¹ØŒ ÙˆØ§Ù„ØªÙƒÙ†ÙˆÙ„ÙˆØ¬ÙŠØ§.",
+    "Integrated Pathways for Growth": "Ù…Ø³Ø§Ø±Ø§Øª Ù…ØªÙƒØ§Ù…Ù„Ø© Ù„Ù„Ù†Ù…Ùˆ",
+    "Complementing our language programs, new services in psychological wellbeing, robotics, and creative arts help children, youth, and adults build resilience, critical thinking, and the confidence to succeed long term.": "Ø§Ø³ØªÙƒÙ…Ø§Ù„Ù‹Ø§ Ù„Ø¨Ø±Ø§Ù…Ø¬Ù†Ø§ Ø§Ù„Ù„ØºÙˆÙŠØ©ØŒ ØªØ³Ø§Ø¹Ø¯ Ø§Ù„Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ø¬Ø¯ÙŠØ¯Ø© ÙÙŠ Ø§Ù„Ø±ÙØ§Ù‡ Ø§Ù„Ù†ÙØ³ÙŠØŒ ÙˆØ§Ù„Ø±ÙˆØ¨ÙˆØªØ§ØªØŒ ÙˆØ§Ù„ÙÙ†ÙˆÙ† Ø§Ù„Ø¥Ø¨Ø¯Ø§Ø¹ÙŠØ© Ø§Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ø´Ø¨Ø§Ø¨ ÙˆØ§Ù„Ø¨Ø§Ù„ØºÙŠÙ† Ø¹Ù„Ù‰ Ø¨Ù†Ø§Ø¡ Ø§Ù„Ù…Ø±ÙˆÙ†Ø©ØŒ ÙˆØ§Ù„ØªÙÙƒÙŠØ± Ø§Ù„Ù†Ù‚Ø¯ÙŠØŒ ÙˆØ§Ù„Ø«Ù‚Ø© Ù„Ù„Ù†Ø¬Ø§Ø­ Ø¹Ù„Ù‰ Ø§Ù„Ù…Ø¯Ù‰ Ø§Ù„Ø·ÙˆÙŠÙ„.",
+    "Explore Services": "Ø§Ø³ØªÙƒØ´Ù Ø§Ù„Ø®Ø¯Ù…Ø§Øª",
+    "Enroll Now": "Ø³Ø¬Ù„ Ø§Ù„Ø¢Ù†",
+    "Language opens doors. Wellbeing builds resilience. Technology develops future skills. Creativity inspires innovation.": "Ø§Ù„Ù„ØºØ© ØªÙØªØ­ Ø§Ù„Ø£Ø¨ÙˆØ§Ø¨. Ø§Ù„Ø±ÙØ§Ù‡ ÙŠØ¨Ù†ÙŠ Ø§Ù„Ù…Ø±ÙˆÙ†Ø©. Ø§Ù„ØªÙƒÙ†ÙˆÙ„ÙˆØ¬ÙŠØ§ ØªØ·ÙˆØ± Ù…Ù‡Ø§Ø±Ø§Øª Ø§Ù„Ù…Ø³ØªÙ‚Ø¨Ù„. Ø§Ù„Ø¥Ø¨Ø¯Ø§Ø¹ ÙŠÙ„Ù‡Ù… Ø§Ù„Ø§Ø¨ØªÙƒØ§Ø±.",
+    "Summer Camp 2026 activities": "Ø£Ù†Ø´Ø·Ø© Ø§Ù„Ù…Ø®ÙŠÙ… Ø§Ù„ØµÙŠÙÙŠ 2026",
+    "Now Enrolling: Summer Camp 2026": "Ø§Ù„ØªØ³Ø¬ÙŠÙ„ Ù…ÙØªÙˆØ­ Ø§Ù„Ø¢Ù†: Ø§Ù„Ù…Ø®ÙŠÙ… Ø§Ù„ØµÙŠÙÙŠ 2026",
+    "A dynamic summer experience combining English, robotics, arts, and engaging activities for children and teens.": "ØªØ¬Ø±Ø¨Ø© ØµÙŠÙÙŠØ© Ø¯ÙŠÙ†Ø§Ù…ÙŠÙƒÙŠØ© ØªØ¬Ù…Ø¹ Ø¨ÙŠÙ† Ø§Ù„Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØ©ØŒ ÙˆØ§Ù„Ø±ÙˆØ¨ÙˆØªØ§ØªØŒ ÙˆØ§Ù„ÙÙ†ÙˆÙ†ØŒ ÙˆØ£Ù†Ø´Ø·Ø© ØªÙØ§Ø¹Ù„ÙŠØ© Ù„Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ù…Ø±Ø§Ù‡Ù‚ÙŠÙ†.",
+    "Learn More": "Ø§Ø¹Ø±Ù Ø§Ù„Ù…Ø²ÙŠØ¯",
+    "Mind Space by EACC logo": "Ø´Ø¹Ø§Ø± Mind Space by EACC",
+    "Mind Space by EACC": "Ù…Ø§ÙŠÙ†Ø¯ Ø³Ø¨ÙŠØ³ Ù…Ù† EACC",
+    "Psychological therapy, assessments, and family support for children, youth, and adults.": "Ø¹Ù„Ø§Ø¬ Ù†ÙØ³ÙŠØŒ ÙˆØªÙ‚ÙŠÙŠÙ…Ø§ØªØŒ ÙˆØ¯Ø¹Ù… Ø£Ø³Ø±ÙŠ Ù„Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ø´Ø¨Ø§Ø¨ ÙˆØ§Ù„Ø¨Ø§Ù„ØºÙŠÙ†.",
+    "Robotics and creative workshops": "ÙˆØ±Ø´ Ø§Ù„Ø±ÙˆØ¨ÙˆØªØ§Øª ÙˆØ§Ù„Ø¥Ø¨Ø¯Ø§Ø¹",
+    "Robotics Lab & Expressive Studios": "Ù…Ø¹Ù…Ù„ Ø§Ù„Ø±ÙˆØ¨ÙˆØªØ§Øª ÙˆØ§Ø³ØªÙˆØ¯ÙŠÙˆÙ‡Ø§Øª Ø§Ù„ÙÙ†ÙˆÙ† Ø§Ù„ØªØ¹Ø¨ÙŠØ±ÙŠØ©",
+    "Hands-on robotics, creative expression, and workshops that build confidence, creativity, and future skills.": "ØªØ·Ø¨ÙŠÙ‚ Ø¹Ù…Ù„ÙŠ ÙÙŠ Ø§Ù„Ø±ÙˆØ¨ÙˆØªØ§ØªØŒ ÙˆØªØ¹Ø¨ÙŠØ± Ø¥Ø¨Ø¯Ø§Ø¹ÙŠØŒ ÙˆÙˆØ±Ø´ ØªØ¨Ù†ÙŠ Ø§Ù„Ø«Ù‚Ø© ÙˆØ§Ù„Ø¥Ø¨Ø¯Ø§Ø¹ ÙˆÙ…Ù‡Ø§Ø±Ø§Øª Ø§Ù„Ù…Ø³ØªÙ‚Ø¨Ù„.",
+    "Authorized testing services": "Ø®Ø¯Ù…Ø§Øª Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ù…Ø¹ØªÙ…Ø¯Ø©",
+    "Authorized Testing Center": "Ù…Ø±ÙƒØ² Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ù…Ø¹ØªÙ…Ø¯",
+    "Official registration for TOEFL, CILS, and CELI exams, placement tests, and psychological assessments.": "ØªØ³Ø¬ÙŠÙ„ Ø±Ø³Ù…ÙŠ Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª TOEFL ÙˆCILS ÙˆCELI ÙˆØ§Ø®ØªØ¨Ø§Ø±Ø§Øª ØªØ­Ø¯ÙŠØ¯ Ø§Ù„Ù…Ø³ØªÙˆÙ‰ ÙˆØ§Ù„ØªÙ‚ÙŠÙŠÙ…Ø§Øª Ø§Ù„Ù†ÙØ³ÙŠØ©.",
+    "Book Your Test": "Ø§Ø­Ø¬Ø² Ø§Ø®ØªØ¨Ø§Ø±Ùƒ",
+    "Established in 1996, EACC has supported 60,000+ graduates since 1996, serves as an Authorized TOEFL, CILS & CELI Testing Center, is powered by 80+ educators and specialists, and is part of Future Education Holding.": "Ù…Ù†Ø° ØªØ£Ø³ÙŠØ³Ù‡Ø§ ÙÙŠ 1996ØŒ Ø¯Ø¹Ù…Øª EACC Ø£ÙƒØ«Ø± Ù…Ù† 60,000 Ø®Ø±ÙŠØ¬ØŒ ÙˆØªØ¹Ù…Ù„ ÙƒÙ…Ø±ÙƒØ² Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ù…Ø¹ØªÙ…Ø¯ Ù„Ù€ TOEFL ÙˆCILS ÙˆCELIØŒ ÙˆÙŠÙ‚ÙˆØ¯Ù‡Ø§ Ø£ÙƒØ«Ø± Ù…Ù† 80 Ù…Ø¹Ù„Ù‘Ù…Ù‹Ø§ ÙˆÙ…ØªØ®ØµØµÙ‹Ø§ØŒ ÙˆÙ‡ÙŠ Ø¬Ø²Ø¡ Ù…Ù† Future Education Holding.",
+    "Registration Now Open": "Ø§Ù„ØªØ³Ø¬ÙŠÙ„ Ù…ØªØ§Ø­ Ø§Ù„Ø¢Ù†",
+    "My Voice Summer Camp 2026": "Ø§Ù„Ù…Ø®ÙŠÙ… Ø§Ù„ØµÙŠÙÙŠ My Voice 2026",
+    "A transformational summer experience where children and teens build confidence, strengthen their English, explore robotics and creative expression, and discover their unique voice.": "ØªØ¬Ø±Ø¨Ø© ØµÙŠÙÙŠØ© ØªØ­ÙˆÙŠÙ„ÙŠØ© ÙŠØ¨Ù†ÙŠ ÙÙŠÙ‡Ø§ Ø§Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ù…Ø±Ø§Ù‡Ù‚ÙˆÙ† Ø§Ù„Ø«Ù‚Ø©ØŒ ÙˆÙŠØ·ÙˆÙ‘Ø±ÙˆÙ† Ù„ØºØªÙ‡Ù… Ø§Ù„Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠØ©ØŒ ÙˆÙŠØ³ØªÙƒØ´ÙÙˆÙ† Ø§Ù„Ø±ÙˆØ¨ÙˆØªØ§Øª ÙˆØ§Ù„ØªØ¹Ø¨ÙŠØ± Ø§Ù„Ø¥Ø¨Ø¯Ø§Ø¹ÙŠØŒ ÙˆÙŠÙƒØªØ´ÙÙˆÙ† ØµÙˆØªÙ‡Ù… Ø§Ù„Ø®Ø§Øµ.",
+    "Personalized Assessments": "ØªÙ‚ÙŠÙŠÙ…Ø§Øª Ù…Ø®ØµØµØ©",
+    "Robotics": "Ø§Ù„Ø±ÙˆØ¨ÙˆØªØ§Øª",
+    "Expressive Arts": "Ø§Ù„ÙÙ†ÙˆÙ† Ø§Ù„ØªØ¹Ø¨ÙŠØ±ÙŠØ©",
+    "Field Trips": "Ø±Ø­Ù„Ø§Øª Ù…ÙŠØ¯Ø§Ù†ÙŠØ©",
+    "Adventure Camp": "Ù…Ø®ÙŠÙ… Ø§Ù„Ù…ØºØ§Ù…Ø±Ø©",
+    "Parent Club": "Ù†Ø§Ø¯ÙŠ Ø£ÙˆÙ„ÙŠØ§Ø¡ Ø§Ù„Ø£Ù…ÙˆØ±",
+    "Final Showcase": "Ø§Ù„Ø¹Ø±Ø¶ Ø§Ù„Ø®ØªØ§Ù…ÙŠ",
+    "Explore My Voice Summer Camp 2026": "Ø§Ø³ØªÙƒØ´Ù Ù…Ø®ÙŠÙ… My Voice Ø§Ù„ØµÙŠÙÙŠ 2026",
+    "Register for Summer Camp": "Ø³Ø¬Ù„ ÙÙŠ Ø§Ù„Ù…Ø®ÙŠÙ… Ø§Ù„ØµÙŠÙÙŠ",
+    "Limited seats available.": "Ø§Ù„Ø£Ù…Ø§ÙƒÙ† Ù…Ø­Ø¯ÙˆØ¯Ø©.",
+    "Featured Services": "Ø§Ù„Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ù…Ù…ÙŠØ²Ø©",
+    "Discover the Service That Fits Your Goals": "Ø§ÙƒØªØ´Ù Ø§Ù„Ø®Ø¯Ù…Ø© Ø§Ù„Ù…Ù†Ø§Ø³Ø¨Ø© Ù„Ø£Ù‡Ø¯Ø§ÙÙƒ",
+    "Whether you are looking for language training, international testing, psychological support, online learning, or customized corporate solutions, EACC offers trusted services designed to help you succeed.": "Ø³ÙˆØ§Ø¡ ÙƒÙ†Øª ØªØ¨Ø­Ø« Ø¹Ù† ØªØ¯Ø±ÙŠØ¨ Ù„ØºÙˆÙŠØŒ Ø£Ùˆ Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ø¯ÙˆÙ„ÙŠØ©ØŒ Ø£Ùˆ Ø¯Ø¹Ù… Ù†ÙØ³ÙŠØŒ Ø£Ùˆ ØªØ¹Ù„Ù… Ø£ÙˆÙ†Ù„Ø§ÙŠÙ†ØŒ Ø£Ùˆ Ø­Ù„ÙˆÙ„ Ù…Ø¤Ø³Ø³ÙŠØ© Ù…Ø®ØµØµØ©ØŒ ØªÙ‚Ø¯Ù… EACC Ø®Ø¯Ù…Ø§Øª Ù…ÙˆØ«ÙˆÙ‚Ø© Ù…ØµÙ…Ù…Ø© Ù„Ù…Ø³Ø§Ø¹Ø¯ØªÙƒ Ø¹Ù„Ù‰ Ø§Ù„Ù†Ø¬Ø§Ø­.",
+    "Language Academy programs": "Ø¨Ø±Ø§Ù…Ø¬ Ø£ÙƒØ§Ø¯ÙŠÙ…ÙŠØ© Ø§Ù„Ù„ØºØ§Øª",
+    "Structured language programs for school, work, study, travel, and everyday communication.": "Ø¨Ø±Ø§Ù…Ø¬ Ù„ØºÙˆÙŠØ© Ù…Ù†Ø¸Ù…Ø© Ù„Ù„Ù…Ø¯Ø±Ø³Ø© ÙˆØ§Ù„Ø¹Ù…Ù„ ÙˆØ§Ù„Ø¯Ø±Ø§Ø³Ø© ÙˆØ§Ù„Ø³ÙØ± ÙˆØ§Ù„ØªÙˆØ§ØµÙ„ Ø§Ù„ÙŠÙˆÙ…ÙŠ.",
+    "Explore Language Academy": "Ø§Ø³ØªÙƒØ´Ù Ø£ÙƒØ§Ø¯ÙŠÙ…ÙŠØ© Ø§Ù„Ù„ØºØ§Øª",
+    "Kids and youth development programs": "Ø¨Ø±Ø§Ù…Ø¬ ØªÙ†Ù…ÙŠØ© Ø§Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ø´Ø¨Ø§Ø¨",
+    "English for kids, robotics lab, teen programs, and workshops that develop confidence and future skills.": "Ø¥Ù†Ø¬Ù„ÙŠØ²ÙŠ Ù„Ù„Ø£Ø·ÙØ§Ù„ØŒ ÙˆÙ…Ø¹Ù…Ù„ Ø±ÙˆØ¨ÙˆØªØ§ØªØŒ ÙˆØ¨Ø±Ø§Ù…Ø¬ Ù„Ù„Ù…Ø±Ø§Ù‡Ù‚ÙŠÙ†ØŒ ÙˆÙˆØ±Ø´ ØªØ·ÙˆÙ‘Ø± Ø§Ù„Ø«Ù‚Ø© ÙˆÙ…Ù‡Ø§Ø±Ø§Øª Ø§Ù„Ù…Ø³ØªÙ‚Ø¨Ù„.",
+    "Explore Kids & Youth Academy": "Ø§Ø³ØªÙƒØ´Ù Ø£ÙƒØ§Ø¯ÙŠÙ…ÙŠØ© Ø§Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ø´Ø¨Ø§Ø¨",
+    "Therapy services, assessments, family support, and professional workshops.": "Ø®Ø¯Ù…Ø§Øª Ø¹Ù„Ø§Ø¬ØŒ ÙˆØªÙ‚ÙŠÙŠÙ…Ø§ØªØŒ ÙˆØ¯Ø¹Ù… Ø£Ø³Ø±ÙŠØŒ ÙˆÙˆØ±Ø´ Ø§Ø­ØªØ±Ø§ÙÙŠØ©.",
+    "Explore Mind Space": "Ø§Ø³ØªÙƒØ´Ù Mind Space",
+    "Testing center services": "Ø®Ø¯Ù…Ø§Øª Ù…Ø±ÙƒØ² Ø§Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª",
+    "TOEFL, CILS, CELI, placement tests, and psychological assessments.": "TOEFL ÙˆCILS ÙˆCELI ÙˆØ§Ø®ØªØ¨Ø§Ø±Ø§Øª ØªØ­Ø¯ÙŠØ¯ Ø§Ù„Ù…Ø³ØªÙˆÙ‰ ÙˆØ§Ù„ØªÙ‚ÙŠÙŠÙ…Ø§Øª Ø§Ù„Ù†ÙØ³ÙŠØ©.",
+    "Explore Testing Services": "Ø§Ø³ØªÙƒØ´Ù Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª",
+    "Online language learning": "ØªØ¹Ù„Ù… Ø§Ù„Ù„ØºØ§Øª Ø£ÙˆÙ†Ù„Ø§ÙŠÙ†",
+    "A focused landing point for flexible online language services and learner support.": "Ù†Ù‚Ø·Ø© Ø§Ù†Ø·Ù„Ø§Ù‚ Ù…Ø±ÙƒØ²Ø© Ù„Ø®Ø¯Ù…Ø§Øª Ù„ØºÙˆÙŠØ© Ù…Ø±Ù†Ø© Ø£ÙˆÙ†Ù„Ø§ÙŠÙ† ÙˆØ¯Ø¹Ù… Ø§Ù„Ù…ØªØ¹Ù„Ù…ÙŠÙ†.",
+    "Explore Online Learning": "Ø§Ø³ØªÙƒØ´Ù Ø§Ù„ØªØ¹Ù„Ù… Ø£ÙˆÙ†Ù„Ø§ÙŠÙ†",
+    "Corporate training classroom": "Ù‚Ø§Ø¹Ø© Ø§Ù„ØªØ¯Ø±ÙŠØ¨ Ø§Ù„Ù…Ø¤Ø³Ø³ÙŠ",
+    "Customized language, communication, and professional development programs for organizations.": "Ø¨Ø±Ø§Ù…Ø¬ Ù…Ø®ØµØµØ© ÙÙŠ Ø§Ù„Ù„ØºØ© ÙˆØ§Ù„ØªÙˆØ§ØµÙ„ ÙˆØ§Ù„ØªØ·ÙˆÙŠØ± Ø§Ù„Ù…Ù‡Ù†ÙŠ Ù„Ù„Ù…Ø¤Ø³Ø³Ø§Øª.",
+    "Explore Corporate Training": "Ø§Ø³ØªÙƒØ´Ù Ø§Ù„ØªØ¯Ø±ÙŠØ¨ Ø§Ù„Ù…Ø¤Ø³Ø³ÙŠ",
+    "Why Choose EACC": "Ù„Ù…Ø§Ø°Ø§ ØªØ®ØªØ§Ø± EACC",
+    "What Makes EACC Unique": "Ù…Ø§ Ø§Ù„Ø°ÙŠ ÙŠØ¬Ø¹Ù„ EACC Ù…Ù…ÙŠØ²Ø©",
+    "EACC combines trusted educational experience with new academic, wellbeing, creative, and technology pathways for learners at every stage of life.": "ØªØ¬Ù…Ø¹ EACC Ø¨ÙŠÙ† Ø§Ù„Ø®Ø¨Ø±Ø© Ø§Ù„ØªØ¹Ù„ÙŠÙ…ÙŠØ© Ø§Ù„Ù…ÙˆØ«ÙˆÙ‚Ø© ÙˆÙ…Ø³Ø§Ø±Ø§Øª Ø¬Ø¯ÙŠØ¯Ø© Ø£ÙƒØ§Ø¯ÙŠÙ…ÙŠØ© ÙˆÙ†ÙØ³ÙŠØ© ÙˆØ¥Ø¨Ø¯Ø§Ø¹ÙŠØ© ÙˆØªÙ‚Ù†ÙŠØ© Ù„Ù„Ù…ØªØ¹Ù„Ù…ÙŠÙ† ÙÙŠ ÙƒÙ„ Ù…Ø±Ø§Ø­Ù„ Ø§Ù„Ø­ÙŠØ§Ø©.",
+    "EACC students learning in class": "Ø·Ù„Ø§Ø¨ EACC ÙŠØªØ¹Ù„Ù…ÙˆÙ† Ø¯Ø§Ø®Ù„ Ø§Ù„ÙØµÙ„",
+    "Language Expertise": "Ø®Ø¨Ø±Ø© Ù„ØºÙˆÙŠØ©",
+    "Clear placement, strong instruction, and practical communication pathways for children, teens, and adults.": "ØªØ­Ø¯ÙŠØ¯ Ù…Ø³ØªÙˆÙ‰ ÙˆØ§Ø¶Ø­ØŒ ÙˆØªØ¹Ù„ÙŠÙ… Ù‚ÙˆÙŠØŒ ÙˆÙ…Ø³Ø§Ø±Ø§Øª ØªÙˆØ§ØµÙ„ Ø¹Ù…Ù„ÙŠØ© Ù„Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ù…Ø±Ø§Ù‡Ù‚ÙŠÙ† ÙˆØ§Ù„Ø¨Ø§Ù„ØºÙŠÙ†.",
+    "Courses for students of different ages": "Ø¯ÙˆØ±Ø§Øª Ù„Ø·Ù„Ø§Ø¨ Ù…Ù† Ø£Ø¹Ù…Ø§Ø± Ù…Ø®ØªÙ„ÙØ©",
+    "Whole-Learner Support": "Ø¯Ø¹Ù… Ø´Ø§Ù…Ù„ Ù„Ù„Ù…ØªØ¹Ù„Ù…",
+    "Mind Space services help families and learners build confidence, resilience, and clarity.": "ØªØ³Ø§Ø¹Ø¯ Ø®Ø¯Ù…Ø§Øª Mind Space Ø§Ù„Ø£Ø³Ø± ÙˆØ§Ù„Ù…ØªØ¹Ù„Ù…ÙŠÙ† Ø¹Ù„Ù‰ Ø¨Ù†Ø§Ø¡ Ø§Ù„Ø«Ù‚Ø© ÙˆØ§Ù„Ù…Ø±ÙˆÙ†Ø© ÙˆØ§Ù„ÙˆØ¶ÙˆØ­.",
+    "Student using an online learning platform": "Ø·Ø§Ù„Ø¨ ÙŠØ³ØªØ®Ø¯Ù… Ù…Ù†ØµØ© ØªØ¹Ù„ÙŠÙ… Ø£ÙˆÙ†Ù„Ø§ÙŠÙ†",
+    "Technology for Learning": "Ø§Ù„ØªÙƒÙ†ÙˆÙ„ÙˆØ¬ÙŠØ§ Ù…Ù† Ø£Ø¬Ù„ Ø§Ù„ØªØ¹Ù„Ù…",
+    "LMS access, online learning options, robotics, and digital practice support modern learning habits.": "Ø§Ù„ÙˆØµÙˆÙ„ Ø¥Ù„Ù‰ LMS ÙˆØ®ÙŠØ§Ø±Ø§Øª Ø§Ù„ØªØ¹Ù„Ù… Ø£ÙˆÙ†Ù„Ø§ÙŠÙ† ÙˆØ§Ù„Ø±ÙˆØ¨ÙˆØªØ§Øª ÙˆØ§Ù„ØªØ¯Ø±ÙŠØ¨ Ø§Ù„Ø±Ù‚Ù…ÙŠ ØªØ¯Ø¹Ù… Ø¹Ø§Ø¯Ø§Øª ØªØ¹Ù„Ù… Ø­Ø¯ÙŠØ«Ø©.",
+    "TOEFL authorized testing center": "Ù…Ø±ÙƒØ² Ø§Ø®ØªØ¨Ø§Ø± TOEFL Ù…Ø¹ØªÙ…Ø¯",
+    "Official Testing": "Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ø±Ø³Ù…ÙŠØ©",
+    "Authorized testing and assessment services create a trusted entry point for learners.": "ØªÙˆÙØ± Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª ÙˆØ§Ù„ØªÙ‚ÙŠÙŠÙ…Ø§Øª Ø§Ù„Ù…Ø¹ØªÙ…Ø¯Ø© Ù†Ù‚Ø·Ø© Ø§Ù†Ø·Ù„Ø§Ù‚ Ù…ÙˆØ«ÙˆÙ‚Ø© Ù„Ù„Ù…ØªØ¹Ù„Ù…ÙŠÙ†.",
+    "Success Stories": "Ù‚ØµØµ Ø§Ù„Ù†Ø¬Ø§Ø­",
+    "Real Results. Meaningful Impact.": "Ù†ØªØ§Ø¦Ø¬ Ø­Ù‚ÙŠÙ‚ÙŠØ©. Ø£Ø«Ø± Ù…Ù„Ù…ÙˆØ³.",
+    "For nearly three decades, Egyptian American Cultural Center has helped learners, families, and organizations achieve their goals through education, assessment, and personal development.": "Ø¹Ù„Ù‰ Ù…Ø¯Ø§Ø± Ù…Ø§ ÙŠÙ‚Ø§Ø±Ø¨ Ø«Ù„Ø§Ø«Ø© Ø¹Ù‚ÙˆØ¯ØŒ Ø³Ø§Ø¹Ø¯ Ø§Ù„Ù…Ø±ÙƒØ² Ø§Ù„Ø«Ù‚Ø§ÙÙŠ Ø§Ù„Ù…ØµØ±ÙŠ Ø§Ù„Ø£Ù…Ø±ÙŠÙƒÙŠ Ø§Ù„Ù…ØªØ¹Ù„Ù…ÙŠÙ† ÙˆØ§Ù„Ø£Ø³Ø± ÙˆØ§Ù„Ù…Ø¤Ø³Ø³Ø§Øª Ø¹Ù„Ù‰ ØªØ­Ù‚ÙŠÙ‚ Ø£Ù‡Ø¯Ø§ÙÙ‡Ù… Ù…Ù† Ø®Ù„Ø§Ù„ Ø§Ù„ØªØ¹Ù„ÙŠÙ… ÙˆØ§Ù„ØªÙ‚ÙŠÙŠÙ… ÙˆØ§Ù„ØªØ·ÙˆÙŠØ± Ø§Ù„Ø´Ø®ØµÙŠ.",
+    "Language Confidence": "Ø«Ù‚Ø© Ù„ØºÙˆÙŠØ©",
+    "Students move from placement to practical communication through guided instruction, feedback, and consistent practice.": "ÙŠÙ†ØªÙ‚Ù„ Ø§Ù„Ø·Ù„Ø§Ø¨ Ù…Ù† ØªØ­Ø¯ÙŠØ¯ Ø§Ù„Ù…Ø³ØªÙˆÙ‰ Ø¥Ù„Ù‰ Ø§Ù„ØªÙˆØ§ØµÙ„ Ø§Ù„Ø¹Ù…Ù„ÙŠ Ø¹Ø¨Ø± ØªÙˆØ¬ÙŠÙ‡ ØªØ¹Ù„ÙŠÙ…ÙŠ ÙˆØªØºØ°ÙŠØ© Ø±Ø§Ø¬Ø¹Ø© ÙˆØªØ¯Ø±ÙŠØ¨ Ù…Ù†ØªØ¸Ù….",
+    "Families gain clearer pathways for children and teens through assessment, counseling, and development-focused programs.": "ØªØ­ØµÙ„ Ø§Ù„Ø£Ø³Ø± Ø¹Ù„Ù‰ Ù…Ø³Ø§Ø±Ø§Øª Ø£ÙˆØ¶Ø­ Ù„Ù„Ø£Ø·ÙØ§Ù„ ÙˆØ§Ù„Ù…Ø±Ø§Ù‡Ù‚ÙŠÙ† Ø¹Ø¨Ø± Ø§Ù„ØªÙ‚ÙŠÙŠÙ… ÙˆØ§Ù„Ø¥Ø±Ø´Ø§Ø¯ ÙˆØ¨Ø±Ø§Ù…Ø¬ ØªØ±ÙƒØ² Ø¹Ù„Ù‰ Ø§Ù„ØªØ·ÙˆÙŠØ±.",
+    "Organizational Growth": "Ù†Ù…Ùˆ Ø§Ù„Ù…Ø¤Ø³Ø³Ø§Øª",
+    "Teams benefit from targeted training that connects language, communication, and professional performance.": "ØªØ³ØªÙÙŠØ¯ Ø§Ù„ÙØ±Ù‚ Ù…Ù† ØªØ¯Ø±ÙŠØ¨ Ù…ÙˆØ¬Ù‡ ÙŠØ±Ø¨Ø· Ø¨ÙŠÙ† Ø§Ù„Ù„ØºØ© ÙˆØ§Ù„ØªÙˆØ§ØµÙ„ ÙˆØ§Ù„Ø£Ø¯Ø§Ø¡ Ø§Ù„Ù…Ù‡Ù†ÙŠ.",
+    "Trusted Partnerships. International Standards.": "Ø´Ø±Ø§ÙƒØ§Øª Ù…ÙˆØ«ÙˆÙ‚Ø©. Ù…Ø¹Ø§ÙŠÙŠØ± Ø¯ÙˆÙ„ÙŠØ©.",
+    "Egyptian American Cultural Center works with respected educational institutions and authorized testing organizations to deliver internationally recognized services and assessments.": "ÙŠØªØ¹Ø§ÙˆÙ† Ø§Ù„Ù…Ø±ÙƒØ² Ø§Ù„Ø«Ù‚Ø§ÙÙŠ Ø§Ù„Ù…ØµØ±ÙŠ Ø§Ù„Ø£Ù…Ø±ÙŠÙƒÙŠ Ù…Ø¹ Ù…Ø¤Ø³Ø³Ø§Øª ØªØ¹Ù„ÙŠÙ…ÙŠØ© Ù…Ø±Ù…ÙˆÙ‚Ø© ÙˆØ¬Ù‡Ø§Øª Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ù…Ø¹ØªÙ…Ø¯Ø© Ù„ØªÙ‚Ø¯ÙŠÙ… Ø®Ø¯Ù…Ø§Øª ÙˆØªÙ‚ÙŠÙŠÙ…Ø§Øª Ù…Ø¹ØªØ±Ù Ø¨Ù‡Ø§ Ø¯ÙˆÙ„ÙŠÙ‹Ø§.",
+    "TOEFL logo": "Ø´Ø¹Ø§Ø± TOEFL",
+    "Authorized Testing Organization": "Ø¬Ù‡Ø© Ø§Ø®ØªØ¨Ø§Ø±Ø§Øª Ù…Ø¹ØªÙ…Ø¯Ø©",
+    "Academic Group": "Ù…Ø¬Ù…ÙˆØ¹Ø© Ø£ÙƒØ§Ø¯ÙŠÙ…ÙŠØ©",
+    "Notting Hill College logo": "Ø´Ø¹Ø§Ø± Notting Hill College",
+    "Academic Partner": "Ø´Ø±ÙŠÙƒ Ø£ÙƒØ§Ø¯ÙŠÙ…ÙŠ",
+    "Think English logo": "Ø´Ø¹Ø§Ø± Think English",
     "Think English": "Think English",
-    "Eton Academy logo": "شعار Eton Academy",
-    "Partner Universities": "جامعات شريكة",
-    "Institutional Network": "شبكة مؤسسية",
-    "View Our Partners": "شاهد شركاءنا",
-    "Start Your Learning Journey with EACC": "ابدأ رحلتك التعليمية مع EACC",
-    "Whether you want to improve your language skills, prepare for an international exam, support your child's development, access psychological services, or advance your organization, EACC is here to help you achieve your goals.": "سواء أردت تحسين مهاراتك اللغوية، أو التحضير لاختبار دولي، أو دعم تطور طفلك، أو الاستفادة من الخدمات النفسية، أو تطوير مؤسستك، فـ EACC هنا لمساعدتك على تحقيق أهدافك.",
-    "Our team is ready to help you choose the service that best fits your needs.": "فريقنا جاهز لمساعدتك في اختيار الخدمة الأنسب لاحتياجاتك.",
-    "EACC White Logo": "شعار EACC الأبيض",
-    "Language, wellbeing, and future skills for every stage of life.": "اللغة والرفاه ومهارات المستقبل لكل مرحلة من مراحل الحياة.",
-    "Helping learners and families grow with confidence since 1996.": "نساعد المتعلمين والأسر على النمو بثقة منذ 1996.",
-    "Explore": "استكشف",
-    "Resources": "الموارد",
-    "Consultation Request": "طلب استشارة",
-    "Alexandria, Egypt": "الإسكندرية، مصر",
-    "WhatsApp: +20 106 553 3240": "واتساب: +20 106 553 3240",
-    "Email: info@eacc-egy.com": "البريد الإلكتروني: info@eacc-egy.com",
-    "© 2026 Egyptian American Cultural Center. All rights reserved.": "© 2026 Egyptian American Cultural Center. جميع الحقوق محفوظة."
+    "Eton Academy logo": "Ø´Ø¹Ø§Ø± Eton Academy",
+    "Partner Universities": "Ø¬Ø§Ù…Ø¹Ø§Øª Ø´Ø±ÙŠÙƒØ©",
+    "Institutional Network": "Ø´Ø¨ÙƒØ© Ù…Ø¤Ø³Ø³ÙŠØ©",
+    "View Our Partners": "Ø´Ø§Ù‡Ø¯ Ø´Ø±ÙƒØ§Ø¡Ù†Ø§",
+    "Start Your Learning Journey with EACC": "Ø§Ø¨Ø¯Ø£ Ø±Ø­Ù„ØªÙƒ Ø§Ù„ØªØ¹Ù„ÙŠÙ…ÙŠØ© Ù…Ø¹ EACC",
+    "Whether you want to improve your language skills, prepare for an international exam, support your child's development, access psychological services, or advance your organization, EACC is here to help you achieve your goals.": "Ø³ÙˆØ§Ø¡ Ø£Ø±Ø¯Øª ØªØ­Ø³ÙŠÙ† Ù…Ù‡Ø§Ø±Ø§ØªÙƒ Ø§Ù„Ù„ØºÙˆÙŠØ©ØŒ Ø£Ùˆ Ø§Ù„ØªØ­Ø¶ÙŠØ± Ù„Ø§Ø®ØªØ¨Ø§Ø± Ø¯ÙˆÙ„ÙŠØŒ Ø£Ùˆ Ø¯Ø¹Ù… ØªØ·ÙˆØ± Ø·ÙÙ„ÙƒØŒ Ø£Ùˆ Ø§Ù„Ø§Ø³ØªÙØ§Ø¯Ø© Ù…Ù† Ø§Ù„Ø®Ø¯Ù…Ø§Øª Ø§Ù„Ù†ÙØ³ÙŠØ©ØŒ Ø£Ùˆ ØªØ·ÙˆÙŠØ± Ù…Ø¤Ø³Ø³ØªÙƒØŒ ÙÙ€ EACC Ù‡Ù†Ø§ Ù„Ù…Ø³Ø§Ø¹Ø¯ØªÙƒ Ø¹Ù„Ù‰ ØªØ­Ù‚ÙŠÙ‚ Ø£Ù‡Ø¯Ø§ÙÙƒ.",
+    "Our team is ready to help you choose the service that best fits your needs.": "ÙØ±ÙŠÙ‚Ù†Ø§ Ø¬Ø§Ù‡Ø² Ù„Ù…Ø³Ø§Ø¹Ø¯ØªÙƒ ÙÙŠ Ø§Ø®ØªÙŠØ§Ø± Ø§Ù„Ø®Ø¯Ù…Ø© Ø§Ù„Ø£Ù†Ø³Ø¨ Ù„Ø§Ø­ØªÙŠØ§Ø¬Ø§ØªÙƒ.",
+    "EACC White Logo": "Ø´Ø¹Ø§Ø± EACC Ø§Ù„Ø£Ø¨ÙŠØ¶",
+    "Language, wellbeing, and future skills for every stage of life.": "Ø§Ù„Ù„ØºØ© ÙˆØ§Ù„Ø±ÙØ§Ù‡ ÙˆÙ…Ù‡Ø§Ø±Ø§Øª Ø§Ù„Ù…Ø³ØªÙ‚Ø¨Ù„ Ù„ÙƒÙ„ Ù…Ø±Ø­Ù„Ø© Ù…Ù† Ù…Ø±Ø§Ø­Ù„ Ø§Ù„Ø­ÙŠØ§Ø©.",
+    "Helping learners and families grow with confidence since 1996.": "Ù†Ø³Ø§Ø¹Ø¯ Ø§Ù„Ù…ØªØ¹Ù„Ù…ÙŠÙ† ÙˆØ§Ù„Ø£Ø³Ø± Ø¹Ù„Ù‰ Ø§Ù„Ù†Ù…Ùˆ Ø¨Ø«Ù‚Ø© Ù…Ù†Ø° 1996.",
+    "Explore": "Ø§Ø³ØªÙƒØ´Ù",
+    "Resources": "Ø§Ù„Ù…ÙˆØ§Ø±Ø¯",
+    "Consultation Request": "Ø·Ù„Ø¨ Ø§Ø³ØªØ´Ø§Ø±Ø©",
+    "Alexandria, Egypt": "Ø§Ù„Ø¥Ø³ÙƒÙ†Ø¯Ø±ÙŠØ©ØŒ Ù…ØµØ±",
+    "WhatsApp: +20 106 553 3240": "ÙˆØ§ØªØ³Ø§Ø¨: +20 106 553 3240",
+    "Email: info@eacc-egy.com": "Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ: info@eacc-egy.com",
+    "Â© 2026 Egyptian American Cultural Center. All rights reserved.": "Â© 2026 Egyptian American Cultural Center. Ø¬Ù…ÙŠØ¹ Ø§Ù„Ø­Ù‚ÙˆÙ‚ Ù…Ø­ÙÙˆØ¸Ø©."
   };
 
   var dictionary = window.EACC_TRANSLATIONS.enToAr;
@@ -1142,7 +938,7 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
     document.documentElement.dir = isArabic ? 'rtl' : 'ltr';
 
     document.title = isArabic
-      ? 'EACC | المركز الثقافي المصري الأمريكي'
+      ? 'EACC | Ø§Ù„Ù…Ø±ÙƒØ² Ø§Ù„Ø«Ù‚Ø§ÙÙŠ Ø§Ù„Ù…ØµØ±ÙŠ Ø§Ù„Ø£Ù…Ø±ÙŠÙƒÙŠ'
       : 'EACC | Egyptian American Cultural Center';
 
     var description = document.querySelector('meta[name="description"]');
@@ -1150,7 +946,7 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
       description.setAttribute(
         'content',
         isArabic
-          ? 'يقدم المركز الثقافي المصري الأمريكي تعليم لغات متميزًا، ومخيمات، وبرامج تحضير للاختبارات، وتجارب تعلم تفاعلية.'
+          ? 'ÙŠÙ‚Ø¯Ù… Ø§Ù„Ù…Ø±ÙƒØ² Ø§Ù„Ø«Ù‚Ø§ÙÙŠ Ø§Ù„Ù…ØµØ±ÙŠ Ø§Ù„Ø£Ù…Ø±ÙŠÙƒÙŠ ØªØ¹Ù„ÙŠÙ… Ù„ØºØ§Øª Ù…ØªÙ…ÙŠØ²Ù‹Ø§ØŒ ÙˆÙ…Ø®ÙŠÙ…Ø§ØªØŒ ÙˆØ¨Ø±Ø§Ù…Ø¬ ØªØ­Ø¶ÙŠØ± Ù„Ù„Ø§Ø®ØªØ¨Ø§Ø±Ø§ØªØŒ ÙˆØªØ¬Ø§Ø±Ø¨ ØªØ¹Ù„Ù… ØªÙØ§Ø¹Ù„ÙŠØ©.'
           : 'Egyptian American Cultural Center offers premium language education, camps, test preparation programs, and immersive learning experiences.'
       );
     }
@@ -1179,7 +975,7 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
 
     var isOpen = mobileToggle.getAttribute('aria-expanded') === 'true';
     if (language === 'ar') {
-      mobileToggle.setAttribute('aria-label', isOpen ? 'إغلاق القائمة' : 'فتح القائمة');
+      mobileToggle.setAttribute('aria-label', isOpen ? 'Ø¥ØºÙ„Ø§Ù‚ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø©' : 'ÙØªØ­ Ø§Ù„Ù‚Ø§Ø¦Ù…Ø©');
     } else {
       mobileToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
     }
@@ -1258,6 +1054,7 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
   document.addEventListener('click', function (event) {
     var button = event.target.closest && event.target.closest('.language-toggle, .eacc-language-toggle');
     if (!button) return;
+    if (button.hasAttribute('data-language-switch')) return;
 
     event.preventDefault();
     event.stopPropagation();
@@ -1266,7 +1063,7 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
     setLanguage(state.language === 'ar' ? 'en' : 'ar');
   }, true);
 
-  window.EACC_TRANSLATION = {
+window.EACC_TRANSLATION = {
     setLanguage: setLanguage,
     getLanguage: function () { return state.language; },
     getMissingTranslations: function () { return Array.from(state.missing); },
@@ -1279,6 +1076,60 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
     init();
   }
 })();
+})();
+
+
+/* --- Real EN/AR mirrored page switch --- */
+(() => {
+  if (window.__eaccMirroredLanguageSwitch) return;
+  window.__eaccMirroredLanguageSwitch = true;
+
+  function normalizePathname(pathname) {
+    return decodeURIComponent(pathname || '/').replace(/\\/g, '/');
+  }
+
+  function getMirrorHref() {
+    var pathname = normalizePathname(window.location.pathname);
+    var search = window.location.search || '';
+    var hash = window.location.hash || '';
+    var isArabic = /^\/ar(\/|$)/i.test(pathname);
+
+    if (window.location.protocol === 'file:') {
+      var parts = pathname.split('/').filter(Boolean);
+      var rootIndex = parts.lastIndexOf('EACC_WEBSITE_FINAL_VERSION');
+      if (rootIndex !== -1) {
+        var projectParts = parts.slice(rootIndex + 1);
+        var fileModeArabic = projectParts[0] && projectParts[0].toLowerCase() === 'ar';
+        var targetParts = fileModeArabic ? projectParts.slice(1) : ['ar'].concat(projectParts);
+        if (!targetParts.length) targetParts = fileModeArabic ? ['index.html'] : ['ar', 'index.html'];
+        var depthFromCurrent = Math.max(0, projectParts.length - 1);
+        var prefix = depthFromCurrent ? '../'.repeat(depthFromCurrent) : '';
+        return prefix + targetParts.join('/') + search + hash;
+      }
+    }
+
+    var target = isArabic
+      ? pathname.replace(/^\/ar\/?/i, '/') || '/index.html'
+      : '/ar' + (pathname === '/' ? '/index.html' : pathname);
+    return target.replace(/\/+/g, '/') + search + hash;
+  }
+
+  function syncLanguageSwitch() {
+    var isArabic = /^\/ar(\/|$)/i.test(normalizePathname(window.location.pathname));
+    document.querySelectorAll('[data-language-switch]').forEach(function (link) {
+      link.setAttribute('href', getMirrorHref());
+      link.setAttribute('aria-label', isArabic ? 'Switch website language to English' : 'Switch website language to Arabic');
+      var label = link.querySelector('#languageToggleText, .eacc-lang-label');
+      if (label) label.textContent = isArabic ? 'EN' : 'AR';
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', syncLanguageSwitch);
+  } else {
+    syncLanguageSwitch();
+  }
+  document.addEventListener('eacc:partials-loaded', syncLanguageSwitch);
 })();
 
 
@@ -1391,6 +1242,7 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
     if (!a) return '';
     var local = a.getAttribute('data-local-link');
     var href = a.getAttribute('href');
+    if (a.hasAttribute('data-language-switch')) return normalizeHrefOnly(href || '');
     if (local) return normalizeLocalPath(local);
     return normalizeHrefOnly(href || '');
   }
@@ -1436,3 +1288,313 @@ document.addEventListener("eacc:partials-loaded", loadGoogleTranslateScript);
   }
   document.addEventListener('eacc:partials-loaded', normalizeLinks);
 })();
+
+/* OFFER POPUP SYSTEM */
+(function () {
+  var WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxgsU0np0A7vm8zTEp1KFJ05SP9kBx08n8SlPPrKLv2zoxX36Gk7ztdZHwv0xxBzO2lsQ/exec';
+  var SESSION_CLOSED_KEY = 'eacc-offer-popup-closed';
+  var LOCAL_OFFER_KEY = 'eacc-offer-code';
+  var LOCAL_PHONE_KEY = 'eacc-offer-phone';
+
+  function hasStorage(storage) {
+    try {
+      var testKey = '__eacc_offer_test__';
+      storage.setItem(testKey, '1');
+      storage.removeItem(testKey);
+      return true;
+    } catch (error) {
+      return false;
+    }
+  }
+
+  var canUseSession = hasStorage(window.sessionStorage);
+  var canUseLocal = hasStorage(window.localStorage);
+
+  function getStoredOffer() {
+    if (!canUseLocal) return null;
+    var code = localStorage.getItem(LOCAL_OFFER_KEY);
+    if (!code) return null;
+    return {
+      code: code,
+      phone: localStorage.getItem(LOCAL_PHONE_KEY) || ''
+    };
+  }
+
+  function setStoredOffer(code, phone) {
+    if (!canUseLocal || !code) return;
+    localStorage.setItem(LOCAL_OFFER_KEY, code);
+    if (phone) localStorage.setItem(LOCAL_PHONE_KEY, phone);
+  }
+
+  function normalizePhone(value) {
+    var phone = String(value || '').replace(/[\s\-().]/g, '');
+    if (/^01[0125]\d{8}$/.test(phone)) return '+2' + phone;
+    if (/^201[0125]\d{8}$/.test(phone)) return '+' + phone;
+    if (/^\+201[0125]\d{8}$/.test(phone)) return phone;
+    return '';
+  }
+
+  function toLocalEgyptPhone(value) {
+    var normalized = normalizePhone(value);
+    return normalized ? normalized.replace(/^\+2/, '') : '';
+  }
+
+  function getInputValue(input) {
+    return input ? String(input.value || input.getAttribute('value') || '').trim() : '';
+  }
+
+  function escapeHtml(value) {
+    return String(value || '').replace(/[&<>'"]/g, function (char) {
+      return {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        "'": '&#39;',
+        '"': '&quot;'
+      }[char];
+    });
+  }
+
+  function extractOfferCode(payload) {
+    if (!payload) return '';
+    var possibleKeys = ['code', 'offerCode', 'offer_code', 'Code'];
+    for (var i = 0; i < possibleKeys.length; i += 1) {
+      if (payload[possibleKeys[i]]) return String(payload[possibleKeys[i]]).trim();
+    }
+    var text = typeof payload === 'string' ? payload : JSON.stringify(payload);
+    var match = text.match(/EACC-[A-Z0-9]{3,}/i);
+    return match ? match[0].toUpperCase() : '';
+  }
+
+  function isDuplicateResponse(payload) {
+    if (!payload || typeof payload === 'string') return false;
+    var status = String(payload.status || payload.Status || payload.message || '').toLowerCase();
+    return Boolean(payload.existing || payload.duplicate || payload.alreadyExists || status.indexOf('already') !== -1 || status.indexOf('duplicate') !== -1);
+  }
+
+  function isSuccessfulResponse(payload) {
+    if (!payload) return false;
+    if (typeof payload === 'string') return /success|ok|eacc-/i.test(payload);
+    if (payload.success === true || payload.ok === true) return true;
+    var status = String(payload.status || payload.Status || payload.result || '').toLowerCase();
+    return status === 'success' || status === 'ok' || status === 'done' || Boolean(extractOfferCode(payload));
+  }
+
+  function parseResponseText(text) {
+    try {
+      return JSON.parse(text);
+    } catch (error) {
+      return text;
+    }
+  }
+
+  function createPopup() {
+    if (document.getElementById('eaccOfferOverlay')) return document.getElementById('eaccOfferOverlay');
+
+    var overlay = document.createElement('div');
+    overlay.className = 'eacc-offer-overlay';
+    overlay.id = 'eaccOfferOverlay';
+    overlay.setAttribute('aria-hidden', 'true');
+    overlay.innerHTML = [
+      '<div class="eacc-offer-modal" role="dialog" aria-modal="true" aria-labelledby="eaccOfferTitle">',
+      '  <button class="eacc-offer-close" type="button" aria-label="Close offer popup">&times;</button>',
+      '  <div class="eacc-offer-content">',
+      '    <span class="eacc-offer-badge">Special Offer</span>',
+      '    <h2 class="eacc-offer-title" id="eaccOfferTitle">Get Your EACC Offer Code</h2>',
+      '    <p class="eacc-offer-helper">Register your name and Egyptian phone number to receive your offer code. Save the code and show it at the center when you visit us.</p>',
+      '    <form class="eacc-offer-form" id="eaccOfferForm" novalidate>',
+      '      <div class="eacc-offer-field">',
+      '        <label for="eaccOfferName">Name</label>',
+      '        <input id="eaccOfferName" name="name" type="text" autocomplete="name" placeholder="Your full name" required>',
+      '        <div class="eacc-offer-error" id="eaccOfferNameError" aria-live="polite"></div>',
+      '      </div>',
+      '      <div class="eacc-offer-field">',
+      '        <label for="eaccOfferPhone">Phone number</label>',
+      '        <input id="eaccOfferPhone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="01012345678" required>',
+      '        <div class="eacc-offer-error" id="eaccOfferPhoneError" aria-live="polite"></div>',
+      '      </div>',
+      '      <button class="eacc-offer-submit" id="eaccOfferSubmit" type="submit">Get My Offer Code</button>',
+      '      <p class="eacc-offer-footnote">Accepted formats: 01012345678, 201012345678, or +201012345678.</p>',
+      '    </form>',
+      '    <div class="eacc-offer-status" id="eaccOfferStatus" aria-live="polite"></div>',
+      '    <div class="eacc-offer-success" id="eaccOfferSuccess" aria-live="polite"></div>',
+      '  </div>',
+      '</div>'
+    ].join('');
+
+    document.body.appendChild(overlay);
+    return overlay;
+  }
+
+  function initOfferPopup() {
+    if (window.__eaccOfferPopupLoaded || !document.body) return;
+    window.__eaccOfferPopupLoaded = true;
+
+    if (canUseSession && sessionStorage.getItem(SESSION_CLOSED_KEY) === '1') return;
+
+    var overlay = createPopup();
+    var modal = overlay.querySelector('.eacc-offer-modal');
+    var closeButton = overlay.querySelector('.eacc-offer-close');
+    var form = overlay.querySelector('#eaccOfferForm');
+    var nameInput = overlay.querySelector('#eaccOfferName');
+    var phoneInput = overlay.querySelector('#eaccOfferPhone');
+    var submitButton = overlay.querySelector('#eaccOfferSubmit');
+    var status = overlay.querySelector('#eaccOfferStatus');
+    var success = overlay.querySelector('#eaccOfferSuccess');
+    var nameError = overlay.querySelector('#eaccOfferNameError');
+    var phoneError = overlay.querySelector('#eaccOfferPhoneError');
+    var previousFocus = null;
+
+    function clearMessages() {
+      nameError.textContent = '';
+      phoneError.textContent = '';
+      status.textContent = '';
+      status.classList.remove('is-visible');
+    }
+
+    function closePopup() {
+      overlay.classList.remove('is-visible');
+      overlay.setAttribute('aria-hidden', 'true');
+      if (canUseSession) sessionStorage.setItem(SESSION_CLOSED_KEY, '1');
+      if (previousFocus && typeof previousFocus.focus === 'function') previousFocus.focus();
+    }
+
+    function openPopup() {
+      previousFocus = document.activeElement;
+      overlay.classList.add('is-visible');
+      overlay.setAttribute('aria-hidden', 'false');
+      setTimeout(function () {
+        var stored = getStoredOffer();
+        if (stored && stored.code) {
+          closeButton.focus();
+        } else {
+          nameInput.focus();
+        }
+      }, 80);
+    }
+
+    function showStatus(message) {
+      status.textContent = message;
+      status.classList.add('is-visible');
+    }
+
+    function showSuccess(code, duplicate) {
+      if (!code) return;
+      form.style.display = 'none';
+      status.classList.remove('is-visible');
+      success.classList.add('is-visible');
+      success.innerHTML = [
+        '<span class="eacc-offer-success-icon" aria-hidden="true">&#10003;</span>',
+        '<p class="eacc-offer-success-text">',
+        duplicate
+          ? 'You already have an offer code: <strong>' + escapeHtml(code) + '</strong>. Please screenshot or save this code and show it at the center when you visit us to activate the offer.'
+          : 'Registration successful! Your offer code is: <strong>' + escapeHtml(code) + '</strong>. Please screenshot or save this code and show it at the center when you visit us to activate the offer.',
+        '</p>',
+        '<div class="eacc-offer-code">' + escapeHtml(code) + '</div>',
+        '<button class="eacc-offer-secondary" type="button">Close</button>'
+      ].join('');
+      var secondaryClose = success.querySelector('.eacc-offer-secondary');
+      if (secondaryClose) secondaryClose.addEventListener('click', closePopup);
+    }
+
+    function validateForm() {
+      clearMessages();
+      var name = getInputValue(nameInput);
+      var rawPhone = getInputValue(phoneInput);
+      var normalizedPhone = normalizePhone(rawPhone);
+      var isValid = true;
+
+      if (!name) {
+        nameError.textContent = 'Please enter your name.';
+        isValid = false;
+      }
+
+      if (!normalizedPhone) {
+        phoneError.textContent = 'Please enter a valid Egyptian phone number.';
+        isValid = false;
+      }
+
+      return isValid ? { name: name, phone: normalizedPhone } : null;
+    }
+
+    async function submitOffer(event) {
+      event.preventDefault();
+      var values = validateForm();
+      if (!values) return;
+
+      submitButton.disabled = true;
+      submitButton.textContent = 'Submitting...';
+
+      try {
+        var requestPayload = {
+          name: values.name,
+          Name: values.name,
+          phone: values.phone,
+          Phone: values.phone,
+          localPhone: toLocalEgyptPhone(values.phone)
+        };
+        var fallbackUrl = WEB_APP_URL + '?name=' + encodeURIComponent(values.name) + '&phone=' + encodeURIComponent(values.phone);
+        var response = await fetch(fallbackUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'text/plain;charset=utf-8'
+          },
+          body: JSON.stringify(requestPayload)
+        });
+
+        var text = await response.text();
+        var payload = parseResponseText(text);
+        var code = extractOfferCode(payload);
+
+        if (!response.ok || !isSuccessfulResponse(payload) || !code) {
+          throw new Error((payload && payload.message) || 'We could not complete your registration right now. Please try again.');
+        }
+
+        setStoredOffer(code, values.phone);
+        showSuccess(code, isDuplicateResponse(payload));
+      } catch (error) {
+        showStatus(error && error.message ? error.message : 'Something went wrong. Please try again.');
+      } finally {
+        submitButton.disabled = false;
+        submitButton.textContent = 'Get My Offer Code';
+      }
+    }
+
+    closeButton.addEventListener('click', closePopup);
+    overlay.addEventListener('click', function (event) {
+      if (event.target === overlay) closePopup();
+    });
+    document.addEventListener('keydown', function (event) {
+      if (event.key === 'Escape' && overlay.classList.contains('is-visible')) closePopup();
+      if (event.key !== 'Tab' || !overlay.classList.contains('is-visible')) return;
+      var focusable = Array.prototype.slice.call(modal.querySelectorAll('a[href], button:not([disabled]), input:not([disabled]), textarea:not([disabled]), select:not([disabled]), [tabindex]:not([tabindex="-1"])'));
+      if (!focusable.length) return;
+      var first = focusable[0];
+      var last = focusable[focusable.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    });
+    form.addEventListener('submit', submitOffer);
+
+    var storedOffer = getStoredOffer();
+    if (storedOffer && storedOffer.code) {
+      showSuccess(storedOffer.code, true);
+    }
+
+    setTimeout(openPopup, 900);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initOfferPopup);
+  } else {
+    initOfferPopup();
+  }
+  document.addEventListener('eacc:partials-loaded', initOfferPopup);
+})();
+
+

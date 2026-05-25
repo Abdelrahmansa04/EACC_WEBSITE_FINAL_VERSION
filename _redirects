@@ -1,0 +1,27 @@
+# Permanent SEO redirects
+# Source: C:/Users/Lenovo/Downloads/redirect guide.xlsx
+# Format: old URL   new URL   status
+
+# Language academy redirects
+/english-programs                 /Our%20Services/langauge-academy/eng/eng.html       301
+/english-for-adults               /Our%20Services/langauge-academy/eng/adults.html    301
+/english-programms-for-youth      /Our%20Services/langauge-academy/eng/youth.html     301
+/english-for-kids                 /Our%20Services/langauge-academy/eng/kids.html      301
+/french-programs                  /Our%20Services/langauge-academy/french/french.html 301
+/german-programs                  /Our%20Services/langauge-academy/german/german.html 301
+/italian-programs                 /Our%20Services/langauge-academy/italian/italian.html 301
+/spanish-programs                 /Our%20Services/langauge-academy/spanish/spanish.html 301
+
+# Summer camp redirect
+/summer-camp-2026                 /summer-camp-2026.html                              301
+
+# International exam and testing redirects
+/toefl-preparation-courses        /testing-centre/tofel.html                          301
+/ielts-preparation-courses        /Our%20Services/int-exams/ielts.html                301
+/oet-preparation-course           /Our%20Services/int-exams/oet.html                  301
+/pte-preparation-course           /Our%20Services/int-exams/pte.html                  301
+
+# About and contact redirects
+/who-we-are                       /about-us/our-story.html                            301
+/frquently-asked-questions        /about-us/faq.html                                  301
+/contact                          /contact-us/visit-our-centre.html                   301

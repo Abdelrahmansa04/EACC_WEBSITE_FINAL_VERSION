@@ -1,0 +1,695 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+  <!--
+    EACC HOME PAGE MAINTENANCE NOTES
+    - Main language behavior is controlled globally by assets/js/global.js.
+    - The visible AR/EN switch links to the mirrored العربية or English page.
+    - Layout, interaction, and navigation scripts are intentionally separated near the end of the body element.
+  -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>EACC | المركز المصري الأمريكي</title>
+
+  <meta name="description"
+    content="يقدم المركز المصري الأمريكي تعليم لغات متميزًا، وبرامج تحضير للاختبارات، وخدمات تعليمية وتنموية تساعد المتعلمين على بناء الثقة وتحقيق أهدافهم." />
+
+  <link rel="icon" type="image/webp" href="../assets/images/eacc-blue-logo.webp">
+
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Global Styles -->
+  <link rel="stylesheet" href="../assets/css/global.css">
+
+  <!-- Homepage mobile polish: keeps index sections clean and readable on phones. -->
+  <style id="eacc-index-mobile-polish">
+    @media (max-width: 768px) {
+      body.eacc-home-page {
+        background: linear-gradient(180deg, #f7f8ff 0%, #ffffff 42%, #f8f9ff 100%);
+      }
+
+      body.eacc-home-page .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      body.eacc-home-page section {
+        padding-block: 64px;
+      }
+
+      body.eacc-home-page .hero {
+        min-height: auto !important;
+        padding: 108px 0 54px !important;
+        text-align: center;
+      }
+
+      body.eacc-home-page .hero-slider,
+      body.eacc-home-page .hero-overlay {
+        border-radius: 0 0 28px 28px;
+      }
+
+      body.eacc-home-page .hero-content {
+        width: 100%;
+        max-width: 560px;
+        margin-inline: auto;
+        align-items: center;
+      }
+
+      body.eacc-home-page .hero .hero-title-block {
+        margin: 0 0 18px !important;
+      }
+
+      body.eacc-home-page .hero .hero-slogan-line {
+        max-width: 11ch;
+        margin-inline: auto;
+        font-size: clamp(38px, 12vw, 54px) !important;
+        line-height: 0.98 !important;
+        text-wrap: balance;
+      }
+
+      body.eacc-home-page .hero-overview-summary {
+        padding: 18px 16px;
+        border-radius: 24px;
+        background: rgba(255, 255, 255, 0.14);
+        text-align: left;
+      }
+
+      body.eacc-home-page .hero-overview-kicker {
+        width: 100%;
+        justify-content: center;
+      }
+
+      body.eacc-home-page .hero-overview-points article {
+        background: rgba(255, 255, 255, 0.12);
+        border-radius: 18px;
+      }
+
+      body.eacc-home-page .hero .hero-buttons,
+      body.eacc-home-page .cta-box .hero-buttons {
+        width: 100%;
+        display: grid !important;
+        grid-template-columns: 1fr;
+        gap: 12px;
+      }
+
+      body.eacc-home-page .hero .hero-buttons .btn,
+      body.eacc-home-page .cta-box .hero-buttons .btn,
+      body.eacc-home-page .camp-actions .btn {
+        width: 100%;
+        min-height: 52px;
+        justify-content: center;
+      }
+
+      body.eacc-home-page .positioning-line {
+        margin-top: 0;
+        font-size: clamp(24px, 8vw, 34px);
+        line-height: 1.12;
+        text-wrap: balance;
+      }
+
+      body.eacc-home-page .featured-banner-grid,
+      body.eacc-home-page .approved-service-grid,
+      body.eacc-home-page .story-grid {
+        grid-template-columns: 1fr !important;
+        gap: 18px;
+        margin-top: 28px;
+      }
+
+      body.eacc-home-page .feature-card {
+        border-radius: 24px !important;
+        padding: 22px;
+      }
+
+      body.eacc-home-page .feature-card-media,
+      body.eacc-home-page .feature-media {
+        width: calc(100% + 44px);
+        margin: -22px -22px 18px;
+        aspect-ratio: 16 / 10;
+        border-radius: 24px 24px 18px 18px;
+      }
+
+      body.eacc-home-page .feature-card h3 {
+        font-size: clamp(21px, 6vw, 28px);
+        line-height: 1.12;
+      }
+
+      body.eacc-home-page .service-card-link {
+        min-height: 48px;
+        margin-top: 18px;
+      }
+
+      body.eacc-home-page .camps-section {
+        padding-block: 68px;
+        text-align: center;
+      }
+
+      body.eacc-home-page .camps-wrapper {
+        gap: 24px;
+      }
+
+      body.eacc-home-page .camps-image {
+        border-radius: 26px;
+        overflow: hidden;
+        box-shadow: 0 22px 54px rgba(0, 0, 0, 0.2);
+      }
+
+      body.eacc-home-page .camps-section .camp-highlights {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px;
+      }
+
+      body.eacc-home-page .camps-section .camp-highlights span {
+        min-height: 44px;
+        padding: 10px;
+        border-radius: 16px;
+      }
+
+      body.eacc-home-page .section-title {
+        margin-bottom: 26px;
+      }
+
+      body.eacc-home-page .section-title h2,
+      body.eacc-home-page .cta-box h2 {
+        text-wrap: balance;
+      }
+
+      body.eacc-home-page #about .features-grid,
+      body.eacc-home-page #partners .partner-logo-grid {
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+      }
+
+      body.eacc-home-page #partners .partner-logo-card {
+        max-width: none;
+        min-height: 132px;
+        border-radius: 22px;
+      }
+
+      body.eacc-home-page .post-feature-trust-summary,
+      body.eacc-home-page .cta-box {
+        border-radius: 24px;
+        padding: 22px 18px;
+      }
+
+    }
+
+    @media (max-width: 420px) {
+      body.eacc-home-page .container {
+        width: min(100% - 22px, 1180px);
+      }
+
+      body.eacc-home-page section {
+        padding-block: 56px;
+      }
+
+      body.eacc-home-page .hero {
+        padding-top: 100px !important;
+      }
+
+      body.eacc-home-page .camps-section .camp-highlights {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+
+  <style id="eacc-index-hero-buttons-center">
+    .eacc-home-page .hero .hero-buttons {
+      margin-inline: auto !important;
+      justify-content: center !important;
+      justify-items: center;
+    }
+  </style>
+
+  <style id="eacc-ar-index-hero-slider-fix">
+    body.eacc-home-page.is-arabic .hero {
+      background: var(--navy-dark, #0d1457);
+    }
+
+    body.eacc-home-page.is-arabic .hero-slider {
+      display: block !important;
+      position: absolute !important;
+      inset: 0 !important;
+      z-index: 0 !important;
+      opacity: 1 !important;
+    }
+
+    body.eacc-home-page.is-arabic .hero-slider .slide {
+      display: block !important;
+      position: absolute !important;
+      inset: 0 !important;
+      background-size: cover !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      opacity: 0;
+      visibility: visible !important;
+    }
+
+    body.eacc-home-page.is-arabic .hero-slider .slide.active {
+      opacity: 1 !important;
+    }
+
+    body.eacc-home-page.is-arabic .hero-slider .slide:nth-child(1) {
+      background-image: url('../assets/images/home-hero3.webp') !important;
+    }
+
+    body.eacc-home-page.is-arabic .hero-slider .slide:nth-child(2) {
+      background-image: url('../assets/images/explore-our-campus/home-hero2.webp') !important;
+    }
+
+    body.eacc-home-page.is-arabic .hero-slider .slide:nth-child(3) {
+      background-image: url('../assets/images/explore-our-campus/home-hero.webp') !important;
+    }
+
+    body.eacc-home-page.is-arabic .hero-overlay {
+      z-index: 1 !important;
+      background:
+        linear-gradient(
+          to left,
+          rgba(13,20,87,0.82),
+          rgba(13,20,87,0.36)
+        ) !important;
+    }
+
+    body.eacc-home-page.is-arabic .hero .container,
+    body.eacc-home-page.is-arabic .hero-content {
+      position: relative;
+      z-index: 3;
+    }
+  </style>
+
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="alternate" hreflang="en" href="https://eacc-egy.com/">
+  <link rel="alternate" hreflang="ar" href="https://eacc-egy.com/ar/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://eacc-egy.com/">
+</head>
+
+<body class="eacc-home-page loading is-arabic">
+
+  <!-- Global Loading Screen -->
+  <div data-include="./partials/global-loading-screen.html"></div>
+
+  <!-- Global Navbar -->
+  <div data-include="./partials/global-navbar.html"></div>
+
+
+
+  <!-- Home Hero -->
+
+  <section class="hero">
+
+    <div class="hero-slider">
+
+      <div class="slide slide-hero-main active"
+        style="background-image:url('../assets/images/home-hero3.webp')"></div>
+      <div class="slide slide-hero-camps"
+        style="background-image:url('../assets/images/explore-our-campus/home-hero2.webp')"></div>
+      <div class="slide slide-hero-main"
+        style="background-image:url('../assets/images/explore-our-campus/home-hero.webp')"></div>
+
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="container">
+
+      <div class="hero-content">
+
+        <div class="hero-title-block">
+          <h1 class="hero-slogan-line">نُمكّن العقول ونبني المستقبل.</h1>
+        </div>
+
+        <div class="hero-overview-summary" aria-label="نظرة عامة على دعم المتعلم المتكامل في EACC">
+          <span class="hero-overview-kicker">المركز المصري الأمريكي</span>
+          
+          <p>منذ عام 1996، ساعد المركز المصري الأمريكي أكثر من 60,000 خريج على تطوير مهارات التواصل، وبناء الثقة، واكتساب رؤية عالمية من خلال برامج اللغات المعتمدة، والتحضير للاختبارات الدولية، والتطوير المهني.</p>
+          <div class="hero-overview-points">
+            <article>
+              <h3>توسيع خدماتنا في 2026</h3>
+              <p>يتطلب التميز اليوم أكثر من إتقان اللغة فقط. لذلك توسّع EACC خدماتها لدعم المتعلمين في الدراسة، والرفاه النفسي، والإبداع، والتكنولوجيا.</p>
+            </article>
+            <article>
+              <h3>مسارات متكاملة للنمو</h3>
+              <p>تكمل خدماتنا الجديدة في الرفاه النفسي والروبوتات والفنون الإبداعية برامج اللغات لدينا، وتساعد الأطفال والشباب والبالغين على بناء المرونة والتفكير النقدي والثقة للنجاح على المدى الطويل.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+
+          <a href="./index.html#services" class="btn btn-primary">
+            استكشف الخدمات</a>
+
+          <a href="./lang-form.html" class="btn btn-outline" data-local-link="./lang-form.html">
+            سجّل الآن</a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Home Overview Cards -->
+
+  <section class="home-supporting-message" id="home-overview">
+
+    <div class="container">
+      <p class="positioning-line">اللغة تفتح الأبواب، والرفاه النفسي يبني المرونة، والتكنولوجيا تطور مهارات المستقبل، والإبداع يلهم الابتكار.</p>
+
+      <div class="featured-banner-grid">
+        <article class="feature-card">
+          <div class="feature-card-media">
+            <img src="../assets/images/summer26/summer8.webp" alt="أنشطة المخيم الصيفي 2026" loading="lazy" decoding="async">
+          </div>
+          <h3>التسجيل مفتوح الآن: مخيم صيف 2026</h3>
+          <p>تجربة صيفية ديناميكية تجمع بين اللغة الإنجليزية والروبوتات والفنون والأنشطة التفاعلية للأطفال والمراهقين.</p>
+          <a class="service-card-link" href="./summer-camp-2026.html" data-local-link="./summer-camp-2026.html">استكشف البرنامج</a>
+        </article>
+        <article class="feature-card" id="mind-space">
+          <div class="feature-card-media is-logo">
+            <img src="../assets/images/partners/mindspace.webp" alt="شعار مايند سبيس من EACC" loading="lazy" decoding="async">
+          </div>
+          <h3>مايند سبيس من EACC</h3>
+          <p>جلسات دعم نفسي وتقييمات وإرشاد أسري للأطفال والشباب والبالغين.</p>
+          <a class="service-card-link" href="./mindspace.html" data-local-link="./mindspace.html">مايند سبيس من EACC</a>
+        </article>
+        <article class="feature-card" id="robotics-lab">
+          <div class="feature-card-media">
+            <img src="../assets/images/summer/ai-kdis.webp" alt="الروبوتات والورش الإبداعية" loading="lazy" decoding="async">
+          </div>
+          <h3>مختبر الروبوتات والاستوديوهات التعبيرية</h3>
+          <p>تجارب عملية في الروبوتات والتعبير الإبداعي وورش عمل تبني الثقة والابتكار ومهارات المستقبل.</p>
+          <a class="service-card-link" href="./Our Services/kids-youth/robotics.html" data-local-link="./Our Services/kids-youth/robotics.html">استكشف الخدمات</a>
+        </article>
+        <article class="feature-card" id="testing-center">
+          <div class="feature-card-media is-logo">
+            <img src="../assets/images/int-exams.webp" alt="خدمات اختبارات معتمدة" loading="lazy" decoding="async">
+          </div>
+          <h3>مركز اختبارات معتمد</h3>
+          <p>تسجيل رسمي لاختبارات TOEFL وCILS وCELI، واختبارات تحديد المستوى، والتقييمات النفسية.</p>
+          <a class="service-card-link" href="./lang-form.html" data-local-link="./lang-form.html">احجز اختبارك</a>
+        </article>
+      </div>
+
+      <p class="post-feature-trust-summary" aria-label="مؤشرات الثقة في EACC">
+        منذ عام 1996، دعمت EACC <strong>أكثر من 60,000 خريج منذ عام 1996</strong>، وتعمل كـ
+        <a href="#testing-center" class="hero-trust-link">مركز اختبار معتمد لاختبارات TOEFL وCILS وCELI</a>,
+        ويقودها <strong>أكثر من 80 معلمًا ومتخصصًا</strong>، وهي جزء من <strong>فيوتشر إديوكيشن القابضة</strong>.
+      </p>
+
+    </div>
+
+  </section>
+
+  <!-- المخيم الصيفي 2026 -->
+
+  <section class="camps-section" id="summer-camp-2026">
+
+    <div class="container camps-wrapper">
+
+      <div class="camps-content">
+        <span class="camp-kicker">التسجيل مفتوح الآن</span>
+        <h2>مخيم My Voice الصيفي 2026</h2>
+        <p>تجربة صيفية مميزة تساعد الأطفال والمراهقين على بناء الثقة وتقوية الإنجليزية واستكشاف الروبوتات والتعبير الإبداعي واكتشاف صوتهم الخاص.</p>
+        <div class="camp-highlights">
+          <span>تقييمات مخصصة</span>
+          <span>الروبوتات</span>
+          <span>الفنون التعبيرية</span>
+          <span>رحلات ميدانية</span>
+          <span>مخيم المغامرات</span>
+          <span>نادي أولياء الأمور</span>
+          <span>العرض الختامي</span>
+        </div>
+        <div class="camp-actions">
+          <a href="./summer-camp-2026.html" class="btn btn-outline camp-cta-btn" data-local-link="./summer-camp-2026.html">
+            استكشف مخيم My Voice الصيفي 2026
+          </a>
+          <a href="./lang-form.html" class="btn btn-primary camp-cta-btn" data-local-link="./lang-form.html">
+            سجّل في المخيم الصيفي
+          </a>
+          <p class="camp-urgency">
+            <span class="camp-urgency-icon" aria-hidden="true">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/>
+                <path d="M12 7v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            الأماكن محدودة.
+          </p>
+        </div>
+      </div>
+
+      <div class="camps-image">
+        <img loading="lazy" src="../assets/images/summer26/summer8.webp" alt="مخيم My Voice الصيفي 2026">
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- الخدمات المميزة -->
+
+  <section id="services">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span class="mini-title">الخدمات المميزة</span>
+        <h2>اكتشف الخدمة التي تناسب أهدافك</h2>
+        <p>سواء كنت تبحث عن تدريب لغوي، أو اختبارات دولية، أو دعم نفسي، أو تعلم عبر الإنترنت، أو حلول تدريب للشركات، تقدم EACC خدمات موثوقة مصممة لمساعدتك على النجاح.</p>
+      </div>
+
+      <div class="approved-service-grid">
+        <article class="feature-card">
+          <div class="feature-card-media">
+            <img src="../assets/images/languages.webp" alt="برامج أكاديمية اللغات" loading="lazy" decoding="async">
+          </div>
+          <h3>أكاديمية اللغات</h3>
+          <p>برامج لغوية منظمة للمدرسة والعمل والدراسة والسفر والتواصل اليومي.</p>
+          <a class="service-card-link" href="./Our Services/langauge-academy/language-acad.html" data-local-link="./Our Services/langauge-academy/language-acad.html">استكشف أكاديمية اللغات</a>
+        </article>
+        <article class="feature-card" id="kids-youth-academy">
+          <div class="feature-card-media">
+            <img src="../assets/images/summer26/summer12.webp" alt="برامج تطوير الأطفال والشباب" loading="lazy" decoding="async">
+          </div>
+          <h3>أكاديمية تطوير الأطفال والشباب</h3>
+          <p>الإنجليزية للأطفال، ومختبر الروبوتات، وبرامج المراهقين، وورش عمل تنمي الثقة ومهارات المستقبل.</p>
+          <a class="service-card-link" href="./Our Services/kids-youth.html" data-local-link="./Our Services/kids-youth.html">استكشف أكاديمية الأطفال والشباب</a>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card-media is-logo">
+            <img src="../assets/images/partners/mindspace.webp" alt="شعار مايند سبيس من EACC" loading="lazy" decoding="async">
+          </div>
+          <h3>مايند سبيس من EACC</h3>
+          <p>خدمات علاجية وتقييمات ودعم أسري وورش عمل متخصصة.</p>
+          <a class="service-card-link" href="./mindspace.html" data-local-link="./mindspace.html">استكشف مايند سبيس</a>
+        </article>
+        <article class="feature-card">
+          <div class="feature-card-media is-logo">
+            <img src="../assets/images/int-exams.webp" alt="خدمات مركز الاختبارات" loading="lazy" decoding="async">
+          </div>
+          <h3>مركز اختبارات معتمد</h3>
+          <p>اختبارات TOEFL وCILS وCELI، واختبارات تحديد المستوى، والتقييمات النفسية.</p>
+          <a class="service-card-link" href="./testing-centre.html" data-local-link="./testing-centre.html">استكشف خدمات الاختبارات</a>
+        </article>
+        <article class="feature-card" id="online-language-center">
+          <div class="feature-card-media">
+            <img src="../assets/images/private.avif" alt="تعلم اللغات أونلاين" loading="lazy" decoding="async">
+          </div>
+          <h3>مركز اللغات أونلاين</h3>
+          <p>وجهة مخصصة لخدمات تعلم اللغات عبر الإنترنت ودعم المتعلمين بمرونة.</p>
+          <a class="service-card-link" data-local-link="./Our Services/online-lang.html" href="./Our Services/online-lang.html">استكشف التعلم أونلاين</a>
+        </article>
+        <article class="feature-card" id="corporate-training">
+          <div class="feature-card-media">
+            <img src="../assets/images/hero (4).avif" alt="قاعة تدريب للشركات" loading="lazy" decoding="async">
+          </div>
+          <h3>تدريب الشركات</h3>
+          <p>برامج مخصصة في اللغة والتواصل والتطوير المهني للمؤسسات.</p>
+          <a class="service-card-link" href="./corporate-train.html" data-local-link="./corporate-train.html">استكشف تدريب الشركات</a>
+        </article>
+      </div>
+
+    </div>
+
+  </section>
+  <!-- لماذا تختار EACC -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span class="mini-title">لماذا تختار EACC</span>
+        <h2>ما الذي يميز EACC؟</h2>
+        <p>تجمع EACC بين خبرة تعليمية موثوقة ومسارات أكاديمية ونفسية وإبداعية وتكنولوجية جديدة للمتعلمين في كل مرحلة من مراحل الحياة.</p>
+      </div>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <div class="feature-media">
+            <img src="../assets/images/hero (4).avif" alt="طلاب EACC أثناء التعلم داخل الصف" loading="lazy" decoding="async">
+          </div>
+          <h3>خبرة لغوية</h3>
+          <p>تحديد مستوى واضح وتدريس قوي ومسارات تواصل عملية للأطفال والمراهقين والكبار.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-media">
+            <img src="../assets/images/partners/mindspace.webp" alt="دورات لطلاب من أعمار مختلفة" loading="lazy" decoding="async">
+          </div>
+          <h3>دعم المتعلم المتكامل</h3>
+          <p>تساعد خدمات مايند سبيس الأسر والمتعلمين على بناء الثقة والمرونة والوضوح.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-media">
+            <img src="../assets/images/lms.webp" alt="طالب يستخدم منصة تعلم أونلاين" loading="lazy" decoding="async">
+          </div>
+          <h3>تكنولوجيا للتعلم</h3>
+          <p>يدعم الوصول إلى منصة LMS وخيارات التعلم أونلاين والروبوتات والتدريب الرقمي عادات تعلم حديثة.</p>
+        </article>
+        <article class="feature-card">
+          <div class="feature-media is-logo">
+            <img src="../assets/images/int-exams.webp" alt="مركز اختبار TOEFL معتمد" loading="lazy" decoding="async">
+          </div>
+          <h3>اختبارات رسمية</h3>
+          <p>تخلق خدمات الاختبارات والتقييم المعتمدة نقطة انطلاق موثوقة للمتعلمين.</p>
+        </article>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- قصص نجاح -->
+
+  <section id="success-stories">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span class="mini-title">قصص نجاح</span>
+        <h2>نتائج حقيقية وأثر ملموس.</h2>
+        <p>على مدار ما يقرب من ثلاثة عقود، ساعد المركز المصري الأمريكي الثقافي المتعلمين والأسر والمؤسسات على تحقيق أهدافهم من خلال التعليم والتقييم والتطوير الشخصي.</p>
+      </div>
+
+      <div class="story-grid">
+        <article class="feature-card">
+          <h3>ثقة لغوية</h3>
+          <p>ينتقل الطلاب من تحديد المستوى إلى التواصل العملي من خلال تعليم موجه وتغذية راجعة وتدريب مستمر.</p>
+        </article>
+        <article class="feature-card">
+          <h3>دعم شامل</h3>
+          <p>تحصل العائلات على مسارات أوضح للأطفال والمراهقين من خلال التقييم والإرشاد والبرامج الموجهة للنمو.</p>
+        </article>
+        <article class="feature-card">
+          <h3>نمو المؤسسات</h3>
+          <p>تستفيد الفرق من تدريب موجه يربط بين اللغة والتواصل والأداء المهني.</p>
+        </article>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Partners And Accreditations -->
+
+  <section id="partners">
+
+    <div class="container">
+
+      <div class="section-title">
+        <span class="mini-title">الشركاء والاعتمادات</span>
+        <h2>شراكات موثوقة ومعايير دولية.</h2>
+        <p>يتعاون المركز المصري الأمريكي الثقافي مع مؤسسات تعليمية وجهات اختبار معتمدة لتقديم خدمات وتقييمات معترف بها دوليًا.</p>
+      </div>
+
+      <div class="partner-logo-grid" aria-label="شعارات الشركاء والاعتمادات المميزة">
+        <div class="partner-logo-card">
+          <img src="../assets/images/tofel.avif" alt="شعار TOEFL" loading="lazy" decoding="async">
+          <small>جهة اختبار معتمدة</small>
+        </div>
+        <div class="partner-logo-card">
+          <img src="../assets/images/italian/cils.avif" alt="شعار TOEFL" loading="lazy" decoding="async">
+          CILS<small>جهة اختبار معتمدة</small>
+        </div>
+        <div class="partner-logo-card">
+  
+          <img src="../assets/images/italian/celi.avif" alt="شعار TOEFL" loading="lazy" decoding="async">
+          CELI<small>جهة اختبار معتمدة</small>
+        </div>
+        <div class="partner-logo-card">
+          <img src="../assets/images/partners/feh.webp" alt="شعار TOEFL" loading="lazy" decoding="async">
+          Future Education Holding<small>مجموعة أكاديمية</small>
+        </div>
+        <div class="partner-logo-card">
+          <img src="../assets/images/partners/notting.avif" alt="كلية نوتينغ هيل logo" loading="lazy" decoding="async">
+          كلية نوتينغ هيل<small>شريك أكاديمي</small>
+        </div>
+        <div class="partner-logo-card">
+          <img src="../assets/images/partners/think-eng.avif" alt="شعار Think English" loading="lazy" decoding="async">
+          Think English<small>شريك أكاديمي</small>
+        </div>
+        <div class="partner-logo-card">
+          <img src="../assets/images/partners/eton.avif" alt="شعار أكاديمية إيتون" loading="lazy" decoding="async">
+          جامعات شريكة<small>شبكة مؤسسية</small>
+        </div>
+      
+      </div>
+
+      <div class="section-action">
+        <a href="./about-us/partners.html" class="btn btn-dark" data-local-link="./about-us/partners.html">استعرض شركاءنا</a>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Final Call To Action -->
+
+  <section>
+
+    <div class="container">
+
+      <div class="cta-box">
+        <h2>ابدأ رحلتك التعليمية مع EACC</h2>
+        <p>سواء كنت ترغب في تحسين مهاراتك اللغوية، أو التحضير لاختبار دولي، أو دعم تطور طفلك، أو الاستفادة من الخدمات النفسية، أو تطوير مؤسستك، فإن EACC هنا لمساعدتك على تحقيق أهدافك.</p>
+        <div class="hero-buttons">
+          <a class="btn btn-primary" data-local-link="./lang-form.html" href="./lang-form.html">سجّل الآن</a>
+          <a class="btn btn-outline" href="./contact-us/visit-our-centre.html" data-local-link="./contact-us/visit-our-centre.html">تواصل معنا</a>
+        </div>
+<p>فريقنا جاهز لمساعدتك في اختيار الخدمة الأنسب لاحتياجاتك.</p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Floating WhatsApp Action -->
+  <a class="sticky-wp" href="https://wa.me/201065533240" aria-label="تواصل مع EACC عبر واتساب" data-external-link="https://wa.me/201065533240" data-local-link="https://wa.me/201065533240">
+    <img loading="lazy" src="../assets/icons/wp-icon.webp" alt="" aria-hidden="true">
+  </a>
+
+  <!-- Global Scripts And Footer -->
+  <script src="../assets/js/include-partials.js"></script>
+
+  <!-- Global Footer -->
+<div data-include="./partials/global-footer.html"></div>
+</body>
+
+</html>
+
+

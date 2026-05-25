@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
 <head>
 
   <!--
     EACC HOME PAGE MAINTENANCE NOTES
     - Main language behavior is controlled globally by assets/js/global.js.
-    - The visible AR/EN toggle triggers Google Translate; the Google widget itself stays hidden.
+    - The visible AR/EN switch links to the mirrored Arabic or English page.
     - Layout, interaction, and navigation scripts are intentionally separated near the end of the body element.
   -->
 
@@ -230,6 +230,9 @@
     }
   </style>
 
+  <link rel="alternate" hreflang="en" href="https://eacc-egy.com/">
+  <link rel="alternate" hreflang="ar" href="https://eacc-egy.com/ar/index.html">
+  <link rel="alternate" hreflang="x-default" href="https://eacc-egy.com/">
 </head>
 
 <body class="eacc-home-page loading">
@@ -248,7 +251,7 @@
 
     <div class="hero-slider">
 
-      <div class="slide slide-hero-main"
+      <div class="slide slide-hero-main active"
         style="background-image:url('assets/images/home-hero3.webp')"></div>
       <div class="slide slide-hero-camps"
         style="background-image:url('assets/images/explore-our-campus/home-hero2.webp')"></div>
