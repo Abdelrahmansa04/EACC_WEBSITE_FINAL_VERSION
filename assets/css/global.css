@@ -3962,7 +3962,7 @@ header .container.navbar { width: min(1380px, calc(100% - 28px)); }
   .footer-bottom-links a { color: rgba(255,255,255,.7); text-decoration: none; }
   .footer-bottom-links a:hover { color: var(--eacc-gold, var(--gold, #f5a623)); }
 
-  @media (max-width: 1240px) {
+  @media (max-width: 768px) {
     .mobile-toggle { display: flex; }
     header nav.nav-links { position: fixed; top: 90px; right: -100%; width: min(420px, 100%); height: calc(100vh - 90px); overflow-y: auto; flex-direction: column; align-items: stretch; gap: 10px; padding: 28px 24px; background: #fff; box-shadow: -18px 0 42px rgba(13,20,87,.14); transition: right .32s ease; }
     header nav.nav-links.active { right: 0; }
@@ -4255,7 +4255,7 @@ header .container.navbar { width: min(1380px, calc(100% - 28px)); }
     transform: translateX(3px);
   }
 
-  @media (max-width: 1240px) {
+  @media (max-width: 768px) {
     header nav.nav-links .dropdown-menu {
       display: none;
       margin: 4px 0 10px;
@@ -5672,7 +5672,7 @@ header .dropdown-menu .dropdown-parent-link {
   display: none;
 }
 
-@media (max-width: 1240px) {
+@media (max-width: 768px) {
   header nav.nav-links {
     scroll-behavior: smooth;
   }
@@ -5794,7 +5794,7 @@ header .dropdown-menu .dropdown-parent-link {
 }
 
 /* Premium global mobile hamburger drawer */
-@media (max-width: 1240px) {
+@media (max-width: 768px) {
   header nav.nav-links {
     width: min(430px, calc(100% - 22px)) !important;
     right: max(-430px, calc(-100% + 22px)) !important;

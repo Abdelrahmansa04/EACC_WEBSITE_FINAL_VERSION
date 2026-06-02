@@ -490,7 +490,7 @@
         event.target.closest('.dropdown > a');
 
       const isDropdownTapMode =
-        window.matchMedia('(max-width: 1240px)').matches;
+        window.matchMedia('(max-width: 768px)').matches;
 
       if (dropdownTrigger && isDropdownTapMode) {
         event.preventDefault();
@@ -1278,7 +1278,7 @@ window.EACC_TRANSLATION = {
     if (
       a &&
       a.matches('.dropdown > a') &&
-      window.matchMedia('(max-width: 1240px)').matches &&
+      window.matchMedia('(max-width: 768px)').matches &&
       a.closest('header nav.nav-links')
     ) {
       return;
