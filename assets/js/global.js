@@ -489,11 +489,20 @@
       const dropdownTrigger =
         event.target.closest('.dropdown > a');
 
-      const isMobileMenu =
+      const isDropdownTapMode =
         window.matchMedia('(max-width: 1240px)').matches;
 
-      if (dropdownTrigger && isMobileMenu) {
-        closeMobileDropdowns();
+      if (dropdownTrigger && isDropdownTapMode) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        const dropdown = dropdownTrigger.closest('.dropdown');
+        const willOpen = !dropdown.classList.contains('open');
+
+        closeMobileDropdowns(dropdown);
+        dropdown.classList.toggle('open', willOpen);
+        dropdownTrigger.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+        return;
       }
 
       const link =
@@ -1266,6 +1275,15 @@ window.EACC_TRANSLATION = {
 
   document.addEventListener('click', function (event) {
     var a = event.target && event.target.closest ? event.target.closest('a') : null;
+    if (
+      a &&
+      a.matches('.dropdown > a') &&
+      window.matchMedia('(max-width: 1240px)').matches &&
+      a.closest('header nav.nav-links')
+    ) {
+      return;
+    }
+
     var destination = resolveLocalHref(a);
     if (shouldIgnore(a, destination)) return;
 
