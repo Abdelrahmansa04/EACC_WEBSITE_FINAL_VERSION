@@ -233,6 +233,13 @@
   <link rel="alternate" hreflang="en" href="https://eacc-egy.com/">
   <link rel="alternate" hreflang="ar" href="https://eacc-egy.com/ar/index.html">
   <link rel="alternate" hreflang="x-default" href="https://eacc-egy.com/">
+  <style id="eacc-home-offer-disabled">
+    body.eacc-home-page .eacc-home-offer-hidden,
+    body.eacc-home-page #eaccLaunchOfferFrame {
+      display: none !important;
+      visibility: hidden !important;
+    }
+  </style>
 </head>
 
 <body class="eacc-home-page loading">
@@ -253,7 +260,7 @@
 
       <div class="slide slide-hero-main active"
         style="background-image:url('assets/images/home-hero3.webp')"></div>
-      <div class="slide slide-hero-camps"
+      <div class="slide slide-hero-camps eacc-home-offer-hidden"
         style="background-image:url('assets/images/explore-our-campus/home-hero2.webp')"></div>
       <div class="slide slide-hero-main"
         style="background-image:url('assets/images/explore-our-campus/home-hero.webp')"></div>
@@ -314,7 +321,7 @@
       <p class="positioning-line">Language opens doors. Wellbeing builds resilience. Technology develops future skills. Creativity inspires innovation.</p>
 
       <div class="featured-banner-grid">
-        <article class="feature-card">
+        <article class="feature-card eacc-home-offer-hidden">
           <div class="feature-card-media">
             <img src="assets/images/summer26/summer8.webp" alt="Summer Camp 2026 activities" loading="lazy" decoding="async">
           </div>
@@ -360,7 +367,7 @@
 
   <!-- Summer Camp 2026 -->
 
-  <section class="camps-section" id="summer-camp-2026">
+  <section class="camps-section eacc-home-offer-hidden" id="summer-camp-2026">
 
     <div class="container camps-wrapper">
 
@@ -625,41 +632,7 @@
   <a class="sticky-wp" href="https://wa.me/201065533240" aria-label="Chat with EACC on WhatsApp" data-external-link="https://wa.me/201065533240" data-local-link="https://wa.me/201065533240">
     <img loading="lazy" src="assets/icons/wp-icon.webp" alt="" aria-hidden="true">
   </a>
-
-  <!-- Website Launch Offer: index-only popup loaded from offers.html. -->
-  <script>
-    (function () {
-      var frame = document.createElement('iframe');
-      frame.id = 'eaccLaunchOfferFrame';
-      frame.title = 'EACC New Era Launch Offer';
-      frame.src = 'offers.html';
-      frame.setAttribute('aria-label', 'EACC website launch offer');
-      frame.setAttribute('sandbox', 'allow-scripts allow-forms');
-      frame.setAttribute('referrerpolicy', 'no-referrer');
-      frame.style.cssText = [
-        'position:fixed',
-        'inset:0',
-        'width:100%',
-        'height:100%',
-        'border:0',
-        'z-index:9500',
-        'background:transparent'
-      ].join(';');
-
-      function removeOfferFrame() {
-        if (frame && frame.parentNode) frame.parentNode.removeChild(frame);
-        window.removeEventListener('message', handleOfferMessage);
-      }
-
-      function handleOfferMessage(event) {
-        if (!event.data || event.data.type !== 'EACC_OFFER_CLOSE') return;
-        removeOfferFrame();
-      }
-
-      window.addEventListener('message', handleOfferMessage);
-      document.body.appendChild(frame);
-    })();
-  </script>
+  <!-- Website Launch Offer disabled. offers.html is kept in the project but no longer loads on the homepage. -->
 
   <!-- Global Scripts And Footer -->
   <script src="assets/js/include-partials.js"></script>
