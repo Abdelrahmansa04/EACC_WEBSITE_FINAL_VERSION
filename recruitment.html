@@ -356,11 +356,12 @@
 
     <section class="recruitment-form-section">
       <div class="container">
-        <form class="recruitment-card" id="recruitmentApplicationForm" action="https://formsubmit.co/abdelrahmansaeed288@gmail.com" method="POST" enctype="multipart/form-data">
+        <form class="recruitment-card" id="recruitmentApplicationForm" action="https://formsubmit.co/recruitment@eacc-egy.com" method="POST" enctype="multipart/form-data">
           <input type="hidden" name="_subject" value="EACC Recruitment Application - New Candidate">
           <input type="hidden" name="_template" value="table">
           <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="Form Type" value="Recruitment Application">
+          <input type="hidden" name="name" id="formSubmitSenderName" value="">
 
 
           <h2>Application Form</h2>
@@ -452,6 +453,28 @@
     </section>
   </main>
 
+  <script>
+    (function updateRecruitmentSubmitMeta() {
+      var form = document.getElementById('recruitmentApplicationForm');
+      if (!form) return;
+
+      var fullName = form.querySelector('input[name="Full Name"]');
+      var senderName = form.querySelector('#formSubmitSenderName');
+      var subject = form.querySelector('input[name="_subject"]');
+
+      form.addEventListener('submit', function () {
+        var applicantName = fullName && fullName.value ? fullName.value.trim() : '';
+        if (senderName) {
+          senderName.value = applicantName || 'EACC Recruitment Applicant';
+        }
+        if (subject) {
+          subject.value = applicantName
+            ? 'EACC Recruitment Application - ' + applicantName
+            : 'EACC Recruitment Application - New Candidate';
+        }
+      });
+    })();
+  </script>
   <script src="assets/js/include-partials.js"></script>
   <div data-include="partials/global-footer.html"></div>
 </body>
