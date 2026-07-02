@@ -505,3 +505,46 @@ function setupAllSheetsManually() {
   });
   return "All form sheets are ready.";
 }
+
+/**
+ * Manual debug helper.
+ * Run this from the Apps Script editor to simulate a form submit.
+ */
+function testDoPostLanguageAcademy() {
+  const fakeEvent = {
+    parameter: {
+      formType: "Language Academy",
+      fullName: "Debug Test User",
+      phone: "01012345678",
+      category: "Adult",
+      age: "12",
+      language: "English",
+      page: "lang-form.html",
+      debug: "true"
+    }
+  };
+
+  const result = doPost(fakeEvent);
+  Logger.log(result.getContent());
+  return result.getContent();
+}
+
+/**
+ * Manual debug helper for consultation/contact forms.
+ */
+function testDoPostConsultation() {
+  const fakeEvent = {
+    parameter: {
+      formType: "request information",
+      fullName: "Debug Test User",
+      email: "test@example.com",
+      phone: "01012345678",
+      page: "contact-us/visit-our-centre.html",
+      debug: "true"
+    }
+  };
+
+  const result = doPost(fakeEvent);
+  Logger.log(result.getContent());
+  return result.getContent();
+}
