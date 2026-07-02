@@ -6867,7 +6867,7 @@ header .dropdown-menu a:hover {
 (function () {
   'use strict';
 
-  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbywhx0d2jcqyIKF3tQhU3hiuzw070sziC79MkembT8gOW4wxVWc_85zBe_y8me16uDDSQ/exec';
+  var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyNlmeOGtzjq2fmTGRWhu81J8luxPnfBbnESvsEPvR6gArxUfHcey-8Mh-J2MOtre-xDg/exec';
 
   var configs = [
     {
@@ -7030,7 +7030,8 @@ header .dropdown-menu a:hover {
       await fetch(SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',
-        body: JSON.stringify(payload)
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8' },
+        body: new URLSearchParams(payload).toString()
       });
       setFeedback(feedback, 'success', isArabic() ? cfg.successAr : cfg.successEn);
       form.reset();
@@ -7067,6 +7068,8 @@ header .dropdown-menu a:hover {
 <div data-include='partials/global-footer.html'></div>
 </body>
 </html>
+
+
 
 
 
