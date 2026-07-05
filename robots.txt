@@ -1,0 +1,8 @@
+# robots.txt for eacc-egy.com
+# Generated for https://eacc-egy.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://eacc-egy.com/sitemap.xml
