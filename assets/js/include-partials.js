@@ -144,6 +144,7 @@
           <a href="/who-we-are" data-local-link="about-us/our-story.html">Our Story</a>
           <a href="/leadership" data-local-link="about-us/leadership.html">Leadership Team</a>
           <a href="/partners" data-local-link="about-us/partners.html">Partners &amp; Accreditations</a>
+          <a href="/blog" data-local-link="about-us/blog.html">Blog</a>
           <a href="/recruitment" data-local-link="recruitment.html">Work for Us</a>
         </div>
       </div>
@@ -200,6 +201,7 @@
           <a href="Our Services/online-lang.html" data-local-link="Our Services/online-lang.html">Online Language Center</a>
           <a href="corporate-train.html" data-local-link="corporate-train.html">Corporate Training</a>
           <a href="recruitment.html" data-local-link="recruitment.html">Work for Us</a>
+          <a href="about-us/blog.html" data-local-link="about-us/blog.html">Blog</a>
         </div>
       </div>
       <div class="footer-col">
