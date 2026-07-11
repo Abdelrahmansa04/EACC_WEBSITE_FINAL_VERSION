@@ -1,0 +1,12 @@
+{
+  "name": "eacc-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "check:functions": "node --check netlify/functions/blog-posts.mjs && node --check netlify/functions/blog-image.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": "^9.1.2"
+  },
+  "devDependencies": {}
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs Dashboard | EACC</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" type="image/webp" href="../assets/images/eacc-white-logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/blog.css">
+</head>
+<body class="eacc-inner-site eacc-blog loading">
+  <div data-include="../partials/global-loading-screen.html"></div>
+  <div data-include="../partials/global-navbar.html"></div>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container">
+        <span class="eyebrow">Admin Dashboard</span>
+        <h1>Manage EACC Blog Posts</h1>
+        <p>Create, edit, publish, and remove blog posts from one protected workspace.</p>
+      </div>
+    </section>
+
+    <section class="blog-dashboard" aria-labelledby="dashboardTitle">
+      <div class="container">
+        <div class="admin-gate" id="adminGate">
+          <h2 id="dashboardTitle">Admin access</h2>
+          <p>Use your approved admin email and private access code to manage the blog.</p>
+          <form class="blog-form" id="loginForm">
+            <div class="blog-field">
+              <label for="adminEmail">Admin email</label>
+              <input id="adminEmail" name="adminEmail" type="email" autocomplete="email" placeholder="name@example.com" required>
+            </div>
+            <div class="blog-field">
+              <label for="adminToken">Access code</label>
+              <input id="adminToken" name="adminToken" type="password" autocomplete="current-password" placeholder="Private admin code" required>
+            </div>
+            <div class="dashboard-actions">
+              <button class="blog-btn blog-btn-primary" type="submit">Open Dashboard</button>
+              <a class="blog-btn blog-btn-secondary" href="blog.html">Back to Blog</a>
+            </div>
+            <div class="dashboard-message" id="loginMessage"></div>
+          </form>
+        </div>
+
+        <div class="dashboard-shell" id="dashboardShell" hidden>
+          <section class="dashboard-panel" aria-labelledby="editorTitle">
+            <div class="dashboard-topline">
+              <div>
+                <h2 id="editorTitle">Create post</h2>
+                <p id="editorSubtitle">Write a new blog post and choose draft or published.</p>
+              </div>
+              <button class="mini-btn" id="resetEditor" type="button">New</button>
+            </div>
+
+            <form class="blog-form" id="postForm">
+              <input id="postId" type="hidden">
+              <input id="currentImageUrl" type="hidden">
+              <input id="currentImageKey" type="hidden">
+
+              <div class="blog-field">
+                <label for="postTitle">Title</label>
+                <input id="postTitle" type="text" maxlength="140" placeholder="Blog post title" required>
+              </div>
+
+              <div class="blog-field">
+                <label for="postDescription">Description</label>
+                <textarea id="postDescription" maxlength="2400" placeholder="Write the blog description..." required></textarea>
+              </div>
+
+              <div class="blog-field">
+                <label for="postStatus">Status</label>
+                <select id="postStatus">
+                  <option value="draft">Draft</option>
+                  <option value="published">Published</option>
+                </select>
+              </div>
+
+              <div class="blog-field">
+                <label for="postImage">Optional image</label>
+                <input id="postImage" type="file" accept="image/*">
+              </div>
+
+              <div class="dashboard-actions">
+                <button class="blog-btn blog-btn-primary" type="submit">Save Post</button>
+                <button class="blog-btn blog-btn-secondary" id="clearImage" type="button">Remove Image</button>
+              </div>
+              <div class="dashboard-message" id="formMessage"></div>
+            </form>
+          </section>
+
+          <section class="dashboard-list" aria-labelledby="postListTitle">
+            <div class="dashboard-topline">
+              <div>
+                <h2 id="postListTitle">Posts</h2>
+                <p>Published posts appear on the public blog. Drafts stay here.</p>
+              </div>
+              <button class="mini-btn" id="logoutButton" type="button">Close</button>
+            </div>
+            <div class="dashboard-message" id="listMessage">Loading posts...</div>
+            <div class="post-admin-list" id="adminPostList"></div>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/js/blog-dashboard.js"></script>
+  <script src="../assets/js/include-partials.js"></script>
+  <div data-include="../partials/global-footer.html"></div>
+</body>
+</html>
