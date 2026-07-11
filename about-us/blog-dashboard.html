@@ -68,8 +68,23 @@
               </div>
 
               <div class="blog-field">
+                <label for="postSlug">URL slug</label>
+                <input id="postSlug" type="text" maxlength="120" placeholder="auto-generated-from-title">
+              </div>
+
+              <div class="blog-field">
                 <label for="postDescription">Description</label>
                 <textarea id="postDescription" maxlength="2400" placeholder="Write the blog description..." required></textarea>
+              </div>
+
+              <div class="blog-field">
+                <label for="postSeoTitle">SEO title</label>
+                <input id="postSeoTitle" type="text" maxlength="160" placeholder="Optional search title">
+              </div>
+
+              <div class="blog-field">
+                <label for="postSeoDescription">SEO description</label>
+                <textarea id="postSeoDescription" class="compact-textarea" maxlength="220" placeholder="Optional search description"></textarea>
               </div>
 
               <div class="blog-field">
@@ -82,6 +97,10 @@
 
               <div class="blog-field">
                 <label for="postImage">Optional image</label>
+                <div class="dashboard-image-preview" id="imagePreviewBox">
+                  <span>No image selected</span>
+                  <img id="imagePreview" alt="">
+                </div>
                 <input id="postImage" type="file" accept="image/*">
               </div>
 

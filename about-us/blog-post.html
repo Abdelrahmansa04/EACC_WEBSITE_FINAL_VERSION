@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Post | EACC</title>
+  <meta name="description" content="Read an EACC blog post from the Egyptian American Cultural Center community." />
+  <link rel="icon" type="image/webp" href="../assets/images/eacc-white-logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&family=Playfair+Display:wght@600;700;800&family=Noto+Naskh+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/global.css">
+  <link rel="stylesheet" href="../assets/css/blog.css">
+</head>
+<body class="eacc-inner-site eacc-blog loading">
+  <div data-include="../partials/global-loading-screen.html"></div>
+  <div data-include="../partials/global-navbar.html"></div>
+
+  <main>
+    <section class="hero blog-post-hero" id="top">
+      <div class="container">
+        <span class="eyebrow">EACC Blog</span>
+        <h1 id="postHeroTitle">Loading post...</h1>
+        <p id="postHeroMeta">Please wait while the article loads.</p>
+      </div>
+    </section>
+
+    <section class="blog-post-detail">
+      <div class="container">
+        <div class="blog-status" id="postStatus">Loading post...</div>
+        <article class="blog-article" id="postArticle" hidden>
+          <div class="blog-article-image" id="postImageWrap" hidden>
+            <img id="postImage" alt="">
+          </div>
+          <div class="blog-article-body">
+            <div class="blog-card-meta" id="postMeta"></div>
+            <h2 id="postTitle"></h2>
+            <p id="postDescription"></p>
+            <a class="blog-btn blog-btn-secondary" href="blog.html">Back to Blog</a>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="../assets/js/blog-post.js"></script>
+  <script src="../assets/js/include-partials.js"></script>
+  <div data-include="../partials/global-footer.html"></div>
+</body>
+</html>

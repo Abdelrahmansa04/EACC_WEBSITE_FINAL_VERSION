@@ -51,12 +51,29 @@ function slugify(value) {
   return slug || `post-${Date.now()}`;
 }
 
+function uniqueSlug(baseSlug, posts, currentId = "") {
+  const base = slugify(baseSlug);
+  const taken = new Set(
+    posts
+      .filter((post) => post.id !== currentId && !post.deletedAt)
+      .map((post) => post.slug)
+  );
+
+  if (!taken.has(base)) {
+    return base;
+  }
+
+  return `${base}-${Date.now()}`;
+}
+
 function publicPost(post) {
   return {
     id: post.id,
     slug: post.slug,
     title: post.title,
     description: post.description,
+    seoTitle: post.seoTitle || post.title,
+    seoDescription: post.seoDescription || post.description,
     imageUrl: post.imageUrl || "",
     status: post.status,
     createdAt: post.createdAt,
@@ -102,6 +119,18 @@ export default async function handler(request) {
 
     if (request.method === "GET") {
       const includeAll = url.searchParams.get("all") === "true";
+      const slug = text(url.searchParams.get("slug"), 120);
+
+      if (slug) {
+        const post = posts.find((item) => item.slug === slug && !item.deletedAt);
+
+        if (!post || (!admin && post.status !== "published")) {
+          return json({ message: "Post was not found." }, 404);
+        }
+
+        return json({ post: admin ? adminPost(post) : publicPost(post) });
+      }
+
       const visiblePosts = posts
         .filter((post) => !post.deletedAt)
         .filter((post) => includeAll && admin ? true : post.status === "published")
@@ -132,9 +161,11 @@ export default async function handler(request) {
 
       const post = {
         id: crypto.randomUUID(),
-        slug: `${slugify(title)}-${Date.now()}`,
+        slug: uniqueSlug(body.slug || title, posts),
         title,
         description,
+        seoTitle: text(body.seoTitle || title, 160),
+        seoDescription: text(body.seoDescription || description, 220),
         imageUrl: text(body.imageUrl, 600),
         imageKey: text(body.imageKey, 300),
         status,
@@ -167,6 +198,9 @@ export default async function handler(request) {
         ...posts[index],
         title,
         description,
+        slug: uniqueSlug(body.slug || title, posts, posts[index].id),
+        seoTitle: text(body.seoTitle || title, 160),
+        seoDescription: text(body.seoDescription || description, 220),
         imageUrl: text(body.imageUrl, 600),
         imageKey: text(body.imageKey, 300),
         status: body.status === "published" ? "published" : "draft",

@@ -17,6 +17,10 @@
   var formMessage = document.getElementById("formMessage");
   var editorTitle = document.getElementById("editorTitle");
   var editorSubtitle = document.getElementById("editorSubtitle");
+  var imagePreviewBox = document.getElementById("imagePreviewBox");
+  var imagePreview = document.getElementById("imagePreview");
+  var postImageInput = document.getElementById("postImage");
+  var previewObjectUrl = "";
 
   function getStoredAuth() {
     try {
@@ -65,6 +69,30 @@
     target.classList.toggle("error", Boolean(isError));
   }
 
+  function slugify(value) {
+    return String(value || "")
+      .trim()
+      .toLowerCase()
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
+  }
+
+  function setImagePreview(src) {
+    if (previewObjectUrl && previewObjectUrl !== src) {
+      URL.revokeObjectURL(previewObjectUrl);
+      previewObjectUrl = "";
+    }
+
+    if (src) {
+      imagePreview.src = src;
+      imagePreviewBox.classList.add("has-image");
+      return;
+    }
+
+    imagePreview.removeAttribute("src");
+    imagePreviewBox.classList.remove("has-image");
+  }
+
   function showDashboard() {
     adminGate.hidden = true;
     dashboardShell.hidden = false;
@@ -78,8 +106,12 @@
   function resetEditor() {
     postForm.reset();
     document.getElementById("postId").value = "";
+    document.getElementById("postSlug").value = "";
+    document.getElementById("postSeoTitle").value = "";
+    document.getElementById("postSeoDescription").value = "";
     document.getElementById("currentImageUrl").value = "";
     document.getElementById("currentImageKey").value = "";
+    setImagePreview("");
     editorTitle.textContent = "Create post";
     editorSubtitle.textContent = "Write a new blog post and choose draft or published.";
     setMessage(formMessage, "");
@@ -170,12 +202,17 @@
 
     try {
       var id = document.getElementById("postId").value;
-      var file = document.getElementById("postImage").files[0];
+      var file = postImageInput.files[0];
       var image = await uploadImage(file);
+      var title = document.getElementById("postTitle").value.trim();
+      var description = document.getElementById("postDescription").value.trim();
       var payload = {
         id: id,
-        title: document.getElementById("postTitle").value.trim(),
-        description: document.getElementById("postDescription").value.trim(),
+        title: title,
+        slug: slugify(document.getElementById("postSlug").value || title),
+        description: description,
+        seoTitle: document.getElementById("postSeoTitle").value.trim(),
+        seoDescription: document.getElementById("postSeoDescription").value.trim(),
         status: document.getElementById("postStatus").value,
         imageUrl: image ? image.imageUrl : document.getElementById("currentImageUrl").value,
         imageKey: image ? image.imageKey : document.getElementById("currentImageKey").value
@@ -192,7 +229,7 @@
         throw new Error(data.message || "Post could not be saved.");
       }
 
-      setMessage(formMessage, "Post saved.");
+      setMessage(formMessage, id ? "Post updated." : "Post created.");
       resetEditor();
       await loadPosts();
     } catch (error) {
@@ -230,11 +267,15 @@
 
     document.getElementById("postId").value = post.id;
     document.getElementById("postTitle").value = post.title;
+    document.getElementById("postSlug").value = post.slug || "";
     document.getElementById("postDescription").value = post.description;
+    document.getElementById("postSeoTitle").value = post.seoTitle || "";
+    document.getElementById("postSeoDescription").value = post.seoDescription || "";
     document.getElementById("postStatus").value = post.status;
     document.getElementById("currentImageUrl").value = post.imageUrl || "";
     document.getElementById("currentImageKey").value = post.imageKey || "";
-    document.getElementById("postImage").value = "";
+    postImageInput.value = "";
+    setImagePreview(post.imageUrl || "");
     editorTitle.textContent = "Edit post";
     editorSubtitle.textContent = "Update the post details, image, or publish status.";
     window.scrollTo({ top: document.querySelector(".dashboard-panel").offsetTop - 110, behavior: "smooth" });
@@ -257,8 +298,22 @@
   document.getElementById("clearImage").addEventListener("click", function () {
     document.getElementById("currentImageUrl").value = "";
     document.getElementById("currentImageKey").value = "";
-    document.getElementById("postImage").value = "";
+    postImageInput.value = "";
+    setImagePreview("");
     setMessage(formMessage, "Image removed for this draft. Save the post to apply it.");
+  });
+
+  postImageInput.addEventListener("change", function () {
+    var file = postImageInput.files[0];
+
+    if (!file) {
+      setImagePreview(document.getElementById("currentImageUrl").value);
+      return;
+    }
+
+    previewObjectUrl = URL.createObjectURL(file);
+    setImagePreview(previewObjectUrl);
+    setMessage(formMessage, "Image ready to upload when you save.");
   });
 
   document.getElementById("logoutButton").addEventListener("click", function () {

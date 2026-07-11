@@ -24,19 +24,21 @@
   function renderPost(post) {
     var title = escapeHtml(post.title);
     var description = escapeHtml(post.description);
+    var url = "blog-post.html?slug=" + encodeURIComponent(post.slug);
     var image = post.imageUrl
       ? '<div class="blog-card-media"><img src="' + escapeHtml(post.imageUrl) + '" alt="' + title + '"></div>'
       : "";
 
     return [
-      '<article class="blog-card reveal ' + (post.imageUrl ? "" : "no-image") + '">',
+      '<article class="blog-card reveal ' + (post.imageUrl ? "" : "no-image") + '"><a class="blog-card-link" href="' + url + '">',
       image,
       '<div class="blog-card-content">',
       '<div class="blog-card-meta"><span>' + formatDate(post.createdAt) + '</span><span>EACC Community</span></div>',
       '<h3 class="blog-card-title">' + title + '</h3>',
       '<p class="blog-card-description">' + description + '</p>',
+      '<span class="read-link">Read article</span>',
       '</div>',
-      '</article>'
+      '</a></article>'
     ].join("");
   }
 
