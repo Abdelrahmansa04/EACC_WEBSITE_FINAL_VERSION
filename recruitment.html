@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
@@ -316,6 +316,32 @@
       cursor: pointer;
     }
 
+
+    .form-feedback {
+      margin-top: 20px;
+      padding: 16px 18px;
+      border-radius: 16px;
+      background: rgba(24,128,74,.10);
+      border: 1px solid rgba(24,128,74,.24);
+      color: #145c35;
+      font-weight: 800;
+      line-height: 1.6;
+    }
+
+    .form-feedback.is-error {
+      background: rgba(181,54,54,.10);
+      border-color: rgba(181,54,54,.24);
+      color: #8e2d2d;
+    }
+
+    .form-feedback[hidden] {
+      display: none;
+    }
+
+    .submit-row .btn[disabled] {
+      cursor: wait;
+      opacity: .72;
+    }
     @media (max-width: 720px) {
       .recruitment-hero {
         padding: 118px 0 70px;
@@ -356,16 +382,12 @@
 
     <section class="recruitment-form-section">
       <div class="container">
-        <form class="recruitment-card" id="recruitmentApplicationForm" action="https://formsubmit.co/recruitment@eacc-egy.com" method="POST" enctype="multipart/form-data">
-          <input type="hidden" name="_subject" value="EACC Recruitment Application - New Candidate">
-          <input type="hidden" name="_template" value="table">
-          <input type="hidden" name="_captcha" value="false">
+        <form class="recruitment-card" id="recruitmentApplicationForm" method="POST" enctype="multipart/form-data">
           <input type="hidden" name="Form Type" value="Recruitment Application">
-          <input type="hidden" name="name" id="formSubmitSenderName" value="">
 
 
           <h2>Application Form</h2>
-          <p class="form-intro">Please complete the required fields carefully. Your submission will be received by EACC Human Resources in a structured email table for easy review.</p>
+          <p class="form-intro">Please complete the required fields carefully. Your submission will be saved for EACC Human Resources in the recruitment spreadsheet with a secure CV link.</p>
 
           <h3>Personal Information</h3>
           <div class="form-grid">
@@ -446,31 +468,108 @@
           <p>Thank you for your interest in joining EACC.</p>
           <p>Our Human Resources team carefully reviews every application. If your profile matches a current or future opportunity, we will be delighted to contact you.</p>
           <label class="consent-line"><input type="checkbox" name="Consent Confirmation" required> I confirm that the information provided is accurate and complete.</label>
-          <p class="form-note recruitment-submit-note">Your application details and CV will be sent securely to EACC HR by email.</p>
-          <div class="submit-row"><button type="submit" class="btn btn-primary">Submit Application</button></div>
+          <p class="form-note recruitment-submit-note">Your application details will be saved to the recruitment spreadsheet, and your CV will be uploaded as a secure Drive link.</p>
+          <div class="submit-row"><button type="submit" class="btn btn-primary" id="recruitmentSubmitButton">Submit Application</button></div>
+          <div class="form-feedback" id="recruitmentFormFeedback" role="status" aria-live="polite" hidden></div>
         </form>
       </div>
     </section>
   </main>
 
   <script>
-    (function updateRecruitmentSubmitMeta() {
+    (function handleRecruitmentSpreadsheetSubmit() {
       var form = document.getElementById('recruitmentApplicationForm');
       if (!form) return;
 
-      var fullName = form.querySelector('input[name="Full Name"]');
-      var senderName = form.querySelector('#formSubmitSenderName');
-      var subject = form.querySelector('input[name="_subject"]');
+      var SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzgxYodaiJmWSFu10wZIVATdD_8yE8t8VFxrb2cAEmGe1MUoZxuX3ZQCKH3pFh8Lx5F/exec';
+      var submitButton = document.getElementById('recruitmentSubmitButton');
+      var feedback = document.getElementById('recruitmentFormFeedback');
+      var maxCvSize = 10 * 1024 * 1024;
 
-      form.addEventListener('submit', function () {
-        var applicantName = fullName && fullName.value ? fullName.value.trim() : '';
-        if (senderName) {
-          senderName.value = applicantName || 'EACC Recruitment Applicant';
+      function setFeedback(message, isError) {
+        if (!feedback) return;
+        feedback.textContent = message;
+        feedback.classList.toggle('is-error', Boolean(isError));
+        feedback.hidden = false;
+      }
+
+      function readFileAsBase64(file) {
+        return new Promise(function (resolve, reject) {
+          var reader = new FileReader();
+          reader.onload = function () {
+            var value = String(reader.result || '');
+            resolve(value.indexOf(',') >= 0 ? value.split(',').pop() : value);
+          };
+          reader.onerror = function () { reject(reader.error || new Error('Could not read CV file.')); };
+          reader.readAsDataURL(file);
+        });
+      }
+
+      function collectPayload(cvFile, cvData) {
+        var formData = new FormData(form);
+        var payload = {
+          formType: 'Recruitment Application',
+          page: window.location.pathname.split('/').pop() || 'recruitment.html'
+        };
+
+        formData.forEach(function (value, key) {
+          if (value instanceof File) return;
+          if (key === 'Areas of Expertise[]') return;
+          payload[key] = value;
+        });
+
+        payload['Areas of Expertise'] = Array.prototype.slice.call(form.querySelectorAll('input[name="Areas of Expertise[]"]:checked'))
+          .map(function (input) { return input.value; })
+          .join(', ');
+        payload['Consent Confirmation'] = form.querySelector('input[name="Consent Confirmation"]:checked') ? 'Confirmed' : '';
+        payload.cvFile = {
+          name: cvFile.name,
+          type: cvFile.type || 'application/octet-stream',
+          data: cvData
+        };
+
+        return payload;
+      }
+
+      form.addEventListener('submit', async function (event) {
+        event.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+
+        var cvInput = form.querySelector('input[name="attachment"]');
+        var cvFile = cvInput && cvInput.files ? cvInput.files[0] : null;
+        if (!cvFile) {
+          setFeedback('Please upload your CV before submitting.', true);
+          return;
         }
-        if (subject) {
-          subject.value = applicantName
-            ? 'EACC Recruitment Application - ' + applicantName
-            : 'EACC Recruitment Application - New Candidate';
+        if (cvFile.size > maxCvSize) {
+          setFeedback('The CV file is larger than 10 MB. Please upload a smaller PDF or Word file.', true);
+          return;
+        }
+
+        if (submitButton) {
+          submitButton.disabled = true;
+          submitButton.textContent = 'Submitting...';
+        }
+        if (feedback) feedback.hidden = true;
+
+        try {
+          var cvData = await readFileAsBase64(cvFile);
+          var payload = collectPayload(cvFile, cvData);
+          await fetch(SCRIPT_URL, {
+            method: 'POST',
+            mode: 'no-cors',
+            body: JSON.stringify(payload)
+          });
+
+          setFeedback('Thank you for applying. Your application has been saved and your CV link has been added to the recruitment spreadsheet.', false);
+          form.reset();
+        } catch (error) {
+          setFeedback('Something went wrong while submitting your application. Please try again.', true);
+        } finally {
+          if (submitButton) {
+            submitButton.disabled = false;
+            submitButton.textContent = 'Submit Application';
+          }
         }
       });
     })();
@@ -479,3 +578,5 @@
   <div data-include="partials/global-footer.html"></div>
 </body>
 </html>
+
+
