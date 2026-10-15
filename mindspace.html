@@ -6451,9 +6451,55 @@ header .dropdown-menu a:hover {
 </div>
 <!-- -->
 
-<main>
+<style id="mindspace-about-refresh">
+  .mindspace-legacy-content{display:none!important}.mindspace-about-hero .hero-content{max-width:980px}.mindspace-about-hero .hero-kicker{display:block;margin:0 0 14px;color:var(--gold-light,#ffd54f);font-weight:800;letter-spacing:.08em;text-transform:uppercase}.mindspace-about-hero h1{max-width:900px;margin-inline:auto}.mindspace-about-hero .hero-lead{max-width:860px;margin:22px auto 0}.mindspace-trust-list{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:28px auto 0;padding:0;list-style:none}.mindspace-trust-list li{padding:10px 16px;border:1px solid rgba(255,255,255,.28);border-radius:999px;background:rgba(255,255,255,.13);color:#fff;font-size:14px;font-weight:800;backdrop-filter:blur(12px)}.mindspace-story{max-width:920px;margin-inline:auto;text-align:center}.mindspace-story p{margin:0 auto 18px;color:#596174;font-size:clamp(16px,1.35vw,19px)}.mindspace-positioning{margin-top:30px;color:var(--navy-dark,#0d1457);font-family:var(--heading-font,inherit);font-size:clamp(24px,3.2vw,38px);font-weight:800;line-height:1.25}.mindspace-purpose-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.mindspace-purpose-card{height:100%;padding:clamp(26px,4vw,46px);border:1px solid rgba(13,20,87,.08);border-radius:28px;background:#fff;box-shadow:0 24px 70px rgba(13,20,87,.1)}.mindspace-purpose-card .purpose-label{display:block;margin-bottom:14px;color:var(--gold,#f5a623);font-size:13px;font-weight:900;letter-spacing:.12em;text-transform:uppercase}.mindspace-purpose-card h2{margin-bottom:22px;color:var(--navy-dark,#0d1457)}.mindspace-purpose-card p{color:#596174}.mindspace-purpose-card p:last-child{margin-bottom:0}.mindspace-principles{background:var(--navy-dark,#0d1457);color:#fff}.mindspace-principles .section-head h2,.mindspace-principles .section-head p{color:#fff}.mindspace-principle-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:36px}.mindspace-principle{padding:24px;border:1px solid rgba(255,255,255,.16);border-radius:22px;background:rgba(255,255,255,.08)}.mindspace-principle strong{display:block;margin-bottom:8px;color:var(--gold-light,#ffd54f);font-size:18px}.mindspace-principle p{margin:0;color:rgba(255,255,255,.84)}.mindspace-closing{max-width:920px;margin-inline:auto;text-align:center}.mindspace-closing p{max-width:780px;margin-inline:auto}@media(max-width:820px){.mindspace-purpose-grid,.mindspace-principle-grid{grid-template-columns:1fr}.mindspace-trust-list{align-items:stretch;flex-direction:column}}
+</style>
+<style id="mindspace-about-contrast-fixes">
+  .mindspace-about-hero .mindspace-trust-list li { color: #fff !important; }
+  body.eacc-inner-site main > .mindspace-principles { background: #f5f7fc !important; color: var(--navy-dark, #0d1457) !important; }
+  .mindspace-principles .section-head h2 { color: #111827 !important; }
+  .mindspace-principles .section-head p { color: #596174 !important; }
+  .mindspace-principles .section-head > .eyebrow {
+    display: inline-flex; align-items: center; justify-content: center; min-height: 42px;
+    padding: 9px 18px; border: 1px solid rgba(245,166,35,.42); border-radius: 999px;
+    background: #fff; color: var(--navy-dark, #0d1457) !important;
+    box-shadow: 0 10px 28px rgba(13,20,87,.08); letter-spacing: .09em;
+  }
+  .mindspace-principle { background: #fff !important; border-color: rgba(13,20,87,.08) !important; box-shadow: 0 18px 50px rgba(13,20,87,.07); }
+  .mindspace-principle p { color: #111827 !important; }
+  body.eacc-inner-site main > .cta-section .mindspace-closing h2,
+  body.eacc-inner-site main > .cta-section .mindspace-closing p { color: #fff !important; }
+  .mindspace-closing > .eyebrow {
+    display: inline-flex; align-items: center; justify-content: center; min-height: 42px;
+    padding: 9px 18px; border: 1px solid rgba(255,255,255,.3); border-radius: 999px;
+    background: rgba(255,255,255,.12); color: #fff !important;
+    box-shadow: 0 12px 32px rgba(0,0,0,.14); backdrop-filter: blur(12px); letter-spacing: .08em;
+  }
+  body.eacc-inner-site main > .mindspace-principles { padding-block: clamp(64px, 6vw, 82px) !important; }
+  body.eacc-inner-site main > .cta-section:not(.mindspace-legacy-content) {
+    min-height: 0 !important; padding-block: clamp(64px, 6vw, 82px) !important;
+  }
+  .mindspace-closing > .eyebrow { margin-bottom: 18px; }
+  .mindspace-closing h2 { margin: 0 0 14px !important; line-height: 1.12; }
+  .mindspace-closing p { margin-top: 0 !important; margin-bottom: 0 !important; line-height: 1.7; }
+  .mindspace-closing .hero-actions { margin-top: 28px; }
+  body.eacc-inner-site main > .mindspace-form-embed { padding-block: clamp(58px, 6vw, 78px) !important; }
+  @media (max-width: 768px) {
+    body.eacc-inner-site main > .mindspace-principles,
+    body.eacc-inner-site main > .cta-section:not(.mindspace-legacy-content),
+    body.eacc-inner-site main > .mindspace-form-embed { padding-block: 56px !important; }
+    .mindspace-closing > .eyebrow { margin-bottom: 16px; }
+    .mindspace-closing .hero-actions { margin-top: 24px; }
+  }
+</style>
+<main data-content-version="about-mindspace-2026">
+<section class="mind-hero mindspace-about-hero"><div class="container hero-content"><span class="hero-kicker">A Specialized Psychological &amp; Developmental Hub by EACC</span><h1>Where Understanding Becomes Growth</h1><p class="hero-lead">Mind Space brings together specialized psychological care, assessment, rehabilitation, and skills development for children and adolescents.</p><ul class="mindspace-trust-list" aria-label="Mind Space foundations"><li>Over 25 years of institutional experience</li><li>Built around every child’s needs</li><li>Professional, individualized, evidence-based support</li></ul><div class="hero-actions"><a class="btn btn-primary" href="#about">Discover Mind Space</a><a class="btn btn-secondary" href="#mindspace-form">Book an Appointment</a></div></div></section>
+<section id="about"><div class="container mindspace-story"><span class="eyebrow">About Mind Space</span><h2>Understanding each child before defining the path forward</h2><p>Mind Space operates under the umbrella of the Egyptian American Cultural Center (EACC), extending EACC’s established legacy in education, training, and development into psychological well-being and child development.</p><p>We provide professional, individualized, and evidence-based support for children, families, and schools, with care shaped around the needs, strengths, and potential of every child.</p><div class="mindspace-positioning">A trusted foundation. Specialized expertise. Individualized care.</div></div></section>
+<section class="band" id="purpose"><div class="container mindspace-purpose-grid"><article class="mindspace-purpose-card"><span class="purpose-label">Our Vision</span><h2>A future where understanding comes first</h2><p>We envision a future where every child and adolescent is understood before being judged, supported before challenges become barriers, and empowered to grow into their fullest potential.</p><p>We see a community where psychological well-being is valued as an essential part of development, families feel confident supporting their children, and seeking professional support is recognized as a strength, not a stigma.</p><p>Our aim is to become a trusted reference for child and adolescent psychological and developmental support, creating lasting impact beyond the therapy room and into homes, schools, and the wider community.</p></article><article class="mindspace-purpose-card"><span class="purpose-label">Our Mission</span><h2>Meaningful change begins with understanding</h2><p>We create a space where children and adolescents are seen beyond their challenges, their strengths are recognized, their voices are heard, and their potential is given room to grow.</p><p>We work alongside families to turn understanding into practical change, building the emotional awareness, resilience, confidence, and life skills needed to navigate each stage of development with greater independence.</p><p>Rather than simply responding to difficulties, we believe in understanding early, supporting intentionally, and building for the long term.</p></article></div></section>
+<section class="mindspace-principles" id="approach"><div class="container"><div class="section-head"><span class="eyebrow">How We Work</span><h2>Every mind has its own way of learning, feeling, connecting, and growing</h2><p>Our approach keeps the individual at the center of every assessment, plan, and step forward.</p></div><div class="mindspace-principle-grid"><article class="mindspace-principle"><strong>Understand Differently</strong><p>Look beyond labels to recognize strengths, needs, and the whole person.</p></article><article class="mindspace-principle"><strong>Support Intentionally</strong><p>Shape professional support around clear goals and each individual’s needs.</p></article><article class="mindspace-principle"><strong>Grow Together</strong><p>Work with children, adolescents, families, and schools toward lasting change.</p></article></div></div></section>
+<section class="cta-section" id="contact"><div class="container mindspace-closing"><span class="eyebrow">Mind Space by EACC</span><h2>Every potential deserves space to grow</h2><p>Start with understanding. Tell us what support you are looking for, and our team will help you identify the right next step.</p><div class="hero-actions"><a class="btn btn-primary" href="#mindspace-form">Request Support</a></div></div></section>
 <!-- mind-hero -->
-<section class="mind-hero">
+<section class="mind-hero mindspace-legacy-content" aria-hidden="true">
 <div class="container hero-content">
 <span class="eyebrow" data-ar="???? ????? ???? ?? ?????? ?????? ???????? ???????" data-en="Mindspace Center by EACC">Mindspace Center by EACC</span>
 <h1 data-ar="???? - ????? - ???" data-en="Learning - Development - Support">Learning - Development - Support</h1>
@@ -6465,7 +6511,7 @@ header .dropdown-menu a:hover {
 </div>
 </section>
 <!-- about -->
-<section id="about">
+<section class="mindspace-legacy-content" id="about-legacy" aria-hidden="true">
 <div class="container">
 <div class="intro-panel">
 <span class="eyebrow" data-ar="?? ??????" data-en="About the Center">About the Center</span>
@@ -6477,7 +6523,8 @@ header .dropdown-menu a:hover {
 </div>
 </section>
 <!-- services -->
-<section class="band" id="services">
+<span id="services" aria-hidden="true"></span>
+<section class="band mindspace-legacy-content" id="services-legacy" aria-hidden="true">
 <div class="container">
 <div class="section-head">
 <span class="eyebrow" data-ar="??????? ????????" data-en="Our Specialized Services">Our Specialized Services</span>
@@ -6549,7 +6596,8 @@ header .dropdown-menu a:hover {
 </div>
 </section>
 <!-- assessment -->
-<section id="assessment">
+<span id="assessment" aria-hidden="true"></span>
+<section class="mindspace-legacy-content" id="assessment-legacy" aria-hidden="true">
 <div class="container split-grid">
 <div class="metric-panel">
 <h2 data-ar="??????? ??????" data-en="Comprehensive Assessment">Comprehensive Assessment</h2>
@@ -6574,7 +6622,8 @@ header .dropdown-menu a:hover {
 </div>
 </section>
 <!-- family -->
-<section class="band" id="family">
+<span id="family" aria-hidden="true"></span>
+<section class="band mindspace-legacy-content" id="family-legacy" aria-hidden="true">
 <div class="container">
 <div class="section-head">
 <span class="eyebrow" data-ar="??????? ?? ??????" data-en="Our Partnership with the Family">Our Partnership with the Family</span>
@@ -6604,7 +6653,7 @@ header .dropdown-menu a:hover {
 </div>
 </section>
 <!-- contact -->
-<section class="cta-section" id="contact">
+<section class="cta-section mindspace-legacy-content" id="contact-legacy" aria-hidden="true">
 <div class="container final-copy">
 <span class="eyebrow" data-ar="???? ????? ????" data-en="Mindspace Center">Mindspace Center</span>
 <h2 data-ar="???? ?????? ?????? ???? ??? ?????? ????." data-en="Together, we can help your child learn with confidence.">Together, we can help your child learn with confidence.</h2>
