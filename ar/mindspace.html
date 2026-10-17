@@ -6492,6 +6492,46 @@ header .dropdown-menu a:hover {
     .mindspace-closing > .eyebrow { margin-bottom: 16px; }
     .mindspace-closing .hero-actions { margin-top: 24px; }
   }
+  #approach, #contact { display: none !important; }
+  .mindspace-v2-section { padding-block: clamp(72px, 8vw, 112px) !important; }
+  .mindspace-v2-section.alt { background: #f5f7fc !important; }
+  .mindspace-v2-head { max-width: 860px; margin: 0 auto 42px; text-align: center; }
+  .mindspace-v2-head h2 { margin: 12px 0 16px; color: #111827; font-size: clamp(34px, 4.8vw, 58px); line-height: 1.2; }
+  .mindspace-v2-head p { margin: 0; color: #596174; font-size: clamp(16px, 1.35vw, 19px); }
+  .mindspace-v2-kicker { display: inline-flex; padding: 8px 15px; border-radius: 999px; background: rgba(245,166,35,.14); color: #a85d00; font-size: 13px; font-weight: 900; }
+  .mindspace-service-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
+  .mindspace-service-card, .mindspace-assessment-card, .mindspace-family-card { border: 1px solid rgba(13,20,87,.08); border-radius: 26px; background: #fff; box-shadow: 0 20px 60px rgba(13,20,87,.08); }
+  .mindspace-service-card { padding: 30px; }
+  .mindspace-service-number { display: grid; width: 46px; height: 46px; place-items: center; margin-bottom: 20px; border-radius: 14px; background: linear-gradient(135deg,#f5a623,#ffd54f); color: #0d1457; font-weight: 900; }
+  .mindspace-service-card h3, .mindspace-family-card h3 { margin: 0 0 14px; color: #0d1457; font-size: 25px; line-height: 1.35; }
+  .mindspace-service-card p, .mindspace-family-card p { color: #596174; }
+  .mindspace-clean-list { display: grid; gap: 10px; margin: 20px 0 0; padding: 0; list-style: none; }
+  .mindspace-clean-list li { position: relative; padding-right: 24px; color: #293043; line-height: 1.7; }
+  .mindspace-clean-list li::before { content: ''; position: absolute; right: 0; top: .7em; width: 9px; height: 9px; border-radius: 50%; background: #f5a623; }
+  .mindspace-assessment-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+  .mindspace-assessment-card { display: grid; grid-template-columns: 48px 1fr; gap: 16px; padding: 24px; }
+  .mindspace-assessment-icon { display: grid; width: 48px; height: 48px; place-items: center; border-radius: 15px; background: #eef0f8; color: #0d1457; font-weight: 900; }
+  .mindspace-assessment-card h3 { margin: 0 0 7px; color: #0d1457; font-size: 19px; }
+  .mindspace-assessment-card p { margin: 0; color: #596174; font-size: 15px; }
+  .mindspace-family-intro { display: grid; grid-template-columns: .9fr 1.1fr; gap: clamp(30px, 6vw, 74px); align-items: center; margin-bottom: 54px; }
+  .mindspace-family-intro h2 { margin: 12px 0 18px; color: #111827; font-size: clamp(36px, 4.8vw, 58px); line-height: 1.25; }
+  .mindspace-family-intro p { color: #596174; font-size: 18px; }
+  .mindspace-family-highlight { padding: clamp(28px, 4vw, 44px); border-radius: 28px; background: linear-gradient(135deg,#0d1457,#283593); color: #fff; box-shadow: 0 28px 70px rgba(13,20,87,.2); }
+  body.eacc-inner-site .mindspace-family-highlight h3 { margin: 0 0 14px; color: #fff !important; font-size: 30px; }
+  body.eacc-inner-site .mindspace-family-highlight p { margin: 0; color: #fff !important; }
+  .mindspace-process-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+  .mindspace-process-step { padding: 22px 18px; border-radius: 20px; background: #fff; border: 1px solid rgba(13,20,87,.08); box-shadow: 0 14px 40px rgba(13,20,87,.06); }
+  .mindspace-process-step strong { display: block; margin-bottom: 8px; color: #0d1457; }
+  .mindspace-process-step p { margin: 0; color: #596174; font-size: 14px; }
+  .mindspace-why-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin-top: 38px; }
+  .mindspace-family-card { padding: 26px; }
+  .mindspace-final-cta { padding-block: clamp(70px, 8vw, 98px) !important; background: linear-gradient(135deg,#0d1457,#283593) !important; color: #fff; text-align: center; }
+  .mindspace-final-cta .container { max-width: 900px; }
+  .mindspace-final-cta h2 { margin: 14px 0 18px; color: #fff !important; font-size: clamp(38px, 5.2vw, 64px); line-height: 1.2; }
+  .mindspace-final-cta p { max-width: 760px; margin: 0 auto; color: rgba(255,255,255,.86) !important; font-size: 18px; }
+  .mindspace-final-cta .hero-actions { margin-top: 30px; }
+  @media (max-width: 980px) { .mindspace-service-grid { grid-template-columns: 1fr; } .mindspace-process-grid { grid-template-columns: repeat(2,1fr); } }
+  @media (max-width: 760px) { .mindspace-assessment-grid, .mindspace-family-intro, .mindspace-why-grid, .mindspace-process-grid { grid-template-columns: 1fr; } .mindspace-v2-section { padding-block: 64px !important; } }
 </style>
 <main data-content-version="about-mindspace-2026">
 <section class="mind-hero mindspace-about-hero"><div class="container hero-content"><span class="hero-kicker">مركز متخصص للدعم النفسي والنمائي من EACC</span><h1>حيث يتحول الفهم إلى نمو</h1><p class="hero-lead">يجمع مايند سبيس بين الرعاية النفسية المتخصصة والتقييم والتأهيل وتنمية المهارات للأطفال والمراهقين.</p><ul class="mindspace-trust-list" aria-label="ركائز مايند سبيس"><li>أكثر من 25 عامًا من الخبرة المؤسسية</li><li>خدمات مصممة حول احتياجات كل طفل</li><li>دعم مهني وفردي قائم على الأدلة</li></ul><div class="hero-actions"><a class="btn btn-primary" href="#about">اكتشف مايند سبيس</a><a class="btn btn-secondary" href="#mindspace-form">احجز موعدًا</a></div></div></section>
@@ -6499,6 +6539,45 @@ header .dropdown-menu a:hover {
 <section class="band" id="purpose"><div class="container mindspace-purpose-grid"><article class="mindspace-purpose-card"><span class="purpose-label">رؤيتنا</span><h2>مستقبل يأتي فيه الفهم أولًا</h2><p>نتطلع إلى مستقبل يُفهم فيه كل طفل ومراهق قبل الحكم عليه، ويحصل على الدعم قبل أن تتحول التحديات إلى عوائق، ويتمكن من النمو والوصول إلى أقصى إمكاناته.</p><p>نتصور مجتمعًا يقدر الصحة النفسية بوصفها جزءًا أساسيًا من النمو، وتشعر فيه الأسر بالثقة في دعم أبنائها، ويُنظر إلى طلب المساندة المتخصصة باعتباره قوة لا وصمة.</p><p>ونسعى إلى أن نصبح مرجعًا موثوقًا للدعم النفسي والنمائي للأطفال والمراهقين، لنصنع أثرًا مستدامًا يتجاوز غرفة العلاج إلى المنزل والمدرسة والمجتمع.</p></article><article class="mindspace-purpose-card"><span class="purpose-label">رسالتنا</span><h2>التغيير الحقيقي يبدأ بالفهم</h2><p>نهيئ مساحة يُنظر فيها إلى الأطفال والمراهقين بما يتجاوز تحدياتهم، وتُكتشف نقاط قوتهم، وتُسمع أصواتهم، وتُمنح إمكاناتهم المساحة اللازمة للنمو.</p><p>نعمل جنبًا إلى جنب مع الأسر لتحويل الفهم إلى تغيير عملي، وبناء الوعي بالمشاعر والمرونة والثقة والمهارات الحياتية اللازمة لعبور كل مرحلة من مراحل النمو باستقلالية أكبر.</p><p>وبدلًا من الاكتفاء بالاستجابة للصعوبات، نؤمن بأهمية الفهم المبكر والدعم الهادف والبناء للمستقبل.</p></article></div></section>
 <section class="mindspace-principles" id="approach"><div class="container"><div class="section-head"><span class="eyebrow">منهجنا</span><h2>لكل عقل طريقته الخاصة في التعلم والشعور والتواصل والنمو</h2><p>نضع الفرد في قلب كل تقييم وخطة وخطوة نحو التقدم.</p></div><div class="mindspace-principle-grid"><article class="mindspace-principle"><strong>نفهم بصورة مختلفة</strong><p>نتجاوز التصنيفات لنرى نقاط القوة والاحتياجات والإنسان كاملًا.</p></article><article class="mindspace-principle"><strong>ندعم بقصد ووعي</strong><p>نصمم الدعم المهني حول أهداف واضحة واحتياجات كل فرد.</p></article><article class="mindspace-principle"><strong>ننمو معًا</strong><p>نتعاون مع الأطفال والمراهقين والأسر والمدارس من أجل تغيير مستدام.</p></article></div></div></section>
 <section class="cta-section" id="contact"><div class="container mindspace-closing"><span class="eyebrow">مايند سبيس من EACC</span><h2>كل إمكانات تستحق مساحة لتنمو</h2><p>ابدأ بالفهم. أخبرنا بنوع الدعم الذي تبحث عنه، وسيساعدك فريقنا على تحديد الخطوة التالية المناسبة.</p><div class="hero-actions"><a class="btn btn-primary" href="#mindspace-form">اطلب الدعم</a></div></div></section>
+<section class="mindspace-v2-section alt" id="specialized-services">
+<div class="container">
+<div class="mindspace-v2-head"><span class="mindspace-v2-kicker">خدماتنا المتخصصة</span><h2>نفهم كل احتياج وندعم كل إمكانات</h2><p>من خلال التوعية والعلاج وبرامج الدعم العلاجي، يقدم مايند سبيس دعمًا فرديًا قائمًا على الأدلة يعزز الصحة النفسية وينمي القدرات ويدعم التطور الهادف.</p></div>
+<div class="mindspace-service-grid">
+<article class="mindspace-service-card"><div class="mindspace-service-number">01</div><h3>التوعية وإرشاد الوالدين</h3><p>تساعد الموارد والإرشادات المستندة إلى الأدلة الأسر على فهم الاحتياجات النمائية والانفعالية والسلوكية والاستجابة لها بصورة أفضل.</p><ul class="mindspace-clean-list"><li>موارد للتوعية النفسية والتربوية</li><li>إرشاد الوالدين والاستشارات الأسرية</li><li>ورش وندوات توعوية</li><li>نادي الوالدين وبرامج التثقيف الأسري</li></ul></article>
+<article class="mindspace-service-card"><div class="mindspace-service-number">02</div><h3>التقييم والعلاج والتأهيل</h3><p>خدمات متخصصة تراعي احتياجات كل طفل أو مراهق وتدعم صحته النفسية وتواصله وسلوكه ونموه وتعلمه.</p><ul class="mindspace-clean-list"><li>التقييم النفسي والنمائي</li><li>العلاج والدعم النفسي</li><li>علاج النطق واللغة</li><li>تنمية المهارات والتدخل لصعوبات التعلم</li><li>العلاج النفسي الحركي</li><li>الإرشاد والاستشارات الأسرية</li></ul></article>
+<article class="mindspace-service-card"><div class="mindspace-service-number">03</div><h3>البرامج العلاجية المكملة</h3><p>برامج إبداعية وتعبيرية وتجريبية منظمة تكمل خطط التدخل الفردية وتوفر فرصًا إضافية للتعبير والتواصل والنمو.</p><ul class="mindspace-clean-list"><li>برامج الفن والتعبير الإبداعي</li><li>برامج قائمة على الموسيقى</li></ul></article>
+</div>
+</div>
+</section>
+
+<section class="mindspace-v2-section" id="evaluation">
+<div class="container">
+<div class="mindspace-v2-head"><span class="mindspace-v2-kicker">التقييم والقياس النفسي</span><h2>فهم أوضح يقود إلى دعم أفضل</h2><p>يساعد التقييم المهني على تحديد نقاط قوة كل طفل واحتياجاته ومجالات نموه، ويوجه التوصيات الفردية الخاصة بالتعلم والتطور والصحة النفسية.</p></div>
+<div class="mindspace-assessment-grid">
+<article class="mindspace-assessment-card"><div class="mindspace-assessment-icon">01</div><div><h3>مقياس كونرز</h3><p>يقيم صعوبات الانتباه وفرط الحركة والاندفاع والمشكلات السلوكية المرتبطة بها.</p></div></article>
+<article class="mindspace-assessment-card"><div class="mindspace-assessment-icon">02</div><div><h3>مقياس CARS</h3><p>يساعد على تقييم السلوكيات والخصائص النمائية المرتبطة باضطراب طيف التوحد.</p></div></article>
+<article class="mindspace-assessment-card"><div class="mindspace-assessment-icon">03</div><div><h3>اختبار الذكاء والتقييم المعرفي</h3><p>يقيم القدرات العقلية والاستدلال ونقاط القوة المعرفية.</p></div></article>
+<article class="mindspace-assessment-card"><div class="mindspace-assessment-icon">04</div><div><h3>التقييم السلوكي والانفعالي</h3><p>يقيم الأنماط السلوكية وتنظيم المشاعر والتفاعل الاجتماعي.</p></div></article>
+<article class="mindspace-assessment-card"><div class="mindspace-assessment-icon">05</div><div><h3>تقييم صعوبات التعلم</h3><p>يحدد الصعوبات المحتملة في القراءة والكتابة والرياضيات.</p></div></article>
+<article class="mindspace-assessment-card"><div class="mindspace-assessment-icon">06</div><div><h3>تقييم النطق واللغة</h3><p>يقيم النطق وتطور اللغة ومهارات التواصل.</p></div></article>
+<article class="mindspace-assessment-card"><div class="mindspace-assessment-icon">07</div><div><h3>التقييم النفسي الحركي</h3><p>يقيم التناسق الحركي والوعي بالجسم والتكامل بين الحركة والإدراك.</p></div></article>
+<article class="mindspace-assessment-card"><div class="mindspace-assessment-icon">08</div><div><h3>متابعة التقدم وملف التعلم</h3><p>يتابع التقدم نحو الأهداف الفردية ويحدد تفضيلات التعلم ونقاط القوة والأساليب الفعالة.</p></div></article>
+</div>
+</div>
+</section>
+
+<section class="mindspace-v2-section alt" id="family-support">
+<div class="container">
+<div class="mindspace-family-intro"><div><span class="mindspace-v2-kicker">دعم الأسرة والشراكة معها</span><h2>نعمل معًا من أجل نمو كل طفل</h2><p>الأسرة شريك أساسي في نمو الطفل. نمكّن الوالدين من خلال إرشادات عملية وتوصيات فردية ودعم مستمر يساعدهم على فهم احتياجات طفلهم وتعزيز تقدمه في المنزل.</p><p>وعندما يكون ذلك مناسبًا، يحقق التعاون بين الأسرة والمتخصصين والمدرسة بيئة متسقة وداعمة تعزز الصحة النفسية والتعلم والنمو.</p></div><div class="mindspace-family-highlight"><h3>دعم فردي وتقدم ذو معنى</h3><p>تعتمد عمليتنا المنظمة على فهم احتياجات كل طفل وقدراته، ثم تعديل الدعم مع تطور هذه الاحتياجات.</p></div></div>
+<div class="mindspace-v2-head"><span class="mindspace-v2-kicker">منهجنا</span><h2>مسار مدروس من الفهم إلى التقدم</h2></div>
+<div class="mindspace-process-grid"><article class="mindspace-process-step"><strong>تقييم شامل</strong><p>فهم نقاط القوة والاحتياجات ومجالات النمو.</p></article><article class="mindspace-process-step"><strong>تخطيط فردي</strong><p>إعداد خطط مخصصة وفق نتائج التقييم والأهداف.</p></article><article class="mindspace-process-step"><strong>تنمية تدريجية للمهارات</strong><p>بناء المهارات وفق وتيرة الطفل دون ضغط أو مقارنة.</p></article><article class="mindspace-process-step"><strong>متابعة مستمرة</strong><p>مراجعة التقدم وتعديل الاستراتيجيات مع تطور الاحتياجات.</p></article><article class="mindspace-process-step"><strong>تعاون أسري</strong><p>ربط الدعم بين المنزل والمدرسة والبيئة العلاجية.</p></article></div>
+<div class="mindspace-v2-head" style="margin-top:72px"><span class="mindspace-v2-kicker">لماذا تختار مايند سبيس</span><h2>لأن فهم طفلك يغير كل شيء</h2></div>
+<div class="mindspace-why-grid"><article class="mindspace-family-card"><h3>انظر إلى ما وراء السلوك</h3><p>افهم ما الذي قد يعبر عنه سلوك طفلك وما نوع الدعم الذي قد يحتاجه.</p></article><article class="mindspace-family-card"><h3>حوّل التحديات إلى فرص</h3><p>ساعد طفلك على بناء مهارات تجعل المواقف اليومية أسهل.</p></article><article class="mindspace-family-card"><h3>اجعل لكل خطوة قيمة</h3><p>ركز على التقدم الهادف في التواصل والتعلم وتنظيم المشاعر والاستقلالية.</p></article><article class="mindspace-family-card"><h3>كن أكثر ثقة كوالد</h3><p>اكتسب استراتيجيات عملية للتعامل مع التحديات اليومية بوضوح وثقة أكبر.</p></article></div>
+</div>
+</section>
+
+<section class="mindspace-final-cta" id="support"><div class="container"><span class="mindspace-v2-kicker">مايند سبيس من EACC</span><h2>كل طفل يستحق أن يُفهم</h2><p>رحلة طفلك فريدة، والعثور على الدعم المناسب يمكن أن يصنع فارقًا حقيقيًا. نحن هنا لمساعدتك على فهم احتياجات طفلك واستكشاف الخطوات التالية نحو النمو والثقة والصحة النفسية.</p><div class="hero-actions"><a class="btn btn-primary" href="#mindspace-form">ابدأ استفسارك</a></div></div></section>
+
 <!-- mind-hero -->
 <section class="mind-hero mindspace-legacy-content" aria-hidden="true">
 <div class="container hero-content">
@@ -6667,18 +6746,18 @@ header .dropdown-menu a:hover {
 <div class="container">
 <div class="mindspace-form-shell">
 <div class="mindspace-form-intro">
-<span class="eyebrow" data-en="Request MindSpace Support">اطلب دعم مايند سبيس</span>
-<h2 data-en="Tell us about your child and we will guide you to the right service.">أخبرنا عن طفلك وسنرشدك إلى الخدمة الأنسب.</h2>
-<p data-en="يرجى مشاركة بيانات تواصل دقيقة ووصف مختصر لاحتياجات طفلك. سيقوم فريقنا بمراجعة الطلب والتواصل معك بالخطوة التالية المقترحة.">يرجى مشاركة بيانات تواصل دقيقة ووصف مختصر لاحتياجات طفلك. سيقوم فريقنا بمراجعة الطلب والتواصل معك بالخطوة التالية المقترحة.</p>
+<span class="eyebrow">اطلب الدعم من مايند سبيس</span>
+<h2>لنجد الدعم المناسب لطفلك</h2>
+<p>شاركنا بعض التفاصيل عن طفلك وما يثير قلقك. سيراجع فريقنا استفسارك ويرشدك إلى الخطوة التالية الأنسب.</p>
 <ul class="mindspace-form-points">
-<li data-en="تواصل سري ومحترم.">تواصل سري ومحترم.</li>
-<li data-en="إرشاد نحو التقييم أو العلاج أو الدعم الأسري.">إرشاد نحو التقييم أو العلاج أو الدعم الأسري.</li>
-<li data-en="خطوة أولى واضحة لفهم احتياجات طفلك.">خطوة أولى واضحة لفهم احتياجات طفلك.</li>
+<li><strong>الخصوصية والاحترام:</strong> نتعامل مع معلوماتك بعناية وسرية.</li>
+<li><strong>إرشاد فردي:</strong> توجيه يستند إلى احتياجات طفلك وما يشغل أسرتك.</li>
+<li><strong>خطوات تالية واضحة:</strong> تعرف إلى خيارات التقييم أو العلاج أو الدعم الأسري.</li>
 </ul>
 </div>
 <div class="mindspace-form-card">
-<h3 data-en="طلب دعم مايند سبيس">طلب دعم مايند سبيس</h3>
-<p class="form-subtitle" data-en="أكمل النموذج أدناه وسيتواصل معك فريقنا قريبًا.">أكمل النموذج أدناه وسيتواصل معك فريقنا قريبًا.</p>
+<h3>ابدأ استفسارك</h3>
+<p class="form-subtitle">نحن هنا لنستمع ونفهم ونساعدك على اتخاذ الخطوة التالية بثقة.</p>
 <form class="mindspace-inline-form" id="mindspaceForm" novalidate="">
 <input name="formType" type="hidden" value="Mind Space"/>
 <div class="form-row">
